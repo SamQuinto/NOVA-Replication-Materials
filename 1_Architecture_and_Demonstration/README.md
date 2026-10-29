@@ -8,7 +8,6 @@ This folder contains the Architecture 1 and 2 (A1 and A2) prompts, the scoring c
 | [Architecture 2 (A2)](A2/) | A lower-cost model supported by instructions and Python rules developed for the exercise |
 | [Web app](demo/) | The app you can download and run in your browser |
 | [Scoring code](code/) | Python scripts, exact prompt text, exercise definitions and the files they need |
-| [Detailed architecture guide](Architecture_Guide.md) | A step-by-step explanation of both architectures, including the prompts and the code behind them |
 
 ## Try it in your browser
 
@@ -48,6 +47,6 @@ python -m unittest discover -s code/tests -v
 
 These tests do not call a model. They check request preparation, score calculation, and whether the app still works after its folder is copied and renamed.
 
-A2 uses a separate tutorial scorer. A long tutorial offer can receive a second reading by the same model; it is not sent to a stronger model. See the A2 guide for details.
+A2 uses a separate tutorial scorer. A long tutorial offer can receive a second reading by the same model; it is not sent to a stronger model.
 
 Requests use `store:false`. OpenAI explains this setting in its [response-storage documentation](https://developers.openai.com/api/docs/guides/migrate-to-responses). Its [structured-output documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explains the JSON format we request. Getting valid JSON does not by itself mean the model understood the offer correctly; NOVA also checks the interpretation before calculating points.

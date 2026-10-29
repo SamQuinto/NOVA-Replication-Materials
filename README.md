@@ -32,5 +32,3 @@ The main evaluation includes 1,225 offer inputs, and the separate tutorial evalu
 ## Participant privacy
 
 Participant data from the pilot tests have been de-identified before sharing. Names, Prolific IDs and contact details are not included, and the original records remain private. The [privacy note](3_Validation_and_Development/Privacy_Review.md) explains what we removed and the limits of sharing free-text responses.
-
-For more detail, the [repository guide](NOVA_Repository_Guide.md) maps the files, explains how to use them, and identifies the sources for each appendix. You can also read its [formatted HTML version](NOVA_Repository_Guide.html). The [architecture guide](1_Architecture_and_Demonstration/Architecture_Guide.md) explains the prompts and scoring code step by step, with expandable sections containing the exact source text. The prompts and scoring behavior used in the evaluation have not been changed by this documentation update.

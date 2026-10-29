@@ -16,6 +16,5 @@ You can inspect each part here:
 - [Role materials](../code/frozen/Role_Materials.json)
 - [Issue and option definitions sent to the model](../code/frozen/A1_Scoring_Definitions.json)
 - [Full scoring table used to calculate points](../code/frozen/Scoring_Table.json)
-- [Explanation of each step and prompt section](../docs/A1_Walkthrough.md)
 
 The main exercise and tutorial use the same general prompt with different exercise files. To use A1 for a new exercise, prepare those files and test a varied set of offers before collecting data.

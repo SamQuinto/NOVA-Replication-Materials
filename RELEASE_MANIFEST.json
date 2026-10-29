@@ -1,10 +1,10 @@
 {
-  "release": "NOVA replication package 2026-10-29 repository guide and compact figure",
-  "previous_commit": "f80613098f946825dc9926c1e9f29ca174bdbfcc",
+  "release": "NOVA replication package 2026-10-29 concise documentation",
+  "previous_commit": "4b99ca0937cc5d3153743ee6122f1ce94e170f0f",
   "files": {
     ".gitattributes": {
-      "bytes": 654,
-      "sha256": "cab0ff1c39caeead3a828288d781d5f07eacbde9a12b851c7fab0bc8ec751681"
+      "bytes": 464,
+      "sha256": "ecc4a413b3620e45b0e87b5ba0f17197c0dcc958ab00c19c6995e51b40c0d5db"
     },
     ".gitignore": {
       "bytes": 251,
@@ -15,20 +15,12 @@
       "sha256": "5b85ae601d7d192c31a8d6b2647acc0337b452ab9188d03a5f7ad063afbcb815"
     },
     "1_Architecture_and_Demonstration/A1/README.md": {
-      "bytes": 1784,
-      "sha256": "a2dd91425f6ff72e4ace3b790fdc5062340f57aef959db4e2591ff04f9827440"
+      "bytes": 1709,
+      "sha256": "32209ce3805313c81553b83763081b53c16d2777acc1034edb4b378bcb7f2390"
     },
     "1_Architecture_and_Demonstration/A2/README.md": {
-      "bytes": 1658,
-      "sha256": "d5cc8ee9aca22c3d1ed5d9850932819785a68162f85eaacbe9538c8b7cef6ee9"
-    },
-    "1_Architecture_and_Demonstration/Architecture_Guide.html": {
-      "bytes": 257090,
-      "sha256": "359b4af5ae2c02777b3f240c7a3da542df7df6c6c3ec2ad5c3e9b72365e12413"
-    },
-    "1_Architecture_and_Demonstration/Architecture_Guide.md": {
-      "bytes": 232908,
-      "sha256": "3213dfd27e88148d63ca7edb6bac50a8b8f14be148087b77e09a181b0936614d"
+      "bytes": 1587,
+      "sha256": "dff43599fca0e1d415fe5fce6c8e4e572ec1732fa71f48e5185f500feace7207"
     },
     "1_Architecture_and_Demonstration/code/A1-1.py": {
       "bytes": 1447,
@@ -306,14 +298,6 @@
       "bytes": 5170,
       "sha256": "cf7b18e7857f5aecffeb8b5a2b8b87c7633955925d4fc0e63978b54c8dabdbb0"
     },
-    "1_Architecture_and_Demonstration/docs/A1_Walkthrough.md": {
-      "bytes": 6569,
-      "sha256": "b4f6081a7817801c21c942ad46dc042f3e639ea357bbacfa1752baba7803bcb4"
-    },
-    "1_Architecture_and_Demonstration/docs/A2_Walkthrough.md": {
-      "bytes": 8964,
-      "sha256": "4c2970ccb1a91133f22e0c170a94ac1a6e18e22a92dfe2a21a208deeea06472a"
-    },
     "1_Architecture_and_Demonstration/figures/Architecture_Figure_Editable.docx": {
       "bytes": 25958,
       "sha256": "2b427b64e44bbf69910e2515a1d204e43acfa745197fa6626b929dda402c4975"
@@ -351,8 +335,8 @@
       "sha256": "b879cb939261b2a88be13d0b16d08ef96d9894f6e3de18e33c20a0d56c748b3d"
     },
     "1_Architecture_and_Demonstration/README.md": {
-      "bytes": 3680,
-      "sha256": "872481571bc72a7f52d2610dbac7fb84ef5dea01edbb1087b66016538047f0f4"
+      "bytes": 3494,
+      "sha256": "2bab51c65b19826182d23ee6f2dd93bcf42e1de158eebfbd4199b6101145cbe3"
     },
     "2_Exercise_Materials/Negotiation_Exercise_Role_Materials.docx": {
       "bytes": 43081,
@@ -615,8 +599,8 @@
       "sha256": "91bc8b1f24e0ee231277cd7e7ded5ded6b2c58333dcfa33683a6bf5913bc2756"
     },
     "3_Validation_and_Development/results/Release_Checks.json": {
-      "bytes": 4896,
-      "sha256": "c91ad48809dbb7cfbb1adab3ef5cbd23fd9971af895757ba4c3f987e7eb291f7"
+      "bytes": 3533,
+      "sha256": "176cf5b8f997f82c7891cf3654deab1a0c89e369c3b8f1c76caa09645c56a876"
     },
     "3_Validation_and_Development/results/Reproduction_Checks.csv": {
       "bytes": 574,
@@ -626,17 +610,9 @@
       "bytes": 12214,
       "sha256": "7b3e7edb198f69a5628440c24391a6d4beead7f446a560d9a089c865ae7a47d0"
     },
-    "NOVA_Repository_Guide.html": {
-      "bytes": 39788,
-      "sha256": "61f6dff27819258f27ecadc5717d95b5dd901dbd23cf74ca3275773801d6ce31"
-    },
-    "NOVA_Repository_Guide.md": {
-      "bytes": 31468,
-      "sha256": "61b5b96a963c0b0d220b878de80c2354af6d957616d7086abb1cb0ac186363fe"
-    },
     "README.md": {
-      "bytes": 3387,
-      "sha256": "0c5dea3716ef5ce3dcab5a743882e351f7ccdb955b7c4e60b96abd835f234401"
+      "bytes": 2856,
+      "sha256": "07cde9a1ffac21b66e9e8ef8bacefb1eee529b7bdce701562e378f15d4650692"
     }
   }
 }

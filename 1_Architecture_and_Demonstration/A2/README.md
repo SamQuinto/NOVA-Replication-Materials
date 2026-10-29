@@ -15,7 +15,6 @@ You can inspect each part here:
 - [Code that selects issues and prepares the request](../code/a2_extract.py)
 - [Custom Python rules](../code/a2_custom_rules.py)
 - [Code that checks and scores the interpretation](../code/a2_finalize.py)
-- [Explanation of the rules, with examples](../docs/A2_Walkthrough.md)
 
 The rules read the offer and exercise definitions, not benchmark IDs or expected answers. When adapting a rule, test the problem it is meant to solve and other offers that might be affected.
 
