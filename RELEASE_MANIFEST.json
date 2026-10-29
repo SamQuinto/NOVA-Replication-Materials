@@ -1,10 +1,10 @@
 {
   "release": "NOVA replication package 2026-10-29 repository guide and compact figure",
-  "previous_commit": "fd65d013cacd7df8722f92b5c65dfa31239f55f6",
+  "previous_commit": "f80613098f946825dc9926c1e9f29ca174bdbfcc",
   "files": {
     ".gitattributes": {
-      "bytes": 558,
-      "sha256": "8b81c9703ffbc68f693b8d546274e8ff4221edbec0f9bea644eb7c3819a644a7"
+      "bytes": 654,
+      "sha256": "cab0ff1c39caeead3a828288d781d5f07eacbde9a12b851c7fab0bc8ec751681"
     },
     ".gitignore": {
       "bytes": 251,
