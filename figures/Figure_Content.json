@@ -9,50 +9,50 @@
         [
           "Offer data and exercise files",
           [
-            "Offer text and negotiator role (JSON)",
-            "Optional prior-offer context",
-            "Role materials and full table definitions",
-            "General prompt and response format"
+            "Offer text entered in the free-text box",
+            "Negotiator’s assigned role",
+            "Role materials and scoring table (JSON files)",
+            "General-purpose prompt containing the main instructions (text file)",
+            "Optional: Previous offer text, when referenced—for example, “Keep everything from the previous offer, but change the salary to $60,000.”"
           ]
         ],
         [
           "Python script A1-1",
           [
-            "Builds one model request (JSON)",
-            "Includes every active issue and option",
-            "Keeps score calculation in Python"
+            "Combines the inputs above, including all issues and options from the scoring table, into one JSON request sent to the LLM."
           ]
         ],
         [
           "Advanced LLM",
           [
-            "e.g., OpenAI GPT-6.1 Sol",
-            "Selects issues and options from the offer",
-            "Returns supporting words and questions"
+            "(e.g., OpenAI GPT-6.1 Sol)",
+            "Processes the JSON request prepared above",
+            "Identifies the proposed issues and matches them to available options in the scoring table",
+            "Returns its interpretation as JSON"
           ]
         ],
         [
           "Interpretation (JSON)",
           [
-            "Issues, options and quoted evidence",
-            "Clarification questions",
-            "Ideas retained without points"
+            "Identified issues and their interpreted options",
+            "Words quoted from the offer to support each interpretation",
+            "Clarification questions and ideas retained without scores, if needed"
           ]
         ],
         [
           "Python script A1-2",
           [
-            "Checks evidence, options and values",
-            "Looks up researcher-defined scores",
-            "Prepares totals and follow-up messages"
+            "Checks the interpretation above for supporting quotations, valid issues and options, and allowable values",
+            "Looks up researcher-defined scores in the scoring table and calculates totals",
+            "Returns the scored offer as JSON"
           ]
         ],
         [
           "Scored offer (JSON)",
           [
-            "Scores by issue and option",
-            "Role-specific totals when complete",
-            "Clarifications and unpriced ideas"
+            "Interpreted issues and options, with their individual scores",
+            "Each negotiator’s total score when the offer is complete and valid",
+            "Clarification questions and unscored ideas, if any"
           ]
         ]
       ]
@@ -66,50 +66,51 @@
         [
           "Offer data and exercise files",
           [
-            "Offer text and negotiator role (JSON)",
-            "Optional prior-offer context",
-            "Role materials and fitted reading rules",
-            "Scoring table, vocabulary and format"
+            "Offer text entered in the free-text box",
+            "Negotiator’s assigned role",
+            "Role materials, scoring table and matching vocabulary (JSON files)",
+            "Main instructions (text file) and exercise-specific reading instructions (JSON file)",
+            "Optional: Previous offer text, when the current offer refers to it"
           ]
         ],
         [
           "Python script A2-1",
           [
-            "Retrieves likely relevant table entries",
-            "Builds a request with their options",
-            "Includes exercise-specific reading notes"
+            "Uses matching rules to select relevant issues and options from the scoring table",
+            "Combines these entries with the offer, role materials and instructions into one JSON request sent to the LLM"
           ]
         ],
         [
           "Economical LLM",
           [
-            "e.g., OpenAI GPT-5.6 Luna",
-            "Selects supported issues and options",
-            "Returns supporting words and questions"
+            "(e.g., OpenAI GPT-5.6 Luna)",
+            "Processes the JSON request prepared above",
+            "Identifies the proposed issues and matches them to the selected scoring-table options",
+            "Returns its interpretation as JSON"
           ]
         ],
         [
           "Interpretation (JSON)",
           [
-            "Issues, options and quoted evidence",
-            "Clarification questions",
-            "Ideas retained without points"
+            "Identified issues and their interpreted options",
+            "Words quoted from the offer to support each interpretation",
+            "Clarification questions and ideas retained without scores, if needed"
           ]
         ],
         [
           "Python script A2-2",
           [
-            "Applies fitted exercise-specific rules",
-            "Checks the result and retrieves scores",
-            "Records which custom rules were used"
+            "Applies exercise-specific Python rules to the interpretation above",
+            "Checks quotations, issues, options and values, then looks up assigned scores and calculates totals",
+            "Returns the scored offer as JSON"
           ]
         ],
         [
           "Scored offer (JSON)",
           [
-            "Scores by issue and option",
-            "Role-specific totals when complete",
-            "Clarifications and unpriced ideas"
+            "Interpreted issues and options, with their individual scores",
+            "Each negotiator’s total score when the offer is complete and valid",
+            "Clarification questions and unscored ideas, if any"
           ]
         ]
       ]

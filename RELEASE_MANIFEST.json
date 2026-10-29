@@ -123,18 +123,18 @@
     },
     {
       "path": "figures/Architecture_Figure_Editable.docx",
-      "sha256": "d472016a8071db43cdec891a5641d613629520495706eda70737217016bc18d8",
-      "bytes": 38088
+      "sha256": "724cc1c125f798d29b111245e84bcb9617099aaf922dbdfd376a3ecc592cd289",
+      "bytes": 25070
     },
     {
       "path": "figures/Figure_2_Current_Architectures.png",
-      "sha256": "fac6b5ffbf997f10daffbadfa803958e3aa1d14e5b5aeb1ac2c2237e26daa75e",
-      "bytes": 247660
+      "sha256": "781e78935fae6ebe02c8b22d23c9489004d82d0ac95d9ba0edad5941ca7de5b9",
+      "bytes": 399356
     },
     {
       "path": "figures/Figure_2_Current_Architectures.svg",
-      "sha256": "911621e821705c5b682aedd42f17bf9373df337b089f012c3597b5c80c1c0275",
-      "bytes": 11135
+      "sha256": "d6f34584c77ee48e8bd3a673b087846b64e836836d84a1785cd0bb7c4ed70a2b",
+      "bytes": 13598
     },
     {
       "path": "figures/Figure_B2_Tutorial_Path.png",
@@ -148,8 +148,8 @@
     },
     {
       "path": "figures/Figure_Content.json",
-      "sha256": "34cb4e565d7ef57f88d7c799342e19a6ee7dae265966abb8d54fbfca5205b6e3",
-      "bytes": 4768
+      "sha256": "0f83fc182b53767a70fa0a9aad371ebde760811d49f3fa77a69c27ad44c84918",
+      "bytes": 5911
     },
     {
       "path": "figures/README.md",
@@ -228,8 +228,8 @@
     },
     {
       "path": "tools/build_figures_source.py",
-      "sha256": "e5e7996f8e7bf97c9b53e22e4427281cc7f0f5081c2df07446d0235c3db570da",
-      "bytes": 7175
+      "sha256": "abd1a805e47d51a1ec02598f2e2c6814886fd45ef0004735c86aefcd24a1025b",
+      "bytes": 8980
     },
     {
       "path": "tools/build_validation_request.py",
@@ -238,8 +238,8 @@
     },
     {
       "path": "tools/build_word_figure_source.py",
-      "sha256": "e3ed3b1f0645c9a579fc466db3c4f9d5ef54ceb65fd40c7f76cfdab7819ae7da",
-      "bytes": 3656
+      "sha256": "9de3305dca7d3c621c000484956b72b8270556ff02dde7e797dbe18b85fc4954",
+      "bytes": 5065
     },
     {
       "path": "tools/recompute_accuracy.py",

@@ -1,23 +1,59 @@
-"""Build editable black-and-white architecture diagrams from one content file."""
+"""Build editable black-and-white architecture diagrams and their text source."""
 from pathlib import Path
 import json,html,textwrap
 W=Path(__file__).resolve().parents[1];OUT=W/'figures'
 
 MAIN={
  'A1':dict(header=['A1  Flexible','Higher API cost'],boxes=[
-  ('Offer data and exercise files',['Offer text and negotiator role (JSON)','Optional prior-offer context','Role materials and full table definitions','General prompt and response format']),
-  ('Python script A1-1',['Builds one model request (JSON)','Includes every active issue and option','Keeps score calculation in Python']),
-  ('Advanced LLM',['e.g., OpenAI GPT-6.1 Sol','Selects issues and options from the offer','Returns supporting words and questions']),
-  ('Interpretation (JSON)',['Issues, options and quoted evidence','Clarification questions','Ideas retained without points']),
-  ('Python script A1-2',['Checks evidence, options and values','Looks up researcher-defined scores','Prepares totals and follow-up messages']),
-  ('Scored offer (JSON)',['Scores by issue and option','Role-specific totals when complete','Clarifications and unpriced ideas'])]),
+  ('Offer data and exercise files',[
+   'Offer text entered in the free-text box',
+   'Negotiator’s assigned role',
+   'Role materials and scoring table (JSON files)',
+   'General-purpose prompt containing the main instructions (text file)',
+   'Optional: Previous offer text, when referenced—for example, “Keep everything from the previous offer, but change the salary to $60,000.”']),
+  ('Python script A1-1',['Combines the inputs above, including all issues and options from the scoring table, into one JSON request sent to the LLM.']),
+  ('Advanced LLM',['(e.g., OpenAI GPT-6.1 Sol)',
+   'Processes the JSON request prepared above',
+   'Identifies the proposed issues and matches them to available options in the scoring table',
+   'Returns its interpretation as JSON']),
+  ('Interpretation (JSON)',[
+   'Identified issues and their interpreted options',
+   'Words quoted from the offer to support each interpretation',
+   'Clarification questions and ideas retained without scores, if needed']),
+  ('Python script A1-2',[
+   'Checks the interpretation above for supporting quotations, valid issues and options, and allowable values',
+   'Looks up researcher-defined scores in the scoring table and calculates totals',
+   'Returns the scored offer as JSON']),
+  ('Scored offer (JSON)',[
+   'Interpreted issues and options, with their individual scores',
+   'Each negotiator’s total score when the offer is complete and valid',
+   'Clarification questions and unscored ideas, if any'])]),
  'A2':dict(header=['A2  Customized','Higher setup effort, lower API cost'],boxes=[
-  ('Offer data and exercise files',['Offer text and negotiator role (JSON)','Optional prior-offer context','Role materials and fitted reading rules','Scoring table, vocabulary and format']),
-  ('Python script A2-1',['Retrieves likely relevant table entries','Builds a request with their options','Includes exercise-specific reading notes']),
-  ('Economical LLM',['e.g., OpenAI GPT-5.6 Luna','Selects supported issues and options','Returns supporting words and questions']),
-  ('Interpretation (JSON)',['Issues, options and quoted evidence','Clarification questions','Ideas retained without points']),
-  ('Python script A2-2',['Applies fitted exercise-specific rules','Checks the result and retrieves scores','Records which custom rules were used']),
-  ('Scored offer (JSON)',['Scores by issue and option','Role-specific totals when complete','Clarifications and unpriced ideas'])])}
+  ('Offer data and exercise files',[
+   'Offer text entered in the free-text box',
+   'Negotiator’s assigned role',
+   'Role materials, scoring table and matching vocabulary (JSON files)',
+   'Main instructions (text file) and exercise-specific reading instructions (JSON file)',
+   'Optional: Previous offer text, when the current offer refers to it']),
+  ('Python script A2-1',[
+   'Uses matching rules to select relevant issues and options from the scoring table',
+   'Combines these entries with the offer, role materials and instructions into one JSON request sent to the LLM']),
+  ('Economical LLM',['(e.g., OpenAI GPT-5.6 Luna)',
+   'Processes the JSON request prepared above',
+   'Identifies the proposed issues and matches them to the selected scoring-table options',
+   'Returns its interpretation as JSON']),
+  ('Interpretation (JSON)',[
+   'Identified issues and their interpreted options',
+   'Words quoted from the offer to support each interpretation',
+   'Clarification questions and ideas retained without scores, if needed']),
+  ('Python script A2-2',[
+   'Applies exercise-specific Python rules to the interpretation above',
+   'Checks quotations, issues, options and values, then looks up assigned scores and calculates totals',
+   'Returns the scored offer as JSON']),
+  ('Scored offer (JSON)',[
+   'Interpreted issues and options, with their individual scores',
+   'Each negotiator’s total score when the offer is complete and valid',
+   'Clarification questions and unscored ideas, if any'])])}
 
 def esc(s):return html.escape(s)
 def text(x,y,lines,size=28,bold=False,anchor='middle'):
@@ -26,8 +62,11 @@ def box(x,y,w,h,title,body,core=False):
  parts=[f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="white" stroke="black" stroke-width="{3 if core else 1.8}"/>',text(x+w/2,y+42,[title],31,True)]
  ypos=y+85
  for line in body:
-  wrapped=textwrap.wrap(line,width=int((w-54)/13),break_long_words=False)
-  parts.append(text(x+27,ypos,['• '+wrapped[0]]+['  '+s for s in wrapped[1:]],27,anchor='start'));ypos+=34*len(wrapped)+8
+  model=line.startswith('(e.g.,')
+  wrapped=textwrap.wrap(line,width=int((w-70)/14.5),break_long_words=False)
+  plain=model or title=='Python script A1-1'
+  lines=wrapped if plain else ['• '+wrapped[0]]+['  '+s for s in wrapped[1:]]
+  parts.append(text(x+27,ypos,lines,27,anchor='start'));ypos+=34*len(wrapped)+8
  assert ypos<=y+h+5,(title,ypos,y+h)
  return ''.join(parts)
 def arrow(x1,y1,x2,y2,label=None):
@@ -38,7 +77,14 @@ def svg(width,height,body):
  return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="black"/></marker></defs><rect width="100%" height="100%" fill="white"/>'+body+'</svg>'
 def main():
  OUT.mkdir(exist_ok=True)
- heights=[285,215,220,220,230,220];ys=[];y=115
+ heights=[]
+ for step in range(6):
+  sizes=[]
+  for col in MAIN.values():
+   body=col['boxes'][step][1]
+   sizes.append(110+sum(34*len(textwrap.wrap(line,width=42,break_long_words=False))+8 for line in body))
+  heights.append(max(sizes))
+ ys=[];y=115
  for height in heights:ys.append(y);y+=height+45
  parts=[]
  for i,(key,col) in enumerate(MAIN.items()):
@@ -71,7 +117,7 @@ Suggested caption: **Figure 2. Alternative scorer architectures in NOVA.**
 
 Suggested note: The language model identifies the proposed issues and options; Python scripts apply researcher-defined scores. A1 receives every active issue definition. A2 retrieves possible issues and uses fitted reading rules. Script numbers identify processing stages rather than separate source files. The optional second tutorial reading is shown separately, not as part of the fitted one-call A2 job scorer.
 
-`Figure_Content.json` is the common editable text source. `Architecture_Figure_Editable.docx` provides a native Word text-and-box version of the main comparison. The images contain no embedded figure number or caption.
+`Figure_Content.json` records the figure text and feeds the Word builder. `Architecture_Figure_Editable.docx` provides a native Word text-and-box version of the main comparison. For vector changes, edit the SVG directly or edit and rerun `tools/build_figures_source.py`; that builder keeps its own layout and text definitions. The images contain no embedded figure number or caption.
 ''',encoding='utf-8')
  print(str(OUT))
 if __name__=='__main__':main()
