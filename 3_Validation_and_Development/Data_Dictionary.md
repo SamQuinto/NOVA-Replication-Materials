@@ -15,6 +15,9 @@ The files below are in `data/`. Main-exercise and tutorial offer IDs are numbere
 | `sent_offers.json` / `.csv` | One proposal sent to a counterpart | trial ID, chronological offer number, role, offer text, choices, scores, event labels |
 | `post_negotiation_responses.json` / `.csv` | One respondent in a valid both-survey dyad | trial ID, pilot, condition, role, raw answers |
 | `feedback_survey_responses.json` / `.csv` | One completed feedback questionnaire | anonymous respondent ID, assigned role, raw answers including three offer questions |
+| `early_development_offers.json` / `.csv` | One earlier development input | development ID, recorded source, test category, role, offer and previous-offer context |
+
+The 568 earlier development inputs were retained from the previous 1,000-input development collection after leaving out the inputs labelled as live-pilot and survey responses. They include researcher examples, LLM examples, wording from earlier LLM negotiations and generated variations. Some older tests did not retain an author label; the shared source field says so. These inputs are not added to the 1,225-offer main evaluation or the 731-offer tutorial evaluation. Their older answer keys and private source metadata are not included.
 
 JSON keeps lists and related fields together in their original structure. CSV stores those fields as JSON text within a cell. We also protect CSV cells that start with a spreadsheet formula character so that a participant's text is not accidentally run as a formula. The JSON version retains the de-identified wording. The notebook uses JSON for these structured records and CSV for the scoring judgments.
 

@@ -8,6 +8,7 @@ Start with [the analysis](Analysis.html) to read the results. If you would like 
 | --- | --- |
 | [Main offer validation](NOVA_Offer_Validation.xlsx) | 1,225 inputs, responses from three scorer settings, error reviews, accuracy calculations and prompt text |
 | [Tutorial offer validation](NOVA_Tutorial_Validation.xlsx) | The separate evaluation of 731 tutorial inputs |
+| [Earlier development inputs](data/early_development_offers.csv) | 568 earlier tests and wording variations, kept separate from the main and tutorial evaluations |
 | [Data](data/) | Participant offers and survey responses, recorded scorer responses, review decisions and API usage |
 | [Results](results/) | Tables calculated from the supplied data |
 | [Figures](figures/) | The issue-frequency chart and issue-diversity histogram |
