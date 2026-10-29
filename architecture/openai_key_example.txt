@@ -1,4 +1,0 @@
-YOUR_OPENAI_API_KEY_HERE
-
-This is a placeholder only. Set OPENAI_API_KEY in your environment.
-Do not replace this tracked file with a real key or commit credentials.

@@ -1,0 +1,110 @@
+trial_id,pilot,condition,candidate,recruiter,included_behavior,completed_negotiation,has_both_surveys,scoring_failure,attendance_status,excluded_from_analysis
+T001,Oct 20,Fixed 9,P001,P002,False,False,False,,,
+T002,Oct 20,Fixed 9,P003,P004,True,True,True,,,
+T003,Oct 20,Fixed 9,P005,P006,False,False,False,,,
+T004,Oct 20,Fixed 9,P007,P008,True,True,True,,,
+T005,Oct 20,Fixed 9,P009,P010,True,True,True,,,
+T006,Oct 20,Fixed 9,P011,P012,True,True,True,,,
+T007,Oct 20,Fixed 9,P013,P014,True,True,True,,,
+T008,Oct 20,Fixed 9,P015,P016,True,True,False,,,
+T009,Oct 20,Fixed 9,P017,P018,True,False,True,,,
+T010,Oct 20,Fixed 9,P019,P020,True,True,True,,,
+T011,Oct 20,Fixed 9,P021,P022,False,False,False,,,
+T012,Oct 20,NOVA,P023,P024,True,True,True,,,
+T013,Oct 20,NOVA,P025,P026,False,False,False,,,
+T014,Oct 20,NOVA,P027,P028,True,True,True,,,
+T015,Oct 20,NOVA,P029,P030,True,True,True,,,
+T016,Oct 20,NOVA,P031,P032,True,True,True,,,
+T017,Oct 20,NOVA,P033,P034,True,True,True,,,
+T018,Oct 20,NOVA,P035,P036,True,True,True,,,
+T019,Oct 20,NOVA,P037,P038,True,True,True,,,
+T020,Oct 20,NOVA,P039,P040,True,True,True,,,
+T021,Oct 20,NOVA,P041,P042,True,True,True,,,
+T022,Oct 20,NOVA,P043,P044,True,True,True,,,
+T023,Oct 27,Fixed 9,P045,P046,False,False,False,0,Exclude — no reciprocal negotiation,1
+T024,Oct 27,Fixed 9,P047,P048,False,False,False,0,Exclude — no reciprocal negotiation,1
+T025,Oct 27,Fixed 9,P049,P050,False,False,False,0,Exclude — no reciprocal negotiation,1
+T026,Oct 27,Fixed 9,P051,P052,False,False,False,0,Exclude — no reciprocal negotiation,1
+T027,Oct 27,Fixed 9,P053,P054,False,False,False,0,Exclude — no reciprocal negotiation,1
+T028,Oct 27,Fixed 9,P055,P056,False,False,False,0,Exclude — no reciprocal negotiation,1
+T029,Oct 27,Fixed 9,P057,P058,False,False,False,0,Exclude — no reciprocal negotiation,1
+T030,Oct 27,Fixed 9,P059,P060,False,False,False,0,Exclude — no reciprocal negotiation,1
+T031,Oct 27,NOVA,P061,P062,False,False,False,0,Exclude — no reciprocal negotiation,1
+T032,Oct 27,NOVA,P063,P064,False,False,False,0,Exclude — no reciprocal negotiation,1
+T033,Oct 27,NOVA,P065,P066,False,False,False,0,Exclude — no reciprocal negotiation,1
+T034,Oct 27,NOVA,P067,P068,False,False,False,0,Exclude — no reciprocal negotiation,1
+T035,Oct 27,NOVA,P069,P070,False,False,False,0,Exclude — no reciprocal negotiation,1
+T036,Oct 27,NOVA,P071,P072,False,False,False,1,Exclude — main-task scoring failure,1
+T037,Oct 27,NOVA,P073,P074,False,False,False,1,Exclude — main-task scoring failure,1
+T038,Oct 27,NOVA,P075,P076,False,False,False,1,Exclude — main-task scoring failure,1
+T039,Oct 27,NOVA,P077,P078,False,False,False,1,Exclude — main-task scoring failure,1
+T040,Oct 27,NOVA,P079,P080,False,False,False,1,Exclude — main-task scoring failure,1
+T041,Oct 27,NOVA,P081,P082,False,False,False,1,Exclude — main-task scoring failure,1
+T042,Oct 27,NOVA,P083,P084,False,False,False,1,Exclude — main-task scoring failure,1
+T043,Oct 27,NOVA,P085,P086,False,False,False,1,Exclude — main-task scoring failure,1
+T044,Oct 27,NOVA,P087,P088,False,False,False,1,Exclude — main-task scoring failure,1
+T045,Oct 27,NOVA,P089,P090,False,False,False,1,Exclude — main-task scoring failure,1
+T046,Oct 27,Fixed 9,P091,P092,True,True,True,0,Review — communication problem,0
+T047,Oct 27,Fixed 9,P093,P094,True,True,True,0,Review — communication problem,0
+T048,Oct 27,NOVA,P095,P096,False,False,False,0,Review — no reciprocal offer/vote,0
+T049,Oct 27,Fixed 9,P097,P098,True,True,True,0,Two-way negotiation recorded,0
+T050,Oct 27,Fixed 9,P099,P100,True,True,True,0,Two-way negotiation recorded,0
+T051,Oct 27,Fixed 9,P101,P102,True,True,True,0,Two-way negotiation recorded,0
+T052,Oct 27,Fixed 9,P103,P104,True,True,True,0,Two-way negotiation recorded,0
+T053,Oct 27,Fixed 9,P105,P106,True,True,True,0,Two-way negotiation recorded,0
+T054,Oct 27,Fixed 9,P107,P108,True,True,True,0,Two-way negotiation recorded,0
+T055,Oct 27,Fixed 9,P109,P110,True,True,True,0,Two-way negotiation recorded,0
+T056,Oct 27,Fixed 9,P111,P112,True,True,True,0,Two-way negotiation recorded,0
+T057,Oct 27,Fixed 9,P113,P114,True,True,True,0,Two-way negotiation recorded,0
+T058,Oct 27,Fixed 9,P115,P116,True,True,True,0,Two-way negotiation recorded,0
+T059,Oct 27,Fixed 9,P117,P118,True,True,True,0,Two-way negotiation recorded,0
+T060,Oct 27,Fixed 9,P119,P120,True,True,True,0,Two-way negotiation recorded,0
+T061,Oct 27,Fixed 9,P121,P122,True,True,True,0,Two-way negotiation recorded,0
+T062,Oct 27,Fixed 9,P123,P124,True,True,True,0,Two-way negotiation recorded,0
+T063,Oct 27,Fixed 9,P125,P126,True,True,True,0,Two-way negotiation recorded,0
+T064,Oct 27,Fixed 9,P127,P128,True,True,True,0,Two-way negotiation recorded,0
+T065,Oct 27,Fixed 9,P129,P130,True,True,True,0,Two-way negotiation recorded,0
+T066,Oct 27,Fixed 9,P131,P132,True,True,True,0,Two-way negotiation recorded,0
+T067,Oct 27,Fixed 9,P133,P134,True,True,True,0,Two-way negotiation recorded,0
+T068,Oct 27,Fixed 9,P135,P136,True,True,True,0,Two-way negotiation recorded,0
+T069,Oct 27,Fixed 9,P137,P138,True,True,True,0,Two-way negotiation recorded,0
+T070,Oct 27,Fixed 9,P139,P140,True,True,True,0,Two-way negotiation recorded,0
+T071,Oct 27,Fixed 9,P141,P142,True,True,True,0,Two-way negotiation recorded,0
+T072,Oct 27,Fixed 9,P143,P144,True,True,True,0,Two-way negotiation recorded,0
+T073,Oct 27,Fixed 9,P145,P146,True,True,True,0,Two-way negotiation recorded,0
+T074,Oct 27,Fixed 9,P147,P148,True,True,True,0,Two-way negotiation recorded,0
+T075,Oct 27,Fixed 9,P149,P150,True,True,True,0,Two-way negotiation recorded,0
+T076,Oct 27,Fixed 9,P151,P152,True,True,True,0,Two-way negotiation recorded,0
+T077,Oct 27,Fixed 9,P153,P154,True,True,True,0,Two-way negotiation recorded,0
+T078,Oct 27,Fixed 9,P155,P156,True,True,True,0,Two-way negotiation recorded,0
+T079,Oct 27,Fixed 9,P157,P158,True,True,True,0,Two-way negotiation recorded,0
+T080,Oct 27,Fixed 9,P159,P160,True,True,True,0,Two-way negotiation recorded,0
+T081,Oct 27,NOVA,P161,P162,True,True,True,0,Two-way negotiation recorded,0
+T082,Oct 27,NOVA,P163,P164,True,True,True,0,Two-way negotiation recorded,0
+T083,Oct 27,NOVA,P165,P166,True,True,True,0,Two-way negotiation recorded,0
+T084,Oct 27,NOVA,P167,P168,True,True,True,0,Two-way negotiation recorded,0
+T085,Oct 27,NOVA,P169,P170,True,True,True,0,Two-way negotiation recorded,0
+T086,Oct 27,NOVA,P171,P172,True,True,True,0,Two-way negotiation recorded,0
+T087,Oct 27,NOVA,P173,P174,True,True,True,0,Two-way negotiation recorded,0
+T088,Oct 27,NOVA,P175,P176,True,True,True,0,Two-way negotiation recorded,0
+T089,Oct 27,NOVA,P177,P178,True,True,True,0,Two-way negotiation recorded,0
+T090,Oct 27,NOVA,P179,P180,True,True,True,0,Two-way negotiation recorded,0
+T091,Oct 27,NOVA,P181,P182,True,True,True,0,Two-way negotiation recorded,0
+T092,Oct 27,NOVA,P183,P184,True,True,True,0,Two-way negotiation recorded,0
+T093,Oct 27,NOVA,P185,P186,True,True,True,0,Two-way negotiation recorded,0
+T094,Oct 27,NOVA,P187,P188,True,True,True,0,Two-way negotiation recorded,0
+T095,Oct 27,NOVA,P189,P190,True,True,True,0,Two-way negotiation recorded,0
+T096,Oct 27,NOVA,P191,P192,True,True,True,0,Two-way negotiation recorded,0
+T097,Oct 27,NOVA,P193,P194,True,True,True,0,Two-way negotiation recorded,0
+T098,Oct 27,NOVA,P195,P196,True,True,True,0,Two-way negotiation recorded,0
+T099,Oct 27,NOVA,P197,P198,True,True,True,0,Two-way negotiation recorded,0
+T100,Oct 27,NOVA,P199,P200,True,False,False,0,Two-way negotiation recorded,0
+T101,Oct 27,NOVA,P201,P202,True,True,True,0,Two-way negotiation recorded,0
+T102,Oct 27,NOVA,P203,P204,True,True,True,0,Two-way negotiation recorded,0
+T103,Oct 27,NOVA,P205,P206,True,True,True,0,Two-way negotiation recorded,0
+T104,Oct 27,NOVA,P207,P208,True,True,True,0,Two-way negotiation recorded,0
+T105,Oct 27,NOVA,P209,P210,True,True,True,0,Two-way negotiation recorded,0
+T106,Oct 27,NOVA,P211,P212,True,True,True,0,Two-way negotiation recorded,0
+T107,Oct 27,NOVA,P213,P214,True,True,True,0,Two-way negotiation recorded,0
+T108,Oct 27,NOVA,P215,P216,True,True,True,0,Two-way negotiation recorded,0
+T109,Oct 27,NOVA,P217,P218,True,True,True,0,Two-way negotiation recorded,0

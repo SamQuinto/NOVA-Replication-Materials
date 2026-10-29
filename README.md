@@ -1,31 +1,34 @@
 # NOVA replication materials
 
-The self-contained scorer implementation is in [architecture/](architecture/). That folder can be renamed or moved into another replication package without relying on this repository's outer layout.
+NOVA interprets offers written in ordinary language and assigns researcher-defined scores. This package provides the two scorer templates, the exercises, and de-identified records used to evaluate them.
 
-Start with:
+| Folder | Contents |
+| --- | --- |
+| [1 Architecture and demonstration](1_Architecture_and_Demonstration/) | A1 and A2, exact prompts, Python scripts, editable architecture figure, local demonstration |
+| [2 Exercise materials](2_Exercise_Materials/) | Job and tutorial role materials in Word and PDF, scoring tables, study questionnaires |
+| [3 Validation and development](3_Validation_and_Development/) | Reviewed offer workbooks, anonymous human data, executed analysis notebook and HTML, results and figures |
 
-- [One comprehensive LLM handoff](architecture/LLM_Architecture_Dump.txt)
-- [Runnable examples and instructions](architecture/README.md)
-- [The four named Python stages](architecture/docs/File_Map.md)
-- [Edited Word figure and image files](architecture/figures/README.md)
-- [Exact prompts](architecture/docs/Exact_Prompts.md)
-- [Validation procedure](architecture/docs/Validation_Protocol.md)
-- [Aggregate results](architecture/results/aggregate_results.json)
+## Try NOVA
 
-The main figure uses these exact headings: **A1 - Flexible, Higher API cost** and **A2 - Customized, Lower API cost**. Its numbered boxes map to `architecture/A1-1.py`, `architecture/A1-2.py`, `architecture/A2-1.py` and `architecture/A2-2.py`.
+Download the repository, or the complete `1_Architecture_and_Demonstration` folder. With Python 3.11 or later:
 
-The top-level `score_offer.py`, `score_tutorial_offer.py` and `nova_cli.py` remain compatibility launchers. The architecture folder does not depend on them. For example:
-
-```powershell
-python architecture/score_offer.py --architecture A1 --case-json examples/job_offer.json
-python architecture/score_offer.py --architecture A2 --case-json examples/job_offer.json
-python -m unittest discover -s architecture/tests -v
+```sh
+cd 1_Architecture_and_Demonstration
+python demo/Start_Demo.py
 ```
 
-These commands do not call an API. A paid model call requires `--live` and a key supplied through the environment. No credentials or participant-level offers, validation keys or review workbooks are published.
+The saved example is free and needs no API key. To score your own offers, copy `.env.example` to `.env` in that folder and replace the placeholder with your own key. Never upload `.env`. The demonstration needs no additional Python packages.
 
-This repository is separate from [Joshua's Empirica deployment package](https://github.com/SamQuinto/Creative-Negotiations-Materials/tree/main/empirica). The reorganization does not change that package, the study server or the manuscript.
+## Reproduce the results
 
-The public code can prepare requests and score saved or synthetic interpretations. Independently recoding the human validation data requires authorized private access. A new model response is not guaranteed to match a saved response. The reported A/B measure is also not complete option-and-score accuracy.
+Open [the executed analysis](3_Validation_and_Development/Analysis.html) or [the notebook](3_Validation_and_Development/Analysis.ipynb). Recomputing the results makes **no API calls**. Workbook accuracy sheets also calculate directly from the reviewed Y/N flags.
 
-Public visibility does not itself grant a reuse license. The authors should choose software licensing and human-data access terms before formal archival release.
+The main evaluation contains 1,225 inputs; the separate tutorial evaluation contains 731. These include calculator retries and incomplete inputs, not exclusively proposals sent to a counterpart. [Methods](3_Validation_and_Development/Methods.md) explains the populations and definitions.
+
+## Privacy and versions
+
+Human rows are published with researcher authorization after a privacy review. Direct identifiers, contact details, exact timestamps and private paths are excluded or redacted. Originals and the identity crosswalk remain private. See the [privacy review](3_Validation_and_Development/Privacy_Review.md).
+
+This release preserves the evaluated prompts, scoring code and historical exercise snapshots. It does not retune the scorers or change the separate Empirica deployment repository. New model responses can differ from saved responses. Primary accuracy concerns Types A and B, not an exhaustive independent audit of every numerical mapping.
+
+For appendix writers: [Appendix C replication guide](Appendix_C_Replication_Guide.txt) explains navigation and reproduction; [the architecture handoff](1_Architecture_and_Demonstration/LLM_Architecture_Dump.txt) gives the detailed Appendix B walkthrough, prompt commentary and code references.

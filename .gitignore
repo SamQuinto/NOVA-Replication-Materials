@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .env
 .env.*
+!.env.example
 *openai_key.txt
 *anthropic_key.txt
 *.sqlite
@@ -13,5 +14,7 @@ Cases.json
 Records.json
 Reference_Key.json
 Checks_and_Responses.json
-*.xlsx
 qa/
+.venv/
+*_executed.ipynb
+*.inspect.ndjson

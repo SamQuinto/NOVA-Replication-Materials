@@ -1,0 +1,279 @@
+APPENDIX C REPLICATION MATERIALS AND USER GUIDE
+29 October 2026
+
+PURPOSE AND SUGGESTED OPENING PARAGRAPH
+
+The replication package provides the NOVA scorer templates, the negotiation
+exercises and the records needed to reproduce the reported evaluation and pilot
+measures. It is organized into three sections: Architecture and Demonstration,
+Exercise Materials, and Validation and Development. Researchers can first try a
+local offer-scoring demonstration, then inspect the prompts and exercise files,
+and finally rerun the supplied analysis without making further paid API calls.
+The package includes de-identified human inputs and reviewed classifications so
+that readers can examine individual examples as well as aggregate results.
+
+This file is a comprehensive handoff for writing Appendix C. The folder names
+below are relative to the repository root. The separate architecture handoff
+uses paths relative to its own architecture folder, so it remains useful if the
+outer supplement directory is renamed. Do not refer to a private OneDrive path.
+Do not imply that readers need the researchers' original server or API key.
+
+REPOSITORY MAP
+
+README.md is the short entry point. The three principal folders are:
+
+1_Architecture_and_Demonstration/
+    README.md
+    A1/README.md
+    A2/README.md
+    code/                 all scorer scripts and their runtime dependencies
+    demo/Start_Demo.py     local server and launch command
+    demo/index.html       demonstration interface
+    .env.example          placeholder for a user's own local API key
+    docs/A1_Walkthrough.md
+    docs/A2_Walkthrough.md
+    figures/              supplied images, editable Word and source content
+    LLM_Architecture_Dump.txt
+
+2_Exercise_Materials/
+    README.md
+    job/                  flexible and fixed-nine role documents, Word and PDF
+    tutorial/             venue practice role document, Word and PDF
+    scoring_tables/       flexible-215.json, fixed-9.json, tutorial.json,
+                          NOVA_Scoring_Tables.xlsx
+    questionnaires/       study questions, Word/PDF/YAML, analysis schema JSON
+
+3_Validation_and_Development/
+    README.md
+    NOVA_Offer_Validation.xlsx
+    NOVA_Tutorial_Validation.xlsx
+    Analysis.ipynb        executed notebook, editable and rerunnable
+    Analysis.html         readable and printable executed notebook
+    analysis.py           reusable calculation functions
+    requirements.txt      analysis dependencies
+    Methods.md            measures, populations and limitations
+    Data_Dictionary.md    records, fields and joins
+    Privacy_Review.md
+    data/                 anonymous inputs, outputs, reference judgments,
+                          reviewed flags, usage, trial and survey records
+    results/              recomputed tables as CSV
+    figures/              regenerated diversity and issue-frequency figures
+    development_records/  earlier protocols and aggregate records, not the
+                          current headline results
+
+1. RUNNING THE DEMONSTRATION
+
+Use Python 3.11 or later. Download the full repository, or obtain the complete
+Architecture and Demonstration folder with all of its contents. Downloading one
+Python file alone is not sufficient: exercise definitions, prompt files and
+the included runtime are dependencies. No additional pip packages are needed
+for the demonstration or command-line scorer.
+
+From 1_Architecture_and_Demonstration run:
+
+    python demo/Start_Demo.py
+
+The server binds to 127.0.0.1 and opens a browser page on the user's computer.
+It is not a public hosted service. The page offers a job negotiation and a
+venue-hire tutorial, the corresponding roles, and A1-low, A1-high or A2.
+
+The free saved-example button loads a synthetic offer and its existing
+interpretation, then runs the included final scoring logic. It clearly says
+that no model was called. It must not be described as testing the model's
+ability to interpret newly typed text.
+
+For a live call, copy .env.example to a file named .env in the architecture
+folder. Replace the placeholder with the user's own API key. The server reads
+that local file; the browser never receives the key. Alternatively, provide
+OPENAI_API_KEY in the environment. Do not commit or share .env. The repository
+contains no funded credential. A funded account and access to the supplied
+model are required for live scoring; model availability can change.
+
+Type an offer and click Score with API. A loading indicator remains visible
+during the call. The result shows the interpreted issues/options and assigned
+scores, plus useful questions or retained unscored ideas where applicable.
+Changing text marks the old result as stale; users can score again without
+clearing the text. This page is a calculator demonstration. It does not pair
+participants, send proposals to a counterpart, run video or register agreement.
+
+Only offers deliberately submitted for live scoring are sent to the provider.
+The saved example and all offline analysis work without a key. API requests use
+store:false. This disables application response storage where supported; do
+not misrepresent it as a guarantee about every provider retention policy.
+Requests are not automatically repeated after an uncertain error.
+
+2. INSPECTING A1 AND A2
+
+The A1 and A2 READMEs link to the exact implementation, not pseudocode. The
+four stage filenames match the flowchart: code/A1-1.py, code/A1-2.py,
+code/A2-1.py and code/A2-2.py. The common caller is code/nova_cli.py.
+
+A1-1 prepares a request from offer text, assigned role, optional referenced
+previous text, a general-purpose prompt and the exercise files. The model
+receives every active issue/option definition. It returns interpretation JSON.
+A1-2 checks and scores that object using researcher-defined values. One JSON
+request can contain multiple named message blocks; that does not make them
+separate paid calls or mandatory separate files.
+
+A2-1 selects a relevant issue-definition shortlist and adds explicit exercise
+reading rules. A lower-cost model returns an interpretation. A2-2 applies
+custom Python rules and shared evidence/domain checks before assigning values.
+The current job path makes one Luna call. It is not the older escalating-model
+cascade. The tutorial is a separate evaluated route and can make a second
+same-model completeness call for a dense input; it does not use job-specific
+custom corrections. Explain this difference rather than forcing the tutorial
+into the job diagram.
+
+Exact prompts are code/prompts/A1_Final.txt and A2_Interpretation.txt. The A2
+job conventions are code/frozen/A2_Reading_Rules.json. Each reviewed workbook
+also includes a Prompts sheet. Long prompt text can occupy multiple cells;
+the exact standalone files are the convenient authoritative reading copies.
+
+For a detailed Appendix B account, use LLM_Architecture_Dump.txt. It reproduces
+the prompts and key code and explains every box's source objects, processing,
+configuration and returned objects. Its A1 commentary explains each theme of
+the general prompt. Its A2 commentary explains candidate retrieval, evidence
+recovery, quantities, defaults, actor assignment, alternatives, clarification,
+new terms and rule traces. The full implementation remains available beside
+the explanation. Do not substitute historical Nano routing for the actual
+current Luna job path, or describe Python arithmetic as a model-generated score.
+
+3. COMMAND-LINE USE AND OFFLINE CHECKS
+
+From the architecture folder, preview a request without an API call:
+
+    python code/score_offer.py --case-json code/examples/job_offer.json
+
+Score an existing synthetic interpretation without an API call:
+
+    python code/score_offer.py --case-json code/examples/job_offer.json
+      --interpretation-json code/examples/job_interpretation.json
+
+The second command is shown on two lines for readability; enter it as one line.
+For a live command-line call, export OPENAI_API_KEY and add --live. The command
+line reads the environment, not the demonstration's .env convenience file.
+Select --architecture A2 or --reasoning high as appropriate. The corresponding
+tutorial entry is code/score_tutorial_offer.py. Each script also accepts --help.
+
+Run the offline tests:
+
+    python -m unittest discover -s code/tests -v
+
+These tests compare prepared requests with saved synthetic requests, check
+the finalization paths and copy the implementation to a differently named
+folder before exercising the numbered stages. They do not call a paid model.
+The code and prompt semantics are preserved by this repository reorganization.
+
+4. EXERCISE MATERIALS AND QUESTIONNAIRES
+
+The flexible job and fixed-nine documents each contain both private roles for
+research use. A participant in an experiment should see only their assigned
+role. Word files allow editing; PDFs provide a stable reading copy. The tutorial
+document describes Organizer and Venue manager. Historical internal role names
+Candidate and Recruiter map to those two tutorial roles respectively.
+
+Scoring-table JSON is authoritative for issue definitions, option labels,
+numerical domains, units, interpolation knots and role-specific values. The
+readable workbook is an index and does not replace the engine. In fixed-9.json,
+other issue definitions are retained internally, but the active fixed table has
+nine issues and no more than five representative options per issue. Do not
+interpret every retained inactive definition as an additional fixed option.
+
+Study_Questionnaires.docx/.pdf contains the main post-negotiation questionnaire
+and the role-specific earlier feedback questionnaires. YAML preserves the
+deployment structures. Post_Negotiation_Analysis_Schema.json supplies the
+historical question labels used for the analysis. Deployment files can contain
+interface and bonus wording in addition to substantive questions. The feedback
+survey contains three offer questions per completed respondent; these are a
+different source from calculator attempts during a live negotiation.
+
+5. VALIDATION WORKBOOKS AND DATA
+
+NOVA_Offer_Validation.xlsx has 1,225 inputs repeated once for each of A1-low,
+A1-high and A2. Its Main sheet contains offer ID, source, role, offer, scorer,
+actual displayed response, Type A/B flags and the researcher's reviewed reasons.
+The browsing order mixes similar retries within source sections so that readers
+see varied examples sooner. IDs repeat consistently across scorer blocks.
+The Accuracy sheet calculates counts directly from Y/N flags. The Prompts sheet
+records the instructions. There are no decorative colors or hidden data tabs.
+
+NOVA_Tutorial_Validation.xlsx has the same structure for a separate 731-input
+tutorial collection, with previous-offer context available. It is not merged
+into the main 1,225 denominator. Public JSON files retain offer context,
+reference interpretations and model interpretations/scored results. The CSV
+review files provide the same final flags used in the spreadsheets. Use JSON
+for nested data; CSV encodes nested values as JSON strings.
+
+Type A means a meaningful idea was missed or improperly left unscored. Useful
+clarification can handle missing details; acknowledgement without points can
+handle a genuinely absent table entry. Type B means an unproposed issue was
+added, including a question that reveals a distinct optional idea. An input
+passes primary accuracy when neither is present. A/B primary accuracy does not
+independently prove every numerical mapping. The manuscript's Type C table gap
+is distinct from older internal Type3 mapping flags.
+
+The main set retains retries and is not deduplicated. It includes 930 live
+calculator inputs, 294 offer answers from 98 completed feedback questionnaires,
+and one research-assistant example. The analysis is reproducible from the saved
+labels, but the labels themselves reflect model-assisted interpretation and
+researcher/assistant review. Avoid claiming an independent blinded gold standard
+or that all offers remained untouched during development. Some feedback shaped
+later prompts and custom rules. Fresh live model responses can differ.
+
+6. REPRODUCING ANALYSIS
+
+Open Analysis.html to read or print the executed notebook without installing
+anything. To rerun, create a virtual environment in section 3, activate it and
+install requirements.txt. Then run python analysis.py or execute Analysis.ipynb.
+The notebook's current folder must be 3_Validation_and_Development. It makes no
+API calls and does not require credentials.
+
+The analysis recomputes primary accuracy and Wilson confidence intervals from
+the supplied review flags. Token-usage records give input, cached input and
+output counts and call durations. Historical rate assumptions yield lower and
+upper operating-cost estimates per 1,000 inputs. These are not reconstructed
+provider invoices and are not current price quotations. The mean time sums API
+durations, not human or browser time.
+
+Behavior is based on proposals actually sent. The trial file includes invalid
+and unfinished assigned pairs; the behavior file retains reciprocal valid
+negotiations. Completed behavior excludes early quits but does not require a
+survey. Survey comparisons require both valid partners' questionnaires and
+both responses for a measure. Keep those denominators separate.
+
+Issue diversity is the union of issues across a negotiation, with required
+issues included. Additional diversity subtracts the required salary, budget
+and starting-date issues. Introduction flags a new issue after opening.
+Exploration flags a change relative to the union of both parties' latest offers.
+Exploitation flags revision of an already introduced issue's option. Opening
+offers are excluded from event rates. The notebook computes dyad-mean and
+offer-weighted summaries separately, reproduces the NOVA-only diversity
+histogram, and produces a frequency chart for the nonrequired issues.
+
+Survey scales, means, SDs, confidence intervals and raw exploratory p values
+are computed from valid dyads. Subjective-value Q3/Q5 are reversed. Creative
+engagement and confidence use different response ranges. Q29 feeling stuck is
+not labelled as a separately validated impasse measure. Nonsignificant mean
+differences do not establish equivalence. Tutorial timing is a proxy, not an
+exact directly observed duration.
+
+7. PRIVACY AND INTERPRETIVE LIMITS
+
+The public release excludes direct participant IDs, contact information,
+demographic exports, exact event timestamps, provider request IDs, credentials,
+private filesystem locations and identity crosswalks. A supplied survey email
+was redacted. New anonymous trial/respondent aliases preserve necessary joins.
+Original files and the crosswalk remain private. See Privacy_Review.md for the
+scope and residual free-text re-identification risk. Do not try to identify
+participants from distinctive wording.
+
+The frozen 215-issue scoring table contains no coffee entry, despite a later
+addition mentioned in manuscript text. The notebook flags this discrepancy
+rather than inventing a value. Historical JSON also contains conflicting legacy
+strictly-positive agreement metadata; the analysis follows the researcher's
+both-scores-nonnegative rule. These observations are boundaries of the supplied
+snapshot, not undisclosed changes to historical data.
+
+Appendix C should guide a reader through the package and the commands. Leave
+detailed architecture mechanics to Appendix B and extended validation judgments
+to Appendix D, while linking to the precise relative files supplied here.

@@ -1,0 +1,83 @@
+{
+  "release_date": "2026-10-29",
+  "offline_tests_passed": 16,
+  "offline_tests_skipped": 0,
+  "live_synthetic_smoke_calls": 5,
+  "live_tests": [
+    {
+      "exercise": "job",
+      "architecture": "A1",
+      "reasoning": "low",
+      "decision": "scorable",
+      "interpreted_issues": 3,
+      "api_calls": 1,
+      "api_seconds": 5.28883030009456,
+      "estimated_cost_usd": 0.057392
+    },
+    {
+      "exercise": "job",
+      "architecture": "A1",
+      "reasoning": "high",
+      "decision": "scorable",
+      "interpreted_issues": 3,
+      "api_calls": 1,
+      "api_seconds": 6.387523799901828,
+      "estimated_cost_usd": 0.059212
+    },
+    {
+      "exercise": "job",
+      "architecture": "A2",
+      "reasoning": "low",
+      "decision": "scorable",
+      "interpreted_issues": 3,
+      "api_calls": 1,
+      "api_seconds": 2.617963000200689,
+      "estimated_cost_usd": 0.002024
+    },
+    {
+      "exercise": "tutorial",
+      "architecture": "A1",
+      "reasoning": "low",
+      "decision": "scorable",
+      "interpreted_issues": 4,
+      "api_calls": 1,
+      "api_seconds": 3.1800576001405716,
+      "estimated_cost_usd": 0.005856
+    },
+    {
+      "exercise": "tutorial",
+      "architecture": "A2",
+      "reasoning": "low",
+      "decision": "scorable",
+      "interpreted_issues": 4,
+      "api_calls": 1,
+      "api_seconds": 2.200058899819851,
+      "estimated_cost_usd": 0.0008436
+    },
+    {
+      "exercise": "job",
+      "architecture": "A1",
+      "mode": "saved",
+      "api_calls": 0,
+      "decision": "scorable"
+    },
+    {
+      "exercise": "tutorial",
+      "architecture": "A1",
+      "mode": "saved",
+      "api_calls": 0,
+      "decision": "scorable"
+    }
+  ],
+  "live_test_estimated_cost_usd": 0.1253276,
+  "all_selected_scorer_code_and_prompt_bytes_preserved": true,
+  "preserved_files": 62,
+  "researcher_edited_architecture_word_preserved": true,
+  "main_review_rows_preserved": 3675,
+  "tutorial_review_rows_preserved": 2193,
+  "workbook_formula_edit_checks": true,
+  "notebook_executed_without_api": true,
+  "privacy_pattern_findings": 0,
+  "broken_markdown_links": 0,
+  "source_originals_and_crosswalk_published": false
+}
