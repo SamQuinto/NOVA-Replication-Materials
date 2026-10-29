@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1770" height="1873" viewBox="0 0 1770 1873"><title>NOVA scorer architectures</title><desc>Compact layout. All wording, font sizes and arrow dimensions are unchanged from Figure B1.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="black"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="445" y="40" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >A1 - Flexible, Higher API cost</text>
+<g data-box="0-0"><rect x="35" y="73" width="820" height="409" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="445" y="113" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Initial Inputs: Offer text and exercise files</text>
+<text x="62" y="170.43" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Offer text entered in the free-text box" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="170.43">Offer text entered in the free-text box</tspan></text>
+<text x="62" y="212.45000000000002" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Negotiator’s assigned role" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="212.45000000000002">Negotiator’s assigned role</tspan></text>
+<text x="62" y="254.47000000000003" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Role materials and scoring table (JSON files)" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="254.47000000000003">Role materials and scoring table (JSON files)</tspan></text>
+<text x="62" y="296.49" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="General-purpose prompt containing the main instructions (text file)" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="296.49">General-purpose prompt containing the main instructions (text</tspan><tspan x="84" y="330.51">file)</tspan></text>
+<text x="62" y="372.53000000000003" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Optional: Previous offer text, when referenced—for example, “Keep everything from the previous offer, but change the salary to $60,000.”" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="372.53000000000003">Optional: Previous offer text, when referenced—for example,</tspan><tspan x="84" y="406.55">“Keep everything from the previous offer, but change the</tspan><tspan x="84" y="440.57000000000005">salary to $60,000.”</tspan></text>
+</g>
+<path data-arrow="0-0" d="M445,485 L445,522" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="0-1"><rect x="35" y="527" width="820" height="215" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="445" y="567" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Python script A1-1</text>
+<text data-source-text="Combines the inputs above, including all issues and options from the scoring table, into one JSON request sent to the LLM." font-family="Arial, sans-serif" font-size="27"><tspan x="62" y="645.49">Combines the inputs above, including all issues and options</tspan><tspan x="62" y="679.51">from the scoring table, into one JSON request sent to the LLM.</tspan></text>
+</g>
+<path data-arrow="0-1" d="M445,745 L445,782" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="0-2"><rect x="35" y="787" width="820" height="265" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="445" y="827" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Advanced LLM</text>
+<text data-source-text="(e.g., OpenAI GPT-6.1 Sol)" font-family="Arial, sans-serif" font-size="27"><tspan x="62" y="867.46">(e.g., OpenAI GPT-6.1 Sol)</tspan></text>
+<text x="62" y="909.48" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Processes the JSON request prepared above" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="909.48">Processes the JSON request prepared above</tspan></text>
+<text x="62" y="951.5" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Identifies the proposed issues and matches them to available options in the scoring table" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="951.5">Identifies the proposed issues and matches them to available</tspan><tspan x="84" y="985.52">options in the scoring table</tspan></text>
+<text x="62" y="1027.54" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Returns its interpretation as JSON" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1027.54">Returns its interpretation as JSON</tspan></text>
+</g>
+<path data-arrow="0-2" d="M445,1055 L445,1092" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="0-3"><rect x="35" y="1097" width="820" height="223" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="445" y="1137" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Interpretation (JSON)</text>
+<text x="62" y="1177.47" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Identified issues and their interpreted options" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1177.47">Identified issues and their interpreted options</tspan></text>
+<text x="62" y="1219.49" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Words quoted from the offer to support each interpretation" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1219.49">Words quoted from the offer to support each interpretation</tspan></text>
+<text x="62" y="1261.51" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Clarification questions and ideas retained without scores, if needed" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1261.51">Clarification questions and ideas retained without scores, if</tspan><tspan x="84" y="1295.53">needed</tspan></text>
+</g>
+<path data-arrow="0-3" d="M445,1323 L445,1360" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="0-4"><rect x="35" y="1365" width="820" height="257" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="445" y="1405" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Python script A1-2</text>
+<text x="62" y="1445.46" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Checks the interpretation above for supporting quotations, valid issues and options, and allowable values" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1445.46">Checks the interpretation above for supporting quotations,</tspan><tspan x="84" y="1479.48">valid issues and options, and allowable values</tspan></text>
+<text x="62" y="1521.5" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Looks up researcher-defined scores in the scoring table and calculates totals" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1521.5">Looks up researcher-defined scores in the scoring table and</tspan><tspan x="84" y="1555.52">calculates totals</tspan></text>
+<text x="62" y="1597.54" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Returns the scored offer as JSON" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1597.54">Returns the scored offer as JSON</tspan></text>
+</g>
+<path data-arrow="0-4" d="M445,1625 L445,1662" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="0-5"><rect x="35" y="1667" width="820" height="181" fill="white" stroke="black" stroke-width="3"/>
+<text x="445" y="1707" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Scored offer (JSON)</text>
+<text x="62" y="1747.48" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Shows each negotiator’s scores for interpreted issues and options, with totals when the offer is complete and valid" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1747.48">Shows each negotiator’s scores for interpreted issues and</tspan><tspan x="84" y="1781.5">options, with totals when the offer is complete and valid</tspan></text>
+<text x="62" y="1823.52" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Includes clarification questions and unscored ideas, if any" font-family="Arial, sans-serif" font-size="27"><tspan x="84" y="1823.52">Includes clarification questions and unscored ideas, if any</tspan></text>
+</g>
+<text x="1325" y="40" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >A2 - Customized, Lower API cost</text>
+<g data-box="1-0"><rect x="915" y="73" width="820" height="409" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="1325" y="113" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Offer data and exercise files</text>
+<text x="942" y="153.42" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Offer text entered in the free-text box" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="153.42">Offer text entered in the free-text box</tspan></text>
+<text x="942" y="195.44" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Negotiator’s assigned role" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="195.44">Negotiator’s assigned role</tspan></text>
+<text x="942" y="237.46" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Role materials, scoring table and matching vocabulary (JSON files)" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="237.46">Role materials, scoring table and matching vocabulary (JSON</tspan><tspan x="964" y="271.48">files)</tspan></text>
+<text x="942" y="313.5" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Main instructions (text file) and exercise-specific reading instructions (JSON file)" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="313.5">Main instructions (text file) and exercise-specific reading</tspan><tspan x="964" y="347.52">instructions (JSON file)</tspan></text>
+<text x="942" y="389.54" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Optional: Previous offer text, when referenced—for example, “Keep everything from the previous offer, but change the salary to $60,000.”" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="389.54">Optional: Previous offer text, when referenced—for example,</tspan><tspan x="964" y="423.56">“Keep everything from the previous offer, but change the</tspan><tspan x="964" y="457.58000000000004">salary to $60,000.”</tspan></text>
+</g>
+<path data-arrow="1-0" d="M1325,485 L1325,522" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="1-1"><rect x="915" y="527" width="820" height="215" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="1325" y="567" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Python script A2-1</text>
+<text x="942" y="607.47" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Uses matching rules to select relevant issues and options from the scoring table" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="607.47">Uses matching rules to select relevant issues and options</tspan><tspan x="964" y="641.49">from the scoring table</tspan></text>
+<text x="942" y="683.51" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Combines these entries with the offer, role materials and instructions into one JSON request sent to the LLM" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="683.51">Combines these entries with the offer, role materials and</tspan><tspan x="964" y="717.53">instructions into one JSON request sent to the LLM</tspan></text>
+</g>
+<path data-arrow="1-1" d="M1325,745 L1325,782" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="1-2"><rect x="915" y="787" width="820" height="265" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="1325" y="827" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Economical LLM</text>
+<text data-source-text="(e.g., OpenAI GPT-5.6 Luna)" font-family="Arial, sans-serif" font-size="27"><tspan x="942" y="867.46">(e.g., OpenAI GPT-5.6 Luna)</tspan></text>
+<text x="942" y="909.48" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Processes the JSON request prepared above" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="909.48">Processes the JSON request prepared above</tspan></text>
+<text x="942" y="951.5" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Identifies the proposed issues and matches them to the selected scoring-table options" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="951.5">Identifies the proposed issues and matches them to the</tspan><tspan x="964" y="985.52">selected scoring-table options</tspan></text>
+<text x="942" y="1027.54" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Returns its interpretation as JSON" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1027.54">Returns its interpretation as JSON</tspan></text>
+</g>
+<path data-arrow="1-2" d="M1325,1055 L1325,1092" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="1-3"><rect x="915" y="1097" width="820" height="223" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="1325" y="1137" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Interpretation (JSON)</text>
+<text x="942" y="1177.47" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Identified issues and their interpreted options" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1177.47">Identified issues and their interpreted options</tspan></text>
+<text x="942" y="1219.49" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Words quoted from the offer to support each interpretation" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1219.49">Words quoted from the offer to support each interpretation</tspan></text>
+<text x="942" y="1261.51" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Clarification questions and ideas retained without scores, if needed" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1261.51">Clarification questions and ideas retained without scores, if</tspan><tspan x="964" y="1295.53">needed</tspan></text>
+</g>
+<path data-arrow="1-3" d="M1325,1323 L1325,1360" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="1-4"><rect x="915" y="1365" width="820" height="257" fill="white" stroke="black" stroke-width="1.8"/>
+<text x="1325" y="1405" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Python script A2-2</text>
+<text x="942" y="1445.46" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Applies exercise-specific Python rules to the interpretation above" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1445.46">Applies exercise-specific Python rules to the interpretation</tspan><tspan x="964" y="1479.48">above</tspan></text>
+<text x="942" y="1521.5" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Checks quotations, issues, options and values, then looks up assigned scores and calculates totals" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1521.5">Checks quotations, issues, options and values, then looks up</tspan><tspan x="964" y="1555.52">assigned scores and calculates totals</tspan></text>
+<text x="942" y="1597.54" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Returns the scored offer as JSON" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1597.54">Returns the scored offer as JSON</tspan></text>
+</g>
+<path data-arrow="1-4" d="M1325,1625 L1325,1662" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>
+<g data-box="1-5"><rect x="915" y="1667" width="820" height="181" fill="white" stroke="black" stroke-width="3"/>
+<text x="1325" y="1707" font-family="Arial, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" >Scored offer (JSON)</text>
+<text x="942" y="1747.48" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Shows each negotiator’s scores for interpreted issues and options, with totals when the offer is complete and valid" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1747.48">Shows each negotiator’s scores for interpreted issues and</tspan><tspan x="964" y="1781.5">options, with totals when the offer is complete and valid</tspan></text>
+<text x="942" y="1823.52" font-family="Arial, sans-serif" font-size="27" text-anchor="start" >•</text>
+<text data-source-text="Includes clarification questions and unscored ideas, if any" font-family="Arial, sans-serif" font-size="27"><tspan x="964" y="1823.52">Includes clarification questions and unscored ideas, if any</tspan></text>
+</g>
+</svg>

@@ -1,10 +1,10 @@
 {
-  "release": "NOVA replication package 2026-10-29 documentation update",
-  "previous_commit": "d27badd421bc71e233964dad6a074a598378c423",
+  "release": "NOVA replication package 2026-10-29 repository guide and compact figure",
+  "previous_commit": "fd65d013cacd7df8722f92b5c65dfa31239f55f6",
   "files": {
     ".gitattributes": {
-      "bytes": 548,
-      "sha256": "823f43019fea7a35c08d8a0053351c8118d296318a822aab369c2a7c6c307311"
+      "bytes": 558,
+      "sha256": "8b81c9703ffbc68f693b8d546274e8ff4221edbec0f9bea644eb7c3819a644a7"
     },
     ".gitignore": {
       "bytes": 251,
@@ -21,6 +21,14 @@
     "1_Architecture_and_Demonstration/A2/README.md": {
       "bytes": 1658,
       "sha256": "d5cc8ee9aca22c3d1ed5d9850932819785a68162f85eaacbe9538c8b7cef6ee9"
+    },
+    "1_Architecture_and_Demonstration/Architecture_Guide.html": {
+      "bytes": 257090,
+      "sha256": "359b4af5ae2c02777b3f240c7a3da542df7df6c6c3ec2ad5c3e9b72365e12413"
+    },
+    "1_Architecture_and_Demonstration/Architecture_Guide.md": {
+      "bytes": 232908,
+      "sha256": "3213dfd27e88148d63ca7edb6bac50a8b8f14be148087b77e09a181b0936614d"
     },
     "1_Architecture_and_Demonstration/code/A1-1.py": {
       "bytes": 1447,
@@ -318,6 +326,14 @@
       "bytes": 13479,
       "sha256": "fed1a8aed2e6db829b4a60c114c234805ea2f8226aba6f6c2ebd29cd475123d0"
     },
+    "1_Architecture_and_Demonstration/figures/Figure_B1_NOVA_Architectures_Compact.png": {
+      "bytes": 245838,
+      "sha256": "ffba1bebcb69ef3c516dd64141b252d2afe293d6a921ec7eae8c2b83d9b05f60"
+    },
+    "1_Architecture_and_Demonstration/figures/Figure_B1_NOVA_Architectures_Compact.svg": {
+      "bytes": 18525,
+      "sha256": "11ea38ad6e6555670998115c069873a1fe09f173752660f8f33c3329d6dc4efc"
+    },
     "1_Architecture_and_Demonstration/figures/Figure_B2_Tutorial_Path.png": {
       "bytes": 182549,
       "sha256": "2c66def60e4770a06db7bb71cad5cd140d0fefe94733a937c6be3c58b2e69a02"
@@ -331,16 +347,12 @@
       "sha256": "b681162d60d17aca10ad8c3d504e9ba3e624d782013d7d6746de0985e96cd18c"
     },
     "1_Architecture_and_Demonstration/figures/README.md": {
-      "bytes": 1442,
-      "sha256": "8ce9ce93bcab6805122e073d73c1c33f3b76587b0e9e7458f649ff604cd3ac59"
-    },
-    "1_Architecture_and_Demonstration/LLM_Architecture_Dump.txt": {
-      "bytes": 203548,
-      "sha256": "281eece5eb03a8b9fcaf84e23ef0f9cd0ce4cbb7dfaab5596e352cdf41a4843b"
+      "bytes": 1769,
+      "sha256": "b879cb939261b2a88be13d0b16d08ef96d9894f6e3de18e33c20a0d56c748b3d"
     },
     "1_Architecture_and_Demonstration/README.md": {
-      "bytes": 3684,
-      "sha256": "e2bc54c6f3370502ca41c475042c3e410f49da19f5c67526d8e4c0e748b0157f"
+      "bytes": 3680,
+      "sha256": "872481571bc72a7f52d2610dbac7fb84ef5dea01edbb1087b66016538047f0f4"
     },
     "2_Exercise_Materials/Negotiation_Exercise_Role_Materials.docx": {
       "bytes": 43081,
@@ -603,8 +615,8 @@
       "sha256": "91bc8b1f24e0ee231277cd7e7ded5ded6b2c58333dcfa33683a6bf5913bc2756"
     },
     "3_Validation_and_Development/results/Release_Checks.json": {
-      "bytes": 3080,
-      "sha256": "833815ae866ebd62209966bb7dfc9e18cbcdbe9413653e6cbd4a1eea58f99f14"
+      "bytes": 4896,
+      "sha256": "c91ad48809dbb7cfbb1adab3ef5cbd23fd9971af895757ba4c3f987e7eb291f7"
     },
     "3_Validation_and_Development/results/Reproduction_Checks.csv": {
       "bytes": 574,
@@ -614,14 +626,17 @@
       "bytes": 12214,
       "sha256": "7b3e7edb198f69a5628440c24391a6d4beead7f446a560d9a089c865ae7a47d0"
     },
-    "Appendix_C_Replication_Guide.txt": {
-      "bytes": 12412,
-      "sha256": "cc6e4d77ecb832b3ed8a96f77255cff32ecea1a74511d6f6be25b18bbbf1aac4"
+    "NOVA_Repository_Guide.html": {
+      "bytes": 39788,
+      "sha256": "61f6dff27819258f27ecadc5717d95b5dd901dbd23cf74ca3275773801d6ce31"
+    },
+    "NOVA_Repository_Guide.md": {
+      "bytes": 31468,
+      "sha256": "61b5b96a963c0b0d220b878de80c2354af6d957616d7086abb1cb0ac186363fe"
     },
     "README.md": {
-      "bytes": 3229,
-      "sha256": "3ba179efe47ed5b02b694b3c7635fc5068a87639c33b56d633b2d5ee9893749d"
+      "bytes": 3387,
+      "sha256": "0c5dea3716ef5ce3dcab5a743882e351f7ccdb955b7c4e60b96abd835f234401"
     }
-  },
-  "checks": "3_Validation_and_Development/results/Release_Checks.json"
+  }
 }

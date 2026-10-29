@@ -8,7 +8,7 @@ This folder contains the Architecture 1 and 2 (A1 and A2) prompts, the scoring c
 | [Architecture 2 (A2)](A2/) | A lower-cost model supported by instructions and Python rules developed for the exercise |
 | [Web app](demo/) | The app you can download and run in your browser |
 | [Scoring code](code/) | Python scripts, exact prompt text, exercise definitions and the files they need |
-| [Detailed architecture guide](LLM_Architecture_Dump.txt) | A step-by-step explanation of both architectures, including the prompts and the code behind them |
+| [Detailed architecture guide](Architecture_Guide.md) | A step-by-step explanation of both architectures, including the prompts and the code behind them |
 
 ## Try it in your browser
 

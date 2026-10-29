@@ -92,5 +92,65 @@
     "combined_role_materials_all_source_text_retained": true,
     "previous_separate_role_documents_retained_privately": true,
     "note": "Some code comments and documentation strings were rewritten. The scoring and analysis code was checked to have the same executable structure."
+  },
+  "repository_guide_update": {
+    "date": "2026-10-29",
+    "description": "Structured Markdown and HTML repository and architecture guides; separate compact Figure B1.",
+    "offline_tests_passed": 16,
+    "api_calls_made_for_this_update": 0,
+    "existing_code_exercise_data_workbooks_and_original_figures_byte_unchanged": true,
+    "byte_unchanged_files_checked": 110,
+    "exact_source_blocks_checked": 28,
+    "compact_figure": {
+      "original": {
+        "width": 1510,
+        "height": 2517
+      },
+      "compact": {
+        "width": 1770,
+        "height": 1873
+      },
+      "height_reduction_percent": 25.586015097338098,
+      "width_increase_percent": 17.218543046357617,
+      "body_font_size": 27,
+      "title_font_size": 31,
+      "arrow_stroke_width": 2.3,
+      "arrow_marker_width": 9,
+      "arrow_length": 37,
+      "all_text_boxes_fit": true,
+      "all_original_wording_retained": true,
+      "row_heights": [
+        409,
+        215,
+        265,
+        223,
+        257,
+        181
+      ]
+    },
+    "html_checks": [
+      {
+        "file": "NOVA_Repository_Guide.html",
+        "title": "NOVA repository guide",
+        "headings": 23,
+        "expandableSections": 0,
+        "missingAnchors": [],
+        "pageOverflows": false,
+        "imageFailures": []
+      },
+      {
+        "file": "1_Architecture_and_Demonstration/Architecture_Guide.html",
+        "title": "NOVA architecture guide",
+        "headings": 53,
+        "expandableSections": 28,
+        "missingAnchors": [],
+        "pageOverflows": false,
+        "imageFailures": [],
+        "promptFits": true
+      }
+    ],
+    "privacy_pattern_findings": 0,
+    "broken_markdown_links": 0,
+    "previous_plain_text_guides_retained_privately": true
   }
 }
