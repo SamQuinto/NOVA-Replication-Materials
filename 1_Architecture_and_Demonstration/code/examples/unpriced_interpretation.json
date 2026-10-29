@@ -1,0 +1,38 @@
+{
+  "pairs": [
+    {
+      "source_text": "annual salary $ 50000",
+      "issue": "Salary",
+      "option": "50000",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "start 1st of Jan",
+      "issue": "Starting Date",
+      "option": "2026-01-01",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "Personal budget $5000",
+      "issue": "Personal Budget",
+      "option": "5000",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "6 month probation period",
+      "issue": "Probation Length",
+      "option": "6",
+      "from_previous_offer": false
+    }
+  ],
+  "ambiguities": [],
+  "novel_terms": [
+    "free coffee"
+  ],
+  "unsupported_terms": [],
+  "offer_intent": "offer",
+  "explicit_reference": "",
+  "interpretation_notes": [
+    "The January 1 start date uses the exercise's assumed year, 2026."
+  ]
+}

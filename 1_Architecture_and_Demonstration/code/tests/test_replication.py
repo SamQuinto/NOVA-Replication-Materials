@@ -23,6 +23,14 @@ class ReplicationTests(unittest.TestCase):
         self.assertFalse(r['api_called']);self.assertEqual(len(r['response']['valid_pairs']),3)
         self.assertEqual(r['response']['decision'],'scorable')
         self.assertAlmostEqual(r['response']['total'],sum(x['points'] for x in r['response']['issue_breakdown']))
+    def test_saved_appendix_example_retains_typos_and_both_role_values(self):
+        case=json.loads((ROOT/'examples/appendix_a_offer.json').read_text(encoding='utf-8'))
+        self.assertIn('6o vacations days',case['offer'])
+        r=self.call('score_offer.py','--case-json',str(ROOT/'examples/appendix_a_offer.json'),'--interpretation-json',str(ROOT/'examples/appendix_a_interpretation.json'))
+        self.assertFalse(r['api_called']);self.assertEqual(len(r['response']['issue_breakdown']),6)
+        self.assertAlmostEqual(r['response']['total_for_proposer'],7.8)
+        self.assertAlmostEqual(r['response']['total_for_receiver'],-5.3)
+        self.assertEqual(r['response']['valid_pairs']['Remote Working Days'],'4 days per week')
     def test_a2_job_offline(self):
         r=self.call('score_offer.py','--architecture','A2','--case-json',str(ROOT/'examples/job_offer.json'),'--interpretation-json',str(ROOT/'examples/job_interpretation.json'))
         self.assertFalse(r['api_called']);self.assertEqual(r['response']['architecture'],'A2')

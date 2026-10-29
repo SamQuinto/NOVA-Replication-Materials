@@ -1,0 +1,40 @@
+{
+  "pairs": [
+    {
+      "source_text": "Salary 55000",
+      "issue": "Salary",
+      "option": "55000",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "Starting date February 1",
+      "issue": "Starting Date",
+      "option": "2026-02-01",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "Budget 15000",
+      "issue": "Personal Budget",
+      "option": "15000",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "40 days vacation per year",
+      "issue": "Vacation Days",
+      "option": "40",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "5 remote days a week",
+      "issue": "Remote Working Days",
+      "option": "5",
+      "from_previous_offer": false
+    }
+  ],
+  "ambiguities": [],
+  "novel_terms": [],
+  "unsupported_terms": [],
+  "offer_intent": "offer",
+  "explicit_reference": "",
+  "interpretation_notes": []
+}

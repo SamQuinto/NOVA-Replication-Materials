@@ -12,14 +12,24 @@ Here you can try NOVA, read the negotiation exercises, and explore the data and 
 
 Download this repository, or just the complete `1_Architecture_and_Demonstration` folder. To score your own offers, you will need Python 3.11 or later and your own OpenAI API key.
 
-1. In that folder, copy `.env.example` to a file called `.env` and replace the placeholder with your key. Keep this file private.
-2. From the same folder, run:
+You can try six saved examples without a key or charge. To score new text, take a moment to add your own key using the steps below.
+
+### Add or update your OpenAI key
+
+1. Download and extract the files first; do not run the app from inside the ZIP. Open `1_Architecture_and_Demonstration`—the folder containing `.env.example`, `code` and `demo`.
+2. If you do not have an API key yet, create one in your [OpenAI API settings](https://platform.openai.com/api-keys). OpenAI’s [quickstart](https://developers.openai.com/api/docs/quickstart) explains how to get started. You will need access to the models used by NOVA and available API credit.
+3. Make a **copy** of `.env.example` in that same folder and name the copy **`.env`**. On Windows, turn on **View → Show → File name extensions** in File Explorer so you can check that it is not named `.env.txt`.
+4. Open `.env` in a plain-text editor such as Notepad. Replace `replace_with_your_own_api_key` with your key, keeping `OPENAI_API_KEY=` at the start of the line. Save the file. There should be just one key on that line, with no spaces around it.
+5. To change the key later, edit this same `.env` file and replace the old key. Please keep it private: do not email it, commit it to GitHub, or include it in screenshots. The app reads it on your computer, not in the browser.
+6. Open a terminal **in `1_Architecture_and_Demonstration`** and run:
 
 ```sh
 python demo/Start_Demo.py
 ```
 
-The web app will open in your browser. Write an offer, choose a scorer, and click **Score with API**. Calls are charged to your OpenAI account. You can also look at a saved example without a key or charge. The app does not need any additional Python packages.
+The web app will open in your browser. If it does not, open `http://127.0.0.1:8765/`. Choose an exercise and scorer, write an offer, and click **Score**. New calls are charged to your OpenAI account. The **SAVED EXAMPLES** dropdown is free to use. The app does not need any additional Python packages.
+
+If `python` is not recognized on Windows, try `py demo/Start_Demo.py`. After editing the key, refresh the page; if it still does not work, stop the app with **Ctrl+C** in its terminal and run the command again. If you previously set `OPENAI_API_KEY` as an environment variable, that setting takes priority over `.env`—update it too, or remove it from the terminal you use to start the app. A billing or model-access error needs to be resolved in your OpenAI account; loading a saved example will still work.
 
 ## Explore the materials and results
 

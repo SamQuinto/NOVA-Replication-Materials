@@ -1,0 +1,45 @@
+{
+  "pairs": [
+    {
+      "source_text": "start in January",
+      "issue": "Starting Date",
+      "option": "2026-01-01",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "remote working for 4 days",
+      "issue": "Remote Working Days",
+      "option": "4",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "annual salary of $50000",
+      "issue": "Salary",
+      "option": "50000",
+      "from_previous_offer": false
+    },
+    {
+      "source_text": "personal budget of $10000",
+      "issue": "Personal Budget",
+      "option": "10000",
+      "from_previous_offer": false
+    }
+  ],
+  "ambiguities": [
+    {
+      "source_text": "professional training or experienced mentorship",
+      "issue": "Professional Training Program",
+      "question": "Would you like professional training, experienced mentorship, or both?"
+    }
+  ],
+  "novel_terms": [],
+  "unsupported_terms": [],
+  "offer_intent": "offer",
+  "explicit_reference": "",
+  "interpretation_notes": [
+    "January means January 1, 2026 under the supplied date conventions.",
+    "Remote working is interpreted as 4 days per week.",
+    "Training and mentorship are unresolved alternatives; neither is selected yet.",
+    "The earlier sponsored membership request is not carried forward because the current offer does not reference it."
+  ]
+}

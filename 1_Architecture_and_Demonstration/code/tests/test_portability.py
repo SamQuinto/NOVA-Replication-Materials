@@ -13,12 +13,24 @@ class PortabilityTests(unittest.TestCase):
             server=subprocess.Popen([sys.executable,str(relocated/'demo/Start_Demo.py'),'--port','0','--no-browser'],cwd=directory,env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,encoding='utf-8',creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
             try:
                 url=server.stdout.readline().strip().split('demonstration: ',1)[1]
-                with urllib.request.urlopen(url+'api/status',timeout=10) as response:self.assertFalse(json.load(response)['key_ready'])
+                with urllib.request.urlopen(url+'api/status',timeout=10) as response:status=json.load(response)
+                self.assertFalse(status['key_ready']);self.assertEqual(len(status['examples']),6)
                 for exercise in ['job','tutorial']:
                     for architecture in ['A1','A2']:
                         request=urllib.request.Request(url+'api/score',data=json.dumps(dict(live=False,exercise=exercise,architecture=architecture,reasoning='low')).encode(),headers={'Content-Type':'application/json'})
                         with urllib.request.urlopen(request,timeout=40) as response:result=json.load(response)
                         self.assertFalse(result['api_called']);self.assertEqual(result['response']['decision'],'scorable')
+                        self.assertEqual(result['saved_configuration'],{'architecture':'A1','reasoning':'low'})
+                        if exercise=='job':self.assertAlmostEqual(result['response']['total'],7.8)
+                for example in status['examples']:
+                    request=urllib.request.Request(url+'api/score',data=json.dumps(dict(live=False,example_id=example['id'],exercise='job',architecture='A2',reasoning='high')).encode(),headers={'Content-Type':'application/json'})
+                    with urllib.request.urlopen(request,timeout=40) as response:result=json.load(response)
+                    self.assertFalse(result['api_called'])
+                    self.assertEqual(result['saved_example_id'],example['id'])
+                    self.assertEqual(result['saved_exercise'],example['exercise'])
+                    expected='clarification_needed' if example['id']=='clarification' else 'scorable'
+                    self.assertEqual(result['response']['decision'],expected)
+                    if example['id']=='unpriced':self.assertIn('free coffee',result['response']['novel_terms'])
             finally:server.terminate();server.communicate(timeout=10)
 
     def test_four_stages_in_a_renamed_folder(self):

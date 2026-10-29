@@ -4,6 +4,14 @@ from pathlib import Path
 import argparse,json,os,subprocess,sys,urllib.parse,webbrowser
 ROOT=Path(__file__).resolve().parents[1]
 CODE=ROOT/'code'
+SAVED_EXAMPLES={
+    'appendix_a':('Informal offer: shorthand and typos','job'),
+    'participant_previous':('Candidate proposal from the pilot','job'),
+    'counteroffer':('Recruiter counteroffer from the pilot','job'),
+    'clarification':('A choice that needs clarification','job'),
+    'unpriced':('An idea outside the scoring table','job'),
+    'tutorial':('Tutorial: venue hire','tutorial'),
+}
 
 def local_environment():
     env=dict(os.environ)
@@ -21,7 +29,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8')
         self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.end_headers();self.wfile.write(body)
     def do_GET(self):
-        if self.path=='/api/status':return self.send({'key_ready':bool(local_environment().get('OPENAI_API_KEY'))})
+        if self.path=='/api/status':return self.send({'key_ready':bool(local_environment().get('OPENAI_API_KEY')),
+            'examples':[{'id':key,'title':title,'exercise':exercise} for key,(title,exercise) in SAVED_EXAMPLES.items()]})
         if self.path not in ['/','/index.html']:return self.send({'error':'Not found'},404)
         body=(ROOT/'demo/index.html').read_bytes();self.send_response(200)
         self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(body)
@@ -41,7 +50,14 @@ class Handler(BaseHTTPRequestHandler):
                 offer=str(data.get('offer','')).strip();role=data.get('role','Candidate')
                 if role not in ['Candidate','Recruiter'] or not offer:raise ValueError('Enter an offer and choose a role.')
                 args+=['--offer',offer,'--role',role,'--previous-offer',str(data.get('previous_offer','')),'--live']
-            else:args+=['--case-json',str(CODE/'examples'/(exercise+'_offer.json')),'--interpretation-json',str(CODE/'examples'/(exercise+'_interpretation.json'))]
+            else:
+                # Saved illustrations have a fixed, identified interpretation.
+                example_name=data.get('example_id') or ('appendix_a' if exercise=='job' else 'tutorial')
+                if example_name not in SAVED_EXAMPLES:raise ValueError('Please choose a saved example from the list.')
+                exercise=SAVED_EXAMPLES[example_name][1]
+                args=[sys.executable,str(CODE/'nova_cli.py'),'--architecture','A1','--exercise',exercise,'--reasoning','low',
+                      '--case-json',str(CODE/'examples'/(example_name+'_offer.json')),
+                      '--interpretation-json',str(CODE/'examples'/(example_name+'_interpretation.json'))]
             completed=subprocess.run(args,cwd=CODE,env=env,capture_output=True,text=True,encoding='utf-8',timeout=240)
             if completed.returncode:
                 # Show the useful error message without exposing a private key or path.
@@ -53,7 +69,11 @@ class Handler(BaseHTTPRequestHandler):
             # The page can show usage without displaying OpenAI's response identifiers.
             for receipt in result.get('receipts',[]):receipt.pop('response_id',None)
             result['mode']='live' if live else 'saved example'
-            if not live:result['example']=json.loads((CODE/'examples'/(exercise+'_offer.json')).read_text(encoding='utf-8'))
+            if not live:
+                result['example']=json.loads((CODE/'examples'/(example_name+'_offer.json')).read_text(encoding='utf-8'))
+                result['saved_example_id']=example_name
+                result['saved_exercise']=exercise
+                result['saved_configuration']={'architecture':'A1','reasoning':'low'}
             self.send(result)
         except (ValueError,subprocess.TimeoutExpired) as exc:self.send({'error':str(exc) if isinstance(exc,ValueError) else 'The request timed out. It was not automatically repeated.'},400)
 

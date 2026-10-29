@@ -1,0 +1,11 @@
+{
+  "role": "Recruiter",
+  "offer": "annual salary $ 50000, start 1st of Jan Personal budget $5000 6 month probation period free coffee",
+  "previous_offer": "",
+  "source": {
+    "file": "data/main_offers.json",
+    "offer_id": "o301",
+    "source": "Live negotiation - Oct 27",
+    "input_kind": "Calculator input"
+  }
+}
