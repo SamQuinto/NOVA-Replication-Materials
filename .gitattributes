@@ -1,2 +1,5 @@
 # Preserve the exact frozen file bytes used by RELEASE_MANIFEST.json.
 * -text
+# Exact prompt transcripts intentionally retain the evaluated source whitespace.
+architecture/docs/Exact_Prompts.md whitespace=-blank-at-eol,-blank-at-eof
+architecture/LLM_Architecture_Dump.txt whitespace=-blank-at-eol

@@ -2,7 +2,7 @@
 
 ## What this handbook is for
 
-This handbook gives an appendix writer the details needed to explain NOVA without having to reconstruct the project from old conversations. Start with the overall flow, then work through the objects sent between steps. The prompt files and executable code provide the exact wording and implementation. The private handoff adds the locations of the offer-level evidence, which must not be copied into the public repository.
+This handbook gives an appendix writer the details needed to explain NOVA without reconstructing old conversations. The complete single-file handoff is `LLM_Architecture_Dump.txt` at the architecture-folder root. All implementation paths in that file are relative to this folder, wherever it is placed. Participant-level evidence remains private and is not embedded in the public handoff.
 
 The key distinction is simple. The language model decides **what the negotiator proposed**. Python scripts decide **what that interpreted proposal is worth under the researcher's scoring table**. A perfectly formed JSON response can still misunderstand an offer, so the second step does not remove the need to validate the first.
 
@@ -70,7 +70,7 @@ The JSON response format is supplied in the request's `text.format` setting. The
 
 All active issue definitions and available choices are included. No researcher chooses the offer's issues by hand, and this A1 path does not use an initial low-cost model to shortlist issues. The advanced model selects the issues and options during interpretation.
 
-The figure label “Python script A1-1” names this processing stage. It does not imply that the source code is stored in a physical file called `A1-1.py`.
+The figure label “Python script A1-1” now corresponds to the actual runnable file `A1-1.py`. Its `prepare_request` function is called by `nova_cli.py`. The other numbered boxes likewise correspond to `A1-2.py`, `A2-1.py` and `A2-2.py`.
 
 ### The advanced LLM interprets the offer
 
@@ -116,7 +116,7 @@ A2 uses the exercise's issue names, aliases and fitted wording vocabulary to ret
 
 The researcher designs the scoring table and reading rules. The researcher does not manually select the issue set separately for every participant offer. Python performs the candidate retrieval, and the LLM chooses among the supported issues and options it receives.
 
-`a2_extract.retrieval_text` and the existing stream module's `_catalog` prepare the selected definitions and choices. `a2_extract.extract` combines the current offer, previous-offer context, proposer role, selected scoring-table entries, role materials, and `frozen/A2_Reading_Rules.json`. The general A2 interpretation instructions are in `prompts/A2_Interpretation.txt`.
+`A2-1.py` calls `a2_extract.build_request`. The helper's `retrieval_text` and the existing stream module's `_catalog` prepare the selected definitions and choices. The prepared request combines the current offer, previous-offer context, proposer role, selected scoring-table entries, role materials, and `frozen/A2_Reading_Rules.json`. The general A2 interpretation instructions are in `prompts/A2_Interpretation.txt`. The API call happens after this preparation step, through the runner and shared API client.
 
 The reading-rules JSON is part of the same request. It is not a second call, a hidden trained model, or a separate negotiator message.
 
@@ -128,7 +128,7 @@ Do not use the old Nano-to-Luna figure for this configuration. Earlier code reta
 
 ### Python script A2 2 applies the fitted rules and scores the result
 
-`a2_finalize.finalize` converts the extraction to the shared validation format and calls `a2_custom_rules.customize`. The custom rules are intentionally exercise-specific. They identify recurrent wording and interpretation problems, change supported pairs, retain unclear ideas or add a relevant question, and record which rule fired.
+`A2-2.py` calls `a2_finalize.finalize`, which converts the extraction to the shared validation format and calls `a2_custom_rules.customize`. The custom rules are intentionally exercise-specific. They identify recurrent wording and interpretation problems, change supported pairs, retain unclear ideas or add a relevant question, and record which rule fired.
 
 The final job scorer does not simply rerun every old lexical rejection rule after the model. The refined path removed the older second lexical parser from this step. It then uses the shared evidence/domain checks and numerical lookup. This matters because a correctly interpreted phrase should not be thrown away just because a second regular expression failed to anticipate its wording.
 
@@ -232,7 +232,7 @@ Do not publish private offer tables, full validation keys, billing databases, AP
 ## A writing checklist
 
 - Use “scoring table,” “issue,” and “option” consistently.
-- Say “Python script” for a processing step. Map figure labels to actual functions rather than pretending each label is a separate file.
+- Say “Python script” for a processing step. The four main numbered labels now have matching runnable files. Explain their supporting functions separately rather than treating every imported helper as another model call.
 - Make it clear who selects issues at each stage: Python retrieves candidates for A2; the LLM selects the interpreted issues/options; Python applies the assigned values.
 - Keep the model interpretation, the participant offer, and the scored JSON separate.
 - Do not draw a reviewer loop into the selected A1 architecture. Evaluation reviewers did not participate in its scoring calls.

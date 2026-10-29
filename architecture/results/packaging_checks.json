@@ -1,5 +1,14 @@
 {
-  "offline_smoke_tests": 8,
+  "offline_tests": 16,
+  "named_stage_files": [
+    "A1-1.py",
+    "A1-2.py",
+    "A2-1.py",
+    "A2-2.py"
+  ],
+  "synthetic_request_parity": true,
+  "renamed_and_relocated_folder_execution": true,
+  "mock_a2_api_calls": 1,
   "private_saved_interpretation_parity": [
     {
       "architecture": "A1",
@@ -27,7 +36,7 @@
     }
   ],
   "all_400_sampled_interpretations_matched": true,
-  "new_api_calls": 0,
-  "scope": "Sampled parity of fixed interpretation scoring fields, not fresh model accuracy.",
-  "privacy_scan": "No credentials, private absolute paths, participant IDs or participant dataset files detected. Derived matching vocabulary remains configuration."
+  "new_paid_api_calls": 0,
+  "scope": "Structural refactor and sampled fixed-interpretation parity, not fresh full-corpus model accuracy.",
+  "author_figure_other_cells_preserved": true
 }

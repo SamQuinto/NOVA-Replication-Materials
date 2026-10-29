@@ -18,8 +18,9 @@ def retrieval_text(text,scenario):
         if len(matches)==1:extra.append(matches[0])
     return text+'\n'+' '.join(extra)
 
-def extract(text,previous_offer='',dense_audit=False,model=None):
-    model=model or 'gpt-5-nano';stream=STREAM
+def build_request(text,previous_offer='',model=None):
+    """Prepare the evaluated request without making an API call."""
+    model=model or 'gpt-5.6-luna';stream=STREAM
     catalog=stream._catalog(retrieval_text(text+'\n'+previous_offer,stream.SCENARIO))
     schema=stream._schema();schema['properties']['pairs']['items']['properties']['issue']['enum']=list(catalog)
     fields=schema['properties']['pairs']['items']['properties']
@@ -28,7 +29,16 @@ def extract(text,previous_offer='',dense_audit=False,model=None):
                  exercise_reading_rules=GUIDANCE,role_materials=c.load(c.W/'frozen/Role_Materials.json'))
     if RUN_ID:payload['evaluation_run']=RUN_ID
     req=dict(model=model,store=False,reasoning_effort='low',max_completion_tokens=12000,response_format=dict(type='json_schema',json_schema=dict(name='offer_extraction',strict=True,schema=schema)),messages=[dict(role='system',content=PROMPT),dict(role='user',content=json.dumps(payload,ensure_ascii=False,separators=(',',':')))])
-    parsed,receipt=c.api(req,'A2_themed_'+model);RECEIPTS.append(receipt);TRACE.append(dict(stage='raw_model',model=model,extraction=copy.deepcopy(parsed)))
+    return req
+
+def finish_extraction(parsed,receipt,model):
+    """Retain the evaluated response bookkeeping and ambiguity representation."""
+    RECEIPTS.append(receipt);TRACE.append(dict(stage='raw_model',model=model,extraction=copy.deepcopy(parsed)))
     parsed['_usage']=dict(input_tokens=receipt['input_tokens'],output_tokens=receipt['output_tokens']);parsed['_model']=model
     parsed['_discarded_ambiguities']=[];parsed['ambiguity_details']=parsed['ambiguities'];parsed['ambiguities']=[x['question'] for x in parsed['ambiguity_details']]
     return parsed
+
+def extract(text,previous_offer='',dense_audit=False,model=None):
+    model=model or 'gpt-5.6-luna'
+    parsed,receipt=c.api(build_request(text,previous_offer,model),'A2_themed_'+model)
+    return finish_extraction(parsed,receipt,model)

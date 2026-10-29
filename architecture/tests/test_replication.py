@@ -42,4 +42,31 @@ class ReplicationTests(unittest.TestCase):
         r=self.call('score_tutorial_offer.py','--architecture','A2','--case-json',str(ROOT/'examples/tutorial_offer.json'),'--interpretation-json',str(ROOT/'examples/tutorial_interpretation.json'))
         self.assertFalse(r['api_called']);self.assertEqual(len(r['response']['valid_pairs']),4)
 
+    def test_named_a1_request_stage_matches_saved_request(self):
+        r=self.call('A1-1.py','--case-json',str(ROOT/'examples/job_offer.json'))
+        expected=json.loads((ROOT/'examples/A1_Job_Request.json').read_text(encoding='utf-8'))
+        self.assertTrue(r==expected.get('model_request',expected),'A1 job request differs from the saved request')
+
+    def test_named_a1_tutorial_request_stage_matches_saved_request(self):
+        r=self.call('A1-1.py','--exercise','tutorial','--case-json',str(ROOT/'examples/tutorial_offer.json'))
+        expected=json.loads((ROOT/'examples/A1_Tutorial_Request.json').read_text(encoding='utf-8'))
+        self.assertTrue(r==expected.get('model_request',expected),'A1 tutorial request differs from the saved request')
+
+    def test_named_a2_request_stage_matches_saved_request(self):
+        r=self.call('A2-1.py','--case-json',str(ROOT/'examples/job_offer.json'))
+        expected=json.loads((ROOT/'examples/A2_Job_Request.json').read_text(encoding='utf-8'))
+        self.assertTrue(r==expected.get('model_request',expected),'A2 job request differs from the saved request')
+
+    def test_named_a1_score_stage_matches_runner(self):
+        args=['--case-json',str(ROOT/'examples/job_offer.json'),'--interpretation-json',str(ROOT/'examples/job_interpretation.json')]
+        self.assertEqual(self.call('A1-2.py',*args),self.call('score_offer.py',*args)['response'])
+
+    def test_named_a2_score_stage_matches_runner(self):
+        args=['--case-json',str(ROOT/'examples/job_offer.json'),'--interpretation-json',str(ROOT/'examples/job_interpretation.json')]
+        self.assertEqual(self.call('A2-2.py',*args),self.call('score_offer.py','--architecture','A2',*args)['response'])
+
+    @unittest.skipUnless((ROOT.parent/'score_offer.py').exists(),'Outer compatibility launcher is optional')
+    def test_existing_root_launch_command_still_works(self):
+        self.assertFalse(self.call('../score_offer.py','--case-json',str(ROOT/'examples/job_offer.json'))['api_called'])
+
 if __name__=='__main__':unittest.main()

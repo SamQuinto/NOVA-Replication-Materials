@@ -76,6 +76,9 @@ def arrow(x1,y1,x2,y2,label=None):
 def svg(width,height,body):
  return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="black"/></marker></defs><rect width="100%" height="100%" fill="white"/>'+body+'</svg>'
 def main():
+ global MAIN
+ content=OUT/'Figure_Content.json'
+ if content.exists():MAIN=json.loads(content.read_text(encoding='utf-8'))['main']
  OUT.mkdir(exist_ok=True)
  heights=[]
  for step in range(6):
@@ -84,7 +87,7 @@ def main():
    body=col['boxes'][step][1]
    sizes.append(110+sum(34*len(textwrap.wrap(line,width=42,break_long_words=False))+8 for line in body))
   heights.append(max(sizes))
- ys=[];y=115
+ ys=[];y=85
  for height in heights:ys.append(y);y+=height+45
  parts=[]
  for i,(key,col) in enumerate(MAIN.items()):
@@ -92,7 +95,7 @@ def main():
   for j,((title,body),top,height) in enumerate(zip(col['boxes'],ys,heights)):
    parts.append(box(x,top,690,height,title,body,core=j==5))
    if j<5:parts.append(arrow(cx,top+height+3,cx,ys[j+1]-5))
- (OUT/'Figure_2_Current_Architectures.svg').write_text(svg(1510,y-10,''.join(parts)),encoding='utf-8')
+ (OUT/'Figure_B1_NOVA_Architectures.svg').write_text(svg(1510,y-10,''.join(parts)),encoding='utf-8')
  # Separate the old tutorial's optional completeness path from the job design.
  parts=[text(540,40,['A2 tutorial','Existing interpretation and scoring path'],31,True)]
  nodes=[(110,285,'Offer data and tutorial files',['Offer text, recorded role and relevant context','Tutorial issue definitions and response format','Existing tutorial interpretation instructions']),
@@ -108,16 +111,16 @@ def main():
  parts.append('<path d="M935,1030 L1045,1030 L1045,1530 L935,1530" fill="none" stroke="black" stroke-width="2.3" marker-end="url(#arrow)"/>')
  parts.append(text(1060,1260,['Skip','second','call'],24,anchor='start'))
  (OUT/'Figure_B2_Tutorial_Path.svg').write_text(svg(1170,1930,''.join(parts)),encoding='utf-8')
- (OUT/'Figure_Content.json').write_text(json.dumps(dict(main=MAIN,tutorial_nodes=nodes,script_numbering='Logical processing stages; not necessarily separate physical files.'),ensure_ascii=False,indent=2),encoding='utf-8')
+ (OUT/'Figure_Content.json').write_text(json.dumps(dict(main=MAIN,tutorial_nodes=nodes,script_numbering='The main labels map to A1-1.py, A1-2.py, A2-1.py and A2-2.py. Tutorial labels map separately to existing functions.'),ensure_ascii=False,indent=2),encoding='utf-8')
  (OUT/'README.md').write_text('''# Architecture figures
 
-`Figure_2_Current_Architectures.svg` compares the latest evaluated job A1 and A2 configurations. `Figure_B2_Tutorial_Path.svg` shows the existing tutorial A2 path separately. SVG text and boxes can be edited in a vector editor. PNG copies are ready to inspect or insert into a manuscript.
+`Figure_B1_NOVA_Architectures.svg` compares the latest evaluated job A1 and A2 configurations. `Figure_B2_Tutorial_Path.svg` shows the existing tutorial A2 path separately. SVG text and boxes can be edited in a vector editor. PNG copies are ready to inspect or insert into a manuscript.
 
-Suggested caption: **Figure 2. Alternative scorer architectures in NOVA.**
+Suggested caption: **Figure B1. NOVA scorer architecture templates.**
 
-Suggested note: The language model identifies the proposed issues and options; Python scripts apply researcher-defined scores. A1 receives every active issue definition. A2 retrieves possible issues and uses fitted reading rules. Script numbers identify processing stages rather than separate source files. The optional second tutorial reading is shown separately, not as part of the fitted one-call A2 job scorer.
+Suggested note: The language model identifies the proposed issues and options; Python scripts apply researcher-defined scores. A1 receives every active issue definition. A2 retrieves possible issues and uses fitted reading rules. The four main numbered script boxes correspond to `A1-1.py`, `A1-2.py`, `A2-1.py` and `A2-2.py`. The optional second tutorial reading is shown separately, not as part of the fitted one-call A2 job scorer.
 
-`Figure_Content.json` records the figure text and feeds the Word builder. `Architecture_Figure_Editable.docx` provides a native Word text-and-box version of the main comparison. For vector changes, edit the SVG directly or edit and rerun `tools/build_figures_source.py`; that builder keeps its own layout and text definitions. The images contain no embedded figure number or caption.
+`Architecture_Figure_Editable.docx` is the editable text-and-box master. Run `python tools/sync_figure_from_word.py` after editing it, then `python tools/build_figures_source.py` to update the SVG from `Figure_Content.json`. Rasterizing the SVG is a separate optional image step. `tools/build_word_figure_source.py` can build a fresh editable Word layout from the JSON, but should not be used to overwrite unsynchronized Word edits. The images contain no embedded figure number or caption.
 ''',encoding='utf-8')
  print(str(OUT))
 if __name__=='__main__':main()

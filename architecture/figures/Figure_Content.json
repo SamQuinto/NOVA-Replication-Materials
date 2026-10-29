@@ -2,12 +2,11 @@
   "main": {
     "A1": {
       "header": [
-        "A1  Flexible",
-        "Higher API cost"
+        "A1 - Flexible, Higher API cost"
       ],
       "boxes": [
         [
-          "Offer data and exercise files",
+          "Initial Inputs: Offer text and exercise files",
           [
             "Offer text entered in the free-text box",
             "Negotiator’s assigned role",
@@ -50,17 +49,15 @@
         [
           "Scored offer (JSON)",
           [
-            "Interpreted issues and options, with their individual scores",
-            "Each negotiator’s total score when the offer is complete and valid",
-            "Clarification questions and unscored ideas, if any"
+            "Shows each negotiator’s scores for interpreted issues and options, with totals when the offer is complete and valid",
+            "Includes clarification questions and unscored ideas, if any"
           ]
         ]
       ]
     },
     "A2": {
       "header": [
-        "A2  Customized",
-        "Higher setup effort, lower API cost"
+        "A2 - Customized, Lower API cost"
       ],
       "boxes": [
         [
@@ -70,7 +67,7 @@
             "Negotiator’s assigned role",
             "Role materials, scoring table and matching vocabulary (JSON files)",
             "Main instructions (text file) and exercise-specific reading instructions (JSON file)",
-            "Optional: Previous offer text, when the current offer refers to it"
+            "Optional: Previous offer text, when referenced—for example, “Keep everything from the previous offer, but change the salary to $60,000.”"
           ]
         ],
         [
@@ -108,9 +105,8 @@
         [
           "Scored offer (JSON)",
           [
-            "Interpreted issues and options, with their individual scores",
-            "Each negotiator’s total score when the offer is complete and valid",
-            "Clarification questions and unscored ideas, if any"
+            "Shows each negotiator’s scores for interpreted issues and options, with totals when the offer is complete and valid",
+            "Includes clarification questions and unscored ideas, if any"
           ]
         ]
       ]
@@ -182,5 +178,5 @@
       ]
     ]
   ],
-  "script_numbering": "Logical processing stages; not necessarily separate physical files."
+  "script_numbering": "The main labels map to A1-1.py, A1-2.py, A2-1.py and A2-2.py. Tutorial labels map separately to existing functions."
 }
