@@ -1,7 +1,7 @@
-# Development records
+# How we developed and reviewed the scorer
 
-`validation/` contains the exact reference-drafting, correction and checklist-review prompts and schemas. They support the documented human/LLM review process; they are not live scorer prompts. Use the reviewed workbooks for final supplied classifications.
+The [validation folder](validation/) contains the prompts and response formats we used to draft reference interpretations, review scorer responses and correct review mistakes. These are evaluation tools, separate from the prompts NOVA uses when scoring an offer.
 
-`results/` preserves earlier aggregate and packaging records for provenance. Their paths describe the earlier package layout and their historical mapping flags are not the manuscript's Type C measure. Current recomputed results are in the parent section's `results/` folder.
+The [earlier results](results/) retain aggregate figures and package checks from previous versions. Use the main [results folder](../results/) for the current calculations. Some older records use different labels and folder paths; they are kept to help trace the work, not as a second set of headline results.
 
-To preview a review request without a paid call, use `validation/prepare_review_request.py --help`. Live review needs your own environment key and explicit `--live`. A returned model judgment remains subject to researcher review; it is not automatically ground truth.
+To see how a review request is prepared, run `python validation/prepare_review_request.py --help`. It does not call a model unless you add `--live` and supply your own API key. A model's review is a judgment for the researcher to check, not automatically the correct answer.

@@ -70,7 +70,7 @@
     }
   ],
   "live_test_estimated_cost_usd": 0.1253276,
-  "all_selected_scorer_code_and_prompt_bytes_preserved": true,
+  "all_selected_scorer_code_and_prompt_bytes_preserved": false,
   "preserved_files": 62,
   "researcher_edited_architecture_word_preserved": true,
   "main_review_rows_preserved": 3675,
@@ -79,5 +79,18 @@
   "notebook_executed_without_api": true,
   "privacy_pattern_findings": 0,
   "broken_markdown_links": 0,
-  "source_originals_and_crosswalk_published": false
+  "source_originals_and_crosswalk_published": false,
+  "documentation_update": {
+    "date": "2026-10-29",
+    "description": "Clearer wording across the READMEs, guides, app and comments; main and tutorial role materials combined into one document.",
+    "scoring_and_analysis_logic_unchanged": true,
+    "tested_prompts_and_exercise_definitions_unchanged": true,
+    "participant_offers_and_researcher_review_comments_unchanged": true,
+    "notebook_calculations_and_saved_results_unchanged": true,
+    "offline_tests_passed": 16,
+    "api_calls_made_for_this_update": 0,
+    "combined_role_materials_all_source_text_retained": true,
+    "previous_separate_role_documents_retained_privately": true,
+    "note": "Some code comments and documentation strings were rewritten. The scoring and analysis code was checked to have the same executable structure."
+  }
 }

@@ -1,4 +1,4 @@
-"""Shared file handling for the four numbered architecture stages."""
+"""Read input files and run the four numbered scoring scripts."""
 from pathlib import Path
 import argparse, importlib.util, json, sys
 ROOT = Path(__file__).resolve().parent

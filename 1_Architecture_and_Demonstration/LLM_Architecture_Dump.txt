@@ -1,39 +1,39 @@
-NOVA ARCHITECTURE HANDOFF FOR APPENDIX B
-Release date: 29 October 2026
+NOVA architecture guide for Appendix B
+Updated 29 October 2026
 
-All paths in this file are relative to the architecture folder, which contains
-code/, A1/, A2/, demo/, docs/ and figures/. Its outer name or location does not
-matter. Keep these internal relative paths when drafting Appendix B.
+This guide walks through Architecture 1 and 2 (A1 and A2), explains the purpose
+of each prompt section, and shows the code behind each step. The first part is
+written for readers learning how NOVA works. The later sections reproduce the
+exact prompts and implementation so that those explanations can be checked.
 
-The architectures are researcher-ready templates, not static claims about the
-best future model. A1 - Flexible, Higher API cost. A2 - Customized, Lower API cost.
-A1 supplies all active definitions and general instructions to a stronger model.
-A2 uses retrieved definitions, explicit exercise conventions and custom Python
-rules with a cheaper model. Both retrieve researcher-defined numerical values in
-Python. Customization here means prompt/rule development, not model fine-tuning.
+A1 is the more flexible template: a stronger model reads all active issue and
+option definitions using general instructions. A2 uses a lower-cost model with
+exercise-specific instructions and Python rules. In both, the model interprets
+the offer and a Python script calculates the researcher-defined scores. This
+customization does not involve changing the model's trained weights.
 
-The revised diagram remains in figures/Figure_B1_NOVA_Architectures.png and the
-researcher-edited figures/Architecture_Figure_Editable.docx. Figure_B2_Tutorial_Path
-documents the separate tutorial route. These figures were not substantively
-rewritten in this repository reorganization.
+All paths below start from the architecture folder, which contains code/, A1/,
+A2/, demo/, docs/ and figures/. You can move the outer folder without changing
+those references. The main diagram is figures/Figure_B1_NOVA_Architectures.png;
+Figure_B2_Tutorial_Path explains the separate A2 tutorial steps.
 
-Write the appendix in plain connected language, introducing objects before code
-field names. A request, interpretation and scored result are different JSON
-objects, not necessarily disk files or separate calls. A useful partial score
-does not make an offer complete. An unmatched idea can remain unscored in an
-otherwise valid offer. A useful clarification must not reveal an unrelated idea.
+A request, a model interpretation and a scored offer are different objects.
+They do not have to be saved as separate files, and they do not imply three
+model calls. NOVA can retain scores for the terms it understood even when an
+offer still needs a required detail. It can also acknowledge an idea without
+points when the scoring table cannot represent it.
 
-Human offer rows and review workbooks are now public with researcher permission
-in the separate validation section after a privacy review. They are not runtime
-dependencies. The code below never reads an answer key or benchmark case ID.
+The validation section of the repository shares de-identified participant
+offers and reviewed scorer responses from the pilot tests. Those files help
+readers inspect the evaluation; the scorer does not read them or an answer key
+when it processes an offer.
 
 
-===========================================================================
 docs/A1_Walkthrough.md
-===========================================================================
-# A1 component and prompt commentary
+======================
+# How Architecture 1 works
 
-Paths in this guide are relative to the architecture folder. The diagram is `figures/Figure_B1_NOVA_Architectures.png`; the editable Word file beside it preserves the researcher's edits.
+This guide follows an offer through Architecture 1 (A1), from the words a negotiator types to the score they see. File paths start from the architecture folder, so you can still follow them if you move that folder elsewhere.
 
 ## Offer data and exercise files
 
@@ -41,13 +41,13 @@ A negotiator enters ordinary text in a free-text box. The application supplies t
 
 The role narrative is text inside `code/frozen/Role_Materials.json`. The full numerical scoring table is `code/frozen/Scoring_Table.json`. The model-facing version, `A1_Scoring_Definitions.json`, includes all active issues and options but omits numerical point-weight fields. Exercise information supplies requirements, defaults and conventions. A response schema defines allowed JSON fields. The general instructions are a separate text file, `code/prompts/A1_Final.txt`.
 
-These are separate sources, not separate paid calls. Python reads their contents; the model does not browse local files or follow their filenames. Stable content can benefit from provider-side prompt caching, but it is still included in the request. The tutorial supplies its own exercise files under `code/frozen/tutorial/` and uses the identical general prompt.
+These files are brought together in one request, rather than sent as separate paid calls. The Python script reads their contents and includes them; the model does not open the files itself. Repeated content can receive a lower price through OpenAI's prompt caching, but the content is still sent. The tutorial uses its own exercise files under `code/frozen/tutorial/` with the same general prompt.
 
 ## Python script A1-1
 
 `code/A1-1.py:prepare_request` combines these sources into one request object. The instruction portion contains the general prompt and named `EXERCISE_INFORMATION`, `SCORING_TABLE` and `ROLE_MATERIALS` blocks. The user portion contains `CURRENT_OFFER` (role and text) and `PREVIOUS_OFFER` (optional text). The response schema is attached separately within the same request. This script neither calls a model nor calculates points.
 
-Configuration choices include the selected exercise and reasoning setting. Low and high reasoning use the same prompt and source layout. The supplied model name is `gpt-6.1-sol`. The response format constrains structure, not truth: a syntactically valid issue can still be semantically wrong.
+You choose the exercise and reasoning setting. Low and high reasoning use the same prompt and exercise information; the example model is `gpt-6.1-sol`. The response format helps keep the returned JSON consistent, but it cannot guarantee that the model understood the offer correctly.
 
 ## Advanced LLM
 
@@ -59,7 +59,7 @@ The interpretation includes issue/option pairs, exact source words and whether a
 
 For the synthetic text “Salary $55,000; personal work-expense budget $10,000; starting date May 1,” a Salary pair selects `55000` and quotes the salary words. Starting Date selects a date representation, not a floating-point amount. A vague detail can produce a question. An idea absent from the supplied table can be retained without points.
 
-This object can remain in memory. Saving a request, interpretation and scored result creates useful audit objects; it does not mean three calls or three mandatory disk files.
+The interpretation can pass directly to the next script without being saved as a file. Saving the request, interpretation and scored result is useful if you want to check what happened later, but it does not require three model calls.
 
 ## Python script A1-2
 
@@ -67,7 +67,7 @@ This object can remain in memory. Saving a request, interpretation and scored re
 
 ## Scored offer JSON
 
-The final object contains interpreted terms, issue-level values, role-specific scores and messages. Complete valid offers can have totals. Incomplete offers can retain partial scored terms without a final total. A valid offer may also retain an unmatched unscored idea. The caller decides what to show, submit or accept; calculating an offer is not agreement by both parties.
+The returned JSON contains the interpreted terms, scores for each role and any messages. A complete, valid offer can have a total. If a required detail is missing, NOVA can still show the terms it understood without giving a final total. An offer can also contain a new idea that is acknowledged without points. The study interface decides what to show or submit; calculating a score does not mean both negotiators have accepted the offer.
 
 ## What each prompt block does
 
@@ -84,12 +84,11 @@ The exact text is in `code/prompts/A1_Final.txt`; the following explains it with
 For a new exercise, prepare role narratives, issue/option definitions, units/defaults and numerical values in the exercise files. Keep the general prompt unchanged initially. Test a varied sample and inspect omissions, unproposed additions and mapping errors separately. If a proposed prompt change depends on a particular benefit, role name or month, it belongs in exercise data or a deliberately customized architecture rather than this general prompt. A clean prompt still needs validation on new material.
 
 
-===========================================================================
 docs/A2_Walkthrough.md
-===========================================================================
-# A2 component and code commentary
+======================
+# How Architecture 2 works
 
-All paths are relative to the architecture folder. A2 deliberately moves some interpretation work into exercise-specific instructions and Python rules. The current evaluated job path calls `gpt-5.6-luna` once at low reasoning. Older escalating-model functions remain in the historical runtime, but they are not the current job route.
+This guide explains how Architecture 2 (A2) uses exercise-specific instructions and Python rules to help a lower-cost model interpret offers. File paths start from the architecture folder. The evaluated job scorer calls `gpt-5.6-luna` once at low reasoning. Some older code supports escalating to stronger models, but that is not how the current job scorer runs.
 
 ## Offer data and exercise files
 
@@ -105,7 +104,7 @@ Examples of exercise facts include the annual vacation default, weekly remote-wo
 
 `build_request` constrains the interpretation schema's issue names to that shortlist. It places the role, current text, prior text, selected definitions, exercise reading rules and narratives into the user payload. The interpretation prompt is a system message. Together they form one request. Python does not yet calculate points.
 
-Configuration choices are explicit: a low-cost model, low reasoning, retrieved rather than all definitions, exercise-specific instructions and a fixed response schema. Retrieval saves prompt space but can omit an issue the cheaper model would otherwise recognize. The chosen issue list, not just the LLM, therefore affects coverage.
+This setup uses low reasoning and a smaller set of potentially relevant issue definitions, together with exercise-specific instructions and a required response format. Selecting fewer definitions shortens the request, but an issue can be missed at this step before the model sees it. When investigating a missed idea, check which definitions were sent as well as what the model returned.
 
 ## Economical LLM and interpretation JSON
 
@@ -139,7 +138,7 @@ The helpers `put`, `query` and `omit` have distinct roles. `put` replaces a pair
 
 ## Scored offer JSON
 
-The final object has the same display purpose as A1's: interpreted issue/option terms, assigned scores, valid totals, questions and retained unscored ideas. A correction trace makes Python changes inspectable. A scored partial term is not proof that the offer is complete or agreed.
+The final JSON serves the same purpose as A1's: it gives the interface the interpreted terms, scores, any valid total, questions and acknowledged ideas without points. The `custom_rule_trace` field shows which Python corrections were applied. NOVA may understand part of an offer even when the offer is not yet complete or agreed.
 
 ## Separate tutorial path
 
@@ -299,9 +298,9 @@ if __name__ == '__main__': main()
 
 ===========================================================================
 EXACT FILE: code/runtime_setup.py
-SHA256: c492466453a8a452e254eacd32f3c5216f16cc6d3096179de097e505f1e85514
+SHA256: 8f62e17577381e33a739f7d3475703ff538d210b579066a04924adb826c759dc
 ===========================================================================
-"""Locate the packaged engines without depending on a parent folder name."""
+"""Find the included scorers even if their outer folder has been moved or renamed."""
 from pathlib import Path
 import io, json, os, sys, types, urllib.request, urllib.error
 import common1225 as c
@@ -339,9 +338,9 @@ def a2_setup(exercise, preview=False):
 
 ===========================================================================
 EXACT FILE: code/stage_support.py
-SHA256: 45e062301d69e21aa31ec60469cc81c00a68936e309a3401e0debbd15625ecd2
+SHA256: 39bc6e6646017e45b2ac67f86ea1775f2239335db99c81d354699f4bdbdf074d
 ===========================================================================
-"""Shared file handling for the four numbered architecture stages."""
+"""Read input files and run the four numbered scoring scripts."""
 from pathlib import Path
 import argparse, importlib.util, json, sys
 ROOT = Path(__file__).resolve().parent
@@ -382,12 +381,12 @@ def stage_main(function, *, scoring=False, job_only=False):
 
 ===========================================================================
 EXACT FILE: code/common1225.py
-SHA256: 92a336470c612a21b6a441b20f20cba846be655d5277614a3ebeab0edca1f638
+SHA256: 7896fc230db8b50e819c248d33fb8b05032bb21d68111f949737b6e6a4fe432d
 ===========================================================================
-"""Portable compatibility layer for the frozen evaluated A2 modules.
+"""Shared file loading and API calls for the included scoring scripts.
 
-The historical module name is retained so the evaluated rule files do not need
-to be rewritten. It does not refer to a public participant dataset.
+The older filename is kept so existing imports continue to work. The number
+in its name does not limit how many offers the scorer can process.
 """
 from pathlib import Path
 import json,os,time,urllib.request,urllib.error
@@ -410,7 +409,8 @@ def api(request,stage):
         try:detail=json.loads(e.read().decode()).get('error',{}).get('message','API request rejected')
         except Exception:detail='API request rejected'
         raise RuntimeError(f'API HTTP {e.code}: {detail}') from None
-    # Do not automatically repeat uncertain or incomplete paid requests.
+    # A failed or incomplete request may still be billed, so leave retries to
+    # the user rather than quietly making another paid call.
     if 'choices' in body:
         if body['choices'][0].get('finish_reason')!='stop':raise RuntimeError('Incomplete response; no automatic retry.')
         text=body['choices'][0]['message'].get('content') or ''
@@ -427,12 +427,12 @@ def api(request,stage):
 
 ===========================================================================
 EXACT FILE: code/a2_extract.py
-SHA256: ad98e4db5075761ac3c41fcef195ad548aafb339500d35873e2366cc8593b079
+SHA256: c7df6f2295d5b829eb0fa78fa09be2ff591cbd6d0f024d189fce6a48c3399337
 ===========================================================================
-"""Readable economical extraction; exercise facts are a separate input.
+"""Select issue definitions and prepare A2's interpretation request.
 
-No answer key or case identifier is passed to a scorer. Unlike the earlier
-keyword restoration, this does not invent questions for every neighboring alias.
+Exercise facts are supplied separately from the prompt. The scorer receives
+the offer and its context, not benchmark labels or expected answers.
 """
 import json,re,copy,difflib
 import common1225 as c
@@ -769,12 +769,12 @@ def customize(case,value,table,engine):
 
 ===========================================================================
 EXACT FILE: code/a2_finalize.py
-SHA256: 938ce026a8f547ff08bcf63530a1c33414e1ffec1caa08a649efd5397f7ffff9
+SHA256: 328cd1ccfaf652e27308b1934315687d06047f32972fa3a0a3d553dfbe319296
 ===========================================================================
-"""A2 experiment: explicit exercise rules followed by shared evidence/domain checks.
+"""Apply A2's exercise rules, check the interpretation and calculate scores.
 
-This removes the older second lexical parser. A correctly interpreted word is
-not discarded merely because a regular expression did not anticipate its form.
+The shared checks validate the model's selections without requiring every
+correctly interpreted phrase to match another spelling pattern.
 """
 import copy,importlib.util,re,sys
 import common1225 as c
@@ -3155,15 +3155,17 @@ SHA256: 004b9c098f0b7128fda8bec0397b76261ed9599809e7a4e44d8c420622da9a18
 }
 
 
-OTHER AUTHORITATIVE FILES
-code/frozen/Scoring_Table.json: all numerical job values and domains.
-code/frozen/A1_Scoring_Definitions.json: complete model-facing job definitions.
-code/frozen/Role_Materials.json: role narratives.
-code/frozen/tutorial/: corresponding tutorial definitions and narratives.
-code/runtime/app/backend/offer_engine.py: full shared numerical implementation.
+Other files to consult
 
-Do not claim that primary A/B accuracy independently verifies every option value.
-Use the separate validation notebook for current counts, costs and limitations.
-Historical Type3 mapping flags are not the manuscript's Type C table-coverage gap.
-The frozen table has no coffee entry despite a later-addition claim in the paper.
-The behavioral rule is both scores >= 0; historical metadata has legacy conflicts.
+code/frozen/Scoring_Table.json contains the job scoring values and domains.
+code/frozen/A1_Scoring_Definitions.json contains the definitions sent to A1.
+code/frozen/Role_Materials.json contains the job role narratives.
+code/frozen/tutorial/ contains the corresponding tutorial files.
+code/runtime/app/backend/offer_engine.py contains the full shared scoring code.
+
+The validation notebook gives the current accuracy, cost and timing results.
+Its primary measure checks Types A and B; it does not independently verify every
+option value. Older Type3 mapping flags are different from the manuscript's
+Type C, which means an idea absent from the table. The frozen table has no
+coffee entry. The behavioral analysis accepts agreements with both scores at
+zero or above, despite conflicting settings in some historical metadata.

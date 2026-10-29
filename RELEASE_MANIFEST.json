@@ -1,6 +1,6 @@
 {
-  "release": "NOVA replication package 2026-10-29",
-  "previous_commit": "3c79e5960cb0b6ad80eb7222edf73153bce54b1c",
+  "release": "NOVA replication package 2026-10-29 documentation update",
+  "previous_commit": "d27badd421bc71e233964dad6a074a598378c423",
   "files": {
     ".gitattributes": {
       "bytes": 548,
@@ -15,12 +15,12 @@
       "sha256": "5b85ae601d7d192c31a8d6b2647acc0337b452ab9188d03a5f7ad063afbcb815"
     },
     "1_Architecture_and_Demonstration/A1/README.md": {
-      "bytes": 1346,
-      "sha256": "5cb40de4d633ef3f84395c8a09c249aef8f0ff8fe2f302bcb07906986614a16a"
+      "bytes": 1784,
+      "sha256": "a2dd91425f6ff72e4ace3b790fdc5062340f57aef959db4e2591ff04f9827440"
     },
     "1_Architecture_and_Demonstration/A2/README.md": {
-      "bytes": 1215,
-      "sha256": "a4f1604bc4e64acfd4481e2b0ff6551ab5fb473751918ef20a95148f8618c6cd"
+      "bytes": 1658,
+      "sha256": "d5cc8ee9aca22c3d1ed5d9850932819785a68162f85eaacbe9538c8b7cef6ee9"
     },
     "1_Architecture_and_Demonstration/code/A1-1.py": {
       "bytes": 1447,
@@ -43,16 +43,16 @@
       "sha256": "01980d04194fb4d6fd04ff7fb8268cf75ecad745bcf2aab00d993421c6ca2d7e"
     },
     "1_Architecture_and_Demonstration/code/a2_extract.py": {
-      "bytes": 2848,
-      "sha256": "ad98e4db5075761ac3c41fcef195ad548aafb339500d35873e2366cc8593b079"
+      "bytes": 2834,
+      "sha256": "c7df6f2295d5b829eb0fa78fa09be2ff591cbd6d0f024d189fce6a48c3399337"
     },
     "1_Architecture_and_Demonstration/code/a2_finalize.py": {
-      "bytes": 1927,
-      "sha256": "938ce026a8f547ff08bcf63530a1c33414e1ffec1caa08a649efd5397f7ffff9"
+      "bytes": 1900,
+      "sha256": "328cd1ccfaf652e27308b1934315687d06047f32972fa3a0a3d553dfbe319296"
     },
     "1_Architecture_and_Demonstration/code/common1225.py": {
-      "bytes": 2556,
-      "sha256": "92a336470c612a21b6a441b20f20cba846be655d5277614a3ebeab0edca1f638"
+      "bytes": 2620,
+      "sha256": "7896fc230db8b50e819c248d33fb8b05032bb21d68111f949737b6e6a4fe432d"
     },
     "1_Architecture_and_Demonstration/code/examples/A1_Job_Request.json": {
       "bytes": 165320,
@@ -255,8 +255,8 @@
       "sha256": "346e6a1f0c7ee1f4bf10dea4ad6a14be701c160703d33495041bd693dc085102"
     },
     "1_Architecture_and_Demonstration/code/runtime_setup.py": {
-      "bytes": 1683,
-      "sha256": "c492466453a8a452e254eacd32f3c5216f16cc6d3096179de097e505f1e85514"
+      "bytes": 1692,
+      "sha256": "8f62e17577381e33a739f7d3475703ff538d210b579066a04924adb826c759dc"
     },
     "1_Architecture_and_Demonstration/code/score_offer.py": {
       "bytes": 140,
@@ -267,8 +267,8 @@
       "sha256": "f0b8263ef1b9348482893160aaef2be4d90ea17621256817d2a27b2a1511049e"
     },
     "1_Architecture_and_Demonstration/code/stage_support.py": {
-      "bytes": 1830,
-      "sha256": "45e062301d69e21aa31ec60469cc81c00a68936e309a3401e0debbd15625ecd2"
+      "bytes": 1826,
+      "sha256": "39bc6e6646017e45b2ac67f86ea1775f2239335db99c81d354699f4bdbdf074d"
     },
     "1_Architecture_and_Demonstration/code/tests/test_portability.py": {
       "bytes": 3910,
@@ -279,8 +279,8 @@
       "sha256": "975a8d6b1581124de07cfebb9b83165cb392599a4a89ec9b161a4c611997a7fa"
     },
     "1_Architecture_and_Demonstration/code/tools/build_figures_source.py": {
-      "bytes": 9277,
-      "sha256": "993c0d01140b5bce7cb44cb230914cb1a48a99ad849445d3a95dc51c55202152"
+      "bytes": 9412,
+      "sha256": "11a98227cac79f76772e5bd4ebb4db678834597f2800d237f6240827dc47ff9e"
     },
     "1_Architecture_and_Demonstration/code/tools/build_word_figure_source.py": {
       "bytes": 5065,
@@ -291,20 +291,20 @@
       "sha256": "0cd31036c4003d1f8d220e10ad67c09065bbfb44444069d94431b8f62bdc3ae5"
     },
     "1_Architecture_and_Demonstration/demo/index.html": {
-      "bytes": 7515,
-      "sha256": "210125f4b45cb9dd08d18b355c2a23ea9627c2fb71c898707bedf10b6222b118"
+      "bytes": 7803,
+      "sha256": "a80dff7428e1c7935168bf3370a4b4a00947ab099bde613bc2d16a4c37f0e885"
     },
     "1_Architecture_and_Demonstration/demo/Start_Demo.py": {
-      "bytes": 5130,
-      "sha256": "cc99a172c8875e83afd323ddbedbc009913f16797170f4584c93801cb092581f"
+      "bytes": 5170,
+      "sha256": "cf7b18e7857f5aecffeb8b5a2b8b87c7633955925d4fc0e63978b54c8dabdbb0"
     },
     "1_Architecture_and_Demonstration/docs/A1_Walkthrough.md": {
-      "bytes": 6392,
-      "sha256": "023a35f614df864d64a7b88be459cc404b2a5f26b9ba91dbcfe6a31da7bb6b51"
+      "bytes": 6569,
+      "sha256": "b4f6081a7817801c21c942ad46dc042f3e639ea357bbacfa1752baba7803bcb4"
     },
     "1_Architecture_and_Demonstration/docs/A2_Walkthrough.md": {
-      "bytes": 8840,
-      "sha256": "484e8ddf76844576abb0c6baa4fd5eb36c9971ed58016534be5d01dea08423db"
+      "bytes": 8964,
+      "sha256": "4c2970ccb1a91133f22e0c170a94ac1a6e18e22a92dfe2a21a208deeea06472a"
     },
     "1_Architecture_and_Demonstration/figures/Architecture_Figure_Editable.docx": {
       "bytes": 25958,
@@ -331,32 +331,24 @@
       "sha256": "b681162d60d17aca10ad8c3d504e9ba3e624d782013d7d6746de0985e96cd18c"
     },
     "1_Architecture_and_Demonstration/figures/README.md": {
-      "bytes": 1475,
-      "sha256": "12cc3a17f1947d2a429e4681aa6ac3bf409d46a0b6b7be8d23e60f74a0c51973"
+      "bytes": 1442,
+      "sha256": "8ce9ce93bcab6805122e073d73c1c33f3b76587b0e9e7458f649ff604cd3ac59"
     },
     "1_Architecture_and_Demonstration/LLM_Architecture_Dump.txt": {
-      "bytes": 203441,
-      "sha256": "97e02c9c31be0a2f06e446bf15d75d496daf97f68c69d044d6de1b4a5c0a14c3"
+      "bytes": 203548,
+      "sha256": "281eece5eb03a8b9fcaf84e23ef0f9cd0ce4cbb7dfaab5596e352cdf41a4843b"
     },
     "1_Architecture_and_Demonstration/README.md": {
-      "bytes": 2815,
-      "sha256": "bbd388c3678d44d71a531d1729d1881fdbe7b5c25d5b556d533a7fd14aaca583"
+      "bytes": 3684,
+      "sha256": "e2bc54c6f3370502ca41c475042c3e410f49da19f5c67526d8e4c0e748b0157f"
     },
-    "2_Exercise_Materials/job/Fixed_9_Role_Materials.docx": {
-      "bytes": 41412,
-      "sha256": "8f820f43c07ba32f54aab7782f4d9184063ab611795dc7dd60d54c6a92db42b0"
+    "2_Exercise_Materials/Negotiation_Exercise_Role_Materials.docx": {
+      "bytes": 43081,
+      "sha256": "d0f5f975b4bd56c01aafd0506e09122f5e61515ecf0f832982c02f71bb78f268"
     },
-    "2_Exercise_Materials/job/Fixed_9_Role_Materials.pdf": {
-      "bytes": 148231,
-      "sha256": "488ea8c43eda347e3209315462b0f8ce3d07410d2b66904d8fb48e442bce7f0b"
-    },
-    "2_Exercise_Materials/job/Flexible_Job_Role_Materials.docx": {
-      "bytes": 40607,
-      "sha256": "a3d4051af874e26f42bae00a68e3997d404371a7aa084e8ae2f5b7be8006657e"
-    },
-    "2_Exercise_Materials/job/Flexible_Job_Role_Materials.pdf": {
-      "bytes": 89074,
-      "sha256": "f07d1b737ea64b1be84bc8d36a45a6fd5150c9dfeb29989b329f903d1dd91a18"
+    "2_Exercise_Materials/Negotiation_Exercise_Role_Materials.pdf": {
+      "bytes": 184203,
+      "sha256": "f0322ba68feb2f32d9f7e5f028c888aeafeb66733680323ea9c9a59d3d8ee5c1"
     },
     "2_Exercise_Materials/questionnaires/candidate_feedback_survey.yaml": {
       "bytes": 3717,
@@ -375,16 +367,16 @@
       "sha256": "949a1b386cd4d3152122be351c3a0883c55e150af07392e1d2df7dfdc8ef469d"
     },
     "2_Exercise_Materials/questionnaires/Study_Questionnaires.docx": {
-      "bytes": 41279,
-      "sha256": "ca4f5eb3000530b1ae2d2a0bf7cfe8024d641561c1d11ab0c74dcb6ace4f7114"
+      "bytes": 41289,
+      "sha256": "080773a764945c9b5c6650dbb6f6eb9874af880328582c51468f5323181191ad"
     },
     "2_Exercise_Materials/questionnaires/Study_Questionnaires.pdf": {
-      "bytes": 116400,
-      "sha256": "19c7d07e7d9799be54dee4328d75b2c4c986c1967b57ad4ae7de6a0817e1df59"
+      "bytes": 116369,
+      "sha256": "930d7c9f9327a574021140ccbfe40bef72a06c2df658c8d20d1dfeceec1ad98c"
     },
     "2_Exercise_Materials/README.md": {
-      "bytes": 1197,
-      "sha256": "affd87cd30854f2daed2a4c9e126f9889893c4c0310699084b3ba81b95bb301e"
+      "bytes": 1733,
+      "sha256": "8c89f864ceaed82b5b2587bce09bad6a93da7655bd466d2b14ef572a286366ef"
     },
     "2_Exercise_Materials/scoring_tables/fixed-9.json": {
       "bytes": 540861,
@@ -402,25 +394,17 @@
       "bytes": 17032,
       "sha256": "6f22115e3f58e3a0ec3bd7cf6f5dc521bb6186dc846506d5034d3d835cd2a90a"
     },
-    "2_Exercise_Materials/tutorial/Tutorial_Role_Materials.docx": {
-      "bytes": 37979,
-      "sha256": "db830d6094fffbff7a6cfafaf9fc1d7cf45350b4ab5113a644ccff74e0f5bda6"
-    },
-    "2_Exercise_Materials/tutorial/Tutorial_Role_Materials.pdf": {
-      "bytes": 54784,
-      "sha256": "bd8bb9e3aa010e5173b8a91c43cb6ed8d5ea14498c8be1c27ae9fd2f5ebd1ced"
-    },
     "3_Validation_and_Development/Analysis.html": {
-      "bytes": 726625,
-      "sha256": "826a7b5d1e794d814940c9cb41e4e5a01c6c1dab06a80a4a25b1b2c6554c2218"
+      "bytes": 727522,
+      "sha256": "47c1caa0f8ed4fe049e1730d772c6f566fd6ae04c6c9196e73d0e57b9982ff5c"
     },
     "3_Validation_and_Development/Analysis.ipynb": {
-      "bytes": 468224,
-      "sha256": "8de8475be592ffb3f325bb84149e4a121d8ebeeb50c642416a6ebfd0596a4587"
+      "bytes": 469207,
+      "sha256": "79f4ada70b76679eb05f5a3efd2b5f324afda4efba2fe6fede6979505ae589af"
     },
     "3_Validation_and_Development/analysis.py": {
-      "bytes": 12628,
-      "sha256": "6292b67f196e2ebd9b8c3e5f2bb5f41d3398ac178d329bbde9209b2f75434207"
+      "bytes": 12635,
+      "sha256": "31446271b82c604fbd420c80f51b4fc4fa4b269d2f596a107be65e0e85244df6"
     },
     "3_Validation_and_Development/data/api_usage.csv": {
       "bytes": 548545,
@@ -511,12 +495,12 @@
       "sha256": "38e56413e600803d4d0d0a220f7cb913915cfc5d5da0317c152d194bd0ad195f"
     },
     "3_Validation_and_Development/Data_Dictionary.md": {
-      "bytes": 2394,
-      "sha256": "f27840b87af54d36857e7a65addc24215a4bca042f9738a9107a19e18ac1aef5"
+      "bytes": 2735,
+      "sha256": "34e10a01bdc56e6fcf034b7502085e6c6f2d36c1f12218e6d2d10588dd61b7d9"
     },
     "3_Validation_and_Development/development_records/README.md": {
-      "bytes": 825,
-      "sha256": "3b2dd3a4e4f22601a4dce04cc4a3faff97bb99a16feabea744dbc6cbfcb9528b"
+      "bytes": 894,
+      "sha256": "65c9840096bcb9e49904b63186d4c2e8f0e7861fbff4a0c3e7459be18d421495"
     },
     "3_Validation_and_Development/development_records/results/aggregate_results.json": {
       "bytes": 2910,
@@ -543,8 +527,8 @@
       "sha256": "ca63a1a61a5933f86575ebf86066b47af0f9c53da9a9c69207c16bad2c93da38"
     },
     "3_Validation_and_Development/development_records/validation/README.md": {
-      "bytes": 2212,
-      "sha256": "045e5ff11384b78aceaddd15e8df3f2c2eac06cb6f7eefbbc860c3cf9418ad55"
+      "bytes": 2300,
+      "sha256": "dc6b56509d9e30ab4823bae971399b70825cb4144b8d38bedd2b8347162ec0b9"
     },
     "3_Validation_and_Development/development_records/validation/Reference.txt": {
       "bytes": 1927,
@@ -575,8 +559,8 @@
       "sha256": "9f7d90bc1116c342e4784f3d86493673a215bb01906df67edba0c54ab088cf07"
     },
     "3_Validation_and_Development/Methods.md": {
-      "bytes": 5950,
-      "sha256": "0eae12a58792fd9a353e911648d66a0214ad0588e8efd1fa867a5b77f0036866"
+      "bytes": 6593,
+      "sha256": "ba05642ee80e3dbd76e5dcb072893979345d2f48da900afff82cbb5a6ccbb1d3"
     },
     "3_Validation_and_Development/NOVA_Offer_Validation.xlsx": {
       "bytes": 486262,
@@ -587,12 +571,12 @@
       "sha256": "a0337e4d70c68a6ddbb9199dcc417165f034519ced9d6c410d8c9d63c3cada49"
     },
     "3_Validation_and_Development/Privacy_Review.md": {
-      "bytes": 1240,
-      "sha256": "73f5d6740e6d4952210cd953034f2caaea65928bf5041906975179f7132ca97f"
+      "bytes": 1219,
+      "sha256": "496c1432dbbd5518e3f02bfac18473fc74ebf1439817fed71d8779393cdc447b"
     },
     "3_Validation_and_Development/README.md": {
-      "bytes": 1871,
-      "sha256": "e804a7becb996ce50e177272753dfe16f19fc691e697378d66a21f12411a7197"
+      "bytes": 2527,
+      "sha256": "9dd099b120396fed3534f229d7ee2fcc64aa479086ef48f6635917ab7e9a636e"
     },
     "3_Validation_and_Development/requirements.txt": {
       "bytes": 134,
@@ -619,8 +603,8 @@
       "sha256": "91bc8b1f24e0ee231277cd7e7ded5ded6b2c58333dcfa33683a6bf5913bc2756"
     },
     "3_Validation_and_Development/results/Release_Checks.json": {
-      "bytes": 2257,
-      "sha256": "39f235340ceaa0be4801136c4b894b063736abb51d7e2ee70918af24aee8e318"
+      "bytes": 3080,
+      "sha256": "833815ae866ebd62209966bb7dfc9e18cbcdbe9413653e6cbd4a1eea58f99f14"
     },
     "3_Validation_and_Development/results/Reproduction_Checks.csv": {
       "bytes": 574,
@@ -631,12 +615,12 @@
       "sha256": "7b3e7edb198f69a5628440c24391a6d4beead7f446a560d9a089c865ae7a47d0"
     },
     "Appendix_C_Replication_Guide.txt": {
-      "bytes": 15487,
-      "sha256": "7229a081c9ee09746ba12ba12629d5e35bad725e3abd7a6f2c8a6c9ed15a6dbb"
+      "bytes": 12412,
+      "sha256": "cc6e4d77ecb832b3ed8a96f77255cff32ecea1a74511d6f6be25b18bbbf1aac4"
     },
     "README.md": {
-      "bytes": 2733,
-      "sha256": "56d07bcffde7b44240a28f509c6394f1790fc0e15297d7db5a72ea2f6871bb67"
+      "bytes": 3229,
+      "sha256": "3ba179efe47ed5b02b694b3c7635fc5068a87639c33b56d633b2d5ee9893749d"
     }
   },
   "checks": "3_Validation_and_Development/results/Release_Checks.json"

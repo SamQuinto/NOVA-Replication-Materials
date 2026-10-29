@@ -1,7 +1,7 @@
-"""A2 experiment: explicit exercise rules followed by shared evidence/domain checks.
+"""Apply A2's exercise rules, check the interpretation and calculate scores.
 
-This removes the older second lexical parser. A correctly interpreted word is
-not discarded merely because a regular expression did not anticipate its form.
+The shared checks validate the model's selections without requiring every
+correctly interpreted phrase to match another spelling pattern.
 """
 import copy,importlib.util,re,sys
 import common1225 as c

@@ -1,8 +1,8 @@
-"""Recompute NOVA's published measures from the supplied de-identified rows.
+"""Reproduce NOVA's reported measures from the de-identified pilot data.
 
 No API calls are made. All paths are relative to this file, not to a user's
-OneDrive folder. Review flags are researcher-reviewed classifications, not
-classifications made anew by this notebook.
+OneDrive folder. The notebook uses the supplied scoring-review decisions;
+it does not ask a model to judge those responses again.
 """
 from pathlib import Path
 import json,math,collections,re

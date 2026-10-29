@@ -114,13 +114,15 @@ def main():
  (OUT/'Figure_Content.json').write_text(json.dumps(dict(main=MAIN,tutorial_nodes=nodes,script_numbering='The main labels map to A1-1.py, A1-2.py, A2-1.py and A2-2.py. Tutorial labels map separately to existing functions.'),ensure_ascii=False,indent=2),encoding='utf-8')
  (OUT/'README.md').write_text('''# Architecture figures
 
-`Figure_B1_NOVA_Architectures.svg` compares the latest evaluated job A1 and A2 configurations. `Figure_B2_Tutorial_Path.svg` shows the existing tutorial A2 path separately. SVG text and boxes can be edited in a vector editor. PNG copies are ready to inspect or insert into a manuscript.
+`Figure_B1_NOVA_Architectures` shows how the job-negotiation versions of A1 and A2 process an offer. `Figure_B2_Tutorial_Path` shows A2's separate tutorial steps. Each figure has an image copy for the manuscript and an SVG you can edit in a vector editor.
 
 Suggested caption: **Figure B1. NOVA scorer architecture templates.**
 
-Suggested note: The language model identifies the proposed issues and options; Python scripts apply researcher-defined scores. A1 receives every active issue definition. A2 retrieves possible issues and uses fitted reading rules. The four main numbered script boxes correspond to `A1-1.py`, `A1-2.py`, `A2-1.py` and `A2-2.py`. The optional second tutorial reading is shown separately, not as part of the fitted one-call A2 job scorer.
+The model identifies the proposed issues and options. The Python scripts then calculate the researcher-defined scores. A1 reads every active issue definition; A2 first selects potentially relevant issues and also uses exercise-specific instructions and rules. The numbered boxes refer to the scripts in `code/`. A2's optional second tutorial reading is shown separately because it is not part of the job scorer.
 
-`Architecture_Figure_Editable.docx` is the editable text-and-box master. Run `python tools/sync_figure_from_word.py` after editing it, then `python tools/build_figures_source.py` to update the SVG from `Figure_Content.json`. Rasterizing the SVG is a separate optional image step. `tools/build_word_figure_source.py` can build a fresh editable Word layout from the JSON, but should not be used to overwrite unsynchronized Word edits. The images contain no embedded figure number or caption.
+If you want to change the diagram text in Word, use `Architecture_Figure_Editable.docx`. From the architecture folder, run `python code/tools/sync_figure_from_word.py` to copy those edits into `Figure_Content.json`, then `python code/tools/build_figures_source.py` to update the SVG. Creating a PNG from the SVG is a separate step.
+
+`code/tools/build_word_figure_source.py` can create a new Word layout from the JSON. Save any Word edits back to JSON before using it, so those edits are not overwritten. These figure tools may need extra document or graphics packages; you do not need them to run the NOVA web app. The images have no figure number or caption embedded in them.
 ''',encoding='utf-8')
  print(str(OUT))
 if __name__=='__main__':main()

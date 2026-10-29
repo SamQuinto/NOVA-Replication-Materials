@@ -1,20 +1,28 @@
 # Validation and development
 
-Start with [Analysis.html](Analysis.html) or rerun [Analysis.ipynb](Analysis.ipynb). Neither makes paid API calls.
+This folder lets you inspect the offers from our pilot tests, see how we reviewed NOVA's responses, and reproduce the reported results. Participant information has been de-identified before sharing.
 
-| File or folder | Purpose |
+Start with [the analysis](Analysis.html) to read the results. If you would like to run the calculations yourself, use [the Python notebook](Analysis.ipynb). Neither needs an API key or makes model calls.
+
+| Where to look | What it contains |
 | --- | --- |
-| [NOVA Offer Validation](NOVA_Offer_Validation.xlsx) | 1,225 main inputs, three scorers, reviewed Types A/B flags, formulas and prompts |
-| [NOVA Tutorial Validation](NOVA_Tutorial_Validation.xlsx) | Separate 731-input tutorial evaluation |
-| [data](data/) | Anonymous offers/context, saved interpretations, references, API usage, trials and survey responses |
-| [results](results/) | Recomputed metrics and checks as CSV |
-| [figures](figures/) | Issue frequency and NOVA-only diversity histogram, PNG and SVG |
-| [Methods](Methods.md) | Definitions, populations and statistical methods |
-| [Data dictionary](Data_Dictionary.md) | Fields and links between files |
+| [Main offer validation](NOVA_Offer_Validation.xlsx) | 1,225 inputs, responses from three scorer settings, error reviews, accuracy calculations and prompt text |
+| [Tutorial offer validation](NOVA_Tutorial_Validation.xlsx) | The separate evaluation of 731 tutorial inputs |
+| [Data](data/) | Participant offers and survey responses, recorded scorer responses, review decisions and API usage |
+| [Results](results/) | Tables calculated from the supplied data |
+| [Figures](figures/) | The issue-frequency chart and issue-diversity histogram |
+| [Methods](Methods.md) | How we selected the data and defined each measure |
+| [Data dictionary](Data_Dictionary.md) | What each file and field means, and how to link them |
 
-## Run
+## Inspect the scoring reviews
 
-Use Python 3.11 or newer. From this folder, run `python -m venv .venv`, then activate it (`.venv\Scripts\activate` on Windows; `source .venv/bin/activate` on macOS/Linux).
+Each spreadsheet includes the offer, NOVA's response and our Type A and Type B error judgments. The same offer ID appears once for each scorer, so you can compare their responses. The Accuracy sheet calculates directly from the Y/N judgments. If you edit one, the accuracy updates too.
+
+Your spreadsheet program may limit how much text fits in a row. Selecting a long cell lets you read the complete offer or response.
+
+## Run the analysis
+
+Use Python 3.11 or later. From this folder, run `python -m venv .venv` and activate it: `.venv\Scripts\activate` on Windows, or `source .venv/bin/activate` on macOS/Linux. Then run:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -22,8 +30,6 @@ python analysis.py
 jupyter nbconvert --to notebook --execute Analysis.ipynb --output Analysis_executed.ipynb
 ```
 
-The supplied notebook already contains executed outputs. Open `Analysis.html` to read or print it. Analysis packages are not required by the scorer demonstration.
+The notebook already includes the results from a completed run. You can read or print `Analysis.html` without installing anything. These analysis packages are not needed to try the downloadable web app.
 
-The spreadsheets preserve reviewed reasons and flags. The same IDs repeat across scorer blocks. Accuracy formulas read the Y/N flags. Long cells retain complete text even where Excel's maximum row height requires selecting a cell to read everything.
-
-Feedback influenced later scorer instructions and reference judgments. Do not describe the full collection as an untouched, blinded holdout. Recomputing saved classifications is deterministic; repeating paid model calls need not return identical responses.
+Feedback from earlier tests helped us improve both the scorer and the review decisions. The full collection should therefore not be treated as an untouched test set. The supplied files reproduce the recorded results; asking a model to score the offers again may produce somewhat different responses.

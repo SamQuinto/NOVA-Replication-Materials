@@ -1,4 +1,4 @@
-"""Locate the packaged engines without depending on a parent folder name."""
+"""Find the included scorers even if their outer folder has been moved or renamed."""
 from pathlib import Path
 import io, json, os, sys, types, urllib.request, urllib.error
 import common1225 as c

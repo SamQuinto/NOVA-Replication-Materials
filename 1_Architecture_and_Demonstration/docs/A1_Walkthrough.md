@@ -1,6 +1,6 @@
-# A1 component and prompt commentary
+# How Architecture 1 works
 
-Paths in this guide are relative to the architecture folder. The diagram is `figures/Figure_B1_NOVA_Architectures.png`; the editable Word file beside it preserves the researcher's edits.
+This guide follows an offer through Architecture 1 (A1), from the words a negotiator types to the score they see. File paths start from the architecture folder, so you can still follow them if you move that folder elsewhere.
 
 ## Offer data and exercise files
 
@@ -8,13 +8,13 @@ A negotiator enters ordinary text in a free-text box. The application supplies t
 
 The role narrative is text inside `code/frozen/Role_Materials.json`. The full numerical scoring table is `code/frozen/Scoring_Table.json`. The model-facing version, `A1_Scoring_Definitions.json`, includes all active issues and options but omits numerical point-weight fields. Exercise information supplies requirements, defaults and conventions. A response schema defines allowed JSON fields. The general instructions are a separate text file, `code/prompts/A1_Final.txt`.
 
-These are separate sources, not separate paid calls. Python reads their contents; the model does not browse local files or follow their filenames. Stable content can benefit from provider-side prompt caching, but it is still included in the request. The tutorial supplies its own exercise files under `code/frozen/tutorial/` and uses the identical general prompt.
+These files are brought together in one request, rather than sent as separate paid calls. The Python script reads their contents and includes them; the model does not open the files itself. Repeated content can receive a lower price through OpenAI's prompt caching, but the content is still sent. The tutorial uses its own exercise files under `code/frozen/tutorial/` with the same general prompt.
 
 ## Python script A1-1
 
 `code/A1-1.py:prepare_request` combines these sources into one request object. The instruction portion contains the general prompt and named `EXERCISE_INFORMATION`, `SCORING_TABLE` and `ROLE_MATERIALS` blocks. The user portion contains `CURRENT_OFFER` (role and text) and `PREVIOUS_OFFER` (optional text). The response schema is attached separately within the same request. This script neither calls a model nor calculates points.
 
-Configuration choices include the selected exercise and reasoning setting. Low and high reasoning use the same prompt and source layout. The supplied model name is `gpt-6.1-sol`. The response format constrains structure, not truth: a syntactically valid issue can still be semantically wrong.
+You choose the exercise and reasoning setting. Low and high reasoning use the same prompt and exercise information; the example model is `gpt-6.1-sol`. The response format helps keep the returned JSON consistent, but it cannot guarantee that the model understood the offer correctly.
 
 ## Advanced LLM
 
@@ -26,7 +26,7 @@ The interpretation includes issue/option pairs, exact source words and whether a
 
 For the synthetic text “Salary $55,000; personal work-expense budget $10,000; starting date May 1,” a Salary pair selects `55000` and quotes the salary words. Starting Date selects a date representation, not a floating-point amount. A vague detail can produce a question. An idea absent from the supplied table can be retained without points.
 
-This object can remain in memory. Saving a request, interpretation and scored result creates useful audit objects; it does not mean three calls or three mandatory disk files.
+The interpretation can pass directly to the next script without being saved as a file. Saving the request, interpretation and scored result is useful if you want to check what happened later, but it does not require three model calls.
 
 ## Python script A1-2
 
@@ -34,7 +34,7 @@ This object can remain in memory. Saving a request, interpretation and scored re
 
 ## Scored offer JSON
 
-The final object contains interpreted terms, issue-level values, role-specific scores and messages. Complete valid offers can have totals. Incomplete offers can retain partial scored terms without a final total. A valid offer may also retain an unmatched unscored idea. The caller decides what to show, submit or accept; calculating an offer is not agreement by both parties.
+The returned JSON contains the interpreted terms, scores for each role and any messages. A complete, valid offer can have a total. If a required detail is missing, NOVA can still show the terms it understood without giving a final total. An offer can also contain a new idea that is acknowledged without points. The study interface decides what to show or submit; calculating a score does not mean both negotiators have accepted the offer.
 
 ## What each prompt block does
 

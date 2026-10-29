@@ -1,6 +1,6 @@
-# A2 component and code commentary
+# How Architecture 2 works
 
-All paths are relative to the architecture folder. A2 deliberately moves some interpretation work into exercise-specific instructions and Python rules. The current evaluated job path calls `gpt-5.6-luna` once at low reasoning. Older escalating-model functions remain in the historical runtime, but they are not the current job route.
+This guide explains how Architecture 2 (A2) uses exercise-specific instructions and Python rules to help a lower-cost model interpret offers. File paths start from the architecture folder. The evaluated job scorer calls `gpt-5.6-luna` once at low reasoning. Some older code supports escalating to stronger models, but that is not how the current job scorer runs.
 
 ## Offer data and exercise files
 
@@ -16,7 +16,7 @@ Examples of exercise facts include the annual vacation default, weekly remote-wo
 
 `build_request` constrains the interpretation schema's issue names to that shortlist. It places the role, current text, prior text, selected definitions, exercise reading rules and narratives into the user payload. The interpretation prompt is a system message. Together they form one request. Python does not yet calculate points.
 
-Configuration choices are explicit: a low-cost model, low reasoning, retrieved rather than all definitions, exercise-specific instructions and a fixed response schema. Retrieval saves prompt space but can omit an issue the cheaper model would otherwise recognize. The chosen issue list, not just the LLM, therefore affects coverage.
+This setup uses low reasoning and a smaller set of potentially relevant issue definitions, together with exercise-specific instructions and a required response format. Selecting fewer definitions shortens the request, but an issue can be missed at this step before the model sees it. When investigating a missed idea, check which definitions were sent as well as what the model returned.
 
 ## Economical LLM and interpretation JSON
 
@@ -50,7 +50,7 @@ The helpers `put`, `query` and `omit` have distinct roles. `put` replaces a pair
 
 ## Scored offer JSON
 
-The final object has the same display purpose as A1's: interpreted issue/option terms, assigned scores, valid totals, questions and retained unscored ideas. A correction trace makes Python changes inspectable. A scored partial term is not proof that the offer is complete or agreed.
+The final JSON serves the same purpose as A1's: it gives the interface the interpreted terms, scores, any valid total, questions and acknowledged ideas without points. The `custom_rule_trace` field shows which Python corrections were applied. NOVA may understand part of an offer even when the offer is not yet complete or agreed.
 
 ## Separate tutorial path
 

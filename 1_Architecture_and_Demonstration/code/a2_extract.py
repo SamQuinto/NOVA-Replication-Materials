@@ -1,7 +1,7 @@
-"""Readable economical extraction; exercise facts are a separate input.
+"""Select issue definitions and prepare A2's interpretation request.
 
-No answer key or case identifier is passed to a scorer. Unlike the earlier
-keyword restoration, this does not invent questions for every neighboring alias.
+Exercise facts are supplied separately from the prompt. The scorer receives
+the offer and its context, not benchmark labels or expected answers.
 """
 import json,re,copy,difflib
 import common1225 as c

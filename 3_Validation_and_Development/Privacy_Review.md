@@ -1,9 +1,9 @@
-# Privacy review
+# Participant privacy
 
-The researcher authorized publication of de-identified human rows. This release is rebuilt from selected fields. Raw Empirica exports, demographic exports, API keys, provider request IDs, original participant IDs and the identity crosswalk are not included.
+Participant data from the pilot tests have been de-identified before sharing, with the researcher's approval. We have not included names, Prolific IDs, demographic exports, API keys or the list linking anonymous labels back to participants. The original records remain private.
 
-All selected text fields, including interpretations and review reasons, were scanned for key patterns, emails, URLs, Prolific-style IDs, server IDs and local paths. One survey contact email was removed. Flagged text and representative free-text records were inspected. Fresh aliases replace trial/respondent identifiers. Exact event timestamps and demographics are omitted. The research-assistant example is labelled without the assistant's personal name.
+We checked the selected text, including scorer responses and review notes, for contact details, participant and server IDs, API keys and private file paths. One survey response contained a contact email, which we removed. We also inspected the flagged text and a sample of other responses. Shared records use new labels for participants and negotiations, without exact event timestamps. The research assistant's example does not include their name.
 
-Public workbooks are fresh files with only the selected sheets, not original workbooks with hidden sheets left behind. Originals and crosswalks remain private. Release checks cover exported spreadsheets, notebook, HTML, JSON, CSV and code.
+We created new public spreadsheets containing only the intended sheets, rather than sharing original workbooks that might contain hidden information. The release checks also covered the notebook, HTML, JSON, CSV and code files.
 
-Distinctive free text can still carry re-identification risk. De-identification is not a promise of absolute anonymity. Use these records for replication, do not attempt to identify respondents, and report any overlooked identifying detail to the repository owner.
+Distinctive wording can still make free-text responses recognizable. Please use these data for research and replication, do not try to identify participants, and contact the repository owner if you notice a detail that should be removed.

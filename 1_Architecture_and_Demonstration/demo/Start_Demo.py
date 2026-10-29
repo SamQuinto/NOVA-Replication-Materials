@@ -1,4 +1,4 @@
-"""Start a local NOVA scoring demonstration. Python 3.11 or newer; no packages needed."""
+"""Open the downloadable NOVA web app in your browser. Use your own OpenAI key to score offers."""
 from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
 from pathlib import Path
 import argparse,json,os,subprocess,sys,urllib.parse,webbrowser
@@ -15,7 +15,7 @@ def local_environment():
     return env
 
 class Handler(BaseHTTPRequestHandler):
-    def log_message(self,*args):pass # Never log offers, requests, or API keys.
+    def log_message(self,*args):pass # Keep offers and API keys out of server logs.
     def send(self,value,status=200):
         body=json.dumps(value,ensure_ascii=False).encode()
         self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8')
@@ -44,13 +44,13 @@ class Handler(BaseHTTPRequestHandler):
             else:args+=['--case-json',str(CODE/'examples'/(exercise+'_offer.json')),'--interpretation-json',str(CODE/'examples'/(exercise+'_interpretation.json'))]
             completed=subprocess.run(args,cwd=CODE,env=env,capture_output=True,text=True,encoding='utf-8',timeout=240)
             if completed.returncode:
-                # Show a safe summary, not a traceback containing paths or credentials.
+                # Show the useful error message without exposing a private key or path.
                 message=completed.stderr.strip().splitlines()[-1] if completed.stderr.strip() else 'Scoring did not complete.'
                 key=env.get('OPENAI_API_KEY','')
                 if key:message=message.replace(key,'[key removed]')
                 return self.send({'error':message},502)
             result=json.loads(completed.stdout)
-            # Receipts are useful, but provider identifiers are not needed by the UI.
+            # The page can show usage without displaying OpenAI's response identifiers.
             for receipt in result.get('receipts',[]):receipt.pop('response_id',None)
             result['mode']='live' if live else 'saved example'
             if not live:result['example']=json.loads((CODE/'examples'/(exercise+'_offer.json')).read_text(encoding='utf-8'))
@@ -60,7 +60,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--port',type=int,default=8765);parser.add_argument('--no-browser',action='store_true');args=parser.parse_args()
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler);url=f'http://127.0.0.1:{server.server_port}/'
-    print('NOVA demonstration: '+url,flush=True);print('Your key stays on this computer. Live calls incur API charges.',flush=True)
+    print('NOVA demonstration: '+url,flush=True);print('Open this address to try NOVA. Scoring uses your own OpenAI key and incurs API charges.',flush=True)
     if not args.no_browser:webbrowser.open(url)
     try:server.serve_forever()
     except KeyboardInterrupt:pass

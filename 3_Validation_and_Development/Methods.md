@@ -8,13 +8,13 @@
 
 The manuscript's **Type C** means a meaningful idea absent from the table. It is not the historical “type3” option-mapping warning. A/B accuracy is not an exhaustive independent audit of every mapping or score. The frozen 215-issue snapshot has no coffee entry; a later coffee addition mentioned in the manuscript is not reproduced here.
 
-References and labels were produced through model-assisted interpretation and assistant/researcher review, including researcher decisions about reasonable meanings. The reviewed workbook flags are the supplied final labels, not a new independent human-coded gold standard. The notebook recomputes their counts without asking another model to certify them.
+We drafted reference interpretations with model assistance and reviewed them using researcher feedback about what counted as a reasonable interpretation. The Y/N decisions in the workbooks are the final decisions from that process, rather than a new independent human audit. The notebook counts those decisions; it does not ask another model to judge them again.
 
 ### Inputs
 
-The main 1,225 records include 139 October 20 calculator inputs, 791 October 27 calculator inputs, 294 offer-question answers from 98 completed feedback surveys, and one research-assistant example. Seven answers from unfinished feedback surveys are excluded. The main set is not deduplicated; retries remain separate. Wilson intervals are descriptive offer-level intervals and do not account for within-person dependence. Role and previous-offer context can distinguish otherwise identical text.
+The main collection contains 1,225 inputs: 139 calculator attempts from October 20, 791 from October 27, 294 answers to offer questions from 98 completed feedback surveys, and one research-assistant example. We excluded seven answers from unfinished feedback surveys. Retries remain separate rather than being deduplicated. The confidence intervals treat offers as observations and do not adjust for several offers coming from the same person. Identical wording can still have a different meaning when the role or previous-offer context differs.
 
-Tutorial selection starts with 960 inputs (147 October 20; 813 October 27). Removing 47 same-role/context formatting duplicates leaves 913. Separating 165 previously used inputs and 17 non-offer fragments leaves 731 October 27 inputs. Difficult, partial and unusual offers were not excluded just because scoring failed. A2 uses its separate tutorial implementation, not fitted job rules.
+For the tutorial, we started with 960 inputs: 147 from October 20 and 813 from October 27. We removed 47 formatting duplicates with the same role and context, then set aside 165 inputs used earlier and 17 fragments that were not offers. This left 731 October 27 inputs. We did not remove difficult, partial or unusual offers simply because scoring failed. A2 uses its separate tutorial scorer, without the job-specific rules.
 
 ### API costs and scoring time
 
@@ -22,13 +22,13 @@ For each input, sum all recorded calls:
 
 `((input tokens − cached tokens) × input rate + cached tokens × cached rate + output tokens × output rate) / 1,000,000`.
 
-Historical rates in US dollars per million tokens: `gpt-6.1-sol` input 2.00–2.50, cached input 0.10, output 10.00; `gpt-5.6-luna` input 0.20–0.25, cached input 0.02, output 1.20. These retain historical pricing assumptions, not current provider quotations. Average across retained inputs and multiply by 1,000. Estimates use observed prompt caching and attribute the full scored-request cost even if an identical saved response was reused during evaluation. They estimate operating cost, not total historical invoices.
+The calculations use historical rates in US dollars per million tokens: `gpt-6.1-sol` input 2.00–2.50, cached input 0.10, output 10.00; `gpt-5.6-luna` input 0.20–0.25, cached input 0.02, output 1.20. These are the assumptions used for this evaluation, not current price quotes. We average the cost across inputs and multiply by 1,000. The estimates include the observed caching discount. If a saved response was reused during evaluation, we still count the cost of scoring that offer when estimating normal use. The result estimates operating costs, not the total of past invoices.
 
-Time is the sum of API durations per input, averaged across inputs. It excludes browser overhead, human preparation and development. A2 tutorial can use multiple calls. Future rates, caching, availability and service load can change costs and times.
+For scoring time, we add the API-call times for each input and then average across inputs. This excludes time spent in the browser, preparing offers or developing the scorer. A2 can make more than one call for a tutorial offer. Prices, caching and service load can change both costs and timing in future use.
 
 ## Behavior
 
-All assigned trials: 109 dyads, 56 NOVA and 53 Fixed 9. NOVA involved 112 distinct participants. The behavioral file retains 81 valid reciprocal concluded dyads, including explicit quits. The manuscript's completed NOVA cohort excludes early quits: 38 dyads. Behavioral inclusion does not require a survey. Survey comparisons require valid dyads with both questionnaires and both partners' answers to a measure.
+Across the pilots, we assigned 109 pairs: 56 to NOVA and 53 to Fixed 9. The NOVA trials involved 112 distinct participants. Of the recorded negotiations, 81 passed the attendance and scoring checks and showed participation by both parties; some ended with an explicit quit. The completed NOVA sample used in the manuscript excludes early quits and contains 38 pairs. A completed survey is not required to study negotiation behavior. Survey comparisons, however, use valid pairs where both participants completed the questionnaire and answered the measure being compared.
 
 - **Issue diversity:** union of distinct issues across submitted offers in a negotiation. Includes the three required issues. Additional diversity excludes Salary, Personal Budget and Starting Date.
 - **Introduction:** a post-opening offer adds an issue never mentioned earlier in that dyad.
@@ -38,10 +38,10 @@ All assigned trials: 109 dyads, 56 NOVA and 53 Fixed 9. NOVA involved 112 distin
 - **Issue frequency:** number of completed NOVA dyads mentioning each nonrequired issue. Opening and introduced-later segments are mutually exclusive per dyad/issue.
 - **Agreement:** recorded mutual finalization with both scores nonnegative, including zero. Legacy JSON includes contradictory strictly-positive metadata; analysis uses the researcher's nonnegative rule.
 
-Behavior uses submitted offers, not unsent calculator attempts. The notebook recomputes issue sets and events from `choices`. Exact tutorial duration is unavailable; preparation time is a labelled proxy.
+For behavior, we use offers sent to the counterpart, not calculator attempts that were never sent. The notebook works through the recorded `choices` to recalculate which issues appeared and when they changed. We could not reliably determine exact tutorial duration, so preparation time is labelled as an approximation rather than treated as a direct measure.
 
 ## Surveys and uncertainty
 
 Subjective value averages Q1–Q16, reversing Q3 and Q5. Creative engagement averages Q20–Q24 on a five-point frequency scale. Creative confidence averages Q25–Q27 on a seven-point agreement scale. Q18 is perceived realism. Q29 is feeling stuck, not a validated temporary-impasse measure. Section 2 provides full questions and response choices.
 
-Compare dyad means, not two independent observations per pair. Both partners need a usable answer for a measure. Continuous comparisons use Welch's t test and unadjusted p values; means have Student-t 95% intervals and sample SDs. Accuracy and agreement have Wilson 95% intervals. Tests are exploratory. A nonsignificant difference is not equivalence or noninferiority.
+We average the two partners' answers before comparing conditions, so a pair is not treated as two independent observations. Both partners need a usable answer for that measure. Continuous comparisons use Welch's t test with unadjusted p values. We report sample SDs and Student-t 95% confidence intervals for means, and Wilson 95% intervals for accuracy and agreement. These comparisons are exploratory; a nonsignificant difference does not establish equivalence or noninferiority.

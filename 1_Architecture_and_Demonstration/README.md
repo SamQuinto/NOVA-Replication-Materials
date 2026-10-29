@@ -1,46 +1,53 @@
-# Architecture and demonstration
+# Architecture and downloadable web app
 
-This folder contains everything needed to run the supplied job and tutorial scorers. It works independently of the outer repository. Keep its contents together when downloading or moving it.
+This folder contains the Architecture 1 and 2 (A1 and A2) prompts, the scoring code, and a downloadable web app where you can try NOVA in your local browser. To score your own offers, you will need your own OpenAI API key.
 
-| Item | Purpose |
+| Where to look | What it contains |
 | --- | --- |
-| [A1](A1/) | Flexible template using a stronger model and all active issue definitions |
-| [A2](A2/) | Customized template using a lower-cost model and exercise-specific rules |
-| [demo](demo/) | Browser interface served locally by Python |
-| [code](code/) | Numbered scripts, exact prompts, scoring definitions and runtime dependencies |
-| [figures](figures/) | Architecture image and editable Word version |
-| [Architecture handoff](LLM_Architecture_Dump.txt) | Detailed walkthrough, prompt commentary and code references for Appendix B |
+| [Architecture 1 (A1)](A1/) | General-purpose instructions and a stronger model that reads the full scoring table |
+| [Architecture 2 (A2)](A2/) | A lower-cost model supported by instructions and Python rules developed for the exercise |
+| [Web app](demo/) | The app you can download and run in your browser |
+| [Scoring code](code/) | Python scripts, exact prompt text, exercise definitions and the files they need |
+| [Detailed architecture guide](LLM_Architecture_Dump.txt) | A step-by-step explanation of both architectures, including the prompts and the code behind them |
 
-## Demonstration
+## Try it in your browser
 
-Run `python demo/Start_Demo.py` from this folder. **Try a saved example** needs no key or charge. To score your text live, copy `.env.example` to `.env`, enter your own key, then click **Score with API**. The key stays in the local Python process, not the browser. Only live scoring sends offers to the model provider. Do not enter private information in a demonstration offer.
+Download this whole folder and keep its contents together. You will need Python 3.11 or later, but no additional Python packages.
 
-The tutorial displays Organizer and Venue manager. Its historical internal role labels are `Candidate` and `Recruiter` respectively.
+1. Copy `.env.example` to `.env` in this folder and replace the placeholder with your own OpenAI API key. Do not share or upload that file.
+2. Run `python demo/Start_Demo.py` from this folder.
+3. In the browser, choose the exercise, your role and the scorer. Write an offer and click **Score with API**.
 
-## Command line
+The app shows how NOVA interpreted the offer and what it is worth to the selected role. You can edit the offer and score it again without clearing the text. Calls are charged to your OpenAI account. The app reads your key from your computer without showing it in the browser or publishing it with the repository.
 
-Preview a model request without a paid call:
+If you just want to see how the app looks, **Try a saved example** works without a key or charge. This loads an existing interpretation; it does not ask a model to read new text. The app lets you test scoring, but does not pair you with another negotiator or run a complete study.
+
+The tutorial roles are Organizer and Venue manager. The code uses the internal labels `Candidate` and `Recruiter` for them, respectively.
+
+## Use the Python scripts directly
+
+To see the request NOVA would send, without calling a model:
 
 ```sh
 python code/score_offer.py --case-json code/examples/job_offer.json
 ```
 
-Score the synthetic example using its saved interpretation:
+To calculate scores from a saved example interpretation, also without calling a model:
 
 ```sh
 python code/score_offer.py --case-json code/examples/job_offer.json --interpretation-json code/examples/job_interpretation.json
 ```
 
-For live command-line use, set `OPENAI_API_KEY` in your environment, then add `--live`. The `.env` reader belongs to the browser demonstration; command-line scripts read the environment directly. Use `--architecture A2` for A2, `--reasoning high` for A1-high, or `code/score_tutorial_offer.py` for the tutorial.
+For a live call from the command line, set `OPENAI_API_KEY` in your environment and add `--live`. The command-line scripts read that environment variable; the web app also supports the `.env` file. Choose `--architecture A2` for A2 or `--reasoning high` for A1-high. Use `code/score_tutorial_offer.py` for the tutorial.
 
-## Offline checks
+## Check that it works
 
 ```sh
 python -m unittest discover -s code/tests -v
 ```
 
-These checks make no API calls. They test saved requests, finalization, and operation after copying and renaming the code folder. Analysis dependencies are needed only for the notebook in section 3.
+These tests do not call a model. They check request preparation, score calculation, and whether the app still works after its folder is copied and renamed.
 
-The figure describes the job flow. A2's separate tutorial parser can make a second same-model completeness call for a dense input. It does not escalate to a stronger model.
+A2 uses a separate tutorial scorer. A long tutorial offer can receive a second reading by the same model; it is not sent to a stronger model. See the A2 guide for details.
 
-Requests explicitly use `store:false`. See OpenAI's [response-storage documentation](https://developers.openai.com/api/docs/guides/migrate-to-responses) and [structured-output documentation](https://developers.openai.com/api/docs/guides/structured-outputs). A valid JSON response still needs semantic checks; schema conformance alone does not establish interpretation accuracy.
+Requests use `store:false`. OpenAI explains this setting in its [response-storage documentation](https://developers.openai.com/api/docs/guides/migrate-to-responses). Its [structured-output documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explains the JSON format we request. Getting valid JSON does not by itself mean the model understood the offer correctly; NOVA also checks the interpretation before calculating points.

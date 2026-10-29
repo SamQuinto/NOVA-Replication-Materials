@@ -1,14 +1,19 @@
-# Exercise materials
+# Negotiation exercise materials
 
-| Folder | Contents |
+Start with the [negotiation exercise role materials](Negotiation_Exercise_Role_Materials.pdf). This document brings together the main exercise and tutorial, with a short introduction to each.
+
+The **main exercise** is a two-party job negotiation: one person plays the Candidate and the other plays the Recruiter. The document includes the NOVA version, where negotiators write offers in their own words, and the fixed version, where they choose among nine issues.
+
+The **tutorial** is a short venue-hire negotiation. Participants in our pilot studies completed it before the main task to become familiar with NOVA and its scoring calculator.
+
+Both roles are included for researchers to read. When running a study, give each negotiator only their own role information.
+
+| Where to look | What it contains |
 | --- | --- |
-| [job](job/) | Flexible and fixed nine-issue role materials in Word and PDF |
-| [tutorial](tutorial/) | Venue-hire practice exercise in Word and PDF |
-| [scoring_tables](scoring_tables/) | Exact JSON definitions and readable scoring-table workbook |
-| [questionnaires](questionnaires/) | Main-study and role-feedback questions in Word, PDF and YAML; analysis schema in JSON |
+| [Negotiation exercise role materials](Negotiation_Exercise_Role_Materials.pdf) | Main exercise and tutorial in one document |
+| [Scoring tables](scoring_tables/) | Issues, options, scoring rules and each role's scores |
+| [Questionnaires](questionnaires/) | Questions used after the main task and in the earlier feedback survey |
 
-Role documents contain both private roles for research use. During a study, give each negotiator only their assigned role. Do not expose both parties' scoring values in the flexible exercise.
+The scoring-table workbook is convenient to browse. The JSON files also contain the numerical rules used by the scorer, such as how to calculate points between the displayed examples. In `fixed-9.json`, only the nine active issues belong to the fixed negotiation; other definitions are retained in the file for compatibility.
 
-JSON files preserve historical snapshots. `fixed-9.json` retains other definitions internally, but its active table has nine issues and at most five representative options per issue. Continuous domains and interpolation rules are authoritative in JSON; the workbook is a readable index, not a replacement scoring engine.
-
-The analysis schema supplies historical question labels. The deployment YAML also includes interface/payment information. Candidate and recruiter feedback questionnaires differ. Response data are in section 3, not inside the questionnaire files.
+The questionnaire files include question wording, response choices and settings used by the study interface. The participant responses and analysis are in [Validation and development](../3_Validation_and_Development/).

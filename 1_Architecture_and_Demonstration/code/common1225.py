@@ -1,7 +1,7 @@
-"""Portable compatibility layer for the frozen evaluated A2 modules.
+"""Shared file loading and API calls for the included scoring scripts.
 
-The historical module name is retained so the evaluated rule files do not need
-to be rewritten. It does not refer to a public participant dataset.
+The older filename is kept so existing imports continue to work. The number
+in its name does not limit how many offers the scorer can process.
 """
 from pathlib import Path
 import json,os,time,urllib.request,urllib.error
@@ -24,7 +24,8 @@ def api(request,stage):
         try:detail=json.loads(e.read().decode()).get('error',{}).get('message','API request rejected')
         except Exception:detail='API request rejected'
         raise RuntimeError(f'API HTTP {e.code}: {detail}') from None
-    # Do not automatically repeat uncertain or incomplete paid requests.
+    # A failed or incomplete request may still be billed, so leave retries to
+    # the user rather than quietly making another paid call.
     if 'choices' in body:
         if body['choices'][0].get('finish_reason')!='stop':raise RuntimeError('Incomplete response; no automatic retry.')
         text=body['choices'][0]['message'].get('content') or ''

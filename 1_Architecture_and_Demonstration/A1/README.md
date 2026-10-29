@@ -1,17 +1,21 @@
-# A1
+# Architecture 1 (A1)
 
-**Flexible, higher API cost.** The supplied model is `gpt-6.1-sol`, evaluated at low and high reasoning.
+A1 is the more flexible template. It gives a stronger model every active issue and option in the scoring table, together with general instructions for reading an offer. The example model is `gpt-6.1-sol`, which we evaluated at low and high reasoning.
 
-1. [A1-1.py](../code/A1-1.py) combines offer text, role, optional referenced previous offer, role materials, all active issue definitions and the prompt into one request. It makes no API call.
-2. [nova_cli.py](../code/nova_cli.py) sends that request when `--live` is supplied. The model returns interpretation JSON containing issues, options, quotes, questions and unmatched ideas.
-3. [A1-2.py](../code/A1-2.py) checks that interpretation, retrieves researcher-defined values and returns scored JSON.
+Here is how an offer moves through A1:
 
-The LLM interprets; Python calculates points. Model-facing definitions omit numerical point-weight fields. Role narratives can contain illustrative scores, so this is not a claim that the model sees no valuation information.
+1. [Python script A1-1](../code/A1-1.py) brings together the offer, the negotiator's role, the exercise files and the prompt. If the offer refers to an earlier offer, that earlier text can also be included. The script prepares one request but does not call the model itself.
+2. [The caller](../code/nova_cli.py) sends that request when live scoring is requested. The model returns its interpretation as JSON: the issues and options it identified, the words supporting them, and any questions or ideas it could not match.
+3. [Python script A1-2](../code/A1-2.py) checks the interpretation, looks up the researcher's scores and returns the scored offer as JSON.
 
-- [Exact general prompt](../code/prompts/A1_Final.txt)
+The model interprets the offer; the Python script calculates the points. The model receives issue and option definitions without the numerical scoring weights, although role materials can mention example scores.
+
+You can inspect each part here:
+
+- [General-purpose prompt](../code/prompts/A1_Final.txt)
 - [Role materials](../code/frozen/Role_Materials.json)
-- [Model-facing definitions](../code/frozen/A1_Scoring_Definitions.json)
-- [Full scoring table](../code/frozen/Scoring_Table.json)
-- [Component and prompt commentary](../docs/A1_Walkthrough.md)
+- [Issue and option definitions sent to the model](../code/frozen/A1_Scoring_Definitions.json)
+- [Full scoring table used to calculate points](../code/frozen/Scoring_Table.json)
+- [Explanation of each step and prompt section](../docs/A1_Walkthrough.md)
 
-The tutorial uses the same general prompt. Exercise content is supplied separately as data. This is an evaluated template, not a guarantee of perfect transfer to every new exercise without validation.
+The main exercise and tutorial use the same general prompt with different exercise files. To use A1 for a new exercise, prepare those files and test a varied set of offers before collecting data.

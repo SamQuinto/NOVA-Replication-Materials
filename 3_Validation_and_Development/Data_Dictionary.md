@@ -1,6 +1,6 @@
 # Data dictionary
 
-Paths below are inside `data/`. Main and tutorial IDs are separate namespaces; always include the dataset when joining usage. IDs repeat across scorer blocks.
+The files below are in `data/`. Main-exercise and tutorial offer IDs are numbered separately, and each ID repeats for the different scorers. When linking a response to its API usage, use the exercise, offer ID and scorer together.
 
 | File | One record | Main fields |
 | --- | --- | --- |
@@ -16,6 +16,6 @@ Paths below are inside `data/`. Main and tutorial IDs are separate namespaces; a
 | `post_negotiation_responses.json` / `.csv` | One respondent in a valid both-survey dyad | trial ID, pilot, condition, role, raw answers |
 | `feedback_survey_responses.json` / `.csv` | One completed feedback questionnaire | anonymous respondent ID, assigned role, raw answers including three offer questions |
 
-Nested lists/dictionaries are native JSON and encoded as JSON text in CSV. Human text starting with a spreadsheet formula character is escaped in CSV for safety; JSON retains the de-identified text. The notebook reads JSON for nested data and CSV for reviewed flags.
+JSON keeps lists and related fields together in their original structure. CSV stores those fields as JSON text within a cell. We also protect CSV cells that start with a spreadsheet formula character so that a participant's text is not accidentally run as a formula. The JSON version retains the de-identified wording. The notebook uses JSON for these structured records and CSV for the scoring judgments.
 
-Trial and respondent IDs are fresh aliases, not Prolific hashes. Feedback respondents are not automatically linked to live participants. Input text, prior context, model interpretation and final scored result are distinct objects. An evaluated calculator input need not have been sent; use `sent_offers` for behavior.
+Trial and respondent labels were created for sharing these data; they are not Prolific IDs or hashes of those IDs. The earlier feedback-survey respondents are not automatically linked to the live-study participants. Keep the offer text, previous-offer context, model interpretation and final score distinct when following a record. For negotiation behavior, use `sent_offers`: a calculator attempt was not necessarily sent to the other negotiator.

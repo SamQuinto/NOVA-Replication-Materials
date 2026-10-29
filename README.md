@@ -1,34 +1,36 @@
 # NOVA replication materials
 
-NOVA interprets offers written in ordinary language and assigns researcher-defined scores. This package provides the two scorer templates, the exercises, and de-identified records used to evaluate them.
+Here you can try NOVA, read the negotiation exercises, and explore the data and tests behind the paper. NOVA reads offers written in ordinary language and scores them using a scoring table prepared by the researcher.
 
-| Folder | Contents |
+| Folder | What you will find |
 | --- | --- |
-| [1 Architecture and demonstration](1_Architecture_and_Demonstration/) | A1 and A2, exact prompts, Python scripts, editable architecture figure, local demonstration |
-| [2 Exercise materials](2_Exercise_Materials/) | Job and tutorial role materials in Word and PDF, scoring tables, study questionnaires |
-| [3 Validation and development](3_Validation_and_Development/) | Reviewed offer workbooks, anonymous human data, executed analysis notebook and HTML, results and figures |
+| [1 Architecture and web app](1_Architecture_and_Demonstration/) | Architecture 1 and 2 (A1 and A2) prompts, scoring code, and a downloadable web app where you can try NOVA in your local browser using your own OpenAI key |
+| [2 Exercise materials](2_Exercise_Materials/) | Negotiation exercise role materials for the main task and tutorial, scoring tables, and study questionnaires |
+| [3 Validation and development](3_Validation_and_Development/) | Offers and survey responses from the pilot tests, scoring reviews, and the code and results for the analyses reported in the paper |
 
 ## Try NOVA
 
-Download the repository, or the complete `1_Architecture_and_Demonstration` folder. With Python 3.11 or later:
+Download this repository, or just the complete `1_Architecture_and_Demonstration` folder. To score your own offers, you will need Python 3.11 or later and your own OpenAI API key.
+
+1. In that folder, copy `.env.example` to a file called `.env` and replace the placeholder with your key. Keep this file private.
+2. From the same folder, run:
 
 ```sh
-cd 1_Architecture_and_Demonstration
 python demo/Start_Demo.py
 ```
 
-The saved example is free and needs no API key. To score your own offers, copy `.env.example` to `.env` in that folder and replace the placeholder with your own key. Never upload `.env`. The demonstration needs no additional Python packages.
+The web app will open in your browser. Write an offer, choose a scorer, and click **Score with API**. Calls are charged to your OpenAI account. You can also look at a saved example without a key or charge. The app does not need any additional Python packages.
 
-## Reproduce the results
+## Explore the materials and results
 
-Open [the executed analysis](3_Validation_and_Development/Analysis.html) or [the notebook](3_Validation_and_Development/Analysis.ipynb). Recomputing the results makes **no API calls**. Workbook accuracy sheets also calculate directly from the reviewed Y/N flags.
+The [negotiation exercise role materials](2_Exercise_Materials/Negotiation_Exercise_Role_Materials.pdf) bring the main exercise and tutorial together in one document. The tutorial is the short negotiation participants completed before the main task in our pilot studies to become familiar with NOVA.
 
-The main evaluation contains 1,225 inputs; the separate tutorial evaluation contains 731. These include calculator retries and incomplete inputs, not exclusively proposals sent to a counterpart. [Methods](3_Validation_and_Development/Methods.md) explains the populations and definitions.
+Open [the analysis](3_Validation_and_Development/Analysis.html) to read the results, or use [the notebook](3_Validation_and_Development/Analysis.ipynb) to reproduce them. Rerunning these calculations does not make API calls. The validation spreadsheets also let you inspect individual offers and see how accuracy was calculated.
 
-## Privacy and versions
+The main evaluation includes 1,225 offer inputs, and the separate tutorial evaluation includes 731. These include retries and incomplete calculator inputs, not just offers sent to another negotiator. [Methods](3_Validation_and_Development/Methods.md) explains how we selected the data and calculated each measure.
 
-Human rows are published with researcher authorization after a privacy review. Direct identifiers, contact details, exact timestamps and private paths are excluded or redacted. Originals and the identity crosswalk remain private. See the [privacy review](3_Validation_and_Development/Privacy_Review.md).
+## Participant privacy
 
-This release preserves the evaluated prompts, scoring code and historical exercise snapshots. It does not retune the scorers or change the separate Empirica deployment repository. New model responses can differ from saved responses. Primary accuracy concerns Types A and B, not an exhaustive independent audit of every numerical mapping.
+Participant data from the pilot tests have been de-identified before sharing. Names, Prolific IDs and contact details are not included, and the original records remain private. The [privacy note](3_Validation_and_Development/Privacy_Review.md) explains what we removed and the limits of sharing free-text responses.
 
-For appendix writers: [Appendix C replication guide](Appendix_C_Replication_Guide.txt) explains navigation and reproduction; [the architecture handoff](1_Architecture_and_Demonstration/LLM_Architecture_Dump.txt) gives the detailed Appendix B walkthrough, prompt commentary and code references.
+For more detail, the [replication guide](Appendix_C_Replication_Guide.txt) explains where to find each file and how to use it. The [architecture guide](1_Architecture_and_Demonstration/LLM_Architecture_Dump.txt) explains the prompts and scoring code step by step. The prompts and scoring behavior used in the evaluation have not been changed by this documentation update.

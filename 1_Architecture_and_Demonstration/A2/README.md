@@ -1,18 +1,22 @@
-# A2
+# Architecture 2 (A2)
 
-**Customized, lower API cost.** The supplied job model is `gpt-5.6-luna` at low reasoning.
+A2 reduces the cost of scoring by combining a less expensive model with instructions and Python rules developed for a particular exercise. The job-negotiation example uses `gpt-5.6-luna` at low reasoning.
 
-1. [A2-1.py](../code/A2-1.py) selects relevant issue definitions and prepares a request with the offer, role, prompt, role materials and exercise reading rules.
-2. The LLM returns interpretation JSON. The current job path makes one model call, not a Nano-to-Luna escalation.
-3. [A2-2.py](../code/A2-2.py) applies exercise-specific corrections and shared checks, looks up scores and returns scored JSON.
+Here is how an offer moves through A2:
+
+1. [Python script A2-1](../code/A2-1.py) selects potentially relevant issues from the scoring table. It combines their definitions with the offer, role materials, prompt and exercise-specific instructions in one request.
+2. The model reads the request and returns its interpretation as JSON. The current job scorer makes one model call; it does not move through a sequence of stronger models.
+3. [Python script A2-2](../code/A2-2.py) applies the custom rules, checks the interpretation, looks up scores and returns the scored offer as JSON.
+
+You can inspect each part here:
 
 - [Interpretation prompt](../code/prompts/A2_Interpretation.txt)
-- [Exercise reading rules](../code/frozen/A2_Reading_Rules.json)
-- [Issue selection and request construction](../code/a2_extract.py)
+- [Instructions specific to the job exercise](../code/frozen/A2_Reading_Rules.json)
+- [Code that selects issues and prepares the request](../code/a2_extract.py)
 - [Custom Python rules](../code/a2_custom_rules.py)
-- [Finalization](../code/a2_finalize.py)
-- [Detailed rule and code commentary](../docs/A2_Walkthrough.md)
+- [Code that checks and scores the interpretation](../code/a2_finalize.py)
+- [Explanation of the rules, with examples](../docs/A2_Walkthrough.md)
 
-Rules read proposal content and exercise definitions, never benchmark IDs or expected answers. Changing rules requires retesting affected cases and a regression sample.
+The rules read the offer and exercise definitions, not benchmark IDs or expected answers. When adapting a rule, test the problem it is meant to solve and other offers that might be affected.
 
-A2's tutorial path is retained as evaluated. It does not use fitted job rules and performs less well in the tutorial evaluation. This release does not apply an untested tutorial repair.
+The tutorial uses a separate A2 scorer, without the job-specific rules. It performed less well in the tutorial evaluation. We include that result so you can see where further adaptation is needed.
