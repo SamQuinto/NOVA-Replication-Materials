@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*openai_key.txt
+*anthropic_key.txt
+*.sqlite
+*.sqlite-*
+local-output/
+private/
+node_modules/
+Cases.json
+Records.json
+Reference_Key.json
+Checks_and_Responses.json
+*.xlsx
+qa/

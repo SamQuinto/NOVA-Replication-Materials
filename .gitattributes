@@ -1,0 +1,2 @@
+# Preserve the exact frozen file bytes used by RELEASE_MANIFEST.json.
+* -text

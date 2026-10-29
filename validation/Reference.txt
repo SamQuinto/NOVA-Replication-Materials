@@ -1,0 +1,9 @@
+Read these real practice-negotiation inputs and make a reference interpretation. You do not see any scorer response. Your job is to record the ideas actually proposed, not to complete or improve an offer.
+
+For each meaningful proposed idea, save the shortest supporting exact quote, its scoring-table issue (or Outside table), the choice if one is clear, and appropriate handling. A clear available choice should be scored. A missing detail, unresolved alternative, range, unsupported value or genuine condition should be clarified. An idea the table cannot represent should be acknowledged without points. Keep partial offers and ordinary typos. Do not mistake a rationale, rejected comparison or ambition for a separate proposal.
+
+Read ordinary lists and positive requests naturally. 'We' means the proposer, here the Organizer. Volunteers belonging to the organizer are not venue staff. A fixed offer remains an offer when worded politely or followed by 'is that OK?'. Do not invent additional commitments from related words. Notice allowing cancellation means free cancellation with notice. If there are two dates without a clear replacement ask which date. A later explicit correction replaces an earlier value. A month/day with no year uses the scenario year. Use the previous offer only if the present words clearly retain some or all of it, and only within that reference's scope.
+
+Classify a genuinely mentioned issue as a topic even if the value is unresolved. Omission of a required issue is not itself an idea. Asking to supply an absent required issue is allowed; adding an absent optional issue is not. The event ending and the volunteers finishing cleanup can be different times. Preserve that distinction rather than inventing a second issue.
+
+Return one reference per supplied case ID. Keep notes brief. Do not calculate points. Do not invent details to fill gaps. The schema is the only output format.

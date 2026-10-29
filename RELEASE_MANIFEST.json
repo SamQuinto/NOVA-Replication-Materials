@@ -1,0 +1,435 @@
+{
+  "version": "2026-10-29",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "f3b446fdc730473b626155333c2af21aa9b222a5de2f9abe5883636bd2a782d9",
+      "bytes": 78
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4fa4ca532dbed012850c9937f090468061f20c3de6c4ed8574c54a2acd12ce64",
+      "bytes": 203
+    },
+    {
+      "path": "a2_custom_rules.py",
+      "sha256": "01980d04194fb4d6fd04ff7fb8268cf75ecad745bcf2aab00d993421c6ca2d7e",
+      "bytes": 31141
+    },
+    {
+      "path": "a2_extract.py",
+      "sha256": "c1bea6e5782e3b68411c87477aac77cdebf671122f67cc1726757497416e5d68",
+      "bytes": 2454
+    },
+    {
+      "path": "a2_finalize.py",
+      "sha256": "938ce026a8f547ff08bcf63530a1c33414e1ffec1caa08a649efd5397f7ffff9",
+      "bytes": 1927
+    },
+    {
+      "path": "common1225.py",
+      "sha256": "92a336470c612a21b6a441b20f20cba846be655d5277614a3ebeab0edca1f638",
+      "bytes": 2556
+    },
+    {
+      "path": "nova_cli.py",
+      "sha256": "c545436708036e8f885f3e7a8a1afe712ecacc8e68506da2ff66052b6a44c429",
+      "bytes": 6308
+    },
+    {
+      "path": "openai_key_example.txt",
+      "sha256": "e74cd8a9941708c0f7e9f2ed41054dc0399dc2be1bbedf53ab2e33438a146d79",
+      "bytes": 166
+    },
+    {
+      "path": "README.md",
+      "sha256": "67e3b1469db3942d9b5bba72834987b5b2cbbe84f9ab6ba15ed84c5589f06f03",
+      "bytes": 5849
+    },
+    {
+      "path": "score_offer.py",
+      "sha256": "ff6bdc413a4fdc277bcbcd0ec0e0dd41678568a54c5093170d8148434fd4a835",
+      "bytes": 140
+    },
+    {
+      "path": "score_tutorial_offer.py",
+      "sha256": "f0b8263ef1b9348482893160aaef2be4d90ea17621256817d2a27b2a1511049e",
+      "bytes": 167
+    },
+    {
+      "path": "docs/Appendix_B_Writer_Handbook.md",
+      "sha256": "c5855173f4536b6c91cffcf21ada8fd12a214925c02cdb0804870f22761647b6",
+      "bytes": 28660
+    },
+    {
+      "path": "docs/Exact_Prompts.md",
+      "sha256": "42e5129a02b44d46f41a379a4c94e1c7e7ebcc3ea9048a9264f99bd0b2632b81",
+      "bytes": 40668
+    },
+    {
+      "path": "docs/File_Map.md",
+      "sha256": "53cdee315cad572c21aba12c68d5030b49167560de16f0251e058d19843adddb",
+      "bytes": 3617
+    },
+    {
+      "path": "docs/Replication_Notes.md",
+      "sha256": "d576239dff941a4f7a5d7517c90a50c390e60f257672dbede59eaa7927655b64",
+      "bytes": 2219
+    },
+    {
+      "path": "docs/Validation_Protocol.md",
+      "sha256": "ba8a48269b2ae1d7eb8c09f82feb03b572c81c1f675fd8ce6b7fd10a97adff94",
+      "bytes": 6652
+    },
+    {
+      "path": "examples/A1_Job_Request.json",
+      "sha256": "1fd17ad2adbb4ffdb0e8a1dd49490d8c8398f88e62475ebcc4fbf6b18e1dc2b8",
+      "bytes": 165320
+    },
+    {
+      "path": "examples/A1_Tutorial_Request.json",
+      "sha256": "9f4c3540276b9739664423d5435bada52772668685b9deec8535c1f6cb2ddd16",
+      "bytes": 13910
+    },
+    {
+      "path": "examples/A2_Job_Request.json",
+      "sha256": "fc17e8a4cafaf682c62611836e7960a2fa718ffc6b9166af0e82d5f9e7e483e6",
+      "bytes": 51989
+    },
+    {
+      "path": "examples/A2_Tutorial_Request.json",
+      "sha256": "5ac9c00714c7951d811db070f71a31239fb5c329f1f0d1710080c248126227b6",
+      "bytes": 17720
+    },
+    {
+      "path": "examples/job_interpretation.json",
+      "sha256": "1156c0e4c90a3acf90dad3fc98b40e7ac7d281e7282fbdeb6e6058de36f54eb8",
+      "bytes": 543
+    },
+    {
+      "path": "examples/job_offer.json",
+      "sha256": "73a712efb50f624d085dfa3909ec58c9b8c2cbf37ba367769daf7c58ac835afe",
+      "bytes": 139
+    },
+    {
+      "path": "examples/tutorial_interpretation.json",
+      "sha256": "004b9c098f0b7128fda8bec0397b76261ed9599809e7a4e44d8c420622da9a18",
+      "bytes": 705
+    },
+    {
+      "path": "examples/tutorial_offer.json",
+      "sha256": "6d047810ea85201dca0fbcf044b89a617cce0754b06a6ed259da8006a585f717",
+      "bytes": 162
+    },
+    {
+      "path": "figures/Architecture_Figure_Editable.docx",
+      "sha256": "d472016a8071db43cdec891a5641d613629520495706eda70737217016bc18d8",
+      "bytes": 38088
+    },
+    {
+      "path": "figures/Figure_2_Current_Architectures.png",
+      "sha256": "fac6b5ffbf997f10daffbadfa803958e3aa1d14e5b5aeb1ac2c2237e26daa75e",
+      "bytes": 247660
+    },
+    {
+      "path": "figures/Figure_2_Current_Architectures.svg",
+      "sha256": "911621e821705c5b682aedd42f17bf9373df337b089f012c3597b5c80c1c0275",
+      "bytes": 11135
+    },
+    {
+      "path": "figures/Figure_B2_Tutorial_Path.png",
+      "sha256": "2c66def60e4770a06db7bb71cad5cd140d0fefe94733a937c6be3c58b2e69a02",
+      "bytes": 182549
+    },
+    {
+      "path": "figures/Figure_B2_Tutorial_Path.svg",
+      "sha256": "d3fb6272070bd647b5c431b087c9ed90595cd5d35d13fb6c88a9c6a75c1e31b4",
+      "bytes": 6076
+    },
+    {
+      "path": "figures/Figure_Content.json",
+      "sha256": "34cb4e565d7ef57f88d7c799342e19a6ee7dae265966abb8d54fbfca5205b6e3",
+      "bytes": 4768
+    },
+    {
+      "path": "figures/README.md",
+      "sha256": "684417f7736e59f0dc9b30625a8c0110c50b666b9acaffb4df7740c71591aae8",
+      "bytes": 1199
+    },
+    {
+      "path": "frozen/A1_Exercise.json",
+      "sha256": "987e46e514be603f09b3de61b731ed95ae7c42fd90a28d9e2a7be401d48d271f",
+      "bytes": 284
+    },
+    {
+      "path": "frozen/A1_Scoring_Definitions.json",
+      "sha256": "43246fa9587e8aec7f81953e1c223241b9729818965a02b2205ff5caabdf4127",
+      "bytes": 146066
+    },
+    {
+      "path": "frozen/A2_Reading_Rules.json",
+      "sha256": "139489ed050ade2cd441d4d3685a3f49208c72b76f2df348cf6a37fa1c5dca67",
+      "bytes": 4500
+    },
+    {
+      "path": "frozen/Role_Materials.json",
+      "sha256": "21f99d6a82b26f1da35a19bc6c5deb2827b0e5892879c1ad7f515853dc8f17c1",
+      "bytes": 9522
+    },
+    {
+      "path": "frozen/Scoring_Table.json",
+      "sha256": "2c676c621d76a57c811c3461f3b71b86600ef4f0b2e14d6ca3836ca341c895a1",
+      "bytes": 570079
+    },
+    {
+      "path": "frozen/SOURCE_FIRST_FORMAT.json",
+      "sha256": "0c81f14f48f85826ff0435aaf46958e10b319a16fc73a5af4b3e408acd411441",
+      "bytes": 22501
+    },
+    {
+      "path": "prompts/A1_Final.txt",
+      "sha256": "d22235f40bca658376df75aed44dad69670772b3ee88f4dbb9124c06ae3f3abf",
+      "bytes": 3182
+    },
+    {
+      "path": "prompts/A2_Interpretation.txt",
+      "sha256": "299770266d1e349b4c55f49b04d5f75b1ab6611b2544f7ecf781fcaccc21bff9",
+      "bytes": 1831
+    },
+    {
+      "path": "prompts/A2_Tutorial_Completeness.txt",
+      "sha256": "aa39b653d13e0f2774df06430a52afd446eb5dc5c62be4311973cd6e3da9592a",
+      "bytes": 10323
+    },
+    {
+      "path": "prompts/A2_Tutorial_Standard.txt",
+      "sha256": "06ec73e0f717291d45fb7d2f899e50f3764d6b159d5e7d4ce3ae0ac1210bb8f6",
+      "bytes": 10120
+    },
+    {
+      "path": "results/aggregate_results.json",
+      "sha256": "375dfa359697767d72738fec6e926d3a465209a4162ab5cb34d5f7eedd1197e3",
+      "bytes": 2910
+    },
+    {
+      "path": "results/evaluation_provenance.json",
+      "sha256": "a75612808f13610ed29a0bfb044e8de39f1fd517984eb59631b48075f8b3a28a",
+      "bytes": 4857
+    },
+    {
+      "path": "results/packaging_checks.json",
+      "sha256": "c22d4817cd5f0b8bf2e4780d1e3af966319dd2bd0c30dc0a95506bc66fadda76",
+      "bytes": 890
+    },
+    {
+      "path": "tests/test_replication.py",
+      "sha256": "5f7f08a9300b1d3a2beee8f4b5617d7b985990844fcb11f1a20a99605510c2d2",
+      "bytes": 3625
+    },
+    {
+      "path": "tools/build_figures_source.py",
+      "sha256": "e5e7996f8e7bf97c9b53e22e4427281cc7f0f5081c2df07446d0235c3db570da",
+      "bytes": 7175
+    },
+    {
+      "path": "tools/build_validation_request.py",
+      "sha256": "587b97dfa265afebe41360b4f5cdb468cc7d960c07706c4cb02ea3334c839ee6",
+      "bytes": 2386
+    },
+    {
+      "path": "tools/build_word_figure_source.py",
+      "sha256": "e3ed3b1f0645c9a579fc466db3c4f9d5ef54ceb65fd40c7f76cfdab7819ae7da",
+      "bytes": 3656
+    },
+    {
+      "path": "tools/recompute_accuracy.py",
+      "sha256": "bfe400e12c0290d79495aa05870ff01bc5368659aa460f70ab099a65e5d9ab25",
+      "bytes": 1000
+    },
+    {
+      "path": "validation/Checklist_Format.json",
+      "sha256": "e33ae0e0b5a2330d0a836bc78b8b4c8a5029ec3ba58ed575000fe537bbcb5764",
+      "bytes": 951
+    },
+    {
+      "path": "validation/Checklist_Review.txt",
+      "sha256": "23290f26c894e12d09f738c679fab3b86ac3ff91972037458b1aa4b2e5f86e87",
+      "bytes": 3964
+    },
+    {
+      "path": "validation/README.md",
+      "sha256": "df39d2c137ca659ddb8832d4acc7eb1f6f7b1ba92b98c92a8270f69f4819ffe1",
+      "bytes": 2228
+    },
+    {
+      "path": "validation/Reference.txt",
+      "sha256": "d64f3ab5d396d99aafc3cfbd07ba50a4a37e4b2c7e94edc48e09f936270f2fa7",
+      "bytes": 1927
+    },
+    {
+      "path": "validation/Reference_Correction.txt",
+      "sha256": "755949d675ee9958f5d06ff3f1415f6e1a149341c076444a3f2a47e5d21c0bf0",
+      "bytes": 3474
+    },
+    {
+      "path": "validation/Reference_Format.json",
+      "sha256": "c2900b0ef88b56ae0b79ffa086745a9c198564c772f0d8f1e89812a09fc1bd6c",
+      "bytes": 1957
+    },
+    {
+      "path": "frozen/tutorial/A1_Exercise.json",
+      "sha256": "6433d38f4d14a822a2167340b90ed6e4bb58d1b290bfb1fc25712ab6e1184788",
+      "bytes": 295
+    },
+    {
+      "path": "frozen/tutorial/A1_Scoring_Definitions.json",
+      "sha256": "fd2041a1249a06ec341f80ba6f7b6e089936e8b8629b4664bccd1c9d406552fc",
+      "bytes": 4194
+    },
+    {
+      "path": "frozen/tutorial/OUTPUT_FORMAT.json",
+      "sha256": "e5867a5cc0235b4ae0be026425f3b801c2c7acca8bbd361d186b2be7cff99642",
+      "bytes": 3797
+    },
+    {
+      "path": "frozen/tutorial/Role_Materials.json",
+      "sha256": "23ce9ab19bc9e48defb017ed12b786fdf6e29af4a584ef996ba903212f8dfaf3",
+      "bytes": 1436
+    },
+    {
+      "path": "frozen/tutorial/Scoring_Table.json",
+      "sha256": "6f22115e3f58e3a0ec3bd7cf6f5dc521bb6186dc846506d5034d3d835cd2a90a",
+      "bytes": 17032
+    },
+    {
+      "path": "runtime/app/a1/model_settings.json",
+      "sha256": "3132ff74274eeed4ce4068ecaea72acb6438da04c8ad7228942103c55d07e494",
+      "bytes": 347
+    },
+    {
+      "path": "runtime/app/a1/scoring_table.json",
+      "sha256": "4e057df77841e2a141e5779db07666c934ed6de17a0e2f760d3222b04b0789b8",
+      "bytes": 570081
+    },
+    {
+      "path": "runtime/app/backend/api_budget.py",
+      "sha256": "1ed17810240d8cf9f8b8f64d6370116e2f4815c3926951737ee39349bf8f998d",
+      "bytes": 7567
+    },
+    {
+      "path": "runtime/app/backend/job_offer_refinements.py",
+      "sha256": "ff5ea68f94b8dcd3aa18269af0666e1dd682ce4ab54ce54b2766bff3358eec8d",
+      "bytes": 9935
+    },
+    {
+      "path": "runtime/app/backend/offer_engine.py",
+      "sha256": "1e7787360d15a34b8a9eac18d277d5d9d68adea4fbba34bcf77fed297a61850c",
+      "bytes": 303900
+    },
+    {
+      "path": "runtime/app/backend/scenario_rules.py",
+      "sha256": "99f7fa32c657a0b305e41def60d6813d869227f95e3f277b240e4dcf8c998691",
+      "bytes": 5119
+    },
+    {
+      "path": "runtime/app/backend/scorer_routing.py",
+      "sha256": "0aa2abcbb7d23f2c691b23e5deb088caa45e9e7d7bd6dc336fa8cc7e82018e3d",
+      "bytes": 2790
+    },
+    {
+      "path": "runtime/app/backend/score_offer_a2.py",
+      "sha256": "0f5e18e75469d169aab52a0d10fbb09eb3d790c6227a7a65385be642f07cea9e",
+      "bytes": 5290
+    },
+    {
+      "path": "runtime/app/backend/stream.py",
+      "sha256": "f84035ce7201d8585198706ac68cbeb1983e99bf17f195d3b0eca732b1cfe4cc",
+      "bytes": 57527
+    },
+    {
+      "path": "runtime/app/backend/structured_offer.py",
+      "sha256": "e3fbac05ba403e1089da1e096d1cd341cf31220b1113331d5d64f6d1d91e34b9",
+      "bytes": 4839
+    },
+    {
+      "path": "runtime/app/config/fixed-15.json",
+      "sha256": "84aaa8e0f45b911117d483778b859e20f87d7e12bb2fd5907a83f22fa056ed3a",
+      "bytes": 84075
+    },
+    {
+      "path": "runtime/app/config/fixed-9.json",
+      "sha256": "431880d306a495d26d1e153b2728ce36c8b4ae9955fee11187ca9c175f0cca83",
+      "bytes": 540041
+    },
+    {
+      "path": "runtime/app/config/issue-phrase-registry.json",
+      "sha256": "e208347e62b3ab349f9d8b0872e3130bb9414fb122843b1cabc28d1292b640a5",
+      "bytes": 195401
+    },
+    {
+      "path": "runtime/app/config/large-200.json",
+      "sha256": "8b6aeffd82045fc141a3001cf6e866fd73677367d857b686d8f73458b1c36746",
+      "bytes": 501129
+    },
+    {
+      "path": "runtime/app/config/large-215.json",
+      "sha256": "c8138292e612212a01bd659c17bab7be7ae0ecc6c05d123bd386f5088a5493c1",
+      "bytes": 569666
+    },
+    {
+      "path": "runtime/app/config/small-15.json",
+      "sha256": "9a55a6a0d7c87915832921cd28be22216914d01f372540a7d3905f54ad5659eb",
+      "bytes": 66925
+    },
+    {
+      "path": "runtime/app/config/tutorial.json",
+      "sha256": "346e6a1f0c7ee1f4bf10dea4ad6a14be701c160703d33495041bd693dc085102",
+      "bytes": 17034
+    },
+    {
+      "path": "runtime/app/a1/backend/api_budget.py",
+      "sha256": "b30d0ff2ef8f4563fa9f9d2c369148a2cdecb7ac0d4f1baa536111ff44f55dbc",
+      "bytes": 12167
+    },
+    {
+      "path": "runtime/app/a1/backend/interpretation.py",
+      "sha256": "5a4c3131e55a162540ef1404b0e02e1d7cfcd24e653e317986961ce514d7f7f4",
+      "bytes": 10856
+    },
+    {
+      "path": "runtime/app/a1/backend/offer_engine.py",
+      "sha256": "3e691464b9d1c4d15821164bb7fa9481cef8f440dbb417c98feae81acc949e67",
+      "bytes": 313974
+    },
+    {
+      "path": "runtime/app/a1/backend/scenario.py",
+      "sha256": "c83f18cd267ae77dc980907943a9fcafe7859063f8609f17082a2d5a5d919cc6",
+      "bytes": 938
+    },
+    {
+      "path": "runtime/app/a1/backend/scenario_rules.py",
+      "sha256": "99f7fa32c657a0b305e41def60d6813d869227f95e3f277b240e4dcf8c998691",
+      "bytes": 5119
+    },
+    {
+      "path": "runtime/app/a1/backend/scorer.py",
+      "sha256": "f122a9b4ccfe09cd0aa351c922b9717224fc1f4badc871e2c6531d4eb02425bd",
+      "bytes": 10461
+    },
+    {
+      "path": "runtime/app/a1/formats/interpretation.json",
+      "sha256": "249a74bcc04782bc8e2cfb8dfab0694d1e6b0cce5d8487389319568e579f293a",
+      "bytes": 3069
+    },
+    {
+      "path": "runtime/app/a1/prompts/general_interpretation.txt",
+      "sha256": "1db2068017cb12a7b4b1fa13d48def299335136a5ccc151734ab43f19990bce4",
+      "bytes": 1822
+    },
+    {
+      "path": "runtime/app/a1/prompts/job_reading_notes.txt",
+      "sha256": "8adb8872e4d1ca29358a2e41596f3d2fcba64496029f6f1be9403e582a61a302",
+      "bytes": 9257
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "exercise": "Job negotiation",
+    "scorer": "A1-low",
+    "inputs": 1225,
+    "passes": 1224,
+    "type_a": 1,
+    "type_b": 0,
+    "mapping_flags": 87,
+    "cost_per1000_usd": 5.744084081632653,
+    "cost_upper_per1000_usd": 5.787564081632653,
+    "mean_api_seconds": 4.453753824234009,
+    "evidence": "Fitted development evaluation; A2 final rules replay saved model interpretations. Not an untouched holdout."
+  },
+  {
+    "exercise": "Job negotiation",
+    "scorer": "A1-high",
+    "inputs": 1225,
+    "passes": 1225,
+    "type_a": 0,
+    "type_b": 0,
+    "mapping_flags": 73,
+    "cost_per1000_usd": 9.513981714285713,
+    "cost_upper_per1000_usd": 9.576618448979591,
+    "mean_api_seconds": 10.163860364641462,
+    "evidence": "Fitted development evaluation; A2 final rules replay saved model interpretations. Not an untouched holdout."
+  },
+  {
+    "exercise": "Job negotiation",
+    "scorer": "A2",
+    "inputs": 1225,
+    "passes": 1225,
+    "type_a": 0,
+    "type_b": 0,
+    "mapping_flags": 31,
+    "cost_per1000_usd": 2.3923056326530614,
+    "cost_upper_per1000_usd": 2.897380571428571,
+    "mean_api_seconds": 3.809761083758607,
+    "evidence": "Fitted development evaluation; A2 final rules replay saved model interpretations. Not an untouched holdout."
+  },
+  {
+    "exercise": "Tutorial",
+    "scorer": "A1-low",
+    "inputs": 731,
+    "passes": 730,
+    "type_a": 1,
+    "type_b": 0,
+    "mapping_flags": 113,
+    "cost_per1000_usd": 2.949846785225714,
+    "cost_upper_per1000_usd": 2.994992476060187,
+    "mean_api_seconds": 4.195332327632745,
+    "evidence": "Fresh responses on retained human inputs absent from the saved tutorial library; related wording and participant retries remain. Model-assisted, assistant-reviewed A/B labels. Mapping flags provisional."
+  },
+  {
+    "exercise": "Tutorial",
+    "scorer": "A1-high",
+    "inputs": 731,
+    "passes": 730,
+    "type_a": 1,
+    "type_b": 0,
+    "mapping_flags": 134,
+    "cost_per1000_usd": 7.018943912448709,
+    "cost_upper_per1000_usd": 7.064089603283174,
+    "mean_api_seconds": 12.08744811080874,
+    "evidence": "Fresh responses on retained human inputs absent from the saved tutorial library; related wording and participant retries remain. Model-assisted, assistant-reviewed A/B labels. Mapping flags provisional."
+  },
+  {
+    "exercise": "Tutorial",
+    "scorer": "A2",
+    "inputs": 731,
+    "passes": 579,
+    "type_a": 146,
+    "type_b": 9,
+    "mapping_flags": 181,
+    "cost_per1000_usd": 0.7417710259917932,
+    "cost_upper_per1000_usd": 0.8233916142270867,
+    "mean_api_seconds": 3.770202444048048,
+    "evidence": "Fresh responses on retained human inputs absent from the saved tutorial library; related wording and participant retries remain. Model-assisted, assistant-reviewed A/B labels. Mapping flags provisional."
+  }
+]

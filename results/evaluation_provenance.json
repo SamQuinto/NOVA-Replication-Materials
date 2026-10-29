@@ -1,0 +1,78 @@
+{
+  "version": "2026-10-29",
+  "main_a1": {
+    "frozen_utc": "2026-10-29T05:24:56.779754+00:00",
+    "prompt": "prompts/A1_Final.txt",
+    "schema": "frozen/SOURCE_FIRST_FORMAT.json",
+    "model": "gpt-6.1-sol",
+    "reasoning": [
+      "low",
+      "high",
+      "xhigh"
+    ],
+    "evaluation_run": "human1225-general-final-20261029",
+    "audit": {
+      "prompt_sha256": "8ae07ab05eb18b9ad68e84046be458894771d92a354b7a3049947cd0a6ea2a45",
+      "word_count": 480,
+      "blocked_language_hits": [],
+      "active_issue_name_hits": [],
+      "non_enumeration_numbers": [],
+      "scope": "Reusable instructions only, not evidence of transfer to other exercises."
+    },
+    "files": {
+      "prompts/A1_Final.txt": "d22235f40bca658376df75aed44dad69670772b3ee88f4dbb9124c06ae3f3abf",
+      "frozen/SOURCE_FIRST_FORMAT.json": "0c81f14f48f85826ff0435aaf46958e10b319a16fc73a5af4b3e408acd411441",
+      "frozen/A1_Exercise.json": "987e46e514be603f09b3de61b731ed95ae7c42fd90a28d9e2a7be401d48d271f",
+      "frozen/A1_Scoring_Definitions.json": "43246fa9587e8aec7f81953e1c223241b9729818965a02b2205ff5caabdf4127",
+      "frozen/Role_Materials.json": "21f99d6a82b26f1da35a19bc6c5deb2827b0e5892879c1ad7f515853dc8f17c1",
+      "frozen/Scoring_Table.json": "2c676c621d76a57c811c3461f3b71b86600ef4f0b2e14d6ca3836ca341c895a1",
+      "Cases.json": "828d2b3f16f266689b600167f25171d41df0f84bd219b123c64c059702c224d4",
+      "Reference_Key.json": "1b84c0f06578a4a70adb3b260449db03b54a3eafef1cc975c59207cb171652c2",
+      "runtime/app/a1/backend/scorer.py": "f122a9b4ccfe09cd0aa351c922b9717224fc1f4badc871e2c6531d4eb02425bd",
+      "runtime/app/a1/backend/interpretation.py": "5a4c3131e55a162540ef1404b0e02e1d7cfcd24e653e317986961ce514d7f7f4"
+    },
+    "selection": "50 difficult inputs, a 100-input broader panel, and 50 new shorthand/negation variations. Small panels are development diagnostics, not independent holdouts.",
+    "note": "All 1225 inputs get a fresh request at each reasoning setting; identical role/text/context duplicates share one response within a pass. No completed wrong answer is resampled."
+  },
+  "main_a2": {
+    "at_utc": "2026-10-29T05:52:50.645706+00:00",
+    "model": "gpt-5.6-luna",
+    "policy": "one economical call, followed by exercise-specific deterministic rules",
+    "files": {
+      "a2_custom_rules.py": "01980d04194fb4d6fd04ff7fb8268cf75ecad745bcf2aab00d993421c6ca2d7e",
+      "a2_finalize.py": "938ce026a8f547ff08bcf63530a1c33414e1ffec1caa08a649efd5397f7ffff9",
+      "a2_extract.py": "c1bea6e5782e3b68411c87477aac77cdebf671122f67cc1726757497416e5d68",
+      "prompts/A2_Interpretation.txt": "299770266d1e349b4c55f49b04d5f75b1ab6611b2544f7ecf781fcaccc21bff9",
+      "frozen/A2_Reading_Rules.json": "139489ed050ade2cd441d4d3685a3f49208c72b76f2df348cf6a37fa1c5dca67",
+      "frozen/Scoring_Table.json": "2c676c621d76a57c811c3461f3b71b86600ef4f0b2e14d6ca3836ca341c895a1"
+    },
+    "note": "Final rules fitted using corpus responses; main results replay saved fresh interpretations. Separate live confirmation is not an untouched holdout."
+  },
+  "tutorial": {
+    "n": 731,
+    "A1_model": "gpt-6.1-sol",
+    "A1_reasoning": [
+      "low",
+      "high"
+    ],
+    "A1_prompt_unchanged": true,
+    "A2_model": "gpt-5.6-luna",
+    "A2": "Existing tutorial extraction, optional dense completeness pass, and unchanged tutorial Python rules. No job-only post-pilot patch.",
+    "hashes": {
+      "Cases.json": "4b69056450e365f5461ff9014e78d62d96680d445f7cff3bed460c61899a106f",
+      "prompts\\A1_Final.txt": "d22235f40bca658376df75aed44dad69670772b3ee88f4dbb9124c06ae3f3abf",
+      "frozen\\A1_Exercise.json": "6433d38f4d14a822a2167340b90ed6e4bb58d1b290bfb1fc25712ab6e1184788",
+      "frozen\\A1_Scoring_Definitions.json": "fd2041a1249a06ec341f80ba6f7b6e089936e8b8629b4664bccd1c9d406552fc",
+      "frozen\\OUTPUT_FORMAT.json": "e5867a5cc0235b4ae0be026425f3b801c2c7acca8bbd361d186b2be7cff99642",
+      "frozen\\Role_Materials.json": "23ce9ab19bc9e48defb017ed12b786fdf6e29af4a584ef996ba903212f8dfaf3",
+      "frozen\\Scoring_Table.json": "6f22115e3f58e3a0ec3bd7cf6f5dc521bb6186dc846506d5034d3d835cd2a90a"
+    },
+    "evaluation_rules": {
+      "A": "A meaningful proposed idea is missing or unscored without acceptable acknowledgement/clarification.",
+      "B": "An optional issue not proposed is added in a score, acknowledgement, or question. Required-issue reminders are allowed.",
+      "primary": "Neither A nor B. Incorrect choices for a genuinely mentioned issue are checked separately, not silently counted as B."
+    },
+    "budget_usd": 25
+  },
+  "public_scope": "Code, prompts, exercise definitions, derived matching vocabulary, synthetic fixtures and aggregate results only. No participant-level offers, identifiers or private review records."
+}

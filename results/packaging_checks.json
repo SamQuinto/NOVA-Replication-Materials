@@ -1,0 +1,33 @@
+{
+  "offline_smoke_tests": 8,
+  "private_saved_interpretation_parity": [
+    {
+      "architecture": "A1",
+      "exercise": "job",
+      "checked": 100,
+      "api_calls": 0
+    },
+    {
+      "architecture": "A1",
+      "exercise": "tutorial",
+      "checked": 100,
+      "api_calls": 0
+    },
+    {
+      "architecture": "A2",
+      "exercise": "job",
+      "checked": 100,
+      "api_calls": 0
+    },
+    {
+      "architecture": "A2",
+      "exercise": "tutorial",
+      "checked": 100,
+      "api_calls": 0
+    }
+  ],
+  "all_400_sampled_interpretations_matched": true,
+  "new_api_calls": 0,
+  "scope": "Sampled parity of fixed interpretation scoring fields, not fresh model accuracy.",
+  "privacy_scan": "No credentials, private absolute paths, participant IDs or participant dataset files detected. Derived matching vocabulary remains configuration."
+}

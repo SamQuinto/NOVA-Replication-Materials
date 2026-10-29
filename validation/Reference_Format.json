@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "case_id": {
+            "type": "string"
+          },
+          "ideas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "source_quote": {
+                  "type": "string"
+                },
+                "issue": {
+                  "type": "string",
+                  "enum": [
+                    "Venue fee",
+                    "Event date",
+                    "Closing time",
+                    "Projector",
+                    "Cleanup",
+                    "Cancellation notice",
+                    "Setup access",
+                    "Door staffing",
+                    "Food and refreshments",
+                    "Outside table"
+                  ]
+                },
+                "choice": {
+                  "type": "string"
+                },
+                "handling": {
+                  "type": "string",
+                  "enum": [
+                    "score",
+                    "clarify",
+                    "acknowledge"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source_quote",
+                "issue",
+                "choice",
+                "handling",
+                "notes"
+              ]
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "case_id",
+          "ideas",
+          "notes"
+        ]
+      }
+    }
+  },
+  "required": [
+    "references"
+  ]
+}

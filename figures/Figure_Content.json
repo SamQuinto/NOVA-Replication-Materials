@@ -1,0 +1,185 @@
+{
+  "main": {
+    "A1": {
+      "header": [
+        "A1  Flexible",
+        "Higher API cost"
+      ],
+      "boxes": [
+        [
+          "Offer data and exercise files",
+          [
+            "Offer text and negotiator role (JSON)",
+            "Optional prior-offer context",
+            "Role materials and full table definitions",
+            "General prompt and response format"
+          ]
+        ],
+        [
+          "Python script A1-1",
+          [
+            "Builds one model request (JSON)",
+            "Includes every active issue and option",
+            "Keeps score calculation in Python"
+          ]
+        ],
+        [
+          "Advanced LLM",
+          [
+            "e.g., OpenAI GPT-6.1 Sol",
+            "Selects issues and options from the offer",
+            "Returns supporting words and questions"
+          ]
+        ],
+        [
+          "Interpretation (JSON)",
+          [
+            "Issues, options and quoted evidence",
+            "Clarification questions",
+            "Ideas retained without points"
+          ]
+        ],
+        [
+          "Python script A1-2",
+          [
+            "Checks evidence, options and values",
+            "Looks up researcher-defined scores",
+            "Prepares totals and follow-up messages"
+          ]
+        ],
+        [
+          "Scored offer (JSON)",
+          [
+            "Scores by issue and option",
+            "Role-specific totals when complete",
+            "Clarifications and unpriced ideas"
+          ]
+        ]
+      ]
+    },
+    "A2": {
+      "header": [
+        "A2  Customized",
+        "Higher setup effort, lower API cost"
+      ],
+      "boxes": [
+        [
+          "Offer data and exercise files",
+          [
+            "Offer text and negotiator role (JSON)",
+            "Optional prior-offer context",
+            "Role materials and fitted reading rules",
+            "Scoring table, vocabulary and format"
+          ]
+        ],
+        [
+          "Python script A2-1",
+          [
+            "Retrieves likely relevant table entries",
+            "Builds a request with their options",
+            "Includes exercise-specific reading notes"
+          ]
+        ],
+        [
+          "Economical LLM",
+          [
+            "e.g., OpenAI GPT-5.6 Luna",
+            "Selects supported issues and options",
+            "Returns supporting words and questions"
+          ]
+        ],
+        [
+          "Interpretation (JSON)",
+          [
+            "Issues, options and quoted evidence",
+            "Clarification questions",
+            "Ideas retained without points"
+          ]
+        ],
+        [
+          "Python script A2-2",
+          [
+            "Applies fitted exercise-specific rules",
+            "Checks the result and retrieves scores",
+            "Records which custom rules were used"
+          ]
+        ],
+        [
+          "Scored offer (JSON)",
+          [
+            "Scores by issue and option",
+            "Role-specific totals when complete",
+            "Clarifications and unpriced ideas"
+          ]
+        ]
+      ]
+    }
+  },
+  "tutorial_nodes": [
+    [
+      110,
+      285,
+      "Offer data and tutorial files",
+      [
+        "Offer text, recorded role and relevant context",
+        "Tutorial issue definitions and response format",
+        "Existing tutorial interpretation instructions"
+      ]
+    ],
+    [
+      440,
+      205,
+      "Python script A2-T1",
+      [
+        "Retrieves relevant tutorial issues and options",
+        "Builds the first model request (JSON)"
+      ]
+    ],
+    [
+      690,
+      205,
+      "Economical LLM",
+      [
+        "OpenAI GPT-5.6 Luna at low reasoning",
+        "Returns the first interpretation (JSON)"
+      ]
+    ],
+    [
+      940,
+      185,
+      "Python script A2-T2",
+      [
+        "Checks the existing dense-offer signal",
+        "If not dense, skips the second reading"
+      ]
+    ],
+    [
+      1170,
+      205,
+      "Optional second Luna call",
+      [
+        "Independently rereads the original offer",
+        "Checks completeness without seeing answer 1"
+      ]
+    ],
+    [
+      1420,
+      220,
+      "Python script A2-T3",
+      [
+        "Merges readings and flags disagreements",
+        "Applies existing tutorial checks and scores"
+      ]
+    ],
+    [
+      1685,
+      205,
+      "Scored offer (JSON)",
+      [
+        "Interpreted terms and role-specific scores",
+        "Questions and ideas retained without points"
+      ]
+    ]
+  ],
+  "script_numbering": "Logical processing stages; not necessarily separate physical files."
+}
