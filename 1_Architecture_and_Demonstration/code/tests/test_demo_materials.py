@@ -52,4 +52,10 @@ class DemoMaterialTests(unittest.TestCase):
         self.assertIn('id="scoring-demo"',page)
         self.assertIn('loadMaterials()',page)
 
+    def test_materials_take_just_under_half_the_desktop_width(self):
+        with urlopen(self.url) as response:page=response.read().decode('utf-8')
+        self.assertIn('grid-template-columns:minmax(0,46fr) minmax(0,54fr)',page)
+        self.assertNotIn('grid-template-columns:280px minmax(0,1fr)',page)
+        self.assertIn('@media(max-width:760px)',page)
+
 if __name__=='__main__':unittest.main()
