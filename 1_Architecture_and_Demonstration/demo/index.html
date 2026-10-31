@@ -12,6 +12,7 @@ main{max-width:none}.workspace{display:grid;grid-template-columns:minmax(0,46fr)
 @media(max-width:1450px){#scoring-demo{grid-template-columns:1fr;gap:26px}.result{min-height:0}}
 @media(max-width:1150px){.workspace{gap:18px}.role-body{max-height:calc(100vh - 370px)}}
 @media(max-width:760px){main{padding:22px 15px}.workspace{grid-template-columns:1fr}.role-panel{position:static}.role-body{max-height:330px;min-height:0}.role-header{padding:14px 18px}.role-header h2{font-size:18px}.role-body{padding:16px 18px}#scoring-demo{padding:18px}.toolbar{align-items:start}.saved{width:100%}.saved select{max-width:100%;width:100%}}
+.role-body p{white-space:normal}.role-body ul,.role-body ol{padding-left:24px;margin:0 0 16px}.role-body li{margin-bottom:7px}
 </style>
 <main>
 <header><h1>Try NOVA</h1><p class="muted">Write an offer and see how NOVA interprets and values it.</p><span class="key">To score your own offers, please follow the <a href="https://github.com/SamQuinto/NOVA-Replication-Materials/tree/main/1_Architecture_and_Demonstration#add-or-update-your-openai-key" target="_blank" rel="noopener">README instructions</a> to load your OpenAI key. Or choose one of our saved examples below—no key or charge needed.</span><div class="key muted" id="key" aria-live="polite"></div></header>
@@ -50,7 +51,7 @@ async function loadMaterials(){
  $('materials-role').textContent=roles()[role==='Candidate'?0:1];target.setAttribute('aria-busy','true');
  try{
   const response=await fetch('/api/materials?'+new URLSearchParams({exercise,role})),material=await response.json();if(!response.ok)throw Error(material.error||'Could not load the role materials.');if(request!==materialsRequest)return;
-  target.innerHTML=material.text.split(/\n\s*\n/).filter(Boolean).map(text=>'<p>'+esc(text).replace(/^ROLE NARRATIVE:/,'<strong>ROLE NARRATIVE:</strong>')+'</p>').join('');
+  target.innerHTML=material.html;
   target.scrollTop=0;
  }catch(error){if(request===materialsRequest)target.innerHTML='<p class="empty">'+esc(error.message)+' Please refresh the page to try again.</p>'}
  finally{if(request===materialsRequest)target.removeAttribute('aria-busy')}

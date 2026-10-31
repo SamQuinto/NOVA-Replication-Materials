@@ -1,7 +1,9 @@
 """Open the downloadable NOVA web app in your browser. Use your own OpenAI key to score offers."""
 from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
+from html import escape,unescape
+from html.parser import HTMLParser
 from pathlib import Path
-import argparse,json,os,subprocess,sys,urllib.parse,webbrowser
+import argparse,json,os,re,subprocess,sys,urllib.parse,webbrowser
 ROOT=Path(__file__).resolve().parents[1]
 CODE=ROOT/'code'
 SAVED_EXAMPLES={
@@ -22,18 +24,69 @@ def local_environment():
                 env['OPENAI_API_KEY']=line.split('=',1)[1].strip().strip('"\'')
     return env
 
+def without_narrative_label(text):
+    return re.sub(r'^\s*(?:\*\*|<strong\b[^>]*>|<b>)?\s*ROLE\s+NARRATIVE:\s*(?:\*\*|</strong>|</b>)?\s*','',text,count=1,flags=re.I)
+
+def normalise_material(text):
+    text=re.sub(r'</?(?:p|span|li|ul|ol|h[1-6]|div|br)\b[^>]*>',' ',text,flags=re.I)
+    return ' '.join(unescape(re.sub(r'<[^>]*>','',text)).replace('**','').replace('•','').split())
+
+class SafeMaterialHTML(HTMLParser):
+    """Keep the role's text formatting, without scripts or external content."""
+    tags={'p','br','strong','b','em','i','u','span','ul','ol','li','h2','h3','h4'}
+    styles={'color','font-weight','font-style','font-size','text-decoration','display','margin-left','padding-left','text-indent','margin-bottom','line-height','text-align'}
+    def __init__(self):
+        super().__init__(convert_charrefs=True);self.parts=[];self.blocked=0
+    def handle_starttag(self,tag,attrs):
+        if tag in {'script','style','iframe','object'}:self.blocked+=1;return
+        if self.blocked or tag not in self.tags:return
+        clean=[]
+        for name,value in attrs:
+            if name!='style' or not value:continue
+            declarations=[]
+            for item in value.split(';'):
+                if ':' not in item:continue
+                key,setting=[part.strip() for part in item.split(':',1)]
+                if key.lower() in self.styles and re.fullmatch(r'[\w#.,()% +\-]+',setting) and not re.search(r'url|expression',setting,re.I):
+                    declarations.append(key.lower()+':'+setting)
+            if declarations:clean.append(' style="'+escape(';'.join(declarations),quote=True)+'"')
+        self.parts.append('<'+tag+''.join(clean)+'>')
+    def handle_endtag(self,tag):
+        if tag in {'script','style','iframe','object'}:
+            self.blocked=max(0,self.blocked-1);return
+        if not self.blocked and tag in self.tags and tag!='br':self.parts.append('</'+tag+'>')
+    def handle_data(self,data):
+        if not self.blocked:self.parts.append(escape(data))
+
+def material_html(text,formatted=False):
+    text=without_narrative_label(text)
+    if not formatted:return ''.join('<p>'+escape(p).replace('\n','<br>')+'</p>' for p in re.split(r'\n\s*\n',text) if p.strip())
+    text=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',text,flags=re.S)
+    text=re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)',r'<em>\1</em>',text)
+    parts=[]
+    for paragraph in re.split(r'\n\s*\n',text):
+        paragraph=paragraph.strip()
+        if not paragraph:continue
+        heading=re.fullmatch(r'<strong>(Background Information|Instructions)</strong>',paragraph,re.I)
+        parts.append('<h3>'+heading.group(1)+'</h3>' if heading else '<p>'+paragraph+'</p>')
+    clean=SafeMaterialHTML();clean.feed(''.join(parts));clean.close()
+    return ''.join(clean.parts)
+
 def role_materials(exercise, role):
-    """Use the bundled exercise text, not a shortened demonstration version."""
+    """Load the selected role and its matching display formatting."""
     if exercise not in ['job','tutorial'] or role not in ['Candidate','Recruiter']:
         raise ValueError('Please choose an exercise and role.')
     folder=CODE/'frozen'/('tutorial' if exercise=='tutorial' else '')
     table=json.loads((folder/'Scoring_Table.json').read_text(encoding='utf-8'))
     material=table['roles'][role]
-    # full_text is the role text used by the scorer and current Empirica package.
-    # Some historical full_blocks copies contain extra wording, so do not substitute them.
+    path=ROOT/'demo/role_materials.json'
+    formatted=json.loads(path.read_text(encoding='utf-8')).get(exercise,{}).get(role) if path.is_file() else None
+    # If the wording is edited later, show the new text rather than stale formatting.
+    matching=bool(formatted and normalise_material(formatted)==normalise_material(material['full_text']))
     return {'exercise':exercise,'role':role,
             'name':table.get('parties',{}).get(role,{}).get('name',role),
-            'text':material['full_text']}
+            'text':material['full_text'],
+            'html':material_html(formatted if matching else material['full_text'],formatted=matching)}
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args):pass # Keep offers and API keys out of server logs.

@@ -35,6 +35,8 @@ class DemoMaterialTests(unittest.TestCase):
                     with urlopen(self.url+f'/api/materials?exercise={exercise}&role={role}') as response:
                         material=json.load(response)
                     self.assertEqual(material['text'],source['roles'][role]['full_text'])
+                    self.assertEqual(demo.normalise_material(material['html']),demo.normalise_material(demo.without_narrative_label(material['text'])))
+                    self.assertNotIn('ROLE NARRATIVE:',material['html'])
                     self.assertNotIn('blocks',material)
                     self.assertNotIn('OPENAI_API_KEY',material)
                     self.assertNotIn('issues',material)
@@ -57,5 +59,26 @@ class DemoMaterialTests(unittest.TestCase):
         self.assertIn('grid-template-columns:minmax(0,46fr) minmax(0,54fr)',page)
         self.assertNotIn('grid-template-columns:280px minmax(0,1fr)',page)
         self.assertIn('@media(max-width:760px)',page)
+
+    def test_job_materials_keep_the_existing_formatting(self):
+        for role in ['Candidate','Recruiter']:
+            material=demo.role_materials('job',role)
+            self.assertIn('<strong>',material['html'])
+            self.assertIn('<em>',material['html'])
+            self.assertIn('<u>',material['html'])
+            self.assertIn('•',material['html'])
+            self.assertIn('color:#',material['html'])
+            self.assertIn('<h3>Background Information</h3>',material['html'])
+
+    def test_display_html_drops_scripts_events_and_external_content(self):
+        html=demo.material_html('**ROLE NARRATIVE:** <strong>Read this</strong><script>alert(1)</script><img src="https://example.com/a" onerror="alert(2)"><span onclick="alert(3)" style="color:#166534;background-image:url(https://example.com)">Safely</span>',formatted=True)
+        self.assertNotIn('ROLE NARRATIVE:',html)
+        self.assertNotIn('script',html)
+        self.assertNotIn('alert',html)
+        self.assertNotIn('<img',html)
+        self.assertNotIn('onclick',html)
+        self.assertNotIn('url(',html)
+        self.assertIn('<strong>Read this</strong>',html)
+        self.assertIn('color:#166534',html)
 
 if __name__=='__main__':unittest.main()
