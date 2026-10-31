@@ -18,6 +18,6 @@ Both roles are included for researchers to read. When running a study, give each
 
 Both workbooks have just two sheets: **Scoring table** and **Scoring logic**. Continuous entries are labelled as reference values, not a fixed menu of allowed offers.
 
-The current job table adds **Workplace Coffee** after the October 27 pilot: free coffee is worth +1 to the Candidate and 0 to the Recruiter. The [current JSON](scoring_tables/flexible-216.json) and [classroom JSON](scoring_tables/flexible-216-classroom.json) contain the same 216 issues; the classroom file omits the monetary-payment notice. The original 215-issue JSON and frozen architecture inputs are retained to reproduce the reported validation results.
+The current job table adds **Workplace Coffee** after the October 27 pilot: free coffee is worth +1 to the Candidate and 0 to the Recruiter. The [current JSON](scoring_tables/flexible-216.json) contains the same 216 issues as the main scoring workbook. The original 215-issue JSON and frozen architecture inputs are retained only to reproduce the reported validation results.
 
 The questionnaire files include question wording, response choices and settings used by the study interface. The participant responses and analysis are in [Validation and development](../3_Validation_and_Development/).

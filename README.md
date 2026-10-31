@@ -35,6 +35,8 @@ If `python` is not recognized on Windows, try `py demo/Start_Demo.py`. After edi
 
 The [negotiation exercise role materials](2_Exercise_Materials/Negotiation_Exercise_Role_Materials.pdf) bring the main exercise and tutorial together in one document. The tutorial is the short negotiation participants completed before the main task in our pilot studies to become familiar with NOVA.
 
+The [main job scoring table](2_Exercise_Materials/scoring_tables/Job_Exercise_Scoring_Table_Main.xlsx) contains the current **216 issues**, including workplace coffee. Its [JSON version](2_Exercise_Materials/scoring_tables/flexible-216.json) contains the same issue definitions and scores. Frozen 215-issue inputs are retained separately to reproduce the original validation results.
+
 Open [the analysis](3_Validation_and_Development/Analysis.html) to read the results, or use [the notebook](3_Validation_and_Development/Analysis.ipynb) to reproduce them. Rerunning these calculations does not make API calls. The validation spreadsheets also let you inspect individual offers and see how accuracy was calculated.
 
 The main evaluation includes 1,225 offer inputs, and the separate tutorial evaluation includes 731. These include retries and incomplete calculator inputs, not just offers sent to another negotiator. [Methods](3_Validation_and_Development/Methods.md) explains how we selected the data and calculated each measure.
