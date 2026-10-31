@@ -9,6 +9,7 @@ The files below are in `data/`. Main-exercise and tutorial offer IDs are numbere
 | `main_scorer_outputs.json` | Saved interpretation and scored JSON | offer ID, scorer, interpretation, scored offer, reviewed flags/reason |
 | `main_references.json` | Reviewed reference interpretation | offer ID and reference handling; historical explanatory labels may remain inside it |
 | `tutorial_*` | Corresponding tutorial records | Same structure, with tutorial roles and previous-offer context |
+| `tutorial_A2_review_corrections.json` | One reviewed A2 tutorial failure | Previous and current error flags, review decision and reason; all 152 previously flagged inputs |
 | `api_usage.json` / `.csv` | Calls attributed to one input/scorer | dataset, offer ID, scorer, model, tokens, summed API seconds, cost range, call count |
 | `trials.json` / `.csv` | One assigned pair | trial ID, pilot, condition, anonymous role IDs, inclusion/completion/failure indicators |
 | `negotiations.json` / `.csv` | One valid reciprocal dyad | trial ID, counts, timing proxies, agreement, scores, issues, early-quit flag |

@@ -134,7 +134,7 @@ def reproduction_checks(v,d):
     n=d[(d.condition=='NOVA')&(d.early_quit==0)]
     assert len(n)==38;assert n.introduced_issue_after_opening.sum()==22
     assert abs(n.nonrequired_issue_diversity.mean()-3.736842105263158)<1e-12
-    expected={('main','A1-low'):1224,('main','A1-high'):1225,('main','A2'):1225,('tutorial','A1-low'):731,('tutorial','A1-high'):731,('tutorial','A2'):579}
+    expected={('main','A1-low'):1224,('main','A1-high'):1225,('main','A2'):1225,('tutorial','A1-low'):731,('tutorial','A1-high'):731,('tutorial','A2'):640}
     for _,r in v.iterrows():assert r.passed==expected[(r.dataset,r.scorer)]
     return pd.DataFrame([{'check':'Main and tutorial accuracy counts','result':'Match reviewed workbook'}, {'check':'Completed NOVA negotiations','result':'38'}, {'check':'Mean additional issues','result':f'{n.nonrequired_issue_diversity.mean():.6f}'}, {'check':'New issues after opening','result':'22/38'}, {'check':'Coffee scoring-table entry','result':'Absent from frozen 215-issue snapshot; manuscript statement about a later addition is not reproduced here.'}, {'check':'Agreement eligibility','result':'Analysis uses both scores >= 0. Historical JSON includes contradictory legacy > 0 metadata; it is preserved as a snapshot.'}, {'check':'Primary accuracy scope','result':'Type A and Type B. Historical option-mapping flags are not independently verified by this measure.'}])
 def main():

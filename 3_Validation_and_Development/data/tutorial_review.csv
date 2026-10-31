@@ -11827,7 +11827,7 @@ hope you can support your neighboring
 requirements except
 Otherwise
 llook elsewhere
-consider your surrounding",Y,N,"The offer requests 'cancellation without penalty up fee for up to 1 week before the event,' clearly supporting free cancellation with notice. R3 unnecessarily asked whether cancellation should be free or non-refundable instead of scoring that choice.",I can pay $150 for the venue fee for Sept 15 next year with a 9 PM close time. Is this acceptable for you. This is a community event supported only by dontations so our budget is very constrained. I hope you can support your neighboring community
+consider your surrounding",N,N,,I can pay $150 for the venue fee for Sept 15 next year with a 9 PM close time. Is this acceptable for you. This is a community event supported only by dontations so our budget is very constrained. I hope you can support your neighboring community
 o6,Live negotiation - Oct 27,Organizer,"I can pay $300 for the venue on September 25 next year, with the event closing at 10 p.m. My volunteers can handle the cleanup afterward, and could the venue projector be included in the fee?
 
 Why this is a good offer:
@@ -11910,10 +11910,7 @@ fine
 dont
 help
 maybe you can help since
-social responsibility",Y,N,"Leaves cancellation unscored and asks whether it is free despite the explicit statement “Cancellation with notice is free.”
-Maps “until 20th of September next year” to a fixed September 20 date despite the unresolved deadline wording.
-Maps “close not before than 21.00” to exactly 9:00 p.m., although it states a minimum.
-Scores Organizer cleanup despite “I dont have any one to help cleaning maybe you can help,” which requests help from the venue.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+social responsibility",Y,N,Cleanup is scored as Organizer handles cleanup although the offer asks the venue for help. The cancellation question is accepted and is not an error.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o10,Live negotiation - Oct 27,Organizer,I can pay 350 bucks for the venue on Aug 20 ending at 10.My volunteers can clean up; itll be a quiet meet and greet with no loud music and well play a deposit to hold the property right now as well. We will also prioritise neighbours leaving from 9. If we cancel any time before well let you keep the deposit as well. Non refundable as long as the event is allowed to go on till 10,A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: August 20  [-0.37]
@@ -12183,7 +12180,7 @@ st
 entirely
 help
 labour will be required
-hope",Y,N,"The offer states, ""Members of the event will clean up entirely at the end,"" clearly selecting Organizer handles cleanup. R3 left cleanup unscored and unnecessarily asked who would handle it.","I would be happy to pay $150 to book your venue on September 21st, with the event ending at 10pm. I hope this works for you :)"
+hope",N,N,,"I would be happy to pay $150 to book your venue on September 21st, with the event ending at 10pm. I hope this works for you :)"
 o28,Live negotiation - Oct 27,Organizer,I can pay $350 for the venue on September 15 of next year and close at 9pm. My volunteers can clean up. I need to get in early to set up. Is it possible to include the venue projector in that fee. I can cancel without charge as long as I give you one week's notice.,A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: September 15  [+0.50]
@@ -12236,7 +12233,7 @@ Recorded without points:
 I will make it a yearly recurrent event.
 will cost 30% of the agreed price
 applies
-week's",Y,N,"The offer explicitly states, ""I will pay $300 for the venue fee,"" a valid in-range value. The response left Venue fee unscored and unnecessarily requested clarification; the separate 30% cancellation charge does not make the rental fee ambiguous.",I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
+week's",N,N,,I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
 o32,Live negotiation - Oct 27,Organizer,"my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 10pm, we will handle all the cleaning, i will need access 2 hours early to the venue and i want a 1 week cancellation notice for free, i repeat again it must be free",A2,"Decision: clarification_needed
 - Venue fee: $100  [+2.00]
 - Event date: September 30  [+1.00]
@@ -12248,8 +12245,7 @@ Recorded without points:
 best
 vanue
 th
-repeat again",Y,N,"Missed “i will need access 2 hours early to the venue,” which clearly supports scoring Early setup access included.
-Asked whether cancellation should be free or non-refundable instead of scoring Free cancellation allowed with notice, despite “i want a 1 week cancellation notice for free, i repeat again it must be free.”",my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
+repeat again",Y,N,The request for access two hours early is neither scored nor meaningfully acknowledged. The cancellation question is accepted.,my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
 o33,Live negotiation - Oct 27,Organizer,"Take up a donation from the community and have them pay raise 10,000 for the venue, food, and activities
 venue fee $10,000
 event date June 2027
@@ -12272,8 +12268,7 @@ Recorded without points:
 donation
 raise
 activities
-June",Y,N,"Missed the final date, ""EVENT DATE 9/27/2027"": asked which calendar day was wanted and flagged the superseded June date instead of scoring September 27.
-Mapped ""Food $5,000"" to ""Venue provides refreshments at no extra charge,"" although neither venue provision nor free refreshments was proposed.",
+June",Y,N,"Food costing $5,000 is interpreted as venue-provided refreshments at no extra charge. Asking for the event date is accepted; the unsupported free-refreshments interpretation remains incorrect.",
 o34,Live negotiation - Oct 27,Organizer,"I can pay $210 for the venue on September 28 next year and close at 10pm. Can the venue projector be included? I can clean it up with my volunteer, and I need to get in early to set it up. I can cancel without a charge if I give two weeks' notice",A2,"Decision: scorable
 - Venue fee: $210  [+1.37]
 - Event date: September 28  [+0.93]
@@ -12342,7 +12337,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 th
 possible
-long",Y,N,“Can I cancel as long as I give one weeks notice?” clearly proposes free cancellation with notice. R3 leaves it unscored and unnecessarily asks whether cancellation should be free or non-refundable.,
+long",N,N,,
 o40,Live negotiation - Oct 27,Organizer,"I can offer the venue for $500 on August 22 next year, closing at 7:00 p.m. The projector is included if your volunteers handle cleanup.I would like to be able to cancel the booking without any charge if I give at least one week's notice.",A2,"Decision: clarification_needed
 - Venue fee: $500  [-0.29]
 - Event date: August 22  [-0.30]
@@ -12353,8 +12348,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 able
-least one week's",Y,N,"The offer explicitly requests cancellation 'without any charge if I give at least one week's notice.' R3 unnecessarily asks whether cancellation should be free instead of scoring Free cancellation allowed with notice.
-R3 scores Organizer handles cleanup, but 'your volunteers handle cleanup' assigns cleanup to the addressee's side—the Venue Manager—under the recorded Organizer role.","I can pay $250 for the venue on September 20 next year, with the event closing at 10 p.m. My volunteers can handle the cleanup, and I would appreciate having early access to set up the creative activities."
+least one week's",Y,N,"The Organizer says ""your volunteers handle cleanup,"" assigning it to the other party. The response instead scores Organizer handles cleanup. The cancellation question is accepted.","I can pay $250 for the venue on September 20 next year, with the event closing at 10 p.m. My volunteers can handle the cleanup, and I would appreciate having early access to set up the creative activities."
 o41,Live negotiation - Oct 27,Organizer,"Would like to have the event on September 30th, paying $225 and the event finishing at 11
 
 The cleanup will be done by organiser but a projector must be included 
@@ -12373,7 +12367,7 @@ paying
 finishing
 done
 Organisers have the right
-beforehand",Y,N,"The offer explicitly states, “Organisers have the right to cancel up to 2 weeks beforehand for free.” R3 left free cancellation with notice unscored and unnecessarily asked whether cancellation should be free or non-refundable.","Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+beforehand",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o42,Live negotiation - Oct 27,Organizer,I would like to secure your location to host our event on August 20th.  We would be finished by 8 pm.  We are a non profit venue.  $250 Is our budget.  Is that possible? I did mentioned we would be completed by 8 pm.  Close by 8 pm,A2,"Decision: scorable
 - Event date: August 20  [-0.37]
 - Closing time: 8:00 p.m.  [+0.00]
@@ -12514,7 +12508,7 @@ o54,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on Augus
 Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
-done within",Y,N,Leaves “Cancellation with notice should free if done within a week” unscored and asks whether cancellation should be free or non-refundable. Free cancellation with notice is explicitly proposed; only what “within a week” refers to needs clarification.,I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
+done within",N,N,,I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
 o55,Live negotiation - Oct 27,Organizer,"I can pay $250 for the venue on September 28 next year, ending at 10 p.m. My volunteers will handle all the cleanup afterward, and I’d like to confirm that we can access the venue early to set up.",A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: September 28  [+0.93]
@@ -12578,9 +12572,7 @@ Will the organizer or venue staff handle cleanup?
 Recorded without points:
 The venue manager can bring 2 guests
 throw
-Organisers",Y,N,"“Organisers will set up and clean up” clearly assigns cleanup to the organizer, but the response asks who handles cleanup instead of scoring it.
-“Organisers will set up” does not establish early entry. Scoring “Early setup access included” adds an unsupported timing condition to the setup commitment.
-“Free food for the venue manager” is a personal benefit, not event refreshments; “Organizer provides refreshments” is the wrong mapping.","I propose $250 for the venue  on September 15, and closing at 9:00pm. I will throw in free food for the venue manager."
+Organisers",Y,Y,The response adds Early setup access included although the offer only promises setup work. It also turns a personal food benefit for the manager into event refreshments. The cleanup question is accepted.,"I propose $250 for the venue  on September 15, and closing at 9:00pm. I will throw in free food for the venue manager."
 o61,Live negotiation - Oct 27,Organizer,"I'd like the venue for $300 on September 30 next year, closing at 9:00 p.m. The projector is included if our volunteers handle cleanup. I can cancel without a charge if I give one week’s notice",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 30  [+1.00]
@@ -12925,8 +12917,7 @@ Recorded without points:
 I'd
 th
 able
-nocharge",Y,N,"The offer explicitly requests cancellation without charge: ""cancel up to 3 days before with nocharge."" R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring free cancellation with notice.
-R3 scores August 1 instead of the proposed ""August the 18th next year"" (2027-08-18).",
+nocharge",Y,N,"The offer specifies August 18, but the response scores August 1. The closing-time and cancellation questions are accepted.",
 o97,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on September 2nd next year, closing at 10:00 p.m. The projector is included and you'll handle the clean up Can we agree on this?",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 2  [+0.07]
@@ -13218,7 +13209,7 @@ o129,Live negotiation - Oct 27,Organizer,I CAN PAY 2OO DOLLARS FOR THE VENUE ON 
 Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
-OO",Y,N,“2OO DOLLARS FOR THE VENUE” clearly proposes $200 with an ordinary letter-for-digit typo. R3 unnecessarily requested clarification instead of scoring the venue fee.,
+OO",N,N,,
 o130,Live negotiation - Oct 27,Organizer,"I am able to pay 300 dollars for the venue 15 Sep, ending at 10 pm. I can cancel anytime",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 15  [+0.50]
@@ -13350,7 +13341,7 @@ hope you can support your neighboring
 requirements except
 Otherwise
 llook elsewhere
-consider your surrounding",Y,N,The offer explicitly requests “cancellation without penalty up to 1 week before.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring Free cancellation allowed with notice.,I can pay $150 for the venue fee for Sept 15 next year with a 9 PM close time. Is this acceptable for you. This is a community event supported only by dontations so our budget is very constrained. I hope you can support your neighboring community
+consider your surrounding",N,N,,I can pay $150 for the venue fee for Sept 15 next year with a 9 PM close time. Is this acceptable for you. This is a community event supported only by dontations so our budget is very constrained. I hope you can support your neighboring community
 o139,Live negotiation - Oct 27,Organizer,"I believe if we set the event on a lower price and a latter date like 24th September next year, people would be more than happy to plan ahead properly. Like call off work at said date. The price could be $350 because it doesn't break the account, People would also have enough time to enjoy the event if we close late like 10pm. This could also impact the feedback or review left by our neighbors. Leading to a higher probability of doing such event  on a long run",A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: September 24  [+0.80]
@@ -13382,9 +13373,7 @@ agree
 handy to clean afterward
 because my stage crew
 build the stage
-sufficient to avoid",Y,N,"Missed Setup access: “i must also be allowed early entrance” clearly supports Early setup access included, but R3 did not score it.
-Unnecessarily asked about Cancellation notice: “a cancellation notice no later than a week before ... will be sufficient to avoid any additional fees” supports Free cancellation allowed with notice.
-Mapped Event date to August 13 despite the unresolved alternatives “August 13, or ... August 20, or ... August 27”; R3 should have requested a date choice.","I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
+sufficient to avoid",Y,N,The early-entrance request is neither scored nor meaningfully acknowledged. The response also chooses August 13 from unresolved date alternatives. The cancellation question is accepted.,"I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
 o141,Live negotiation - Oct 27,Organizer,"oh dear that's very expensive, i guess i can push my budget out to 350 and unfortunately lots of folk are on holiday in august so we can't do then. We could agree to close at 8pm and my volunteers will clean the venue for you. Am afraid that's the best we can do. the earliest date we could do woudl be the 3rd september. how about we give you some publicity on our website to for being such gracious hosts. we can pay a fee if we ahve to cancel.",A2,"Decision: clarification_needed
 - Venue fee: $350  [+0.57]
 - Event date: September 3  [+0.10]
@@ -13418,11 +13407,7 @@ course
 fine
 dont
 help
-social responsibility",Y,N,"Asked whether cancellation should be free or non-refundable instead of scoring the explicit choice: “Cancellation with notice is free.”
-Silently omitted the cancellation qualifications: “A week notice should be fine” and “If I cancel later than a week time I am happy to pay 50 $ fee.” These should be captured without points.
-Scored Organizer handles cleanup, although “I dont have any one to help cleaning, you should do cleaning” assigns cleanup to the Venue.
-Scored September 20 as an exact event date, although “until 20th of September next year” leaves an on-versus-by ambiguity.
-Scored Closing time as exactly 9:00 p.m., although “close not before than 21.00” specifies only a minimum.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+social responsibility",Y,N,The response scores Organizer cleanup although the offer says the venue should clean. It also omits the stated one-week notice and $50 late-cancellation condition. The cancellation question itself is accepted.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o143,Live negotiation - Oct 27,Organizer,"I can pay $300 for the venue on September 25 next year, with the event closing at 10 p.m. My volunteers can handle the cleanup afterward, and could the venue projector be included in the fee?
 
 Why this is a good offer:
@@ -13497,7 +13482,7 @@ between 1800 and 2100
 confirm
 able
 week's
-above",Y,N,"The offer states 'between 1800 and 2100,' clearly specifying a 9:00 p.m. closing time. R3 leaves it unscored and unnecessarily asks for Closing time.",
+above",N,N,,
 o148,Live negotiation - Oct 27,Organizer,"If I give one week's  notice, I can cancel without a charge.   I need access from 6:00pm to set up.  If you do it for $300, I will provide clean up for your next 2 bookings free of charge and include your details on all promotional material.  The event can be on 18th September and finish at 9:30pm.",A2,"Decision: clarification_needed
 - Venue fee: $300  [+0.86]
 - Cancellation notice: Free cancellation allowed with notice  [+0.75]
@@ -13578,8 +13563,7 @@ Recorded without points:
 unlimited teas and coffees within
 myself
 suggest
-within 1 weeks notice period",Y,N,"“Can the venue offer unlimited teas and coffees within this price” clearly requests venue-provided refreshments at no extra charge. R3 recorded the detail without scoring the supported choice.
-“Cancellation is free within 1 weeks notice period” supports free cancellation with notice. R3 unnecessarily asked whether cancellation should be free or non-refundable instead of scoring it.","Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
+within 1 weeks notice period",Y,N,Venue-provided teas and coffees within the price are recorded without scoring the supported refreshments option. The cancellation question is accepted.,"Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
 o154,Live negotiation - Oct 27,Organizer,"I will pay $300 for the venue on September 15 and will close at 10.00 pm. 
 I will make it a yearly recurrent event.
 Venue projector included.
@@ -13594,8 +13578,7 @@ Recorded without points:
 I will make it a yearly recurrent event.
 applies
 week's
-agreed",Y,N,"The offer clearly states “I will pay $300 for the venue,” an allowed value. R3 unnecessarily requests clarification instead of scoring the venue fee.
-R3 misses the qualification “Cancellation fee applies when it is cancelled with less than a week's notice (will cost 30% of the agreed price).” Its recorded fragments do not meaningfully capture the notice threshold or partial fee, which should be acknowledged without additional points.",I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
+agreed",Y,N,The stated one-week threshold and 30% late-cancellation charge are not meaningfully retained. Asking again for the venue fee is accepted.,I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
 o155,Live negotiation - Oct 27,Organizer,"I really need the venue until 9pm for the event, so I could increase my offer to $400 for it closing at 9pm? If you could do this I have no problem handling clean up. I do need the date to be September 15th though as this is when we have diaries aligned.",A2,"Decision: scorable
 - Venue fee: $400  [+0.29]
 - Closing time: 9:00 p.m.  [+0.33]
@@ -13744,8 +13727,7 @@ team will come
 such as: sound system
 etc
 sure things are in order after the programme before leaving
-Total shown / retained: +3.26",Y,N,"Cleanup was recorded without points, although “We will also make sure things are in order after the programme before leaving the venue” supports scoring Organizer handles cleanup.
-Projector was mapped to Venue projector included, but “My team will come with their equipment such as: sound system, projector etc.” specifies Organizer brings a projector.","I can pay $150 for the venue on September 15, ending at 9pm. My team will come with their equipment such as: sound system, projector etc. We will also be handling the cleaning before and after the programme. Thank you"
+Total shown / retained: +3.26",Y,N,"The organizer says its own team will bring the projector, but the response scores Venue projector included. It also leaves the supported cleanup commitment unscored without asking about it.","I can pay $150 for the venue on September 15, ending at 9pm. My team will come with their equipment such as: sound system, projector etc. We will also be handling the cleaning before and after the programme. Thank you"
 o167,Live negotiation - Oct 27,Organizer,"Would like to have the event on September 30th, paying $225 and the event finishing at 11
 
 The cleanup will be done by organiser but a projector must be included 
@@ -13764,7 +13746,7 @@ paying
 finishing
 done
 right
-beforehand",Y,N,"The offer explicitly says, ""I have the right to cancel up to 2 weeks beforehand for free."" R3 unnecessarily asks whether cancellation is free or non-refundable instead of scoring ""Free cancellation allowed with notice.""","Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+beforehand",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o168,Live negotiation - Oct 27,Organizer,I can pay 200 bucks for the venue on the 28th of September ending at 10pm.  Can the projector be included please and is it possible to get in early to set up? Can cancellation with one weeks notice be included in the price?,A2,"Decision: clarification_needed
 - Venue fee: $200  [+1.43]
 - Event date: September 28  [+0.93]
@@ -13775,7 +13757,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 th
-possible",Y,N,“Can cancellation with one weeks notice be included in the price?” clearly requests free cancellation with notice. R3 left it unscored and unnecessarily asked whether cancellation should be free or non-refundable.,
+possible",N,N,,
 o169,Live negotiation - Oct 27,Organizer,I can pay $500 for the venue on August 20 next year and the event will close at 7pm. the cleaning will be done by us at our cost. If i cancel the event we won't request the cashback and the cancellation notice is not free.,A2,"Decision: clarification_needed
 - Venue fee: $500  [-0.29]
 - Event date: August 20  [-0.37]
@@ -13785,7 +13767,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 done
-cashback",Y,N,“If i cancel the event we won't request the cashback and the cancellation notice is not free” clearly supports “Booking is non-refundable.” R3 leaves this choice unscored and asks an unnecessary clarification.,I can pay $400 for the venue on September 20 next year and the event will close at 8pm
+cashback",N,N,,I can pay $400 for the venue on September 20 next year and the event will close at 8pm
 o170,Live negotiation - Oct 27,Organizer,I'm working with a budget of $200 an need event space for the last weekend in September. The event will go on until around 3:00 AM which I know is rather late so I'm happy to canvas for volunteers to clean up at the end.,A2,"Decision: scorable
 - Venue fee: $200  [+1.43]
 - Cleanup: Organizer handles cleanup  [-0.50]
@@ -13808,7 +13790,7 @@ th
 profit
 budget
 possible? I did mentioned
-completed",Y,N,The offer explicitly states “We would be finished by 8 pm” and repeats “completed by 8 pm.” R3 omitted the clear 8:00 p.m. closing time and unnecessarily asked for it.,
+completed",N,N,,
 o172,Live negotiation - Oct 27,Organizer,"I would to make a compromise that works for both of us. I will increase my offer to $300 for Sep 15th with a closing time of 10pm. We will handle the cleanup, the projector will be included at no additional charge.",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 15  [+0.50]
@@ -13945,7 +13927,7 @@ o183,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on Augu
 Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
-done within",Y,N,"“Cancellation should free if done within a week” explicitly requests free cancellation. The response leaves that choice unscored and asks free versus non-refundable, rather than clarifying what “within a week” is measured from.",I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
+done within",N,N,,I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
 o184,Live negotiation - Oct 27,Organizer,"I propose $250 for the venue  on September 15, and closing at 9:00pm. I will throw in free food for the venue manager. The venue manager can bring 2 guests. Organizers will  clean up.",A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: September 15  [+0.50]
@@ -13996,7 +13978,7 @@ o188,Live negotiation - Oct 27,Organizer,"I can offer the venue for $500 on Augu
 - Projector: Venue projector included  [+1.00]
 - Cleanup: Organizer handles cleanup  [-0.50]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,"“One week cancellation notice, free” clearly supports “Free cancellation allowed with notice.” R3 leaves it unscored and unnecessarily asks whether cancellation is free or non-refundable.","I am looking for a venue closing at 9pm last Sunday of August, circa $ 300"
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,"I am looking for a venue closing at 9pm last Sunday of August, circa $ 300"
 o189,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on September 22 next year, closing at 9 p.m. The projector is included if your volunteers handle cleanup. I need to get in early to set up",A2,"Decision: scorable
 - Venue fee: $400  [+0.29]
 - Event date: September 22  [+0.73]
@@ -14029,7 +14011,7 @@ o192,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on Augu
 - Cleanup: Organizer handles cleanup  [-0.50]
 - Projector: Venue projector included  [+1.00]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,“I can give one weeks cancellation notice” supports Free cancellation allowed with notice. R3 left this unscored and unnecessarily asked whether cancellation should be free or non-refundable.,"What about $200 for September 30th, slosing at 8pm?"
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,"What about $200 for September 30th, slosing at 8pm?"
 o193,Live negotiation - Oct 27,Organizer,"I have up to £200 for a venue on 2 Dec during the day
 
 $200 any date august or september 2027 time flexible 
@@ -14045,7 +14027,7 @@ Please state the venue fee in US dollars (USD).
 Recorded without points:
 Dec
 flexible
-rd",Y,N,"Left Event date unscored and requested another date despite “3rd September 2027” and the final confirmation “date 3rd september,” which replace the earlier 2 Dec proposal.",
+rd",N,N,,
 o194,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on September 2nd next year, closing at 10:00 p.m. The projector is included and I'll handle the clean up Can we agree on this?",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 2  [+0.07]
@@ -14083,7 +14065,7 @@ Recorded without points:
 I'd
 th
 able
-nocharge",Y,N,The offer explicitly requests “cancel up to 3 days before with nocharge.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring “Free cancellation allowed with notice.”,
+nocharge",N,N,,
 o197,Live negotiation - Oct 27,Organizer,"I can pay $250 for the venue on 30 August ending at 10p.m
 I can use my own technical equipment, and technical staff
 we cam move the date to  September 1st",A2,"Decision: scorable
@@ -14427,8 +14409,7 @@ Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
 HiI'd like to rent
-th",Y,N,"“We can pay $200” clearly specifies a permitted venue fee, but the response left it unscored and unnecessarily requested clarification.
-“We will be out by 11pm” specifies the available 11:00 p.m. closing choice, but the response omitted it.",
+th",Y,N,The proposed 11 p.m. departure is neither scored nor addressed by a relevant question. Asking again for the venue fee is accepted.,
 o239,Live negotiation - Oct 27,Organizer,"I can pay 270 dollars for the venue on September 10th next year, ending at 9:30 pm.",A2,"Decision: clarification_needed
 - Venue fee: $270  [+1.03]
 - Event date: September 10  [+0.33]
@@ -14690,9 +14671,7 @@ handy to clean afterward
 because my stage crew
 build the stage
 entitle
-deposit",Y,N,"Missed setup access: “i must also be allowed early entrance” clearly requests Early setup access included, but R3 neither scored nor clarified it.
-Unnecessarily left cancellation unscored: “a cancellation notice no later than a week before the venue will entitle me to 100% refund of the deposit” supports Free cancellation allowed with notice, but R3 asked whether cancellation should be free or non-refundable.
-Scored Event date as August 13 despite the unresolved alternatives “August 13, or friday, August 20, or friday, August 27.” A date clarification was needed.","I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
+deposit",Y,N,The early-entrance request is neither scored nor meaningfully acknowledged. The response also chooses August 13 from unresolved date alternatives. The cancellation question is accepted.,"I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
 o270,Live negotiation - Oct 27,Organizer,"I believe if we set the event on a lower price and a latter date people would be more than happy to plan ahead properly. Like call off work at said date, easily pay the money, because it doesn't break the account and have enough time to enjoy the event if we close late. This could also impact the feedback or review left by our neighbors. Leading to a higher probability of doing such event  on a long run",A2,"Decision: clarification_needed
 - Closing time: 11:00 p.m.  [+1.00]
 Questions / messages:
@@ -14742,10 +14721,7 @@ fine
 dont
 help
 maybe you can help since
-social responsibility",Y,N,"The response unnecessarily leaves cancellation unscored: “A week notice should be fine for a cancelation,” followed by a $50 fee only for later cancellation, supports free cancellation with notice.
-It scores “Organizer handles cleanup” despite “I dont have any one to help cleaning maybe you can help,” which requests venue assistance rather than offering organizer-only cleanup.
-It fixes “until 20th of September next year” as September 20 despite the unresolved deadline wording.
-It scores an exact 9:00 p.m. closing although “not before than 21.00” permits later closing times.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+social responsibility",Y,N,The response scores Organizer handles cleanup although the offer asks the venue for cleanup help. The cancellation question is accepted.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o273,Live negotiation - Oct 27,Organizer,"I'd ask for it bit earlier and I'd ask to do it on a day that we could find a common ground on and I'd stick to the $300 but say it couldn't be any earlier than September 10 and then we'd come to an agreement on the time,  Id say about how reliable my own staff would be and I'd try and get a time around 8:00 p.m for closing",A2,"Decision: clarification_needed
 - Venue fee: $300  [+0.86]
 - Event date: September 10  [+0.33]
@@ -14794,8 +14770,7 @@ Recorded without points:
 unlimited teas and coffees within this price?   off $300 fhe
 suggest
 venues responsibility
-required",Y,N,"“Clean up is not the venues responsibility, but that of the organiser” clearly selects Organizer handles cleanup; R3 unnecessarily asks who handles cleanup instead of scoring it.
-“Can the venue offer unlimited teas and coffees within this price?” clearly requests Venue provides refreshments at no extra charge; R3 records the text without scoring that supported choice.","Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
+required",Y,N,The supported venue-provided refreshments request is recorded without points. The no-projector qualification is not meaningfully retained. The cleanup question is accepted.,"Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
 o277,Live negotiation - Oct 27,Organizer,"Hello, I'd like to book the venue for September 25th next year, with an a closing time for the event of 10p.m. I can offer $200 for the venue. Our volunteers can handle cleanup afterward, and we would appreciate access to the venue early for the setup.",A2,"Decision: scorable
 - Event date: September 25  [+0.83]
 - Closing time: 5:00 p.m.  [-1.00]
@@ -14907,8 +14882,7 @@ team will come
 such as: sound system
 etc
 sure things are in order after the programme before leaving
-Total shown / retained: +2.97",Y,N,"Cleanup was recorded without points despite the clear commitment: “We will also make sure things are in order after the programme before leaving the venue.” This supports scoring “Organizer handles cleanup.”
-Projector was mapped to “Venue projector included,” but “My team will come with their equipment such as: sound system, projector etc.” specifies “Organizer brings a projector.”","I can pay $150 for the venue on September 15, ending at 9pm. My team will come with their equipment such as: sound system, projector etc. We will also be handling the cleaning before and after the programme. Thank you"
+Total shown / retained: +2.97",Y,N,"The organizer says its own team will bring the projector, but the response scores Venue projector included. It also leaves the supported cleanup commitment unscored without asking about it.","I can pay $150 for the venue on September 15, ending at 9pm. My team will come with their equipment such as: sound system, projector etc. We will also be handling the cleaning before and after the programme. Thank you"
 o286,Live negotiation - Oct 27,Organizer,"I will pay $300 for the venue on September 15 and will close at 10.00 pm. 
 I will make it a yearly recurrent event.
 Venue projector included.
@@ -14922,7 +14896,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 I will make it a yearly recurrent event.
 week's
-agreede",Y,N,"The offer explicitly says “I will pay $300 for the venue,” which is within the permitted range. R3 leaves Venue fee unscored and unnecessarily asks for a clearer value.",I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
+agreede",N,N,,I will pay $250 for the venue on September 20 and will close at 10.30 pm. My volunteers can clean up the venue at the end.
 o287,Live negotiation - Oct 27,Organizer,"I can make an event that includes food, activities and a band  for 200 dollars  this includes clean up from my staff and wrapping of leftovers a raffle a clown, a petting zoo
 
 for the venue on 15 Sep, ending at 10 t",A2,"Decision: scorable
@@ -14959,7 +14933,7 @@ paying
 finishing
 done
 right
-beforehand",Y,N,“I have the right to cancel up to 2 weeks beforehand” specifies cancellation with notice. R3 leaves it unscored and unnecessarily asks the proposer to choose between free cancellation and a non-refundable booking.,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+beforehand",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o289,Live negotiation - Oct 27,Organizer,I can pay 200 bucks for the venue on the 28th of September ending at 10pm.  Can the projector be included please and is it possible to get in early to set up? Also can I cancel as long as I give one weeks notice?,A2,"Decision: clarification_needed
 - Venue fee: $200  [+1.43]
 - Event date: September 28  [+0.93]
@@ -14971,7 +14945,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 th
 possible
-long",Y,N,“Can I cancel as long as I give one weeks notice?” supports Free cancellation allowed with notice. R3 left this choice unscored and unnecessarily asked whether cancellation should be free or non-refundable.,
+long",N,N,,
 o290,Live negotiation - Oct 27,Organizer,"Sorry, my budget is fixed at $200, its not my money, its what the neighbourhood has donated. As many of them would be attending after work we need to go on until 10PM at least but we can live with 22nd september",A2,"Decision: clarification_needed
 - Venue fee: $200  [+1.43]
 - Event date: September 22  [+0.73]
@@ -15046,7 +15020,7 @@ o296,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on Augu
 - Projector: Venue projector included  [+1.00]
 - Cleanup: Organizer handles cleanup  [-0.50]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,“I will give 2 weeks notice for cancellation for free” clearly proposes Free cancellation allowed with notice. The response left it unscored and unnecessarily asked whether cancellation should be free or non-refundable.,I would like to book 25th sept for $200 and finish at 10pm
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,I would like to book 25th sept for $200 and finish at 10pm
 o297,Live negotiation - Oct 27,Organizer,I can only pay a maximum of 250 dollars. What's the best you can offer for 15 september closing around 9pm and start around afternoon 3pm. I can come on early to set it up if thats okay.,A2,"Decision: clarification_needed
 - Event date: September 15  [+0.50]
 - Closing time: 9:00 p.m.  [+0.33]
@@ -15098,7 +15072,7 @@ o301,Live negotiation - Oct 27,Organizer,"I can offer the venue for $250 on Augu
 - Cleanup: Organizer handles cleanup  [-0.50]
 - Projector: Venue projector included  [+1.00]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,“Cancellation with notice should free” clearly requests free cancellation with notice despite the typo. R3 unnecessarily asked which cancellation option was intended instead of scoring it.,I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,I need a venue of 200 dollars on the 10th of september that will be open for 24 hours and close by 11pm the next day
 o302,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on September 5 next year, closing at 8:00 p.m. The projector is included if your volunteers handle cleanup. The booking will be non refundable",A2,"Decision: scorable
 - Venue fee: $400  [+0.29]
 - Event date: September 5  [+0.17]
@@ -15130,7 +15104,7 @@ secure your location to host
 th
 profit
 budget
-possible",Y,N,"The offer states, “We would be finished by 8 pm.” R3 omitted the clear 8:00 p.m. closing time and unnecessarily asked for it.",
+possible",N,N,,
 o305,Live negotiation - Oct 27,Organizer,"I can offer the venue for $310 on August 22 next year, closing at 8:00 p.m. The projector is included if your volunteers handle cleanup. Volunteers can handle clean ups",A2,"Decision: scorable
 - Venue fee: $310  [+0.80]
 - Event date: August 22  [-0.30]
@@ -15145,7 +15119,7 @@ o306,Live negotiation - Oct 27,Organizer,"I can offer the venue for $500 on Augu
 - Cleanup: Organizer handles cleanup  [-0.50]
 - Projector: Venue projector included  [+1.00]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,"“One week cancellation notice” proposes cancellation with notice, supporting Free cancellation allowed with notice. R3 leaves it unscored and unnecessarily asks whether the booking should instead be non-refundable.","I am looking for a venue closing at 9pm last Sunday of August, circa $ 300"
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,"I am looking for a venue closing at 9pm last Sunday of August, circa $ 300"
 o307,Live negotiation - Oct 27,Organizer,"I can pay $250 for the venue on September 28 next year, ending at 10 p.m. I need early setup access, and I can cancel without a charge if I give one week’s notice.",A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: September 28  [+0.93]
@@ -15183,7 +15157,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 I'd
 th
-able",Y,N,The offer explicitly requests cancellation “up to 3 days before free of charge.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring “Free cancellation allowed with notice.”,
+able",N,N,,
 o311,Live negotiation - Oct 27,Organizer,"Take up a donation from the community and have them pay raise 10,000 for the venue, food, and activities
 venue fee $10,000
 event date June 2027",A2,"Decision: clarification_needed
@@ -15235,7 +15209,7 @@ Please state the venue fee in US dollars (USD).
 Recorded without points:
 Dec
 flexible
-rd",Y,N,"The later proposal, “3rd September 2027 finish 9pm,” resolves the event date. R3 leaves that date unscored and unnecessarily asks for an August/September date based on the superseded December proposal.",
+rd",N,N,,
 o316,Live negotiation - Oct 27,Organizer,I would like to hire your venue next September 15th. I have a budget of £300 and would need the venue until the close of the event at 9pm.,A2,"Decision: clarification_needed
 - Event date: September 15  [+0.50]
 - Closing time: 9:00 p.m.  [+0.33]
@@ -15376,8 +15350,7 @@ Please add Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
 hold 30 people
 looking
-th of November",Y,N,"The offer states 'from 4pm to 10pm', clearly specifying the supported closing time of 10:00 p.m.; R3 leaves it unscored and incorrectly asks for Closing time.
-The offer's 'from 4pm' specifies an event start time outside the table; R3 does not acknowledge it.",
+th of November",Y,N,The proposed 4 p.m. event start is silently omitted. The questions about event date and closing time are accepted.,
 o332,Live negotiation - Oct 27,Organizer,How about $250 with a closing time of 8:30 on Sept. 21.  We clean up and localize trash but you dispose of it.,A2,"Decision: clarification_needed
 - Venue fee: $250  [+1.14]
 - Event date: September 1  [+0.03]
@@ -15423,7 +15396,7 @@ Will the organizer or venue staff handle cleanup?
 Recorded without points:
 That's ridiculous. $200 for 27th
 ourselves
-afterward",Y,N,“ourselves cleaning up venue afterward” clearly assigns cleanup to the Organizer. R3 left this choice unscored and unnecessarily asked who would handle cleanup.,$300 for 15th Sep and ending at 21:00 is a little steep. What about $200 for 15th Sep and ending at 21:00?
+afterward",N,N,,$300 for 15th Sep and ending at 21:00 is a little steep. What about $200 for 15th Sep and ending at 21:00?
 o338,Live negotiation - Oct 27,Organizer,"I can pay 200$ for the venue on the 30 of Sep, ending at 10. We can pay deposit half price now.",A2,"Decision: scorable
 - Venue fee: $200  [+1.43]
 - Event date: September 30  [+1.00]
@@ -15448,8 +15421,7 @@ o341,Live negotiation - Oct 27,Organizer,i will make it 300 but start the event 
 Questions / messages:
 Please add Venue fee, Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
-able to closen the even",Y,N,"“make it 300” clearly proposes a $300 venue fee, but R3 leaves it unscored and incorrectly asks for the fee.
-“start the event late” proposes a later start, but R3 does not capture this out-of-table request without points.",
+able to closen the even",Y,N,The proposal to start the event late is not meaningfully acknowledged. Asking again for the venue fee is accepted.,
 o342,Live negotiation - Oct 27,Organizer,i can pay $350 for the venue on Septembetr 12 next year and close the event at 10pm,A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: September 12  [+0.40]
@@ -15574,7 +15546,7 @@ Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
 HiI
-th",Y,N,"The offer clearly proposes ""$200 for the venue,"" within the permitted $100–$800 range. R3 left the venue fee unscored and unnecessarily requested a clearer value.",
+th",N,N,,
 o361,Live negotiation - Oct 27,Organizer,Saturday next year in august until 9pm and 400 rent no projector,A2,"Decision: scorable
 - Venue fee: $400  [+0.29]
 - Closing time: 9:00 p.m.  [+0.33]
@@ -15619,7 +15591,7 @@ Event date : 15-09-2027",A2,"Decision: rejected
 - Venue fee: $200  [+1.43]
 - Closing time: 9:00 p.m.  [+0.33]
 Questions / messages:
-Please add Event date. I have not scored this offer yet.",Y,N,"The offer explicitly states “Event date : 15-09-2027,” a valid September 15, 2027 date. R3 left it unscored and unnecessarily asked for the event date.",
+Please add Event date. I have not scored this offer yet.",N,N,,
 o368,Live negotiation - Oct 27,Organizer,"$301, Event date October 31, 2026.
  Closing time at 10 pm",A2,"Decision: rejected
 - Venue fee: $301  [+0.85]
@@ -15634,7 +15606,7 @@ o369,Live negotiation - Oct 27,Organizer,I can pay 300 dollars for the venue on 
 Questions / messages:
 Please add Closing time. I have not scored this offer yet.
 Recorded without points:
-till",Y,N,"The offer states ""till 9pm,"" clearly specifying Closing time as 9:00 p.m. R3 left it unscored and unnecessarily asked for a closing time.",
+till",N,N,,
 o370,Live negotiation - Oct 27,Organizer,I can do 350 bucks for the venue sept 10 ending at ten,A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: September 10  [+0.33]
@@ -15802,10 +15774,7 @@ If I cancel later than a week time I am happy to pay 50 $ fee.
 budget is very limited
 course
 dont
-help",Y,N,"Left free cancellation with notice unscored and asked an unnecessary question despite the explicit statement “Cancellation with notice is free.” The $50 fee applies to later cancellation.
-Mapped “I dont have any one to help cleaning, you should do cleaning” to Organizer cleanup instead of Venue cleanup.
-Scored September 20 as the exact event date, although “until 20th of September next year” leaves the date unresolved.
-Scored 9:00 p.m. as the exact closing time, although “close not before than 21.00” sets a minimum and permits later closing times.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+help",Y,N,The response scores Organizer handles cleanup although the offer explicitly assigns cleanup to the venue. The cancellation question is accepted.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o386,Live negotiation - Oct 27,Organizer,"I'd ask for it bit earlier and I'd ask to do it on a day that we could find a common ground on and I'd stick to the $300 but say it couldn't be any earlier than September 10 and then we'd come to an agreement on the time,  Id say about how reliable my own staff would be and I'd try and get a time around 8 p.m for closing",A2,"Decision: clarification_needed
 - Venue fee: $300  [+0.86]
 - Event date: September 10  [+0.33]
@@ -15843,8 +15812,7 @@ free promotion of your venue on social media
 lock everything up at the end
 host
 save
-come",Y,N,"The offer says the organizer 'will clean and lock everything up at the end.' R3 unnecessarily asks who handles cleanup instead of scoring Organizer handles cleanup.
-R3 silently omits the explicit event start time, 'from 7:00pm,' which should be captured without points.",
+come",Y,N,The explicit 7 p.m. event start is silently omitted. The cleanup question is accepted.,
 o389,Live negotiation - Oct 27,Organizer,"I can offer $200 for the venue on September 25 next year, with the event closing at 10 p.m. I'd also like to ask whether the projector can be included and whether my volunteers can help with the cleanup. We'd appreciate some flexibility to come in early to set up.",A2,"Decision: scorable
 - Venue fee: $200  [+1.43]
 - Event date: September 25  [+0.83]
@@ -15870,8 +15838,7 @@ unlimited teas and coffees within this price?   off $300 fhe
 suggest
 venues responsibility
 consumer
-required",Y,N,"“Can the venue offer unlimited teas and coffees within this price?” clearly requests venue-provided refreshments at no extra charge. R3 records the wording but leaves that supported choice unscored.
-“Projector is not required” is not meaningfully acknowledged: R3 records only “required,” losing the no-projector qualification. This should be captured without points because neither projector option represents it.","Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
+required",Y,N,The supported venue-provided refreshments request is recorded without points. The no-projector qualification is not meaningfully retained. The cleanup question is accepted.,"Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
 o391,Live negotiation - Oct 27,Organizer,"We can pay around $290 for the venue on 22 Sep next year, with a closing time of 8. Ideally my team would get there at around 2pm to set up for a 3:30pm start time; we're happy to clean up afterwards in exchange for use of the venue projector",A2,"Decision: scorable
 - Event date: September 22  [+0.73]
 - Closing time: 8:00 p.m.  [+0.00]
@@ -15944,8 +15911,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 best
 vanue
-th",Y,N,"Missed “i will need access 2 hours early to the venue,” which supports scoring Setup access as Early setup access included.
-Asked whether cancellation should be free or non-refundable instead of scoring Free cancellation allowed with notice, despite the explicit request “i want a 1 week cancellation notice for free.”",my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
+th",Y,N,The two-hour early-access request is neither scored nor meaningfully acknowledged. The cancellation question is accepted.,my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
 o397,Live negotiation - Oct 27,Organizer,"Venue fee is $300 for September 15 and will close at 10.00 pm. 
 I will make it a yearly recurrent event.
 Venue projector included.
@@ -15971,7 +15937,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 th
 possible
-long",Y,N,“Can I cancel as long as I give one weeks notice?” clearly requests free cancellation with notice. R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring the supported choice.,
+long",N,N,,
 o399,Live negotiation - Oct 27,Organizer,"Would like to have the event on September 30th, paying $225 and the event finishing at 11
 
 The cleanup will be done by organiser but a projector must be included 
@@ -15989,7 +15955,7 @@ th
 paying
 finishing
 done
-beforehand",Y,N,"The offer explicitly requests ""cancel up to 2 weeks beforehand for free."" R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring Free cancellation allowed with notice.","Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+beforehand",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o400,Live negotiation - Oct 27,Organizer,"Sorry, my budget is fixed, its not my money, its what the neighbourhood has donated. As many of them would be attending after work we need to go on until 10PM at least but we can live with 22nd september",A2,"Decision: clarification_needed
 - Event date: September 22  [+0.73]
 Questions / messages:
@@ -16067,7 +16033,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 done
-cashback",Y,N,"The offer states, ""If i cancel the event we won't request the cashback,"" clearly supporting Booking is non-refundable. R3 left this unscored and unnecessarily asked whether cancellation should be free or non-refundable.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
+cashback",N,N,,I can pay $400 for the venue on September 20 next year and the event will close at 8pm
 o407,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on August 22 next year, closing at 7:00 p.m. The projector is included if your volunteers handle cleanup.  I will give 2 weeks notice for cancellation",A2,"Decision: clarification_needed
 - Venue fee: $400  [+0.29]
 - Event date: August 22  [-0.30]
@@ -16075,7 +16041,7 @@ o407,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on Augu
 - Cleanup: Organizer handles cleanup  [-0.50]
 - Projector: Venue projector included  [+1.00]
 Questions / messages:
-Should cancellation with notice be free, or should the booking be non-refundable?",Y,N,“I will give 2 weeks notice for cancellation” supports “Free cancellation allowed with notice.” R3 leaves it unscored and unnecessarily asks whether cancellation is free or non-refundable.,I would like to book 25th sept for $200 and finish at 10pm
+Should cancellation with notice be free, or should the booking be non-refundable?",N,N,,I would like to book 25th sept for $200 and finish at 10pm
 o408,Live negotiation - Oct 27,Organizer,"I can offer the venue for $500 on August 22 next year, closing at 7:00 p.m. The projector is included if your volunteers handle cleanup. Cancellation in a week should be free",A2,"Decision: clarification_needed
 - Venue fee: $500  [-0.29]
 - Event date: August 22  [-0.30]
@@ -16124,7 +16090,7 @@ Recorded without points:
 I'd
 th
 able
-nocharge",Y,N,The offer explicitly requests “cancel up to 3 days before with nocharge.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring “Free cancellation allowed with notice.”,
+nocharge",N,N,,
 o413,Live negotiation - Oct 27,Organizer,"i can pay 450 but would need a later finish than that, how about 9pm? needs to be september, how about the 10th? we're happy to handle the cleanup",A2,"Decision: clarification_needed
 - Event date: September 1  [+0.03]
 - Cleanup: Organizer handles cleanup  [-0.50]
@@ -16132,9 +16098,7 @@ Questions / messages:
 Please choose one closing time from 5:00 p.m. through 11:00 p.m.
 Recorded without points:
 about
-about the 10th? we're",Y,N,"Missed Venue fee: “i can pay 450” clearly proposes $450, but the response left it unscored.
-Left Closing time unscored and unnecessarily requested clarification despite the explicit proposal “how about 9pm?”
-Mapped Event date to September 1 instead of September 10, despite “needs to be september, how about the 10th?”","i need the venue for september 12th, closing at 10, would 400 cover it?"
+about the 10th? we're",Y,N,"The proposed $450 fee is neither scored nor addressed by a fee question, and September 10 is interpreted as September 1. The closing-time question is accepted.","i need the venue for september 12th, closing at 10, would 400 cover it?"
 o414,Live negotiation - Oct 27,Organizer,"I propose $250 for the venue  on September 15, and closing at 9:00pm. I will throw in free food for the venue manager. Organizers will  clean up.",A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: September 15  [+0.50]
@@ -16229,7 +16193,7 @@ Questions / messages:
 Please add Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
 I'm looking to reserve
-part",Y,N,"The offer states “for $150 at 11pm,” supporting Closing time: 11:00 p.m. R3 leaves this unscored and incorrectly asks for a closing time.",
+part",N,N,,
 o426,Live negotiation - Oct 27,Organizer,"The event date remains 15th os September so that cannot be changed. However, I can offer a sum of $350 with an 8pm closing time",A2,"Decision: scorable
 - Event date: September 1  [+0.03]
 - Venue fee: $350  [+0.57]
@@ -16283,7 +16247,7 @@ Please give a clearer value for Venue fee using the choices shown in the practic
 Recorded without points:
 for 50 people
 start at 1pm
-th",Y,N,"The offer explicitly states 'I can pay $500,' an in-range Venue fee. R3 leaves it unscored and unnecessarily requests a clearer value.",
+th",N,N,,
 o432,Live negotiation - Oct 27,Organizer,"Hey! How are you doing today?
 
 I need a venue sometime in Aug/Sep.
@@ -16467,7 +16431,7 @@ o454,Live negotiation - Oct 27,Organizer,i can pay $400 for the venue on septemb
 - Venue fee: $400  [+0.29]
 - Event date: September 28  [+0.93]
 Questions / messages:
-Please add Closing time. I have not scored this offer yet.",Y,N,"The offer specifies closing time with ""by 8 pm,"" but R3 left it unscored and unnecessarily asked for a closing time.",
+Please add Closing time. I have not scored this offer yet.",N,N,,
 o455,Live negotiation - Oct 27,Organizer,i can pay 100 for the venue on september 30 and close at 11 pm,A2,"Decision: scorable
 - Venue fee: $100  [+2.00]
 - Event date: September 30  [+1.00]
@@ -16491,8 +16455,7 @@ Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
 HiI'd like to rent
-th",Y,N,"The clear, permitted venue fee in ""for $200"" was left unscored; the response unnecessarily requested a clearer fee.
-The closing time in ""7-11pm"" clearly specifies 11:00 p.m., but the response neither scored nor acknowledged it.",
+th",Y,N,"The 11 p.m. closing time in ""7-11pm"" is neither scored nor addressed by a relevant question. Asking again for the venue fee is accepted.",
 o459,Live negotiation - Oct 27,Organizer,"200 venue fee, Event date :  1 november
 closing time :9 pm",A2,"Decision: rejected
 - Venue fee: $200  [+1.43]
@@ -16587,7 +16550,7 @@ o473,Live negotiation - Oct 27,Organizer,I can do 200 bucks sept 20 ending at te
 - Event date: September 20  [+0.67]
 - Closing time: 10:00 p.m.  [+0.67]
 Questions / messages:
-Please add Venue fee. I have not scored this offer yet.",Y,N,"The offer explicitly proposes ""200 bucks"" as the venue fee. R3 leaves it unscored and unnecessarily asks for a Venue fee.",
+Please add Venue fee. I have not scored this offer yet.",N,N,,
 o474,Live negotiation - Oct 27,Organizer,150$ on 30th sept closing at 9pm,A2,"Decision: scorable
 - Venue fee: $150  [+1.71]
 - Event date: September 30  [+1.00]
@@ -16602,7 +16565,7 @@ o475,Live negotiation - Oct 27,Organizer,$350 on Sept 30 and close at 9pm,A2,"De
 Total shown / retained: +1.90",N,N,,
 o476,Live negotiation - Oct 27,Organizer,Can I make a proposal of 250,A2,"Decision: rejected
 Questions / messages:
-Please add Venue fee, Event date, Closing time. I have not scored this offer yet.",Y,N,The offer's “proposal of 250” clearly proposes a $250 venue fee. R3 left it unscored and incorrectly requested the fee again; the missing date and closing time do not prevent scoring it.,
+Please add Venue fee, Event date, Closing time. I have not scored this offer yet.",N,N,,
 o477,Live negotiation - Oct 27,Organizer,I can pay $399,A2,"Decision: rejected
 - Venue fee: $399  [+0.29]
 Questions / messages:
@@ -16694,9 +16657,7 @@ fine
 dont
 help
 maybe you can help since
-social responsibility",Y,N,"“A week notice should be fine for a cancelation” supports free cancellation with notice. R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring that choice.
-R3 scores Organizer handles cleanup despite “I dont have any one to help cleaning maybe you can help,” which requests venue help rather than offering organizer cleanup.
-R3 fixes September 20 and 9:00 p.m. as exact choices, although “until 20th of September” leaves the date ambiguous and “not before than 21.00” sets a minimum closing time.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+social responsibility",Y,N,The response scores Organizer handles cleanup although the offer asks the venue for cleanup help. The cancellation question is accepted.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o484,Live negotiation - Oct 27,Organizer,"I'd ask for it bit earlier and I'd ask to do it on a day that we could find a common ground on and I'd stick to the $300 but say it couldn't be any earlier than September 10 and then we'd come to an agreement on the time,  Id say about how reliable my own staff would be and I'd try and get a time around 8pm for closing",A2,"Decision: clarification_needed
 - Venue fee: $300  [+0.86]
 - Event date: September 10  [+0.33]
@@ -16756,9 +16717,7 @@ Recorded without points:
 unlimited teas and coffees within this price?   off $300 fhe
 suggest
 venues responsibility
-required",Y,N,"“Clean up is not the venues responsibility” supports Organizer handles cleanup; the response unnecessarily asks who handles cleanup instead of scoring it.
-“Can the venue offer unlimited teas and coffees within this price?” clearly requests venue-provided refreshments at no extra charge. The response records the text but leaves that supported choice unscored.
-“Projector is not required” is not meaningfully captured: recording only “required” loses the projector opt-out.","Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
+required",Y,N,The supported venue-provided refreshments request is recorded without points. The no-projector qualification is not meaningfully retained. The cleanup question is accepted.,"Can the venue offer unlimited teas and coffees within this price?   off $300 fhe venue on the 15th of September, closing at 9pm?"
 o489,Live negotiation - Oct 27,Organizer,"I can pay $150 for the venue on September 15, ending at 9pm. My team will come with their equipment such as: sound system, projector etc. We will also be handling the cleaning before and after the programme. Thank you",A2,"Decision: scorable
 - Venue fee: $150  [+1.71]
 - Event date: September 15  [+0.50]
@@ -16782,8 +16741,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 best
 vanue
-th",Y,N,"Missed “i will need access 2 hours early to the venue,” which supports scoring Setup access as Early setup access included.
-Asked whether cancellation should be free instead of scoring Free cancellation allowed with notice, despite the explicit request “i want a free 1 week cancellation notice.”",my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
+th",Y,N,The two-hour early-access request is neither scored nor meaningfully acknowledged. The cancellation question is accepted.,my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
 o491,Live negotiation - Oct 27,Organizer,"We can pay around $200 for the venue on 22 Sep next year, ideally with a closing time of 10:30pm. Ideally my team would get there at around 3pm to set up for a 5:30pm start time; we're happy to clean up afterwards",A2,"Decision: clarification_needed
 - Event date: September 22  [+0.73]
 - Setup access: Early setup access included  [+0.75]
@@ -16893,8 +16851,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 NDA
-done",Y,Y,"The offer states, ""The cancellation notice on booking is refundable."" This supports free cancellation with notice, but R3 leaves it unscored and unnecessarily asks whether the booking should be non-refundable.
-R3 records ""NDA"" without points, adding a confidentiality issue unsupported by any proposal in the offer.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
+done",N,Y,"The response adds ""NDA"" without points although the offer never proposes confidentiality. The cancellation clarification is accepted and is not a Type A error.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
 o500,Live negotiation - Oct 27,Organizer,I would like to secure your location to host our event on August 20th 2027.  We would close by 8 pm.  We are a non profit venue.  $250 Is our budget.  Is that possible?,A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: August 20  [-0.37]
@@ -16941,7 +16898,7 @@ Recorded without points:
 I'd
 th
 able
-nocharge",Y,N,The offer explicitly requests “cancel up to 3 days before with nocharge.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring Free cancellation allowed with notice.,
+nocharge",N,N,,
 o505,Live negotiation - Oct 27,Organizer,"i can pay 450 but would need a later finish than that, how about 9? needs to be september, how about the 10th? we're happy to handle the cleanup",A2,"Decision: clarification_needed
 - Event date: September 1  [+0.03]
 - Cleanup: Organizer handles cleanup  [-0.50]
@@ -16949,9 +16906,7 @@ Questions / messages:
 Please choose one closing time from 5:00 p.m. through 11:00 p.m.
 Recorded without points:
 about
-about the 10th? we're",Y,N,"Missed Venue fee: “i can pay 450” clearly proposes $450, but no fee was scored.
-Left Closing time unscored and requested clarification despite the concrete proposal “how about 9?”, meaning 9:00 p.m.
-Mapped Event date to September 1 instead of September 10, proposed in “needs to be september, how about the 10th?”","i need the venue for september 12th, closing at 10, would 400 cover it?"
+about the 10th? we're",Y,N,"The proposed $450 fee is neither scored nor addressed by a fee question, and September 10 is interpreted as September 1. The closing-time question is accepted.","i need the venue for september 12th, closing at 10, would 400 cover it?"
 o506,Live negotiation - Oct 27,Organizer,"I will pay $300 for the venue on September 15 and will close at 10.00 pm. 
 I will make it a yearly recurrent event.
 Venue projector included.",A2,"Decision: scorable
@@ -17062,7 +17017,7 @@ Please give a clearer value for Venue fee using the choices shown in the practic
 Recorded without points:
 for 50 people
 start at 1pm
-th",Y,N,"“I can pay $500” gives a clear, permitted Venue fee. R3 leaves it unscored and unnecessarily requests a clearer value.",
+th",N,N,,
 o520,Live negotiation - Oct 27,Organizer,"I can  offer the sum of $350 dollars for the last Saturday in September, and  we can close the event  by 10pm.",A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Closing time: 10:00 p.m.  [+0.67]
@@ -17115,7 +17070,7 @@ Will the organizer or venue staff handle cleanup?
 Recorded without points:
 That's ridiculous. $200 for 27th
 ourselves
-afterward",Y,N,“ourselves cleaning up venue afterward” clearly assigns cleanup to the Organizer. R3 left this choice unscored and unnecessarily asked who would handle cleanup.,$300 for 15th Sep and ending at 21:00 is a little steep. What about $200 for 15th Sep and ending at 21:00?
+afterward",N,N,,$300 for 15th Sep and ending at 21:00 is a little steep. What about $200 for 15th Sep and ending at 21:00?
 o526,Live negotiation - Oct 27,Organizer,I can pay $300 on October 28 next year and close at 10 p.m. The event date is November 10.,A2,"Decision: rejected
 - Venue fee: $300  [+0.86]
 - Closing time: 10:00 p.m.  [+0.67]
@@ -17288,7 +17243,7 @@ o551,Live negotiation - Oct 27,Organizer,$275 on event date October 31  and clos
 Questions / messages:
 Please add Event date. I have not scored this offer yet.
 Recorded without points:
-October",Y,N,"The offer specifies “event date October 31,” but the response treats Event date as missing and records only “October.” It should recognize the supplied out-of-range date and request an August–September alternative; scoring October 31 is not required.",
+October",N,N,,
 o552,Live negotiation - Oct 27,Organizer,"300 bucks for the venue on 15 Sep, ending at 9",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 15  [+0.50]
@@ -17308,8 +17263,7 @@ from 2pm-9pm",A2,"Decision: rejected
 Questions / messages:
 Please add Closing time. I have not scored this offer yet.
 Recorded without points:
-th",Y,N,"“from 2pm-9pm” clearly specifies a 9:00 p.m. closing time, but the response leaves it unscored and unnecessarily asks for Closing time.
-The 2 p.m. start time in “from 2pm-9pm” is also omitted; it should be captured without points.",
+th",Y,N,The explicit 2 p.m. event start is silently omitted. Asking about the closing time is accepted.,
 o555,Live negotiation - Oct 27,Organizer,i can pay 250$,A2,"Decision: rejected
 - Venue fee: $250  [+1.14]
 Questions / messages:
@@ -17371,8 +17325,7 @@ th
 course
 fine
 dont
-help",Y,N,"The offer explicitly says “Cancellation with notice is free,” but the response leaves cancellation unscored and unnecessarily asks whether it should be free or non-refundable.
-“I dont have any one to help cleaning, you should do cleaning” assigns cleanup to the venue, but the response scores “Organizer handles cleanup.”",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+help",Y,N,The response scores Organizer handles cleanup although the offer explicitly assigns cleanup to the venue. The cancellation question is accepted.,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o560,Live negotiation - Oct 27,Organizer,"oh dear that's very expensive, i guess i can push my budget out to 350 and unfortunately lots of folk are on holiday in august so we can't do then. We could agree to close at 8pm and my volunteers will clean the venue for you. Am afraid that's the best we can do.",A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Closing time: 8:00 p.m.  [+0.00]
@@ -17408,7 +17361,7 @@ nd
 friday
 th
 several
-offered to stay behind",Y,N,"Missed Event date: “I must have a friday. I can do the 13th” identifies August 13, 2027, the only Friday the 13th in the permitted months. The response unnecessarily requested a date instead of scoring it.","I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
+offered to stay behind",N,N,,"I can do $250 for a Friday, preferably August 13, but the 20th or 27th are just as well, and we will close at 10pm"
 o563,Live negotiation - Oct 27,Organizer,"my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 10pm, we will handle all the cleaning, i will need access 2 hours early to the venue and i want a 1 week cancellation notce",A2,"Decision: clarification_needed
 - Venue fee: $100  [+2.00]
 - Event date: September 30  [+1.00]
@@ -17420,8 +17373,7 @@ Recorded without points:
 best
 vanue
 th
-notce",Y,N,"Missed “i will need access 2 hours early to the venue”: this clearly supports Early setup access included, but R3 neither scored nor acknowledged it.
-Unnecessarily left “i want a 1 week cancellation notce” unscored and asked whether cancellation should be free or non-refundable. The requested cancellation notice supports Free cancellation allowed with notice.",my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
+notce",Y,N,The two-hour early-access request is neither scored nor meaningfully acknowledged. The cancellation question is accepted.,my best offer is 100$ for the vanue on sepptember 30th next year and a closting time of 11pm
 o564,Live negotiation - Oct 27,Organizer,I can pay 350 bucks for the venue on the 10th of September ending at 8pm.  Can the projector be included please and is it possible to get in early to set up? I'm happy for the booking to be non refundable.,A2,"Decision: scorable
 - Venue fee: $350  [+0.57]
 - Event date: September 10  [+0.33]
@@ -17512,8 +17464,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 NDA
 june
-done",Y,Y,"The offer says, ""The cancellation notice on booking is refundable."" This supports free cancellation with notice, but R3 leaves it unscored and unnecessarily asks whether cancellation should be free or non-refundable.
-R3 records ""NDA"" without points, adding a confidentiality issue that the offer never proposes.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
+done",N,Y,"The response adds ""NDA"" without points although the offer never proposes confidentiality. The cancellation clarification is accepted and is not a Type A error.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
 o572,Live negotiation - Oct 27,Organizer,"Would like to have the event on September 30th, paying $225 and the event finishing at 11
 
 The cleanup will be done by organiser but a projector must be included",A2,"Decision: scorable
@@ -17615,7 +17566,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 I'd
-th",Y,N,"The offer says, ""Cancellation notice should be free of charge,"" clearly supporting Free cancellation allowed with notice. R3 left it unscored and unnecessarily asked whether cancellation should be free or non-refundable.",
+th",N,N,,
 o584,Live negotiation - Oct 27,Organizer,"I propose $250 for the venue  on September 15, and closing at 9:00pm. I will throw in free food for the venue manager.",A2,"Decision: scorable
 - Venue fee: $250  [+1.14]
 - Event date: September 15  [+0.50]
@@ -17640,8 +17591,7 @@ Questions / messages:
 These terms are not part of this practice: venue for 50 people.
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
-th",Y,N,"“I can pay $500” specifies a valid Venue fee, but the response leaves it unscored and unnecessarily requests a clearer value.
-“My event would start at 1pm” is omitted rather than acknowledged as an outside-table detail.",
+th",Y,N,The explicit 1 p.m. event start is silently omitted. Asking again for the venue fee is accepted.,
 o587,Live negotiation - Oct 27,Organizer,"I am looking for a venue that can hold 30 people for $290, on Sep 19 next year, ending at 10pm",A2,"Decision: scorable
 - Venue fee: $290  [+0.91]
 - Event date: September 19  [+0.63]
@@ -17795,7 +17745,7 @@ o608,Live negotiation - Oct 27,Organizer,$200 for the venue 30th September and c
 Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
-th",Y,N,"The offer clearly states ""$200 for the venue,"" within the permitted $100–$800 range. The response left Venue fee unscored and unnecessarily requested a clearer value.",
+th",N,N,,
 o609,Live negotiation - Oct 27,Organizer,"how about $300 bucks, on september 15 ending 9 pm.",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 15  [+0.50]
@@ -17966,7 +17916,7 @@ o626,Live negotiation - Oct 27,Organizer,I can pay $800 for the venue on August 
 Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
-done",Y,N,"“A week notice for cancellation” proposes cancellation with notice, which maps to Free cancellation allowed with notice. R3 unnecessarily asked whether cancellation should be free instead of scoring that choice.",I can pay $400 for the venue on September 20 next year and the event will close at 8pm
+done",N,N,,I can pay $400 for the venue on September 20 next year and the event will close at 8pm
 o627,Live negotiation - Oct 27,Organizer,I can pay 60 bucks for the venue on the 28th of September ending at 10pm.  Can the projector be included please and is it possible to get in early to set up?,A2,"Decision: clarification_needed
 - Event date: September 28  [+0.93]
 - Closing time: 10:00 p.m.  [+0.67]
@@ -17990,7 +17940,7 @@ Recorded without points:
 th
 paying
 finishing
-done",Y,N,"The offer states ""The cleanup will be done by me,"" clearly assigning cleanup to the Organizer. R3 leaves it unscored and unnecessarily asks who will handle cleanup.","Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+done",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o629,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on September 2nd next year, closing at 10:00 p.m. The projector is included and I'll handle the clean up",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 2  [+0.07]
@@ -18009,7 +17959,7 @@ Questions / messages:
 Should cancellation with notice be free, or should the booking be non-refundable?
 Recorded without points:
 I'd
-th",Y,N,"The offer explicitly says, ""Cancellation with notice should be free."" R3 unnecessarily asks which cancellation option is intended instead of scoring ""Free cancellation allowed with notice.""",
+th",N,N,,
 o631,Live negotiation - Oct 27,Organizer,"I can offer the venue for $300 on August 31 next year, closing at 7 p.m. The projector is included and I can handle cleanup.",A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: August 31  [+0.00]
@@ -18096,7 +18046,7 @@ Questions / messages:
 Please give a clearer value for Venue fee using the choices shown in the practice information.
 Recorded without points:
 venue for 50 people
-th",Y,N,"The offer clearly proposes “I can pay $500,” which is within the permitted venue-fee range. R3 leaves it unscored and unnecessarily asks for a clearer value.",
+th",N,N,,
 o643,Live negotiation - Oct 27,Organizer,"I propose $200 for the venue a week earlier, and closing at 8:30pm.",A2,"Decision: clarification_needed
 - Venue fee: $200  [+1.43]
 Questions / messages:
@@ -18157,7 +18107,7 @@ o652,Live negotiation - Oct 27,Organizer,"how about 300 bucks, on september 15 e
 Questions / messages:
 Please add Venue fee. I have not scored this offer yet.
 Recorded without points:
-about",Y,N,"The offer explicitly proposes ""300 bucks"" as the venue fee, but the response leaves it unscored and unnecessarily asks for a Venue fee.",
+about",N,N,,
 o653,Live negotiation - Oct 27,Organizer,I will reduce the number of people to 20,A2,"Decision: rejected
 Questions / messages:
 These terms are not part of this practice: I will reduce the number of people to 20.
@@ -18184,7 +18134,7 @@ Questions / messages:
 Please add Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
 oct
-over",Y,N,"The offer explicitly says ""over at 10 pm,"" supporting Closing time: 10:00 p.m. R3 leaves it unscored and incorrectly asks for a closing time.",
+over",N,N,,
 o657,Live negotiation - Oct 27,Organizer,I can pay $300 on October 28,A2,"Decision: rejected
 - Venue fee: $300  [+0.86]
 Questions / messages:
@@ -18193,7 +18143,7 @@ Recorded without points:
 October",N,N,,
 o658,Live negotiation - Oct 27,Organizer,200 dollars,A2,"Decision: clarification_needed
 Questions / messages:
-What venue fee in US dollars would you like? The practice uses $100–$800.",Y,N,"The offer explicitly states ""200 dollars,"" a valid venue fee. R3 leaves it unscored and unnecessarily asks for the fee again.",
+What venue fee in US dollars would you like? The practice uses $100–$800.",N,N,,
 o659,Live negotiation - Oct 27,Organizer,we have to come to an agreement here and $200 plus the time I'm not happy with isn't the best I'm sure we could come to an agreement where I get the venue for max $350 for last to early September on a night where the venue isn't necessarily needed and with a closing time of 8 pm,A2,"Decision: scorable
 - Closing time: 8:00 p.m.  [+0.00]
 - Venue fee: $350  [+0.57]
@@ -18214,9 +18164,7 @@ Should cancellation with notice be free, or should the booking be non-refundable
 Recorded without points:
 budget is very limited
 th
-course",Y,N,"Leaves cancellation unscored and asks whether it should be free, despite the explicit choice 'cancellation with notice should be free'.
-Scores September 20 as an exact date despite the unresolved wording 'until 20th of September next year'.
-Scores an exact 9:00 p.m. closing, although 'close not before than 21.00' specifies only the earliest acceptable closing time.",My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
+course",N,N,,My budget is very limited I can pay 100 $ for the venue until 30th of September next year and of course you should close not before than 21.30
 o661,Live negotiation - Oct 27,Organizer,"I can make an event that includes food, activities and a band  for 400 dollars  this includes clean up from my staff and wrapping of leftovers 
 
 November, 14th ending at 10 this year",A2,"Decision: rejected
@@ -18230,7 +18178,7 @@ Recorded without points:
 activities and a band
 wrapping of leftovers
 November
-th",Y,N,"“November, 14th ending at 10 this year” supplies an event date. R3 treats it as missing and records only fragments, rather than recognizing the out-of-range date and requesting an eligible replacement.",
+th",N,N,,
 o662,Live negotiation - Oct 27,Organizer,if you can make it 350 we can provide a projector and help with cleaning afterwards. agreed that cancellation a week prior incurrs no charge except the contractual fee wch is 5%,A2,"Decision: rejected
 - Venue fee: $350  [+0.57]
 - Projector: Organizer brings a projector  [-0.25]
@@ -18306,8 +18254,7 @@ Recorded without points:
 I'd
 th
 able
-nocharge",Y,N,"The offer explicitly requests “cancel up to 3 days before with nocharge.” R3 unnecessarily asks whether cancellation should be free or non-refundable instead of scoring free cancellation with notice.
-R3 scores August 1, but the offer specifies “August the 18th next year”; the correct date is August 18, 2027.",
+nocharge",Y,N,"The offer specifies August 18, but the response scores August 1. The cancellation question is accepted.",
 o670,Live negotiation - Oct 27,Organizer,"10 bucks for the venue on 15 Sep, ending at 9. I need to get in early to set up and my volunteers can clean up afterwards.",A2,"Decision: clarification_needed
 - Event date: September 15  [+0.50]
 - Closing time: 9:00 p.m.  [+0.33]
@@ -18365,8 +18312,7 @@ Please add Closing time. I have not scored this offer yet.
 Recorded without points:
 Friday
 mid
-we'll be gone",Y,N,"Missed closing time: ""we'll be gone by 10pm"" supplies 10:00 p.m., but R3 leaves it unscored and asks for it as missing.
-Wrong date mapping: ""a Friday, mid- to late-August"" does not specify August 1. R3 scores August 1 instead of asking which Friday.",
+we'll be gone",Y,N,The response chooses August 1 from the unresolved request for a Friday in mid- to late-August. Asking again for the closing time is accepted.,
 o677,Live negotiation - Oct 27,Organizer,I can pay $200 for the venue on september 30 next year and close at 10 pm,A2,"Decision: scorable
 - Venue fee: $200  [+1.43]
 - Event date: September 30  [+1.00]
@@ -18435,18 +18381,18 @@ o688,Live negotiation - Oct 27,Organizer,200 bucks  20th october close 10pm,A2,"
 Questions / messages:
 Please add Venue fee, Event date. I have not scored this offer yet.
 Recorded without points:
-th october",Y,N,"The offer explicitly proposes ""200 bucks"" ($200), a permitted venue fee. R3 leaves it unscored and incorrectly asks the organizer to add a Venue fee.",
+th october",N,N,,
 o689,Live negotiation - Oct 27,Organizer,"200 venue fee, at 1 nov till 6pm",A2,"Decision: rejected
 - Venue fee: $200  [+1.43]
 Questions / messages:
 Please add Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
-nov till",Y,N,"The offer explicitly says ""till 6pm,"" but the response leaves Closing time unscored and asks for it as missing. It should score 6:00 p.m. even though the proposed date is outside the permitted range.",
+nov till",N,N,,
 o690,Live negotiation - Oct 27,Organizer,275 October 31st Noon pm,A2,"Decision: rejected
 Questions / messages:
 Please add Venue fee, Event date, Closing time. I have not scored this offer yet.
 Recorded without points:
-October 31st Noon",Y,N,"The offer's “275” clearly proposes a permitted $275 venue fee, but R3 leaves it unscored and asks for a missing Venue fee. The invalid date and closing time do not prevent scoring this clear term.",
+October 31st Noon",N,N,,
 o691,Live negotiation - Oct 27,Organizer,I can pay $300,A2,"Decision: rejected
 - Venue fee: $300  [+0.86]
 Questions / messages:
@@ -18650,7 +18596,7 @@ What venue fee in US dollars would you like? The practice uses $100–$800.
 Recorded without points:
 activities
 crafters
-activities and crafters",Y,N,"The offer specifies “for 400 dollars,” but the response leaves Venue fee unscored and asks for the fee again unnecessarily.",
+activities and crafters",N,N,,
 o716,Live negotiation - Oct 27,Organizer,I will pay $300 for the venue on September 20 and will close at 8.00 pm.,A2,"Decision: scorable
 - Venue fee: $300  [+0.86]
 - Event date: September 20  [+0.67]

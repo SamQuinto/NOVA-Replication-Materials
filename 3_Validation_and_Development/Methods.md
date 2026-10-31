@@ -2,7 +2,7 @@
 
 ## Accuracy
 
-- **Type A: missed or unscored idea.** A meaningful proposal is omitted, or a clear supported option is left unscored without a necessary clarification. A useful question can handle missing essential details. Acknowledgement without points can handle an idea that the table genuinely cannot represent. Unfinished fragments need not become complete proposals.
+- **Type A: missed or unscored idea.** A meaningful proposal is omitted, or a clear supported option is left unscored without a relevant clarification. A question addressing the proposed issue is accepted even when direct scoring would have been preferable. Mere fragments that lose the idea's meaning do not count as acknowledgement. Acknowledgement without points can handle an idea that the table genuinely cannot represent. Unfinished fragments need not become complete proposals.
 - **Type B: unproposed issue added.** A distinct unproposed issue is priced or introduced. A leading question about an unmentioned optional issue can also reveal it. Reasonable shorthand, such as recruitment-fair participation meaning commitment, is not automatically an addition.
 - **Primary accuracy:** neither A nor B is present. Divide accurate rows by all evaluated inputs for that scorer. An input with both errors is one inaccurate input.
 
@@ -10,7 +10,9 @@ The manuscript's **Type C** means a meaningful idea absent from the table. It is
 
 We drafted reference interpretations with model assistance and reviewed them using researcher feedback about what counted as a reasonable interpretation. The Y/N decisions in the workbooks are the final decisions from that process, rather than a new independent human audit. The notebook counts those decisions; it does not ask another model to judge them again.
 
-On October 31, we accepted two tutorial clarification responses: A1-low on o288 asked about cancellation, and A1-high on o295 asked about the event date. Both acknowledged the proposed issue, so asking an unnecessary clarification was treated as a usability limitation rather than a Type A omission. These two review corrections raise both A1 tutorial counts from 730/731 to 731/731. They do not change the recorded responses, main-exercise results, API costs or timings. A2's review decisions have not been regraded as part of this two-case correction.
+On October 31, we accepted two tutorial clarification responses: A1-low on o288 asked about cancellation, and A1-high on o295 asked about the event date. Both acknowledged the proposed issue, so asking an unnecessary clarification was treated as a usability limitation rather than a Type A omission. These corrections raise both A1 tutorial counts from 730/731 to 731/731.
+
+We then inspected all 152 previously flagged A2 tutorial responses using the same criterion. We removed 63 Type A flags for responses that addressed the issue with a clarification. Two of these offers still had a Type B error, so the accurate count increased by 61, from 579 to 640 of 731. We also marked o60 as Type B because it added early access from a promise to perform setup work, using the same distinction already applied to o205. A2 now has 83 Type A flags, 10 Type B flags and two offers with both errors. The [offer-by-offer review log](data/tutorial_A2_review_corrections.json) retains the previous judgments and the reasons for the decisions. No scorer responses, prompts, main-exercise results, API costs or timings changed, and no new API calls were made.
 
 ### Inputs
 
