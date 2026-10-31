@@ -22,6 +22,19 @@ def local_environment():
                 env['OPENAI_API_KEY']=line.split('=',1)[1].strip().strip('"\'')
     return env
 
+def role_materials(exercise, role):
+    """Use the bundled exercise text, not a shortened demonstration version."""
+    if exercise not in ['job','tutorial'] or role not in ['Candidate','Recruiter']:
+        raise ValueError('Please choose an exercise and role.')
+    folder=CODE/'frozen'/('tutorial' if exercise=='tutorial' else '')
+    table=json.loads((folder/'Scoring_Table.json').read_text(encoding='utf-8'))
+    material=table['roles'][role]
+    # full_text is the role text used by the scorer and current Empirica package.
+    # Some historical full_blocks copies contain extra wording, so do not substitute them.
+    return {'exercise':exercise,'role':role,
+            'name':table.get('parties',{}).get(role,{}).get('name',role),
+            'text':material['full_text']}
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args):pass # Keep offers and API keys out of server logs.
     def send(self,value,status=200):
@@ -29,6 +42,11 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8')
         self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.end_headers();self.wfile.write(body)
     def do_GET(self):
+        parsed=urllib.parse.urlsplit(self.path)
+        if parsed.path=='/api/materials':
+            query=urllib.parse.parse_qs(parsed.query)
+            try:return self.send(role_materials(query.get('exercise',['job'])[0],query.get('role',['Candidate'])[0]))
+            except ValueError as exc:return self.send({'error':str(exc)},400)
         if self.path=='/api/status':return self.send({'key_ready':bool(local_environment().get('OPENAI_API_KEY')),
             'examples':[{'id':key,'title':title,'exercise':exercise} for key,(title,exercise) in SAVED_EXAMPLES.items()]})
         if self.path not in ['/','/index.html']:return self.send({'error':'Not found'},404)

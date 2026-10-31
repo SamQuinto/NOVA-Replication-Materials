@@ -69303,9 +69303,9 @@
         "calls": 1
       }
     },
-    "type_a": "Y",
+    "type_a": "N",
     "type_b": "N",
-    "error_reason": "“I have the right to cancel up to 2 weeks beforehand” specifies cancellation with notice. R1 unnecessarily asks whether it is free instead of scoring “Free cancellation allowed with notice.”"
+    "error_reason": ""
   },
   {
     "offer_id": "o289",
@@ -231270,9 +231270,9 @@
       },
       "relative_revision": true
     },
-    "type_a": "Y",
+    "type_a": "N",
     "type_b": "N",
-    "error_reason": "The offer explicitly says the date “remains 15th of September,” referring to September 15, 2027 in the previous offer. R2 unnecessarily asks for confirmation instead of scoring the clear date."
+    "error_reason": ""
   },
   {
     "offer_id": "o296",

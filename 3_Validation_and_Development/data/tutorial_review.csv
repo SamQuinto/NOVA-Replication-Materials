@@ -2654,7 +2654,7 @@ I have the right to cancel up to 2 weeks beforehand",A1-low,"Decision: clarifica
 Questions / messages:
 Would cancellation with at least two weeks’ notice be free of charge?
 Recorded without points:
-I have the right to cancel up to 2 weeks beforehand",Y,N,“I have the right to cancel up to 2 weeks beforehand” specifies cancellation with notice. R1 unnecessarily asks whether it is free instead of scoring “Free cancellation allowed with notice.”,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
+I have the right to cancel up to 2 weeks beforehand",N,N,,"Would like to have the event on September 30th, paying $200 and the event finishing at 11"
 o289,Live negotiation - Oct 27,Organizer,I can pay 200 bucks for the venue on the 28th of September ending at 10pm.  Can the projector be included please and is it possible to get in early to set up? Also can I cancel as long as I give one weeks notice?,A1-low,"Decision: scorable
 - Venue fee: $200  [+1.43]
 - Event date: September 28  [+0.93]
@@ -8526,7 +8526,7 @@ o295,Live negotiation - Oct 27,Organizer,"The event date remains 15th of Septemb
 Questions / messages:
 Please confirm your choice for Event date.
 Recorded without points:
-if i give a week's notice",Y,N,"The offer explicitly says the date “remains 15th of September,” referring to September 15, 2027 in the previous offer. R2 unnecessarily asks for confirmation instead of scoring the clear date.","I can pay a sum of $300 for the venue on 15th of September, 2027. Close time is 9pm"
+if i give a week's notice",N,N,,"I can pay a sum of $300 for the venue on 15th of September, 2027. Close time is 9pm"
 o296,Live negotiation - Oct 27,Organizer,"I can offer the venue for $400 on August 22 next year, closing at 7:00 p.m. The projector is included if your volunteers handle cleanup.  I will give 2 weeks notice for cancellation for free",A1-high,"Decision: scorable
 - Venue fee: $400  [+0.29]
 - Event date: August 22  [-0.30]

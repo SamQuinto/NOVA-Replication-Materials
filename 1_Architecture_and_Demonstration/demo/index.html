@@ -7,6 +7,11 @@
 #scoring-demo{border:1.5px solid #222;border-radius:6px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;background:white}.entry{display:flex;flex-direction:column;min-width:0}textarea{display:block;width:100%;min-height:320px;height:330px;padding:16px;border:1px solid #888;border-radius:3px;background:white;color:#111;font-size:19px;line-height:1.5;resize:vertical}.actions{margin-top:16px;display:flex;justify-content:flex-end}.score-button{min-width:108px}.output{min-width:0}.result{min-height:330px}.value-label{font-size:16px;margin-bottom:2px}.total{font-size:44px;font-weight:bold;line-height:1.2;margin:6px 0 18px}.result table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:17px;line-height:1.35}.result th,.result td{padding:9px 4px;border-bottom:1px solid #ccc;text-align:left;vertical-align:top;overflow-wrap:anywhere}.result th:first-child{width:41%}.result th:nth-child(2){width:39%}.result th:last-child,.result td:last-child{text-align:right;width:20%;white-space:nowrap}.result h3{font-size:17px;margin:18px 0 8px}.result ul{padding-left:21px;margin:0 0 12px}.result li{margin-bottom:6px}.notice{font-size:15px;white-space:pre-line;margin-top:13px}.context{margin-top:18px}.context summary{cursor:pointer;font-size:15px}.context textarea{margin-top:10px;height:115px;min-height:115px;font-size:16px}.context-note{display:none;font-size:14px;white-space:pre-wrap;border-top:1px solid #ccc;margin-top:16px;padding-top:12px}.context-note.visible{display:block}
 #status{font-size:15px;min-height:24px;margin:14px 0}.spinner{display:inline-block;width:19px;height:19px;border:2.5px solid #bbb;border-top-color:currentColor;border-radius:50%;animation:spin .7s linear infinite;vertical-align:-4px;margin-right:8px}@keyframes spin{to{transform:rotate(360deg)}}.stale .total{color:#777}details{margin-top:18px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-height:420px;overflow:auto}footer{border-top:1px solid #bbb;margin-top:26px;padding-top:16px;font-size:14px}@media(max-width:760px){main{padding:22px 15px}.saved{margin-left:0}#scoring-demo{grid-template-columns:1fr;padding:18px;gap:24px}textarea{font-size:18px;min-height:270px}.result table{font-size:16px}.total{font-size:38px}}
 </style>
+<style>
+main{max-width:1560px}.workspace{display:grid;grid-template-columns:minmax(270px,330px) minmax(0,1fr);gap:24px;align-items:start}.workspace-main{min-width:0}.role-panel{border:1px solid #d5d5d5;border-radius:8px;background:#fafafa;position:sticky;top:20px;overflow:hidden}.role-header{padding:18px 20px 14px;border-bottom:1px solid #ddd;background:#fff}.role-header small{font-size:11px;letter-spacing:1.5px;font-weight:bold}.role-header h2{font-size:20px;margin:4px 0 0}.role-body{padding:18px 20px;max-height:min(650px,calc(100vh - 370px));min-height:180px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;font-size:15px;line-height:1.65;overflow-wrap:break-word}.role-body p{margin:0 0 16px;white-space:pre-line}.role-body h3{font-size:15px;line-height:1.45;margin:22px 0 10px}.role-body h3:first-child{margin-top:0}.role-body:focus-visible{outline:2px solid #111;outline-offset:-3px}.role-body .empty{color:#555}.role-panel [hidden]{display:none}.toolbar{gap:12px}.toolbar select{font-size:15px}#scoring-demo{padding:22px;gap:24px}textarea{font-size:18px}.result table{font-size:16px}.result td{padding-top:10px;padding-bottom:10px}
+@media(max-width:1150px){.workspace{grid-template-columns:280px minmax(0,1fr);gap:18px}#scoring-demo{grid-template-columns:1fr;gap:26px}.result{min-height:0}.role-body{max-height:calc(100vh - 370px)}}
+@media(max-width:760px){main{padding:22px 15px}.workspace{grid-template-columns:1fr}.role-panel{position:static}.role-body{max-height:330px;min-height:0}.role-header{padding:14px 18px}.role-header h2{font-size:18px}.role-body{padding:16px 18px}#scoring-demo{padding:18px}.toolbar{align-items:start}.saved{width:100%}.saved select{max-width:100%;width:100%}}
+</style>
 <main>
 <header><h1>Try NOVA</h1><p class="muted">Write an offer and see how NOVA interprets and values it.</p><span class="key">To score your own offers, please follow the <a href="https://github.com/SamQuinto/NOVA-Replication-Materials/tree/main/1_Architecture_and_Demonstration#add-or-update-your-openai-key" target="_blank" rel="noopener">README instructions</a> to load your OpenAI key. Or choose one of our saved examples below—no key or charge needed.</span><div class="key muted" id="key" aria-live="polite"></div></header>
 <div class="toolbar">
@@ -16,6 +21,12 @@
 <label>Show value for<br><select id="view"><option value="proposer">Candidate</option><option value="counterpart">Recruiter</option></select></label>
 <label class="saved"><strong>SAVED EXAMPLES</strong><br><select id="saved"><option value="">Try a saved example — no charge</option></select></label>
 </div>
+<div class="workspace">
+<aside class="role-panel" aria-label="Exercise role materials">
+<div class="role-header"><small>ROLE MATERIALS</small><h2 id="materials-role">Candidate</h2></div>
+<div id="role-materials" class="role-body" tabindex="0" aria-label="Scrollable role materials" aria-busy="true"><p class="empty">Loading your role materials…</p></div>
+</aside>
+<div class="workspace-main">
 <section id="scoring-demo" aria-label="Offer scoring demonstration">
 <div class="entry"><h2>Your offer</h2><textarea id="offer" aria-label="Your offer" spellcheck="false" placeholder="Write an offer in your own words. Line breaks and commas are both fine."></textarea><div id="context-note" class="context-note"></div><div class="actions"><button class="score-button" id="score">Score</button></div></div>
 <div class="output"><h2>How NOVA read the offer</h2><div class="result" id="result"><p>Ready when you are.</p><p class="muted">Write an offer and click “Score.”</p></div></div>
@@ -23,14 +34,26 @@
 <p id="status" role="status" aria-live="polite"></p>
 <details class="context"><summary>Add a previous offer if this offer refers to it</summary><textarea id="previous" aria-label="Previous offer" spellcheck="false"></textarea></details>
 <details><summary>See the full response (JSON)</summary><pre id="json">Your result will appear here.</pre></details>
+</div>
+</div>
 <footer>A1 reads all active issue and option definitions using general instructions. A2 uses exercise-specific rules with a lower-cost model. Your key stays on the Python server on your computer. Clicking Score makes a paid API call; the saved example does not. Failed requests are not automatically repeated.</footer>
 </main>
 <script>
-const $=id=>document.getElementById(id);let busy=false,keyReady=false,lastData=null,lastInputs=null;
+const $=id=>document.getElementById(id);let busy=false,keyReady=false,lastData=null,lastInputs=null,materialsRequest=0;
 function inputs(){return JSON.stringify(['offer','previous','exercise','role','scorer'].map(id=>$(id).value))}
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function roles(){return $('exercise').value==='tutorial'?['Organizer','Venue manager']:['Candidate','Recruiter']}
 function updateRoles(){const names=roles(),i=$('role').value==='Candidate'?0:1;$('role').options[0].text=names[0];$('role').options[1].text=names[1];$('view').options[0].text=names[i];$('view').options[1].text=names[1-i]}
+async function loadMaterials(){
+ const request=++materialsRequest,exercise=$('exercise').value,role=$('role').value,target=$('role-materials');
+ $('materials-role').textContent=roles()[role==='Candidate'?0:1];target.setAttribute('aria-busy','true');
+ try{
+  const response=await fetch('/api/materials?'+new URLSearchParams({exercise,role})),material=await response.json();if(!response.ok)throw Error(material.error||'Could not load the role materials.');if(request!==materialsRequest)return;
+  target.innerHTML=material.text.split(/\n\s*\n/).filter(Boolean).map(text=>'<p>'+esc(text).replace(/^ROLE NARRATIVE:/,'<strong>ROLE NARRATIVE:</strong>')+'</p>').join('');
+  target.scrollTop=0;
+ }catch(error){if(request===materialsRequest)target.innerHTML='<p class="empty">'+esc(error.message)+' Please refresh the page to try again.</p>'}
+ finally{if(request===materialsRequest)target.removeAttribute('aria-busy')}
+}
 function fitOffer(){const t=$('offer');t.style.height='auto';t.style.height=Math.max(320,t.scrollHeight+3)+'px'}
 function stale(){if(lastData&&!busy){$('status').textContent='Offer edited. Score again to update the value.';$('result').classList.add('stale')}}
 function contextNote(){const words=$('previous').value.trim(),reference=lastData?.interpretation?.explicit_reference;const show=!!words&&!!reference;$('context-note').classList.toggle('visible',show);$('context-note').textContent=show?'Previous offer referred to:\n'+words:''}
@@ -53,15 +76,15 @@ async function score(live){
  try{
   const s=$('scorer').value,response=await fetch('/api/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({live,example_id:$('saved').value,exercise:$('exercise').value,architecture:s==='A2'?'A2':'A1',reasoning:s==='high'?'high':'low',role:$('role').value,offer:$('offer').value,previous_offer:$('previous').value})});
   const data=await response.json();if(!response.ok||data.error)throw Error(data.error||'Scoring did not complete.');
-  if(!live&&data.example){$('exercise').value=data.saved_exercise;$('offer').value=data.example.offer;$('role').value=data.example.role;$('previous').value=data.example.previous_offer||'';$('scorer').value='low';$('view').value='proposer';updateRoles();fitOffer()}
+  if(!live&&data.example){$('exercise').value=data.saved_exercise;$('offer').value=data.example.offer;$('role').value=data.example.role;$('previous').value=data.example.previous_offer||'';$('scorer').value='low';$('view').value='proposer';updateRoles();loadMaterials();fitOffer()}
   lastData=data;lastInputs=inputs();render(data);const seconds=(data.receipts||[]).reduce((sum,x)=>sum+(x.api_seconds||0),0);
   $('status').textContent=live?'Scoring complete.'+(seconds?' '+seconds.toFixed(1)+' seconds spent scoring.':''):'Saved A1-low example loaded. No API call was made. Click Score to interpret your own edits.';
  }catch(e){lastData=null;$('status').textContent='Could not score: '+e.message;$('result').innerHTML='<p>No updated value</p><p>'+esc(e.message)+'</p>'}
  finally{busy=false;['saved','exercise','role','scorer','view'].forEach(id=>$(id).disabled=false);['offer','previous'].forEach(id=>$(id).readOnly=false);$('score').disabled=!keyReady;$('score').textContent='Score';$('result').removeAttribute('aria-busy')}
 }
-$('offer').addEventListener('input',()=>{fitOffer();stale()});$('previous').addEventListener('input',stale);$('role').onchange=()=>{updateRoles();stale()};$('scorer').onchange=stale;
-$('exercise').onchange=()=>{updateRoles();lastData=null;$('result').innerHTML='<p>Write an offer for this exercise and click “Score.”</p>';$('status').textContent='Exercise changed. Score again to update the value.'};
+$('offer').addEventListener('input',()=>{fitOffer();stale()});$('previous').addEventListener('input',stale);$('role').onchange=()=>{updateRoles();loadMaterials();stale()};$('scorer').onchange=stale;
+$('exercise').onchange=()=>{updateRoles();loadMaterials();lastData=null;$('result').innerHTML='<p>Write an offer for this exercise and click “Score.”</p>';$('status').textContent='Exercise changed. Score again to update the value.'};
 $('view').onchange=()=>{if(lastData)render(lastData)};$('score').onclick=()=>score(true);$('saved').onchange=()=>{if($('saved').value)score(false)};
-fetch('/api/status').then(r=>r.json()).then(r=>{keyReady=r.key_ready;$('score').disabled=!keyReady;for(const e of r.examples||[]){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;$('saved').append(option)}$('key').textContent=keyReady?'You’re ready to score your own offers.':'You can still try all the saved examples while you set things up.'}).catch(()=>{$('score').disabled=true;$('key').textContent='The local server is unavailable. Please restart the demo.'});updateRoles();
+fetch('/api/status').then(r=>r.json()).then(r=>{keyReady=r.key_ready;$('score').disabled=!keyReady;for(const e of r.examples||[]){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;$('saved').append(option)}$('key').textContent=keyReady?'You’re ready to score your own offers.':'You can still try all the saved examples while you set things up.'}).catch(()=>{$('score').disabled=true;$('key').textContent='The local server is unavailable. Please restart the demo.'});updateRoles();loadMaterials();
 </script>
 </html>

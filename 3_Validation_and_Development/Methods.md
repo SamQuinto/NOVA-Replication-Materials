@@ -10,6 +10,8 @@ The manuscript's **Type C** means a meaningful idea absent from the table. It is
 
 We drafted reference interpretations with model assistance and reviewed them using researcher feedback about what counted as a reasonable interpretation. The Y/N decisions in the workbooks are the final decisions from that process, rather than a new independent human audit. The notebook counts those decisions; it does not ask another model to judge them again.
 
+On October 31, we accepted two tutorial clarification responses: A1-low on o288 asked about cancellation, and A1-high on o295 asked about the event date. Both acknowledged the proposed issue, so asking an unnecessary clarification was treated as a usability limitation rather than a Type A omission. These two review corrections raise both A1 tutorial counts from 730/731 to 731/731. They do not change the recorded responses, main-exercise results, API costs or timings. A2's review decisions have not been regraded as part of this two-case correction.
+
 ### Inputs
 
 The main collection contains 1,225 inputs: 139 calculator attempts from October 20, 791 from October 27, 294 answers to offer questions from 98 completed feedback surveys, and one research-assistant example. We excluded seven answers from unfinished feedback surveys. Retries remain separate rather than being deduplicated. The confidence intervals treat offers as observations and do not adjust for several offers coming from the same person. Identical wording can still have a different meaning when the role or previous-offer context differs.
