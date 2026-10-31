@@ -8,12 +8,20 @@ Start with [the analysis](Analysis.html) to read the results. If you would like 
 | --- | --- |
 | [Main offer validation](NOVA_Offer_Validation.xlsx) | 1,225 inputs, responses from three scorer settings, error reviews, accuracy calculations and prompt text |
 | [Tutorial offer validation](NOVA_Tutorial_Validation.xlsx) | The separate evaluation of 731 tutorial inputs |
-| [Earlier development inputs](data/early_development_offers.csv) | 568 earlier tests and wording variations, kept separate from the main and tutorial evaluations |
+| [Development archive](NOVA_Development_Archive.xlsx) | 568 earlier offers, plus two saved examples showing an error, its refinement and the later interpretation |
 | [Data](data/) | Participant offers and survey responses, recorded scorer responses, review decisions and API usage |
 | [Results](results/) | Tables calculated from the supplied data |
 | [Figures](figures/) | The issue-frequency chart and issue-diversity histogram |
 | [Methods](Methods.md) | How we selected the data and defined each measure |
 | [Data dictionary](Data_Dictionary.md) | What each file and field means, and how to link them |
+
+## Development archive
+
+The archive has two plain sheets. **Archive** keeps the offer, recorded source, role and any previous offer needed to understand it. **Refinements** shows two examples of how we grouped and addressed errors: mapping caregiving leave to the wrong issue, and missing customer-contact hours in a longer proposal. The [saved responses](data/development_refinements.json) let you inspect the earlier and later outputs in full. The later outputs come from replaying recorded model responses through revised code, not new API calls.
+
+These 568 offers were recovered from earlier development work. They are not a complete chronological record or a new accuracy test, and they are kept separate from the main and tutorial evaluations. We preserved the recorded source labels rather than guessing who wrote an offer. The [CSV and JSON copies](data/) retain the original test-category labels as well.
+
+The earlier 15-issue and later 215-issue stages are documented in the development records. The researcher also describes an intermediate 70-issue stage and a later addition of free workplace coffee, bringing the table to 216. Complete snapshots of those two stages were not recovered for this archive. The released scoring files and reported validation results remain tied to the frozen 215-issue table.
 
 ## Inspect the scoring reviews
 

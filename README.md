@@ -39,6 +39,8 @@ Open [the analysis](3_Validation_and_Development/Analysis.html) to read the resu
 
 The main evaluation includes 1,225 offer inputs, and the separate tutorial evaluation includes 731. These include retries and incomplete calculator inputs, not just offers sent to another negotiator. [Methods](3_Validation_and_Development/Methods.md) explains how we selected the data and calculated each measure.
 
+The [development archive](3_Validation_and_Development/NOVA_Development_Archive.xlsx) keeps 568 earlier offers and two examples showing how we identified and addressed scoring errors. It is separate from the reported validation results.
+
 ## Participant privacy
 
 Participant data from the pilot tests have been de-identified before sharing. Names, Prolific IDs and contact details are not included, and the original records remain private. The [privacy note](3_Validation_and_Development/Privacy_Review.md) explains what we removed and the limits of sharing free-text responses.
