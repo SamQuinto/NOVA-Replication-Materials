@@ -1,0 +1,7088 @@
+{
+  "schema_version": 1,
+  "purpose": "Fitted issue-matching vocabulary, not participant-level observations.",
+  "issues": [
+    {
+      "issue_id": "salary",
+      "issue_name": "Salary",
+      "variants": [
+        {
+          "text": "annual pay",
+          "runtime_enabled": true
+        },
+        {
+          "text": "cash compensation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Salary",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Salary need to come up",
+          "runtime_enabled": true
+        },
+        {
+          "text": "salry",
+          "runtime_enabled": true
+        },
+        {
+          "text": "yearly salary",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "personal_budget",
+      "issue_name": "Personal Budget",
+      "variants": [
+        {
+          "text": "A personal work expense budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "An agreed review on expenses linked to performance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "client travel budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "expense budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "gas/ travel coverage outside of the personal budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Personal Budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "personnel expenses",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work experience budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "the budget slightly",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work-expense budget",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "starting_date",
+      "issue_name": "Starting Date",
+      "variants": [
+        {
+          "text": "first day",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I may take 14 days leave thus shifting leave days form 30 days to 56 days per year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "joining date",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Starting Date",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when I can start",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "probation_length",
+      "issue_name": "Probation Length",
+      "variants": [
+        {
+          "text": "3 month probation period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "6 month probation period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "6 months probation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "a probationary period of 6 months",
+          "runtime_enabled": true
+        },
+        {
+          "text": "health and dental start benefits to be started sooner and a reduced probationary period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I propose a shorter probation period which would soften the blow of a lower salary for more job security",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would offer a 6 month probation period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "longer probation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "probation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "probstion",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Probation Length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Probation of 1 month",
+          "runtime_enabled": true
+        },
+        {
+          "text": "probation period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "probationary period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "time before permanent employment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "trial period",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "contract_length",
+      "issue_name": "Contract Length",
+      "variants": [
+        {
+          "text": "2.5-year contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "2-year contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "2 year contract length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "2 years contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "3 year contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Contract Length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Contract length 4 years",
+          "runtime_enabled": true
+        },
+        {
+          "text": "contract term",
+          "runtime_enabled": true
+        },
+        {
+          "text": "how long the contract lasts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "length of employment agreement",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "vacation_days",
+      "issue_name": "Vacation Days",
+      "variants": [
+        {
+          "text": "25 holidays",
+          "runtime_enabled": true
+        },
+        {
+          "text": "30 days of holidays per year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "30 paid vacation days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "40 vacation days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "an increased vacation period allowance such that after 3 months of work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "annual leave allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Annual vacation allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Annual vacation days per year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "extra vacation days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "five weeks of vacation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible holidays ongoing training schedule including third party",
+          "runtime_enabled": true
+        },
+        {
+          "text": "get an extra Vaca day",
+          "runtime_enabled": true
+        },
+        {
+          "text": "holiday",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Holiday/Annual Leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "holiday days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "holiday pay",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Holiday/Vacation days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "holidays",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would like 30 days holiday",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Leave periods",
+          "runtime_enabled": true
+        },
+        {
+          "text": "More holiday (but it doesn't look good actually asking for that one) or increase WAH to 4 days a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "More holidays",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid holidays",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Possibility to earn more holiday days after X years with the company",
+          "runtime_enabled": true
+        },
+        {
+          "text": "PTO days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "some number of sick days in addition to vacation days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "vacation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Vacation -day adjustments",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Vacation Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Vacation days that are increased from the standard offering of",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We could negotiate some holiday periods",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "remote_working_days",
+      "issue_name": "Remote Working Days",
+      "variants": [
+        {
+          "text": "3 days remote working",
+          "runtime_enabled": true
+        },
+        {
+          "text": "3 days working from home a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "4 remote working days per week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "5 days remote",
+          "runtime_enabled": true
+        },
+        {
+          "text": "9-5 job but 3 days remote not 4",
+          "runtime_enabled": true
+        },
+        {
+          "text": "additional remote working days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Additional remote-working days per week (e.g., 4 or 5 days)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Days of remote work per week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Flexibility in remote-working",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Flexibility (Remote or Hybrid)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible remote work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Flexible working from home option (X amount of days per month)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Flexible working (remote working on 3 days)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "fully remote work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "hybrid schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "hybrid working",
+          "runtime_enabled": true
+        },
+        {
+          "text": "money for training schemes and the option to work from home a few days a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "More holiday (but it doesn't look good actually asking for that one) or increase WAH to 4 days a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote",
+          "runtime_enabled": false
+        },
+        {
+          "text": "remote day period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Remote work days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Remote-work flexibility",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote working",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Remote Working Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Remote-working days per week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "wfh",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work from home",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work from home three days a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work location- hybrid/ office/ at home",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Working for home for the entire week instead of 3 days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Working from home",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Working hybrid or remote to suit candidate preference",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "professional_training",
+      "issue_name": "Professional Training Program",
+      "variants": [
+        {
+          "text": "a company sponsored training program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "access to a professional training program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "An agreement to develop a professional training plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "At least one External professional training program every year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Clear professional development plan (training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "course",
+          "runtime_enabled": false
+        },
+        {
+          "text": "details on more training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "employer funded professional training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Enrollment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "examination feed",
+          "runtime_enabled": true
+        },
+        {
+          "text": "External professional training a senior mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "External professional training program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "External professional training programs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "fees for external professional sales training program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible holidays ongoing training schedule including third party",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Help with training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I cover my own training costs if needed",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I propose the option of attending external professional training programmes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want employer-paid training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would say: Professional training and development",
+          "runtime_enabled": true
+        },
+        {
+          "text": "One external professional development program per annum",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional training and development",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional training and development opportunities",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional training opportunity",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional Training Program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional training program support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional training programs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional training support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Seminars",
+          "runtime_enabled": true
+        },
+        {
+          "text": "structured mentoring / training with",
+          "runtime_enabled": true
+        },
+        {
+          "text": "the company pays for relevant courses",
+          "runtime_enabled": true
+        },
+        {
+          "text": "The training period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training",
+          "runtime_enabled": false
+        },
+        {
+          "text": "Training in other areas of the role to further their skills",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Training opportunities",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training program will be offered",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training programme/shadowing for experience",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We would offer free training for advancement within the company at the candidate's pace and a yearly assessment that would influence further wage increases",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "mentorship",
+      "issue_name": "Mentorship Program",
+      "variants": [
+        {
+          "text": "A formal mentoring program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "a formal mentorship program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "a mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "a mentoring responsibility for new employees after gaining experience",
+          "runtime_enabled": true
+        },
+        {
+          "text": "An experienced mentor assigned to the Candidate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "company mentorship program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "experienced salesperson",
+          "runtime_enabled": true
+        },
+        {
+          "text": "External professional training a senior mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would like an internal mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentor role for the person in x months time for a new starter",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentoring / buddy system with a senior sales rep for first 3 months",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring by very experienced staff",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring from other employees",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring scheme for accreditation for example",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring should be available but optional",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentorship from experienced employees",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentorship opportunities",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentorship or experience employee support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentorship pairing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentorship Program",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentorship program pairing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Pairings with an experienced internal mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Providing mentorship from experienced employees",
+          "runtime_enabled": true
+        },
+        {
+          "text": "structured mentoring / training with",
+          "runtime_enabled": true
+        },
+        {
+          "text": "supervision",
+          "runtime_enabled": true
+        },
+        {
+          "text": "the company should assign me a mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training programme/shadowing for experience",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "recruitment_fair",
+      "issue_name": "Role in Recruitment Fair",
+      "variants": [
+        {
+          "text": "Assignment to represent the company at recruitment fairs / university events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "help at 1-2 recruitment fairs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can attend one recruiting fair a year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I could represent the company at several fairs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want regular recruiting-fair duty",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Participation in recruitment fairs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recruitment fair participation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Recruitment fair roles",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recruitment fairs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Representing the company at recruitment fairs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Role in Recruitment Fair",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "conference_presentations",
+      "issue_name": "Mandatory Conference Presentations",
+      "variants": [
+        {
+          "text": "Attendance to one industry conference per annum",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can give one conference talk each year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want speaking to be mandatory",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mandatory Conference Presentations",
+          "runtime_enabled": true
+        },
+        {
+          "text": "the role should include several conference presentations",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "non_compete",
+      "issue_name": "Non-compete Clause",
+      "variants": [
+        {
+          "text": "a six-month restriction is acceptable",
+          "runtime_enabled": true
+        },
+        {
+          "text": "exclusion rules",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I need freedom to join a competitor later",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I will not accept a twelve-month non-compete",
+          "runtime_enabled": true
+        },
+        {
+          "text": "no compete",
+          "runtime_enabled": true
+        },
+        {
+          "text": "No Strict non-compete clause",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-compet",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Non-compete Clause",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-compete clause in contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-compete clause to be reconsidered",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Non-compete limitation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "release criteria (no non competitor clauses)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Removal of non-compete caluse",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Waive the no compete",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Waiving or modifying the standard non-compete clause",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "professional_associations",
+      "issue_name": "Professional Associations Membership",
+      "variants": [
+        {
+          "text": "Association sponsorship/professional association memberships",
+          "runtime_enabled": true
+        },
+        {
+          "text": "comany sponsored professional association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commitment to development through professional associations",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company-sponsored membership in a professional association",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company-sponsored professional association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "employer-paid professional association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I will pay the association fees myself",
+          "runtime_enabled": true
+        },
+        {
+          "text": "membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Membership in a professional society (sponsored)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid professional membership fees",
+          "runtime_enabled": true
+        },
+        {
+          "text": "partcipation in professional networking events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional association",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional Association fairs at intervals",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional-association membership sponsorship",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional Associations Membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional sponsorship",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sponsored membership on a professional association",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sponsored membership support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sponsored professional association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Springside Professional Association membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "the company should pay my professional membership dues",
+          "runtime_enabled": true
+        },
+        {
+          "text": "things like chartership with its membership paid for and opportunity for work travel",
+          "runtime_enabled": true
+        },
+        {
+          "text": "we can split association dues",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "social_events",
+      "issue_name": "Role in Organizing Social Events",
+      "variants": [
+        {
+          "text": "allowing organizing team events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can help with occasional team events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want to organize social events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "occasional team event organizing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "organising team events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Organizing occasional team events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "organizing team events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "regular event planning should not be part of my role",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Role in Organizing Social Events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "team event",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "linkedin_posts",
+      "issue_name": "Regular Social Media Posts for Company",
+      "variants": [
+        {
+          "text": "slightly less social media publicity less commitment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "reduced company social media commitment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "40% less company social media posting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "company social posts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "help shape company updates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want LinkedIn posting to be part of my role",
+          "runtime_enabled": true
+        },
+        {
+          "text": "LinkedIn",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Managing public communications/LinkedIn posts based on sales work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "public updates about client work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recurring company LinkedIn posts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "regular LinkedIn publicity",
+          "runtime_enabled": true
+        },
+        {
+          "text": "regular social media posts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Regular Social Media Posts for Company",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "commission_on_customer_payments",
+      "issue_name": "Commission on Customer Payments",
+      "variants": [
+        {
+          "text": "a written commission",
+          "runtime_enabled": true
+        },
+        {
+          "text": "base commission rate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "comission on sales",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commission on Customer Payments",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission percentage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission rate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "eligible collected revenue",
+          "runtime_enabled": true
+        },
+        {
+          "text": "percentage of sales",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales commission",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "new_hire_ramp_guarantee",
+      "issue_name": "New-Hire Ramp Guarantee",
+      "variants": [
+        {
+          "text": "guaranteed pay while starting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "new-hire income protection",
+          "runtime_enabled": true
+        },
+        {
+          "text": "New-Hire Ramp Guarantee",
+          "runtime_enabled": true
+        },
+        {
+          "text": "nonrecoverable draw",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pay during ramp-up",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramp guarantee",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramp pay",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "commission_payment_schedule",
+      "issue_name": "Commission Payment Schedule",
+      "variants": [
+        {
+          "text": "commission payday",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission payment frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commission Payment Schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission payment timing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission payout schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when commissions are paid",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "expense_repayment_speed",
+      "issue_name": "Expense Repayment Speed",
+      "variants": [
+        {
+          "text": "expense reimbursement speed",
+          "runtime_enabled": true
+        },
+        {
+          "text": "expense reimbursement turnaround",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Expense Repayment Speed",
+          "runtime_enabled": true
+        },
+        {
+          "text": "expense repayment time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "getting work expenses paid back",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "commission_reversal_period",
+      "issue_name": "Commission Reversal Period",
+      "variants": [
+        {
+          "text": "chargeback period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "clawback protection",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission clawback",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission clawback window",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission reversal",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commission Reversal Period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when paid commission can be taken back",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "above_target_commission_rate",
+      "issue_name": "Above-Target Commission Rate",
+      "variants": [
+        {
+          "text": "above-target commission",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Above-Target Commission Rate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "accelerator rate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission accelerator",
+          "runtime_enabled": true
+        },
+        {
+          "text": "extra commission for exceeding quota",
+          "runtime_enabled": true
+        },
+        {
+          "text": "higher commission after hitting target",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "commission_starting_point",
+      "issue_name": "Commission Starting Point",
+      "variants": [
+        {
+          "text": "commission eligibility threshold",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission floor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commission Starting Point",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission threshold",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales needed before commission",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when commission starts",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "home_office_setup_payment",
+      "issue_name": "Home Office Setup Payment",
+      "variants": [
+        {
+          "text": "A 2000 Laptop for working at home",
+          "runtime_enabled": true
+        },
+        {
+          "text": "help paying for home-working equipment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "home-office allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "home office money",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Home Office Setup Payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "home-working equipment contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote-work setup allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote-work setup payment",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "starting_bonus",
+      "issue_name": "Starting Bonus",
+      "variants": [
+        {
+          "text": "bonus for joining",
+          "runtime_enabled": true
+        },
+        {
+          "text": "joining bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "payment when starting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sign-on bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sign-on money",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Starting Bonus",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "team_sales_bonus",
+      "issue_name": "Performance-Based Bonus",
+      "variants": [
+        {
+          "text": "Annual bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Bonus",
+          "runtime_enabled": false
+        },
+        {
+          "text": "bonus for team sales",
+          "runtime_enabled": true
+        },
+        {
+          "text": "bonus scheme based on preformance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Bonuses",
+          "runtime_enabled": true
+        },
+        {
+          "text": "bonuses based on work production",
+          "runtime_enabled": true
+        },
+        {
+          "text": "group sales incentive",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance bonus structure",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Performance bonuses",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Performance related bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Quarterly budget rewards",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales based bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales-bonus plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales team bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "team bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "team performance payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Performance-Based Bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Team Sales Bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We could put some incentives in place where you could earn extra if you reached them",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Yearly bonus based on performance",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "credential_completion_payment",
+      "issue_name": "Credential Completion Payment",
+      "variants": [
+        {
+          "text": "certification bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Credential Completion Payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "money for finishing a credential",
+          "runtime_enabled": true
+        },
+        {
+          "text": "payment for earning a certification",
+          "runtime_enabled": true
+        },
+        {
+          "text": "qualification bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "qualification completion bonus",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "scheduled_salary_increase",
+      "issue_name": "Scheduled Salary Increase",
+      "variants": [
+        {
+          "text": "future pay raise",
+          "runtime_enabled": true
+        },
+        {
+          "text": "merit increase",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pay progression",
+          "runtime_enabled": true
+        },
+        {
+          "text": "salary increase",
+          "runtime_enabled": true
+        },
+        {
+          "text": "salary increase after eighteen months",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Salary increase after x amount of time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "salary review raise",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Scheduled Salary Increase",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We would offer free training for advancement within the company at the candidate's pace and a yearly assessment that would influence further wage increases",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "early_sales_target",
+      "issue_name": "Early Sales Target",
+      "variants": [
+        {
+          "text": "Could the early target be lower while I learn the role?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Early Sales Target",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much of the normal target applies at first?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "quota ramp",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramp schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramped quota",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the full target start immediately?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "feedback_meeting_frequency",
+      "issue_name": "Feedback Meeting Frequency",
+      "variants": [
+        {
+          "text": "Could we have regular development check-ins?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "developmental review cadence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Feedback Meeting Frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often would we discuss my progress?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "review cadence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would feedback be annual, twice yearly, or quarterly?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "teamwork_in_performance_reviews",
+      "issue_name": "Teamwork in Performance Reviews",
+      "variants": [
+        {
+          "text": "Could cooperation be part of performance evaluation?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "development milestone weight",
+          "runtime_enabled": true
+        },
+        {
+          "text": "evaluation weighting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Teamwork in evaluations",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Teamwork in Performance Reviews",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would helping teammates count in my review?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would sales results be the only thing evaluated?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "quota_relief_after_losing_an_account",
+      "issue_name": "Quota Relief After Losing an Account",
+      "variants": [
+        {
+          "text": "Could the next target be adjusted after a major account loss?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "quota relief",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Quota relief after account loss",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Quota Relief After Losing an Account",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory loss adjustment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens to my target if assigned accounts are taken away?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the adjustment match the accounts lost?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_before_target_changes",
+      "issue_name": "Notice before target changes",
+      "variants": [
+        {
+          "text": "advance notice for quota changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could target changes take effect immediately?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much warning would I get before my target changed?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice before target changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "quota-change notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I have 30 or 60 days to adjust?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "early_customer_opportunities",
+      "issue_name": "Early Customer Opportunities",
+      "variants": [
+        {
+          "text": "Could the early pipeline target be modest?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Early Customer Opportunities",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many promising opportunities would I need early on?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pipeline target",
+          "runtime_enabled": true
+        },
+        {
+          "text": "qualified pipeline",
+          "runtime_enabled": true
+        },
+        {
+          "text": "qualified pipeline expectation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would there be a pipeline goal before full sales results are expected?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "probation_coaching_time",
+      "issue_name": "Probation Coaching Time",
+      "variants": [
+        {
+          "text": "Could we schedule regular time to review performance?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much coaching would be available if I struggled early?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance coaching",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Probation Coaching Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "probationary coaching",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would coaching take time away from selling?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "time_to_respond_to_a_review",
+      "issue_name": "Time to Respond to a Review",
+      "variants": [
+        {
+          "text": "Could I respond before a negative review becomes final?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How long would I have to explain my side?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance-review response procedure",
+          "runtime_enabled": true
+        },
+        {
+          "text": "review response period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time to answer a review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time to Respond to a Review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would a written response be included in my review?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "when_review_standards_are_set",
+      "issue_name": "When Review Standards Are Set",
+      "variants": [
+        {
+          "text": "consistency check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could standards be set before the review period starts?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When Review Standards Are Set",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When would I learn what my review is based on?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would expectations be in writing?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "written evaluation criteria",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "evidence_for_poor_performance",
+      "issue_name": "Evidence for Poor Performance",
+      "variants": [
+        {
+          "text": "Could one manager impression determine the outcome?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "documented evidence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Evidence for Poor Performance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "evidence standard",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance decision evidence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What evidence would be used if performance became a concern?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would documented results be required?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "pipeline_credit_after_reassignment",
+      "issue_name": "Pipeline Credit After Reassignment",
+      "variants": [
+        {
+          "text": "Can existing opportunities remain partly mine?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "opportunity credit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pipeline credit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Pipeline Credit After Reassignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales-credit protection",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens to deals already underway?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who gets credit if my accounts change?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "fair_lead_assignment",
+      "issue_name": "Fair Lead Assignment",
+      "variants": [
+        {
+          "text": "Can I understand the assignment rule?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Fair Lead Assignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How are new leads divided?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "inbound-lead allocation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "lead distribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "lead routing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens when an assignment seems unusual?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "lead_workload_limits",
+      "issue_name": "Lead Workload Limits",
+      "variants": [
+        {
+          "text": "Can new leads pause if I am overloaded?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "capacity review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is there a clear workload limit?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "lead-routing pause",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Lead Workload Limits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who can approve a temporary pause?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "workload threshold",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "starting_sales_area",
+      "issue_name": "Starting Sales Area",
+      "variants": [
+        {
+          "text": "named coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales territory",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Starting Sales Area",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory assignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Which customers or area would I start with?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who gets ordinary opportunities in my area?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would my starting accounts be clearly defined?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "lead_response_time",
+      "issue_name": "Lead Response Time",
+      "variants": [
+        {
+          "text": "How quickly must I respond to a qualified lead?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is response time measured in working hours?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "lead follow-up standard",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Lead Response Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "qualified-lead response time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "service-level response",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What response window is expected?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "territory_sales_training",
+      "issue_name": "Territory Sales Training",
+      "variants": [
+        {
+          "text": "commercial onboarding",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales enablement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory briefing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Territory Sales Training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What would I learn about my customers first?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I meet a manager before selling?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would someone explain the territory?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "inactive_account_review",
+      "issue_name": "Inactive Account Review",
+      "variants": [
+        {
+          "text": "account dormancy",
+          "runtime_enabled": true
+        },
+        {
+          "text": "account reassignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Inactive Account Review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is there an agreed inactivity period?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What counts as meaningful account activity?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When can an inactive account be reassigned?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "priority_account_handoff",
+      "issue_name": "Priority Account Handoff",
+      "variants": [
+        {
+          "text": "account transition",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer introduction",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How would a customer handoff begin?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is an introduction required?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Priority Account Handoff",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the previous salesperson introduce me?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "urgent_customer_backup",
+      "issue_name": "Urgent Customer Backup",
+      "variants": [
+        {
+          "text": "customer escalation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "escalation ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Urgent Customer Backup",
+          "runtime_enabled": true
+        },
+        {
+          "text": "urgent-customer support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who backs me up on urgent customer problems?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who takes the lead during an urgent issue?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would someone cover when I am unavailable?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_before_territory_changes",
+      "issue_name": "Notice Before Territory Changes",
+      "variants": [
+        {
+          "text": "coverage reassignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "effective date",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much warning comes before account changes?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice Before Territory Changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory-change notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When would a territory change start?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would non-emergency changes be announced ahead of time?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "routine_discount_limit",
+      "issue_name": "Routine Discount Limit",
+      "variants": [
+        {
+          "text": "discount authority",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want to handle ordinary discounts without asking every time.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Routine Discount Limit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "The company should protect margins while giving me room to learn. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "authority_growth_review",
+      "issue_name": "Authority Growth Review",
+      "variants": [
+        {
+          "text": "Authority Growth Review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "delegated authority",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want to know how stronger decision authority will be considered.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "The review should use results I can actually influence. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "deal_approval_rules",
+      "issue_name": "Deal Approval Rules",
+      "variants": [
+        {
+          "text": "commercial escalation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Deal Approval Rules",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I need clear boundaries for when another person must approve a deal.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Routine customer work should not stop because every unusual detail needs review. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "routine_deal_ownership",
+      "issue_name": "Routine Deal Ownership",
+      "variants": [
+        {
+          "text": "deal-stage ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want to own ordinary customer work from first conversation through proposal.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Management can keep final control of unusual or binding commitments. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Partial Autonomy in Client Management",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Routine Deal Ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "coaching_on_pricing_and_deal_decisions",
+      "issue_name": "Coaching on Pricing and Deal Decisions",
+      "variants": [
+        {
+          "text": "A little coaching before independence could prevent expensive mistakes. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Coaching on Pricing and Deal Decisions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commercial Decision Coaching",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commercial judgment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I learn faster when someone reviews realistic decisions with me.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "specialist_help_response_time",
+      "issue_name": "Specialist Help Response Time",
+      "variants": [
+        {
+          "text": "I need to know how long expert help will take on an important deal.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "specialist deal support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Specialist Help Response Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Specialist support should be predictable without taking over someone else’s workload. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "temporary_authority_review",
+      "issue_name": "Temporary Authority Review",
+      "variants": [
+        {
+          "text": "A review date is different from a promise that authority must be restored. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "authority suspension",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If my authority changes temporarily, I want to know when it will be reconsidered.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Temporary Authority Review",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "manager_absence_backup",
+      "issue_name": "Manager Absence Backup",
+      "variants": [
+        {
+          "text": "A backup can handle ordinary decisions without taking over unusual ones. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I should not have to pause routine customer work whenever my manager is away.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Manager Absence Backup",
+          "runtime_enabled": true
+        },
+        {
+          "text": "manager coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id2?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_account_ownership",
+      "issue_name": "Customer Account Ownership",
+      "variants": [
+        {
+          "text": "account ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Account Ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customers should know who is responsible for their ordinary account needs.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want clear ownership of the customers I am expected to develop.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recruiter_interest2?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory ownership",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "pay_review_timing",
+      "issue_name": "Pay Review Timing",
+      "variants": [
+        {
+          "text": "a salary review after six months",
+          "runtime_enabled": true
+        },
+        {
+          "text": "An agreed review of salary within a certain period and a potential bonus on hitting certain targets",
+          "runtime_enabled": true
+        },
+        {
+          "text": "and a salary review after 2 years",
+          "runtime_enabled": true
+        },
+        {
+          "text": "compensation review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want the timing of any promotion-related pay review to be clear.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Pay Review Timing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion pay review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "salary review after probationary period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When would my pay be reviewed after promotion?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the pay discussion happen before new responsibilities begin?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "advancement_review_frequency",
+      "issue_name": "Advancement Review Frequency",
+      "variants": [
+        {
+          "text": "Advancement Review Frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often would we discuss readiness for advancement?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would prefer a regular promotion-readiness review schedule.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion check-in schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion review cadence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would advancement reviews happen annually or twice yearly?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "temporary_lead_assignment_length",
+      "issue_name": "Temporary Lead Assignment Length",
+      "variants": [
+        {
+          "text": "A longer trial leadership role would help demonstrate readiness.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "acting-lead assignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could I lead the team temporarily to build leadership experience?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How long would a temporary team-lead assignment last?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "interim lead role",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Temporary Lead Assignment Length",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "written_promotion_criteria",
+      "issue_name": "Written Promotion Criteria",
+      "variants": [
+        {
+          "text": "I would value written standards rather than informal judgment alone.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion criteria transparency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion scorecard",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Promotional requirements",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What evidence would show that I am ready for promotion?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would sales and customer results be part of the promotion decision?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Written Promotion Criteria",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "professional_development_budget",
+      "issue_name": "Professional Development Budget",
+      "variants": [
+        {
+          "text": "A formal professional development or training budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "development allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "External professional training budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much development funding would be available each year?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would value training that improves my sales skills.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "money for training schemes and the option to work from home a few days a week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Professional Development Budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the company pay for relevant courses or certifications?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "protected_development_time",
+      "issue_name": "Protected Development Time",
+      "variants": [
+        {
+          "text": "How much time could I spend on a cross-functional learning assignment?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want development added on top of my sales workload.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "learning time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "protected CPD",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Protected Development Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Protected professional-development time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "time-off for attending external professional training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "time-off for external professional training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would paid work time be set aside for development?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "cross_team_project_opportunities",
+      "issue_name": "Cross-Team Project Opportunities",
+      "variants": [
+        {
+          "text": "Could I join projects outside the sales team?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "cross-functional project access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Cross-Team Project Opportunities",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Cross-team project opportunity",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many cross-team projects could I participate in each year?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would value experience with other teams.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "internal mobility support",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "promotion_eligibility_timing",
+      "issue_name": "Promotion Eligibility Timing",
+      "variants": [
+        {
+          "text": "earliest promotion consideration",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want the earliest consideration date to be clear.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "promotion eligibility",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Promotion Eligibility Timing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When could I first be considered for promotion?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would eligibility begin after six or twelve months?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "use_of_work_achievements",
+      "issue_name": "Use of Work Achievements",
+      "variants": [
+        {
+          "text": "Could I describe my results on a future resume?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want to use factual, nonconfidential accomplishments in interviews.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "resume portability",
+          "runtime_enabled": true
+        },
+        {
+          "text": "use of nonconfidential achievements",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Use of Work Achievements",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What achievements could I mention after leaving?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "senior_career_guidance",
+      "issue_name": "Senior Career Guidance",
+      "variants": [
+        {
+          "text": "career mentor access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could I speak with a senior employee about career development?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often would those conversations happen?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would value advice outside my direct reporting line.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "senior career-adviser access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Senior Career Guidance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "socialize with the company executives",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "protected_training_hours",
+      "issue_name": "Protected Training Hours",
+      "variants": [
+        {
+          "text": "How many paid work hours are reserved for learning during my first 90 days?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would like training time protected from sales targets.{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Protected Training Hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramp training hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recruiter_interest",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_system_practice",
+      "issue_name": "Customer System Practice",
+      "variants": [
+        {
+          "text": "Could I practice in a safe training environment first?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "CRM training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer record practice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer-record system practice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer System Practice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many supervised practice sessions would I get before using customer records independently?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want to make customer-record mistakes while learning.",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "early_progress_reviews",
+      "issue_name": "Early Progress Reviews",
+      "variants": [
+        {
+          "text": "Early Progress Reviews",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many progress conversations would we have during my first 90 days?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would rather fix problems early than discover them at the end of onboarding.ρ?]}]}",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding check-in",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ramp review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recruiter_interest",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_readiness_check",
+      "issue_name": "Customer Readiness Check",
+      "variants": [
+        {
+          "text": "Customer Readiness Check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer readiness method",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How would we decide whether I am ready to handle customers alone?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would want the standard based on the actual job.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "readiness check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales readiness assessment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the assessment use realistic customer situations?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_calls_to_observe",
+      "issue_name": "Customer Calls to Observe",
+      "variants": [
+        {
+          "text": "call shadowing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer-call observation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Calls to Observe",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many customer calls could I observe before leading my own?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Seeing different customer situations would help me learn.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Too much observation could delay my contribution.",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "mentor_meeting_frequency",
+      "issue_name": "Mentor Meeting Frequency",
+      "variants": [
+        {
+          "text": "A consistent contact would help me build useful relationships.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often could I discuss practical questions with someone experienced?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentor Meeting Frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding mentor",
+          "runtime_enabled": true
+        },
+        {
+          "text": "peer coaching",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I have a regular mentor or experienced colleague during onboarding?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "certification_fee_support",
+      "issue_name": "Certification Fee Support",
+      "variants": [
+        {
+          "text": "A credential could help my future career.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Certification Fee Support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "certification reimbursement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much would I have to pay myself?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional credential support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would the company help pay for a certification related to the job?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_of_sales_process_changes",
+      "issue_name": "Notice of Sales Process Changes",
+      "variants": [
+        {
+          "text": "How quickly would I receive written notice of important sales changes?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would want written guidance instead of relying on rumors or memory.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice of sales changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice of Sales Process Changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "product-update notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales-change communication",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What counts as a material change?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "online_learning_access",
+      "issue_name": "Online Learning Access",
+      "variants": [
+        {
+          "text": "Could I learn new skills without waiting for a formal class?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Online Learning Access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "online training access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "They can take additional learning classes through the company at no extra cost which would increase their skillset",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training library",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What online training would be available?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I retain access to role-related courses after onboarding?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "weekend_work_frequency",
+      "issue_name": "Weekend Work Frequency",
+      "variants": [
+        {
+          "text": "Saturday or Sunday shifts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "weekend coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "weekend work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Weekend Work Frequency",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "paid_learning_time",
+      "issue_name": "Paid Learning Time",
+      "variants": [
+        {
+          "text": "learning during work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Learning Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paid training time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "protected development time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "provision for study leave in the contract in which I may still work as I further my studies",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "after_hours_event_frequency",
+      "issue_name": "After-Hours Event Frequency",
+      "variants": [
+        {
+          "text": "After-Hours Event Frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "evening events",
+          "runtime_enabled": true
+        },
+        {
+          "text": "events after work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "required company events",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "within_week_schedule_flexibility",
+      "issue_name": "Within-Week Schedule Flexibility",
+      "variants": [
+        {
+          "text": "A flexible hours arrangement within core business times",
+          "runtime_enabled": true
+        },
+        {
+          "text": "change my schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Fridays: leave earlier with shorter break times",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would also like flexible working hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Leave earlier",
+          "runtime_enabled": true
+        },
+        {
+          "text": "move work hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "shift hours this week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Start early 7:30",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time in lieu",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Within-Week Schedule Flexibility",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "team_overlap_hours",
+      "issue_name": "Team Overlap Hours",
+      "variants": [
+        {
+          "text": "available to collaborate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "collaboration window",
+          "runtime_enabled": true
+        },
+        {
+          "text": "core hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer overlap",
+          "runtime_enabled": true
+        },
+        {
+          "text": "shared team hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Team Overlap Hours",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "late_internal_meetings",
+      "issue_name": "Late Internal Meetings",
+      "variants": [
+        {
+          "text": "evening meetings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Late Internal Meetings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "late team meetings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "meetings after my hours",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "schedule_change_notice",
+      "issue_name": "Schedule Change Notice",
+      "variants": [
+        {
+          "text": "advance warning",
+          "runtime_enabled": true
+        },
+        {
+          "text": "changed work hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Schedule Change Notice",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "weekly_extra_duty_hours",
+      "issue_name": "Weekly Extra-Duty Hours",
+      "variants": [
+        {
+          "text": "extra duties",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-sales activity time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-sales work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "supplementary duties",
+          "runtime_enabled": true
+        },
+        {
+          "text": "time away from selling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Weekly Extra-Duty Hours",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "schedule_publication_notice",
+      "issue_name": "Schedule Publication Notice",
+      "variants": [
+        {
+          "text": "schedule in advance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Schedule Publication Notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "weekly schedule notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when the schedule is posted",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "initial_focus_period",
+      "issue_name": "Initial Focus Period",
+      "variants": [
+        {
+          "text": "extra duties after starting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "first weeks on the job",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Initial core-work period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Initial Focus Period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "post-start deferral",
+          "runtime_enabled": true
+        },
+        {
+          "text": "time to learn before extras",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_payment_timing",
+      "issue_name": "Travel Payment Timing",
+      "variants": [
+        {
+          "text": "expense advance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel advance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Payment Timing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When would I get travel money?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who pays for travel upfront?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I need to use my own cash?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "supervised_first_customer_visits",
+      "issue_name": "Supervised First Customer Visits",
+      "variants": [
+        {
+          "text": "Could I shadow someone?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "field shadowing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "First field visits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How many customer visits would be supervised?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ride-along",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Supervised First Customer Visits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I go alone at first?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_approval_speed",
+      "issue_name": "Travel Approval Speed",
+      "variants": [
+        {
+          "text": "How quickly would travel requests be answered?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "manager response time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Approval Speed",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel approval turnaround",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who approves unusual trips?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I be waiting days for approval?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_notice",
+      "issue_name": "Travel Notice",
+      "variants": [
+        {
+          "text": "advance travel notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could travel be assigned suddenly?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much warning would I get?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I have time to plan?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "overnight_travel_limit",
+      "issue_name": "Overnight Travel Limit",
+      "variants": [
+        {
+          "text": "How many overnight trips are expected?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often would I sleep away from home?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is there a monthly travel limit?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "overnight travel cap",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Overnight Travel Limit",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_meal_reimbursement",
+      "issue_name": "Travel Meal Reimbursement",
+      "variants": [
+        {
+          "text": "expense reimbursement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is there a meal allowance?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "meal allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "per diem",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel costs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel expenses",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Meal Reimbursement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I need receipts?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would meals be covered on trips?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "remote_customer_follow_ups",
+      "issue_name": "Remote Customer Follow-Ups",
+      "variants": [
+        {
+          "text": "Can I avoid unnecessary customer trips?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could routine check-ins happen by video?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Remote Customer Follow-Ups",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote customer meeting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "virtual follow-up",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who decides whether I travel?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "fieldwork_travel_area",
+      "issue_name": "Fieldwork Travel Area",
+      "variants": [
+        {
+          "text": "Could I be sent anywhere in the country?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Fieldwork Travel Area",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How far would I travel for customers?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "service area",
+          "runtime_enabled": true
+        },
+        {
+          "text": "territory",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel radius",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I stay near home?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "paid_caregiving_days",
+      "issue_name": "Paid Caregiving Days",
+      "variants": [
+        {
+          "text": "caregiver leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Caregiving Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid days to care for family",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paid family-care leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid time for urgent family care",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time off when someone at home is sick",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "recurring_schedule_flexibility",
+      "issue_name": "Recurring Schedule Flexibility",
+      "variants": [
+        {
+          "text": "Choose when my workday starts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexible work arrangement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Flexible working",
+          "runtime_enabled": true
+        },
+        {
+          "text": "flexitime",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Keep my schedule predictable",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Recurring Schedule Flexibility",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Regular flexibility around school or care",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "leave_coverage_plan",
+      "issue_name": "Leave Coverage Plan",
+      "variants": [
+        {
+          "text": "A clear handoff before I leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "absence coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I should not be contacted while away",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Leave Coverage Plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "leave handoff",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Someone else covers my work",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "unpaid_emergency_leave",
+      "issue_name": "Unpaid Emergency Leave",
+      "variants": [
+        {
+          "text": "A dependable option for urgent care",
+          "runtime_enabled": true
+        },
+        {
+          "text": "emergency family leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time off after paid leave is used",
+          "runtime_enabled": true
+        },
+        {
+          "text": "unpaid caregiver leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Unpaid days for a family emergency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Unpaid Emergency Leave",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "post_travel_recovery_time",
+      "issue_name": "Post-Travel Recovery Time",
+      "variants": [
+        {
+          "text": "A later start after a late trip",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Do not start early after late travel",
+          "runtime_enabled": true
+        },
+        {
+          "text": "post-travel recovery",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Post-Travel Recovery Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Recovery time after overnight travel",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel recovery time",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "four_day_workweek_trial",
+      "issue_name": "Four-Day Workweek Trial",
+      "variants": [
+        {
+          "text": "4 day work week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "compressed workweek",
+          "runtime_enabled": true
+        },
+        {
+          "text": "four-day week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Four-Day Workweek Trial",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Have a regular extra day off",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Try a four-day schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work four longer days",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "time_to_approve_planned_leave",
+      "issue_name": "Time to Approve Planned Leave",
+      "variants": [
+        {
+          "text": "Get a quick answer about planned time off",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Know when my leave request will be answered",
+          "runtime_enabled": true
+        },
+        {
+          "text": "leave-response deadline",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Plan ahead with a clear response",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Planned leave response time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "planned-leave turnaround",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time to Approve Planned Leave",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "alternative_travel_for_care_needs",
+      "issue_name": "Alternative Travel for Care Needs",
+      "variants": [
+        {
+          "text": "A solution when overnight travel clashes with care",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Alternative Travel for Care Needs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Another way to cover a required trip",
+          "runtime_enabled": true
+        },
+        {
+          "text": "caregiving accommodation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Discuss travel conflicts before emergencies",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Required travel care plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel accommodation",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "gradual_return_after_absence",
+      "issue_name": "Gradual Return After Absence",
+      "variants": [
+        {
+          "text": "Ease back into work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Gradual Return After Absence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "graduated return",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Have a lighter workload after a long absence",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Return to full work gradually",
+          "runtime_enabled": true
+        },
+        {
+          "text": "return-to-work ramp",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "after_hours_client_duty",
+      "issue_name": "After-Hours Client Duty",
+      "variants": [
+        {
+          "text": "After-Hours Client Duty",
+          "runtime_enabled": true
+        },
+        {
+          "text": "after-hours coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can cover urgent issues if expectations are clear. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want routine evening client calls.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "on-call client duty",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_forecast_reports",
+      "issue_name": "Sales Forecast Reports",
+      "variants": [
+        {
+          "text": "I would rather keep sales information current than send duplicate reports.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pipeline report",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pipeline reporting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Forecast Reports",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Weekly reporting seems reasonable if it is genuinely useful. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_coaching_frequency",
+      "issue_name": "Sales Coaching Frequency",
+      "variants": [
+        {
+          "text": "A monthly check-in may not be enough when starting. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would value regular feedback while learning the role.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales coaching",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Coaching Frequency",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales mentoring",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "core_sales_system_access",
+      "issue_name": "Core Sales System Access",
+      "variants": [
+        {
+          "text": "Core Sales System Access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "critical system access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Delayed access would make it harder to become productive quickly. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I need access to essential sales systems when I start.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "system access",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "administrative_support_time",
+      "issue_name": "Administrative Support Time",
+      "variants": [
+        {
+          "text": "administrative support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Administrative Support Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Administrative support would leave more time for selling. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "having an assistant",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would like help with routine customer-system updates and scheduling.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales operations",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "written_onboarding_plan",
+      "issue_name": "Written Onboarding Plan",
+      "variants": [
+        {
+          "text": "I would like a clear plan for learning the products and role.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Knowing the first few months’ priorities would help. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding playbook",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Written Onboarding Plan",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "proposal_review_time",
+      "issue_name": "Proposal Review Time",
+      "variants": [
+        {
+          "text": "I would want a clear turnaround time for unusual proposals. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "proposal review service level",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Proposal Review Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Slow proposal reviews could make me look unresponsive to customers.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "turnaround time",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "company_card_access",
+      "issue_name": "Company Card Access",
+      "variants": [
+        {
+          "text": "A clear reimbursement timeline would make work expenses predictable. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company Card Access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "corporate card",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not want to pay ordinary customer or travel costs myself.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "time_to_correct_customer_records",
+      "issue_name": "Time to Correct Customer Records",
+      "variants": [
+        {
+          "text": "CRM correction",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer record correction",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Record Fixes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Errors affecting an active opportunity should be fixed quickly. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would want a clear deadline for fixing important customer-record mistakes.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time to Correct Customer Records",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "work_system_recovery_time",
+      "issue_name": "Work System Recovery Time",
+      "variants": [
+        {
+          "text": "Being unable to work for several days would be a serious problem. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would need a clear time limit if a critical work system fails.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "IT recovery time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id",
+          "runtime_enabled": true
+        },
+        {
+          "text": "system recovery target",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work System Recovery Time",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "written_handover_materials",
+      "issue_name": "Written Handover Materials",
+      "variants": [
+        {
+          "text": "account notes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "client handover",
+          "runtime_enabled": true
+        },
+        {
+          "text": "handover document",
+          "runtime_enabled": true
+        },
+        {
+          "text": "transition information",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Written Handover Materials",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_period_length",
+      "issue_name": "Notice Period Length",
+      "variants": [
+        {
+          "text": "jobs I cannot take",
+          "runtime_enabled": true
+        },
+        {
+          "text": "noncompete period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice Period Length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "resignation notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "working for a competitor",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "use_of_work_samples",
+      "issue_name": "Use of Work Samples",
+      "variants": [
+        {
+          "text": "portfolio pieces",
+          "runtime_enabled": true
+        },
+        {
+          "text": "portfolio use",
+          "runtime_enabled": true
+        },
+        {
+          "text": "showing past work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Use of Work Samples",
+          "runtime_enabled": true
+        },
+        {
+          "text": "using work examples",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work portfolio",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "post_departure_commissions",
+      "issue_name": "Post-Departure Commissions",
+      "variants": [
+        {
+          "text": "commission after leaving",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commission tail",
+          "runtime_enabled": true
+        },
+        {
+          "text": "deals already in progress",
+          "runtime_enabled": true
+        },
+        {
+          "text": "getting paid when a deal closes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Post-Departure Commissions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales commission",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "future_employment_reference",
+      "issue_name": "Future Employment Reference",
+      "variants": [
+        {
+          "text": "employment verification",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Future Employment Reference",
+          "runtime_enabled": true
+        },
+        {
+          "text": "reference check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "reference from the company",
+          "runtime_enabled": true
+        },
+        {
+          "text": "what future employers hear",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "personal_contact_privacy",
+      "issue_name": "Personal Contact Privacy",
+      "variants": [
+        {
+          "text": "being contacted after leaving",
+          "runtime_enabled": true
+        },
+        {
+          "text": "contact privacy",
+          "runtime_enabled": true
+        },
+        {
+          "text": "personal contact information",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Personal Contact Privacy",
+          "runtime_enabled": true
+        },
+        {
+          "text": "personal information",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sharing my phone number",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "client_transition_calls",
+      "issue_name": "Client Transition Calls",
+      "variants": [
+        {
+          "text": "client transition",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Client Transition Calls",
+          "runtime_enabled": true
+        },
+        {
+          "text": "introducing my replacement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "joining client calls",
+          "runtime_enabled": true
+        },
+        {
+          "text": "successor introduction",
+          "runtime_enabled": true
+        },
+        {
+          "text": "transition calls",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "departure_announcement_notice",
+      "issue_name": "Departure Announcement Notice",
+      "variants": [
+        {
+          "text": "advance notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "announcement about my departure",
+          "runtime_enabled": true
+        },
+        {
+          "text": "departure announcement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Departure Announcement Notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "internal announcement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "when people are told",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "departure_compensation",
+      "issue_name": "Departure Compensation",
+      "variants": [
+        {
+          "text": "Departure Compensation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "departure package",
+          "runtime_enabled": true
+        },
+        {
+          "text": "departure payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "money when I leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "severance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "severance pay",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_period_work_status",
+      "issue_name": "Notice-Period Work Status",
+      "variants": [
+        {
+          "text": "being placed on paid leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "garden leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "notice-period arrangement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice-Period Work Status",
+          "runtime_enabled": true
+        },
+        {
+          "text": "reduced duties before leaving",
+          "runtime_enabled": true
+        },
+        {
+          "text": "working through notice",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "recruiting_quote_approval",
+      "issue_name": "Recruiting Quote Approval",
+      "variants": [
+        {
+          "text": "Can I approve quotes before publication?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Do I get to check public statements about me?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "employer branding",
+          "runtime_enabled": true
+        },
+        {
+          "text": "publicity consent",
+          "runtime_enabled": true
+        },
+        {
+          "text": "quote review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Recruiting Quote Approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Will the company use my words in recruiting materials?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "declining_publicity_requests",
+      "issue_name": "Declining Publicity Requests",
+      "variants": [
+        {
+          "text": "Are public appearances part of the job?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I say no to publicity?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Declining Publicity Requests",
+          "runtime_enabled": true
+        },
+        {
+          "text": "opt-out",
+          "runtime_enabled": true
+        },
+        {
+          "text": "publicity refusal right",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would refusing publicity hurt me?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "approval_of_personal_profile_updates",
+      "issue_name": "Approval of Personal Profile Updates",
+      "variants": [
+        {
+          "text": "Approval of Personal Profile Updates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I describe the skills I use here?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I list this job on my profile?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Do I need approval to update my work history?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "online work history",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Personal Profile Accuracy",
+          "runtime_enabled": true
+        },
+        {
+          "text": "professional profile",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_story_attribution",
+      "issue_name": "Customer Story Attribution",
+      "variants": [
+        {
+          "text": "attribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I receive credit for work highlighted to a customer?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "case study",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Story Attribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer testimonial",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who gets named in customer case studies?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would my name appear in a customer success story?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "mentoring_assignment_choice",
+      "issue_name": "Mentoring Assignment Choice",
+      "variants": [
+        {
+          "text": "coaching responsibility",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much coaching would I be expected to provide?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is mentoring coworkers part of the job?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentoring assignment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Mentoring Assignment Choice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would mentoring receive dedicated work time?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "paid_time_for_publicity",
+      "issue_name": "Paid Time for Publicity",
+      "variants": [
+        {
+          "text": "How much work time would publicity activities take?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paid publicity time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Time for Publicity",
+          "runtime_enabled": true
+        },
+        {
+          "text": "recognition contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would preparing a company story be unpaid?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would publicity work happen during paid hours?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "employee_referral_payment",
+      "issue_name": "Employee Referral Payment",
+      "variants": [
+        {
+          "text": "employee referral bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Employee Referral Payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How much is the employee referral payment?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Is there a payment for referring someone?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "referral incentive",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would a successful referral earn a bonus?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "reference_provider_choice",
+      "issue_name": "Reference Provider Choice",
+      "variants": [
+        {
+          "text": "Can my sales results appear in a future reference?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Reference Provider Choice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What will the company confirm about my performance?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Will I receive a reference describing my achievements?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "approval_for_extra_assignments",
+      "issue_name": "Approval for Extra Assignments",
+      "variants": [
+        {
+          "text": "Approval for Extra Assignments",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can another department assign me work directly?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I decline extra assignments?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "extra duties approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-core assignment approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who approves work outside my main sales role?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "role_review_schedule",
+      "issue_name": "Role Review Schedule",
+      "variants": [
+        {
+          "text": "Could my responsibilities change without a scheduled review?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "duties review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How often would we review what my job includes?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Regular work review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Role Review Schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "role-scope review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would my priorities be reviewed regularly?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "primary_manager",
+      "issue_name": "Primary Manager",
+      "variants": [
+        {
+          "text": "line manager",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Main reporting manager",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Primary Manager",
+          "runtime_enabled": true
+        },
+        {
+          "text": "primary reporting manager",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who gives me regular feedback?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who would be my main manager?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Whose instructions take priority if managers disagree?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "input_on_unusual_travel_dates",
+      "issue_name": "Input on Unusual Travel Dates",
+      "variants": [
+        {
+          "text": "Could I suggest another date for a customer visit?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer-trip scheduling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Input on Unusual Travel Dates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Input on unusual trip dates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-routine travel consultation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who makes the final call on unusual travel dates?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I be asked about conflicts before an unusual trip is booked?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_target_adjustment",
+      "issue_name": "Sales Target Adjustment",
+      "variants": [
+        {
+          "text": "sales quota adjustment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Target Adjustment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "target relief",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens to my sales target if extra work takes selling time?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who decides whether my target is adjusted?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would my quota change when I am assigned other duties?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "resolving_work_conflicts",
+      "issue_name": "Resolving Work Conflicts",
+      "variants": [
+        {
+          "text": "Can managers agree which task takes priority?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "competing work instructions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "cross-team priority conflict",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Resolving Work Conflicts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens when cross-team work conflicts with selling?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who decides what gets delayed when two teams need me?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "advance_notice_of_product_changes",
+      "issue_name": "Advance Notice of Product Changes",
+      "variants": [
+        {
+          "text": "Advance Notice of Product Changes",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Advance product updates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could I receive a briefing on important product changes?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How would I hear about product or pricing changes?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "product-change information",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales enablement updates",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I get updates before speaking with customers?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_ownership_after_handoff",
+      "issue_name": "Customer Ownership After Handoff",
+      "variants": [
+        {
+          "text": "commercial relationship ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Ownership After Handoff",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Do I stay responsible for the customer after operations takes over?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "post-handoff account ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "When can the company move a customer to someone else?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who owns the relationship after handoff?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_promise_review",
+      "issue_name": "Customer Promise Review",
+      "variants": [
+        {
+          "text": "claim approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commercial approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Promise Review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "deal desk review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who approves an exception to the normal offer?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who checks unusual promises before I make them?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would a manager or specialist review unusual wording?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "complaint_support",
+      "issue_name": "Complaint Support",
+      "variants": [
+        {
+          "text": "case ownership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "complaint escalation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Complaint Support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer issue handoff",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If a customer is seriously unhappy, who takes over?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who owns a serious complaint after I report it?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would I have to manage every difficult complaint myself?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_data_access_while_traveling",
+      "issue_name": "Customer Data Access While Traveling",
+      "variants": [
+        {
+          "text": "approved systems",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can I use a company device for customer data?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Data Access While Traveling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer-data handling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "data access controls",
+          "runtime_enabled": true
+        },
+        {
+          "text": "How can I access customer information when traveling?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Will I have an approved way to work remotely?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_story_permission",
+      "issue_name": "Customer Story Permission",
+      "variants": [
+        {
+          "text": "Can I use a customer’s name or results in a pitch?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can the customer limit where its story appears?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "case-study permission",
+          "runtime_enabled": true
+        },
+        {
+          "text": "customer reference approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Story Permission",
+          "runtime_enabled": true
+        },
+        {
+          "text": "reference authorization",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who confirms that a customer agreed to be a reference?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "specialist_help_for_customer_questions",
+      "issue_name": "Specialist Help for Customer Questions",
+      "variants": [
+        {
+          "text": "Can I consult someone qualified on technical questions?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "internal routing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "question escalation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Specialist Help for Customer Questions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Specialist Question Help",
+          "runtime_enabled": true
+        },
+        {
+          "text": "subject-matter expert support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What happens when a customer asks something I cannot answer?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who helps with sensitive customer questions?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "performance_based_progression",
+      "issue_name": "Performance-Based Progression",
+      "variants": [
+        {
+          "text": "career path",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not need promotion promised automatically. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want a clear path to progress.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Performance-Based Progression",
+          "runtime_enabled": true
+        },
+        {
+          "text": "role expansion",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "planned_schedule_changes_for_family_needs",
+      "issue_name": "Planned Schedule Changes for Family Needs",
+      "variants": [
+        {
+          "text": "caregiving schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "family-friendly scheduling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can plan schedule changes in advance. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I need predictable flexibility at certain times of year.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Planned family schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Planned Schedule Changes for Family Needs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "target_based_pay_increase",
+      "issue_name": "Target-based pay increase",
+      "variants": [
+        {
+          "text": "I want more fixed pay if I hit the target.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "merit increase",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance raise",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Target-based pay increase",
+          "runtime_enabled": true
+        },
+        {
+          "text": "The increase should depend on measurable results. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "performance_improvement_period",
+      "issue_name": "Performance Improvement Period",
+      "variants": [
+        {
+          "text": "I need income security while building my accounts.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I understand early sales may take time. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Performance Improvement Period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "performance improvement plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "PIP period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "maximum_active_accounts",
+      "issue_name": "Maximum Active Accounts",
+      "variants": [
+        {
+          "text": "A larger portfolio may help cover more customers. ]},{",
+          "runtime_enabled": true
+        },
+        {
+          "text": "account ceiling",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want a limit on how many accounts I handle.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Maximum Active Accounts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "portfolio size",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_shadowing_time",
+      "issue_name": "Sales Shadowing Time",
+      "variants": [
+        {
+          "text": "I want paid time to learn the products and sales process.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ride-along",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Shadowing Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "source_issue_id1??",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Training should help me become productive quickly. ]},{",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "contract_renewal_notice",
+      "issue_name": "Contract Renewal Notice",
+      "variants": [
+        {
+          "text": "Contract Renewal Notice",
+          "runtime_enabled": true
+        },
+        {
+          "text": "decision_reason??",
+          "runtime_enabled": true
+        },
+        {
+          "text": "fixed-term review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want enough warning to plan my next step.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Renewal notice timing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "The company may need time to assess business needs.",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "reply_times_during_the_workday",
+      "issue_name": "Reply Times During the Workday",
+      "variants": [
+        {
+          "text": "A scheduled focus block should pause the routine response clock.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can routine messages have a same-day response expectation rather than an immediate one?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Let’s use one defined channel for genuinely urgent customer matters.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Reply Times During the Workday",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "weekly_no_meeting_focus_time",
+      "issue_name": "Weekly No-Meeting Focus Time",
+      "variants": [
+        {
+          "text": "Could one recurring 90-minute block be protected for focused work?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Two blocks would help me keep routine work from consuming personal time.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Urgent customer or team decisions could remain exceptions.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Weekly No-Meeting Focus Time",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_of_internal_job_openings",
+      "issue_name": "Notice of Internal Job Openings",
+      "variants": [
+        {
+          "text": "Could relevant internal openings be shared with me after six months in good standing?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I am asking for notice, not priority over other applicants.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice of Internal Job Openings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would five business days’ notice be workable once I am eligible?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "time_credit_for_teaching_colleagues",
+      "issue_name": "Time Credit for Teaching Colleagues",
+      "variants": [
+        {
+          "text": "Could we set a maximum session length and identify which sales task moves if there is a conflict?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I am open to quarterly teaching if the preparation and workload tradeoff are explicit.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If peer teaching is assigned, can preparation time be scheduled within my work plan?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time Credit for Teaching Colleagues",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "respecting_customer_do_not_contact_requests",
+      "issue_name": "Respecting Customer Do-Not-Contact Requests",
+      "variants": [
+        {
+          "text": "Can an opt-out automatically stop future outreach and show that it was completed?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Respecting Customer Do-Not-Contact Requests",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Where do I record a prospect’s opt-out in the CRM?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who owns suppression after I enter the refusal?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_contact_hours",
+      "issue_name": "Customer Contact Hours",
+      "variants": [
+        {
+          "text": "Are early or late customer calls occasional exceptions or a regular expectation?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could we use one fixed eight-hour window with only a few planned exceptions?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Customer Contact Hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Which customer region is the primary coverage responsibility?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "information_included_with_new_leads",
+      "issue_name": "Information Included With New Leads",
+      "variants": [
+        {
+          "text": "Could campaign leads include their source and any relevant context?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I am asking for usable handoff information, not control over lead allocation.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Information Included With New Leads",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who should I contact if the lead information is incomplete?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "time_spent_sharing_knowledge",
+      "issue_name": "Time Spent Sharing Knowledge",
+      "variants": [
+        {
+          "text": "Could we start with four work hours per quarter for peer handoffs?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If knowledge sharing is required, it should occur during work time rather than adding an uncapped duty.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Time Spent Sharing Knowledge",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would you expect any defined time for documenting account lessons?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "post_trip_reporting_requirements",
+      "issue_name": "Post-Trip Reporting Requirements",
+      "variants": [
+        {
+          "text": "Can one concise template replace a detailed narrative?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can routine trips be reported in a weekly consolidated form?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Post-Trip Reporting Requirements",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What report is required after a customer trip?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_booking_and_connection_times",
+      "issue_name": "Travel Booking and Connection Times",
+      "variants": [
+        {
+          "text": "A travel-booking support service to reduce admin time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can we set a departure and arrival boundary for non-routine trips?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could the company avoid more than one connection when the practical option is within 10% of the lowest fare?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Booking and Connection Times",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What itinerary price difference is acceptable for avoiding an overnight or extreme travel time?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_support_response_time",
+      "issue_name": "Sales Support Response Time",
+      "variants": [
+        {
+          "text": "Can defined sales-operations requests go through one named queue?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If the final answer is delayed, can the queue provide a holding response and escalation?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Support Response Time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What acknowledgement time applies to a live customer deal?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "who_handles_overlapping_prospects",
+      "issue_name": "Who Handles Overlapping Prospects",
+      "variants": [
+        {
+          "text": "Could a designated manager resolve duplicate records within two business days?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "For a cross-boundary prospect, I need one recorded owner and a direct introduction.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can make one continuity introduction, but ownership and compensation should be recorded separately.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who Handles Overlapping Prospects",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "raising_concerns_about_sales_practices",
+      "issue_name": "Raising Concerns About Sales Practices",
+      "variants": [
+        {
+          "text": "Could urgent concerns receive same-day acknowledgment and a clear status update?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Raising Concerns About Sales Practices",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What is the named channel for documenting a good-faith concern about a sales claim?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who reviews a concern when the immediate deal manager is involved?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "what_counts_as_a_qualified_lead",
+      "issue_name": "What Counts as a Qualified Lead",
+      "variants": [
+        {
+          "text": "Could fit, need, and a reachable contact be the basic threshold?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "For stronger qualification, we could record the buying timeframe and decision-maker, while keeping exceptions visible.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Let’s agree what makes an inquiry an active opportunity before it counts toward my workload.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What Counts as a Qualified Lead",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "support_after_a_sale",
+      "issue_name": "Support After a Sale",
+      "variants": [
+        {
+          "text": "Could the receiving implementation owner be named when responsibility transfers?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can provide a written handoff and answer transition questions for two weeks.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I want post-sale support to be bounded rather than indefinite.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Support After a Sale",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_class_for_long_trips",
+      "issue_name": "Travel Class for Long Trips",
+      "variants": [
+        {
+          "text": "Could premium economy apply to those one-way flights?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If the role involves flights over four hours, what class applies?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Travel Class for Long Trips",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would overnight travel or a medical exception be handled separately?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "written_reasons_for_promotion_decisions",
+      "issue_name": "Written Reasons for Promotion Decisions",
+      "variants": [
+        {
+          "text": "Could the reasons identify the skills I would need to demonstrate next?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I do not need an appeal right or a guarantee of promotion.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If advancement is not approved, could I receive brief written reasons and a follow-up conversation?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Written Reasons for Promotion Decisions",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "notice_before_sales_meetings",
+      "issue_name": "Notice Before Sales Meetings",
+      "variants": [
+        {
+          "text": "Could relevant sales meetings include an agenda one business day ahead?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I need to know the purpose before protecting time for a meeting.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If my attendance is not necessary, may I send written input instead?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Notice Before Sales Meetings",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "periods_with_no_overnight_travel",
+      "issue_name": "Periods With No Overnight Travel",
+      "variants": [
+        {
+          "text": "Could we identify two family periods each year when overnight travel will not normally be scheduled?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "For a broader arrangement, I would ask for four capped periods with an emergency exception.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I can provide the dates 60 days in advance.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Periods With No Overnight Travel",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "rules_for_customer_gifts",
+      "issue_name": "Rules for Customer Gifts",
+      "variants": [
+        {
+          "text": "Can the decision about continuing or stepping away from the opportunity be recorded?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Rules for Customer Gifts",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What customer gifts or relationships must I disclose?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who reviews a disclosed conflict, and how quickly?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "access_to_customer_references",
+      "issue_name": "Access to Customer References",
+      "variants": [
+        {
+          "text": "Access to Customer References",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can priority opportunities receive a faster reference-material response?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who confirms whether a reference is authorized for a particular prospect?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Will I have an approved library of customer examples for sales preparation?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "approval_for_needed_sales_tools",
+      "issue_name": "Approval for Needed Sales Tools",
+      "variants": [
+        {
+          "text": "Approval for Needed Sales Tools",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Can approved costs be paid or reimbursed rather than personally absorbed?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Could a security-approved, no-customer-data tool be trialed for 30 days?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who decides whether a role-critical low-cost tool is approved?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "credit_in_internal_project_records",
+      "issue_name": "Credit in Internal Project Records",
+      "variants": [
+        {
+          "text": "Could completed project records identify me when my manager verifies a substantial contribution?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Credit in Internal Project Records",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I am asking for factual internal attribution, not authorship or extra compensation.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Would a standard contribution field make this easy to administer?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "private_hotel_room",
+      "issue_name": "Private Hotel Room",
+      "variants": [
+        {
+          "text": "A private room within the normal travel budget would be a reasonable compromise.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "For required overnight trips, I need a private room rather than shared accommodation.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If no suitable room is available near the work site, I would like to approve the alternative before booking.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Private Hotel Room",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "career_path_review",
+      "issue_name": "Career Path Review",
+      "variants": [
+        {
+          "text": "Career Path Review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I am not asking for a guaranteed promotion; I would like an agreed next development step.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would ask for possibilities of growth",
+          "runtime_enabled": true
+        },
+        {
+          "text": "If the discussed opportunity disappears, can we schedule a career-development discussion within 30 days?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We can revisit the plan, provided the alternative action remains subject to business needs and performance.",
+          "runtime_enabled": true
+        },
+        {
+          "text": "We would offer free training for advancement within the company at the candidate's pace and a yearly assessment that would influence further wage increases",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "travel_safety_and_emergency_support",
+      "issue_name": "Travel Safety and Emergency Support",
+      "variants": [
+        {
+          "text": "Travel Safety and Emergency Support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What additional process applies to an unusual destination?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What travel-safety guidance and policy terms will I receive before an overnight trip?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Who is the urgent travel contact?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "accessible_sales_materials",
+      "issue_name": "Accessible Sales Materials",
+      "variants": [
+        {
+          "text": "Accessible Sales Materials",
+          "runtime_enabled": true
+        },
+        {
+          "text": "What accessibility and usability standard will the approved materials meet?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Which customer-facing sales materials will the company provide before I begin selling?",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Will new proposal packs be checked before I use them with customers?",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "confidential_information_rules",
+      "issue_name": "Confidential Information Rules",
+      "variants": [
+        {
+          "text": "Confidential Information Rules",
+          "runtime_enabled": true
+        },
+        {
+          "text": "confidentiality",
+          "runtime_enabled": true
+        },
+        {
+          "text": "NDA",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-disclosure",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "contract_renewal_standards",
+      "issue_name": "Contract Renewal Standards",
+      "variants": [
+        {
+          "text": "contract renewal conditions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Contract Renewal Standards",
+          "runtime_enabled": true
+        },
+        {
+          "text": "renewal criteria",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "expense_approval_rules",
+      "issue_name": "Expense Approval Rules",
+      "variants": [
+        {
+          "text": "expense approval",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Expense Approval Rules",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pre-approval for expenses",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "customer_and_employee_non_solicitation",
+      "issue_name": "Customer and Employee Non-Solicitation",
+      "variants": [
+        {
+          "text": "Customer and Employee Non-Solicitation",
+          "runtime_enabled": true
+        },
+        {
+          "text": "do not poach clients",
+          "runtime_enabled": true
+        },
+        {
+          "text": "do not recruit employees",
+          "runtime_enabled": true
+        },
+        {
+          "text": "non-solicitation",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "training_cost_repayment",
+      "issue_name": "Training Cost Repayment",
+      "variants": [
+        {
+          "text": "pay back course costs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training bond",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Training Cost Repayment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "training repayment",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "ownership_of_work_created_in_the_role",
+      "issue_name": "Ownership of Work Created in the Role",
+      "variants": [
+        {
+          "text": "intellectual property",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ownership of materials",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Ownership of Work Created in the Role",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work product",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "reference_and_background_checks",
+      "issue_name": "Reference and Background Checks",
+      "variants": [
+        {
+          "text": "background check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pre-employment screening",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Reference and Background Checks",
+          "runtime_enabled": true
+        },
+        {
+          "text": "references",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "outside_work_and_conflicts_of_interest",
+      "issue_name": "Outside Work and Conflicts of Interest",
+      "variants": [
+        {
+          "text": "conflict of interest",
+          "runtime_enabled": true
+        },
+        {
+          "text": "outside work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Outside Work and Conflicts of Interest",
+          "runtime_enabled": true
+        },
+        {
+          "text": "side job disclosure",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "return_of_company_equipment_and_information",
+      "issue_name": "Return of Company Equipment and Information",
+      "variants": [
+        {
+          "text": "delete company data",
+          "runtime_enabled": true
+        },
+        {
+          "text": "exit checklist",
+          "runtime_enabled": true
+        },
+        {
+          "text": "return company laptop",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Return of Company Equipment and Information",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "regular_review_of_system_access",
+      "issue_name": "Regular Review of System Access",
+      "variants": [
+        {
+          "text": "access review",
+          "runtime_enabled": true
+        },
+        {
+          "text": "permission check",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Regular Review of System Access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remove unused system access",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "required_sales_compliance_training",
+      "issue_name": "Required Sales Compliance Training",
+      "variants": [
+        {
+          "text": "compliance course",
+          "runtime_enabled": true
+        },
+        {
+          "text": "required ethics training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Required Sales Compliance Training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales rules training",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "written_first_week_schedule",
+      "issue_name": "Written First-Week Schedule",
+      "variants": [
+        {
+          "text": "first week plan",
+          "runtime_enabled": true
+        },
+        {
+          "text": "first-week schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "onboarding timetable",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Written First-Week Schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "written schedule before day one",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "unpaid_off_hours_training",
+      "issue_name": "Unpaid Off-Hours Training",
+      "variants": [
+        {
+          "text": "mandatory training off the clock",
+          "runtime_enabled": true
+        },
+        {
+          "text": "off-hours training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "unpaid evening course",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Unpaid Off-Hours Training",
+          "runtime_enabled": true
+        },
+        {
+          "text": "unpaid weekend training",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "standard_weekly_working_hours",
+      "issue_name": "Standard Weekly Working Hours",
+      "variants": [
+        {
+          "text": "Flexible daily working hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "hours each week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Standard Weekly Working Hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "standard workweek",
+          "runtime_enabled": true
+        },
+        {
+          "text": "weekly hours",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work day schedule",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work hours daily",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "paid_sick_days",
+      "issue_name": "Paid Sick Days",
+      "variants": [
+        {
+          "text": "extra sick pay",
+          "runtime_enabled": true
+        },
+        {
+          "text": "illness days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Sick Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paid sick time",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sick leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sick Pay",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sick pay arrangements",
+          "runtime_enabled": true
+        },
+        {
+          "text": "some number of sick days in addition to vacation days",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "employer_retirement_contribution",
+      "issue_name": "Employer Retirement Contribution",
+      "variants": [
+        {
+          "text": "401(k)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company pension contributions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Employer Retirement Contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "employer retirement payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Participation in pension scheme",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pension",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pension contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pension contributions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "retirement contributions",
+          "runtime_enabled": true
+        },
+        {
+          "text": "retirement match",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "employer_health_insurance_contribution",
+      "issue_name": "Employer Health-Insurance Contribution",
+      "variants": [
+        {
+          "text": "A health plan could be included",
+          "runtime_enabled": true
+        },
+        {
+          "text": "company-paid health cover",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Employer Health-Insurance Contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "free health insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Full medical benefits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "health and dental start benefits to be started sooner and a reduced probationary period",
+          "runtime_enabled": true
+        },
+        {
+          "text": "health benefits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "health coverage",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Health insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "health insurance contribution",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Health insurance included",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Medical allowance or insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "medical premium",
+          "runtime_enabled": true
+        },
+        {
+          "text": "private health insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "private insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Private Medical Plan",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "work_mobile_phone_allowance",
+      "issue_name": "Work Mobile-Phone Allowance",
+      "variants": [
+        {
+          "text": "cell phone budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mobile reimbursement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "phone allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work Mobile-Phone Allowance",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "commuting_support",
+      "issue_name": "Commuting Support",
+      "variants": [
+        {
+          "text": "A cycle to work scheme where they can purchase a bike provided free of charge by the company",
+          "runtime_enabled": true
+        },
+        {
+          "text": "a free taxi or bus fe to work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Bike to work scheme vouchers",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commuter benefit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "commuting reimbursement",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Commuting Support",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Free parking",
+          "runtime_enabled": true
+        },
+        {
+          "text": "transport costs",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Transport costs covered",
+          "runtime_enabled": true
+        },
+        {
+          "text": "transportation cover",
+          "runtime_enabled": true
+        },
+        {
+          "text": "travel to work allowance",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "annual_sales_target",
+      "issue_name": "Annual Sales Target",
+      "variants": [
+        {
+          "text": "annual quota",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Annual Sales Target",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales figure",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales goal",
+          "runtime_enabled": true
+        },
+        {
+          "text": "yearly sales target",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "maximum_customer_meetings_per_week",
+      "issue_name": "Maximum Customer Meetings Per Week",
+      "variants": [
+        {
+          "text": "client meetings each week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Maximum Customer Meetings Per Week",
+          "runtime_enabled": true
+        },
+        {
+          "text": "meeting load",
+          "runtime_enabled": true
+        },
+        {
+          "text": "weekly customer meetings",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "maximum_consecutive_travel_days",
+      "issue_name": "Maximum Consecutive Travel Days",
+      "variants": [
+        {
+          "text": "consecutive travel days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "length of each trip",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Maximum Consecutive Travel Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "maximum trip duration",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "paid_parental_leave",
+      "issue_name": "Paid Parental Leave",
+      "variants": [
+        {
+          "text": "maternity leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "new-child leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Parental Leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "parental leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paternity leave",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "company_car",
+      "issue_name": "Company Car",
+      "variants": [
+        {
+          "text": "car provided by the company",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company Car",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Company Car included",
+          "runtime_enabled": true
+        },
+        {
+          "text": "having access to employee benefits such as company cars",
+          "runtime_enabled": true
+        },
+        {
+          "text": "or maybe a company car",
+          "runtime_enabled": true
+        },
+        {
+          "text": "pool car",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "wellness_benefit",
+      "issue_name": "Wellness or Gym Benefit",
+      "variants": [
+        {
+          "text": "gym membership",
+          "runtime_enabled": true
+        },
+        {
+          "text": "lifestyle budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Membership of a local gym",
+          "runtime_enabled": true
+        },
+        {
+          "text": "some sort of lifestyle budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Subsidised local gym membership (X amount)",
+          "runtime_enabled": true
+        },
+        {
+          "text": "wellbeing benefit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "wellness allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Wellness or Gym Benefit",
+          "runtime_enabled": true
+        },
+        {
+          "text": "wellness perks",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "life_insurance",
+      "issue_name": "Employer-Paid Life Insurance",
+      "variants": [
+        {
+          "text": "death-in-service cover",
+          "runtime_enabled": true
+        },
+        {
+          "text": "employer paid life cover",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Employer-Paid Life Insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "life insurance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Life insurance cover",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "equity_or_profit_share",
+      "issue_name": "Equity or Profit Sharing",
+      "variants": [
+        {
+          "text": "equity",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Equity or Profit Sharing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "profit sharing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "share of company profits",
+          "runtime_enabled": true
+        },
+        {
+          "text": "stock options",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Three other job features could be employee profit sharing",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "role_scope",
+      "issue_name": "Role Scope or Job Title",
+      "variants": [
+        {
+          "text": "account manager title",
+          "runtime_enabled": true
+        },
+        {
+          "text": "ideal position",
+          "runtime_enabled": true
+        },
+        {
+          "text": "job title",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Role Scope or Job Title",
+          "runtime_enabled": true
+        },
+        {
+          "text": "role title",
+          "runtime_enabled": true
+        },
+        {
+          "text": "title of position",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "renewal_bonus",
+      "issue_name": "Contract-Renewal Bonus",
+      "variants": [
+        {
+          "text": "bonus at the end of the contract for renewing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "bonus for renewing the contract",
+          "runtime_enabled": true
+        },
+        {
+          "text": "bonus of $5.000 at the end of the contract for renewing",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Contract-Renewal Bonus",
+          "runtime_enabled": true
+        },
+        {
+          "text": "contract renewal payment",
+          "runtime_enabled": true
+        },
+        {
+          "text": "renewal bonus",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "private_office",
+      "issue_name": "Dedicated Office or Workspace",
+      "variants": [
+        {
+          "text": "bookable quiet room",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Dedicated Office or Workspace",
+          "runtime_enabled": true
+        },
+        {
+          "text": "dedicated workspace",
+          "runtime_enabled": true
+        },
+        {
+          "text": "having my own office",
+          "runtime_enabled": true
+        },
+        {
+          "text": "my own office",
+          "runtime_enabled": true
+        },
+        {
+          "text": "private office",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "staff_discount",
+      "issue_name": "Employee Discount",
+      "variants": [
+        {
+          "text": "discount on company products",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Employee Discount",
+          "runtime_enabled": true
+        },
+        {
+          "text": "staff discount",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Staff discounts",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "lunch_break_length",
+      "issue_name": "Lunch Break Length",
+      "variants": [
+        {
+          "text": "lunch break",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Lunch Break Length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "meal break length",
+          "runtime_enabled": true
+        },
+        {
+          "text": "one hour lunch",
+          "runtime_enabled": true
+        },
+        {
+          "text": "One hour lunch break",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "volunteering_days",
+      "issue_name": "Paid Volunteering Days",
+      "variants": [
+        {
+          "text": "4 Volunteering Days per year",
+          "runtime_enabled": true
+        },
+        {
+          "text": "charity days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "paid volunteer leave",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Paid Volunteering Days",
+          "runtime_enabled": true
+        },
+        {
+          "text": "volunteering days",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "working_abroad",
+      "issue_name": "Permission to Work Abroad",
+      "variants": [
+        {
+          "text": "Permission to Work Abroad",
+          "runtime_enabled": true
+        },
+        {
+          "text": "remote work from another country",
+          "runtime_enabled": true
+        },
+        {
+          "text": "work from abroad",
+          "runtime_enabled": true
+        },
+        {
+          "text": "working abroad allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Working from abroad allowance",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "clothing_allowance",
+      "issue_name": "Work Clothing Allowance",
+      "variants": [
+        {
+          "text": "cloth allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "clothes allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "clothing allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work Clothing Allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "workwear budget",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "work_technology_allowance",
+      "issue_name": "Work Technology Upgrade Allowance",
+      "variants": [
+        {
+          "text": "A technology allowance for upgrading their laptop or phone used for client work",
+          "runtime_enabled": true
+        },
+        {
+          "text": "laptop upgrade budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "phone upgrade allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "tech upgrade budget",
+          "runtime_enabled": true
+        },
+        {
+          "text": "technology allowance",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Work Technology Upgrade Allowance",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "team_coaching_responsibility",
+      "issue_name": "Team Coaching Responsibility",
+      "variants": [
+        {
+          "text": "coach a newer teammate",
+          "runtime_enabled": true
+        },
+        {
+          "text": "help the team grow",
+          "runtime_enabled": true
+        },
+        {
+          "text": "I would like to be able to work with a team and help the team grow",
+          "runtime_enabled": true
+        },
+        {
+          "text": "mentor a junior colleague",
+          "runtime_enabled": true
+        },
+        {
+          "text": "team coaching duties",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Team Coaching Responsibility",
+          "runtime_enabled": true
+        }
+      ]
+    },
+    {
+      "issue_id": "sales_planning_meeting_access",
+      "issue_name": "Sales Planning Meeting Access",
+      "variants": [
+        {
+          "text": "access to planning meetings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "involvement in meetings",
+          "runtime_enabled": true
+        },
+        {
+          "text": "sales planning meeting",
+          "runtime_enabled": true
+        },
+        {
+          "text": "Sales Planning Meeting Access",
+          "runtime_enabled": true
+        },
+        {
+          "text": "seat at the monthly sales meeting",
+          "runtime_enabled": true
+        }
+      ]
+    }
+  ]
+}

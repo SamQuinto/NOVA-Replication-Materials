@@ -1,0 +1,159 @@
+"""Open the downloadable NOVA web app in your browser. Use your own OpenAI key to score offers."""
+from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
+from html import escape,unescape
+from html.parser import HTMLParser
+from pathlib import Path
+import argparse,json,os,re,subprocess,sys,urllib.parse,webbrowser
+ROOT=Path(__file__).resolve().parents[1]
+CODE=ROOT/'code'
+SAVED_EXAMPLES={
+    'appendix_a':('Informal offer: shorthand and typos','job'),
+    'participant_previous':('Candidate proposal from the pilot','job'),
+    'counteroffer':('Recruiter counteroffer from the pilot','job'),
+    'clarification':('A choice that needs clarification','job'),
+    'unpriced':('An idea outside the scoring table','job'),
+    'tutorial':('Tutorial: venue hire','tutorial'),
+}
+
+def local_environment():
+    env=dict(os.environ)
+    path=ROOT/'.env'
+    if not env.get('OPENAI_API_KEY') and path.is_file():
+        for line in path.read_text(encoding='utf-8-sig').splitlines():
+            if line.strip().startswith('OPENAI_API_KEY='):
+                env['OPENAI_API_KEY']=line.split('=',1)[1].strip().strip('"\'')
+    return env
+
+def without_narrative_label(text):
+    return re.sub(r'^\s*(?:\*\*|<strong\b[^>]*>|<b>)?\s*ROLE\s+NARRATIVE:\s*(?:\*\*|</strong>|</b>)?\s*','',text,count=1,flags=re.I)
+
+def normalise_material(text):
+    text=re.sub(r'</?(?:p|span|li|ul|ol|h[1-6]|div|br)\b[^>]*>',' ',text,flags=re.I)
+    return ' '.join(unescape(re.sub(r'<[^>]*>','',text)).replace('**','').replace('•','').split())
+
+class SafeMaterialHTML(HTMLParser):
+    """Keep the role's text formatting, without scripts or external content."""
+    tags={'p','br','strong','b','em','i','u','span','ul','ol','li','h2','h3','h4'}
+    styles={'color','font-weight','font-style','font-size','text-decoration','display','margin-left','padding-left','text-indent','margin-bottom','line-height','text-align'}
+    def __init__(self):
+        super().__init__(convert_charrefs=True);self.parts=[];self.blocked=0
+    def handle_starttag(self,tag,attrs):
+        if tag in {'script','style','iframe','object'}:self.blocked+=1;return
+        if self.blocked or tag not in self.tags:return
+        clean=[]
+        for name,value in attrs:
+            if name!='style' or not value:continue
+            declarations=[]
+            for item in value.split(';'):
+                if ':' not in item:continue
+                key,setting=[part.strip() for part in item.split(':',1)]
+                if key.lower() in self.styles and re.fullmatch(r'[\w#.,()% +\-]+',setting) and not re.search(r'url|expression',setting,re.I):
+                    declarations.append(key.lower()+':'+setting)
+            if declarations:clean.append(' style="'+escape(';'.join(declarations),quote=True)+'"')
+        self.parts.append('<'+tag+''.join(clean)+'>')
+    def handle_endtag(self,tag):
+        if tag in {'script','style','iframe','object'}:
+            self.blocked=max(0,self.blocked-1);return
+        if not self.blocked and tag in self.tags and tag!='br':self.parts.append('</'+tag+'>')
+    def handle_data(self,data):
+        if not self.blocked:self.parts.append(escape(data))
+
+def material_html(text,formatted=False):
+    text=without_narrative_label(text)
+    if not formatted:return ''.join('<p>'+escape(p).replace('\n','<br>')+'</p>' for p in re.split(r'\n\s*\n',text) if p.strip())
+    text=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',text,flags=re.S)
+    text=re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)',r'<em>\1</em>',text)
+    parts=[]
+    for paragraph in re.split(r'\n\s*\n',text):
+        paragraph=paragraph.strip()
+        if not paragraph:continue
+        heading=re.fullmatch(r'<strong>(Background Information|Instructions)</strong>',paragraph,re.I)
+        parts.append('<h3>'+heading.group(1)+'</h3>' if heading else '<p>'+paragraph+'</p>')
+    clean=SafeMaterialHTML();clean.feed(''.join(parts));clean.close()
+    return ''.join(clean.parts)
+
+def role_materials(exercise, role):
+    """Load the selected role and its matching display formatting."""
+    if exercise not in ['job','tutorial'] or role not in ['Candidate','Recruiter']:
+        raise ValueError('Please choose an exercise and role.')
+    folder=CODE/'frozen'/('tutorial' if exercise=='tutorial' else '')
+    table=json.loads((folder/'Scoring_Table.json').read_text(encoding='utf-8'))
+    material=table['roles'][role]
+    path=ROOT/'demo/role_materials.json'
+    formatted=json.loads(path.read_text(encoding='utf-8')).get(exercise,{}).get(role) if path.is_file() else None
+    # If the wording is edited later, show the new text rather than stale formatting.
+    matching=bool(formatted and normalise_material(formatted)==normalise_material(material['full_text']))
+    return {'exercise':exercise,'role':role,
+            'name':table.get('parties',{}).get(role,{}).get('name',role),
+            'text':material['full_text'],
+            'html':material_html(formatted if matching else material['full_text'],formatted=matching)}
+
+class Handler(BaseHTTPRequestHandler):
+    def log_message(self,*args):pass # Keep offers and API keys out of server logs.
+    def send(self,value,status=200):
+        body=json.dumps(value,ensure_ascii=False).encode()
+        self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8')
+        self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.end_headers();self.wfile.write(body)
+    def do_GET(self):
+        parsed=urllib.parse.urlsplit(self.path)
+        if parsed.path=='/api/materials':
+            query=urllib.parse.parse_qs(parsed.query)
+            try:return self.send(role_materials(query.get('exercise',['job'])[0],query.get('role',['Candidate'])[0]))
+            except ValueError as exc:return self.send({'error':str(exc)},400)
+        if self.path=='/api/status':return self.send({'key_ready':bool(local_environment().get('OPENAI_API_KEY')),
+            'examples':[{'id':key,'title':title,'exercise':exercise} for key,(title,exercise) in SAVED_EXAMPLES.items()]})
+        if self.path not in ['/','/index.html']:return self.send({'error':'Not found'},404)
+        body=(ROOT/'demo/index.html').read_bytes();self.send_response(200)
+        self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(body)
+    def do_POST(self):
+        host=self.headers.get('Host','');origin=self.headers.get('Origin','')
+        if host not in [f'127.0.0.1:{self.server.server_port}',f'localhost:{self.server.server_port}'] or (origin and origin not in ['http://'+host]):return self.send({'error':'Only this local page may send requests.'},403)
+        if self.path!='/api/score':return self.send({'error':'Not found'},404)
+        try:
+            length=int(self.headers.get('Content-Length','0'))
+            if not 0<length<40000:raise ValueError('Please use an offer shorter than 30,000 characters.')
+            data=json.loads(self.rfile.read(length));exercise=data.get('exercise','job');architecture=data.get('architecture','A1');reasoning=data.get('reasoning','low')
+            if exercise not in ['job','tutorial'] or architecture not in ['A1','A2'] or reasoning not in ['low','high']:raise ValueError('Invalid setting.')
+            env=local_environment();live=bool(data.get('live'))
+            if live and not env.get('OPENAI_API_KEY'):raise ValueError('Add your key to the local .env file, then try again.')
+            args=[sys.executable,str(CODE/'nova_cli.py'),'--architecture',architecture,'--exercise',exercise,'--reasoning',reasoning]
+            if live:
+                offer=str(data.get('offer','')).strip();role=data.get('role','Candidate')
+                if role not in ['Candidate','Recruiter'] or not offer:raise ValueError('Enter an offer and choose a role.')
+                args+=['--offer',offer,'--role',role,'--previous-offer',str(data.get('previous_offer','')),'--live']
+            else:
+                # Saved illustrations have a fixed, identified interpretation.
+                example_name=data.get('example_id') or ('appendix_a' if exercise=='job' else 'tutorial')
+                if example_name not in SAVED_EXAMPLES:raise ValueError('Please choose a saved example from the list.')
+                exercise=SAVED_EXAMPLES[example_name][1]
+                args=[sys.executable,str(CODE/'nova_cli.py'),'--architecture','A1','--exercise',exercise,'--reasoning','low',
+                      '--case-json',str(CODE/'examples'/(example_name+'_offer.json')),
+                      '--interpretation-json',str(CODE/'examples'/(example_name+'_interpretation.json'))]
+            completed=subprocess.run(args,cwd=CODE,env=env,capture_output=True,text=True,encoding='utf-8',timeout=240)
+            if completed.returncode:
+                # Show the useful error message without exposing a private key or path.
+                message=completed.stderr.strip().splitlines()[-1] if completed.stderr.strip() else 'Scoring did not complete.'
+                key=env.get('OPENAI_API_KEY','')
+                if key:message=message.replace(key,'[key removed]')
+                return self.send({'error':message},502)
+            result=json.loads(completed.stdout)
+            # The page can show usage without displaying OpenAI's response identifiers.
+            for receipt in result.get('receipts',[]):receipt.pop('response_id',None)
+            result['mode']='live' if live else 'saved example'
+            if not live:
+                result['example']=json.loads((CODE/'examples'/(example_name+'_offer.json')).read_text(encoding='utf-8'))
+                result['saved_example_id']=example_name
+                result['saved_exercise']=exercise
+                result['saved_configuration']={'architecture':'A1','reasoning':'low'}
+            self.send(result)
+        except (ValueError,subprocess.TimeoutExpired) as exc:self.send({'error':str(exc) if isinstance(exc,ValueError) else 'The request timed out. It was not automatically repeated.'},400)
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--port',type=int,default=8765);parser.add_argument('--no-browser',action='store_true');args=parser.parse_args()
+    server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler);url=f'http://127.0.0.1:{server.server_port}/'
+    print('NOVA demonstration: '+url,flush=True);print('Open this address to try NOVA. Scoring uses your own OpenAI key and incurs API charges.',flush=True)
+    if not args.no_browser:webbrowser.open(url)
+    try:server.serve_forever()
+    except KeyboardInterrupt:pass
+    finally:server.server_close()
+if __name__=='__main__':main()

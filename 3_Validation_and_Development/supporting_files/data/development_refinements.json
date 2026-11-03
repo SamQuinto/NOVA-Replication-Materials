@@ -1,0 +1,30 @@
+[
+  {
+    "development_id": "d154",
+    "offer": "salary 55k, personal work expense budget 12k, starting date May 15; Paid Caregiving Days: 5 paid caregiving days per rolling 12 months",
+    "role": "Recruiter",
+    "theme": "Wrong issue",
+    "expected": "Recognize 5 paid caregiving days. Do not add protected development time.",
+    "before_summary": "Mapped caregiving leave to Protected Development Time: 5 workweeks.",
+    "change": "Use the stated purpose of the leave to distinguish caregiving from development time. Add a focused recognition rule and regression cases.",
+    "after_summary": "Paid Caregiving Days: 5 paid caregiving days per rolling 12 months.",
+    "earlier_output": "- Salary: $55,000  [-0.67]\n- Personal Budget: $12,000  [-0.80]\n- Starting Date: May 15  [-1.23]\n- Protected Development Time: 5 workweeks  [-0.25]\nTotal: -2.95",
+    "later_output": "- Salary: $55,000  [-0.67]\n- Personal Budget: $12,000  [-0.80]\n- Starting Date: May 15  [-1.23]\n- Paid Caregiving Days: 5 paid caregiving days per rolling 12 months  [+0.00]\nTotal: -2.70",
+    "earlier_record": "Saved original V1 response, 22 October 2026",
+    "later_record": "Later customized scorer, replay of saved model responses"
+  },
+  {
+    "development_id": "d214",
+    "offer": "salary 55k, personal work expense budget 12k, starting date May 15 and Customer Contact Hours: Provide one fixed eight-hour customer-facing window aligned with the primary customer region, plus no more than four planned early or late exceptions per quarter with five business days’ notice.",
+    "role": "Recruiter",
+    "theme": "Missed issue",
+    "expected": "Recognize the stated customer-facing availability window as Customer Contact Hours.",
+    "before_summary": "Scored salary, budget and starting date but omitted Customer Contact Hours.",
+    "change": "Recognize customer-contact windows in longer sentences, not only short issue labels. Add focused recognition and regression cases.",
+    "after_summary": "Recognized the eight-hour customer-facing window and its limits under Customer Contact Hours.",
+    "earlier_output": "- Salary: $55,000  [-0.67]\n- Personal Budget: $12,000  [-0.80]\n- Starting Date: May 15  [-1.23]\nTotal: -2.70",
+    "later_output": "- Salary: $55,000  [-0.67]\n- Personal Budget: $12,000  [-0.80]\n- Starting Date: May 15  [-1.23]\n- Customer Contact Hours: Provide one fixed eight-hour customer-facing window aligned with the primary customer region, plus no more than four planned early or late exceptions per quarter with five business days’ notice.  [+0.30]\nTotal: -2.40",
+    "earlier_record": "Saved original V1 response, 22 October 2026",
+    "later_record": "Later customized scorer, replay of saved model responses"
+  }
+]

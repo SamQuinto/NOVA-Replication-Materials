@@ -1,0 +1,11 @@
+{
+  "role": "Candidate",
+  "offer": "Can I start in January with remote working for 4 days with an annual salary of $50000 with a personal budget of $10000, professional training or experienced mentorship",
+  "previous_offer": "Can I start in January with remote working for 4 days with an annual salary of $50000 with a personal budget of $10000, sponsored membership",
+  "source": {
+    "file": "data/main_offers.json",
+    "offer_id": "o24",
+    "source": "Live negotiation - Oct 27",
+    "input_kind": "Calculator input"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "role": "Recruiter",
+  "offer": "Salary 50000\nStarting date January 1\nBudget 10000\n30 days vacation per year, 5 remote days a week",
+  "previous_offer": "Salary 55000\nStarting date February 1\nBudget 15000\n40 days vacation per year, 5 remote days a week",
+  "source": {
+    "file": "data/sent_offers.json",
+    "trial_id": "T083",
+    "offer_number": 3,
+    "pilot": "Oct 27",
+    "offer_ids": [
+      "o903"
+    ]
+  }
+}
